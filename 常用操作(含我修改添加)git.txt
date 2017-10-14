@@ -1,0 +1,104 @@
+拉取源码：
+repo init -u gitolite@192.168.1.21:manifests.git -b master
+repo sync
+
+本地工作操作：
+(1)对仓库的操作
+	git init 在当前文件夹下创建本地仓库
+	rm -rf .git删除本地仓库
+	
+①对代码的操作
+git add                                  ---将新文件或者修改的代码提交到缓存区
+git rm                                    ---把代码从仓库中移除
+git commit                            ---将缓存区的代码提交到仓库中
+git commit -a = git add + git commit          ---但是不对库外的文件操作
+git commit --amend -m "修改最近一次提交注释说明"
+git commit --amend 进入编辑界面，修改完成保存即可。类型linux命令vi，输入i a o进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式。按下wq保存退出
+②信息查看
+git status                               ---查看工作目录下面的代码状态（修改记录）
+git diff                                   ---查看工作目录和缓存区的代码差异
+git diff --cached                    ---查看缓存区和仓库的代码差异
+git diff HEAD                         ---查看工作目录和仓库的代码差异
+git log                                   ---查看commit的记录
+git log -1                                   ---查看commit的最近一条记录
+git show                                ---查看commit的内容
+
+(3)撤销修改
+ git checkout -- file可以丢弃工作区的修改
+ git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+(4) 操作文件
+ git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
+		而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
+	    使用git add -i	选择revert子命令先从索引库中删除，再使用git checkout . ，来取消删除
+ git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
+1) 远程仓库相关命令
+检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
+	git clone <repo> <directory> 可以指定检出后的本地仓库的名称directory
+	或者git clone git@github.com:jquery/jquery.git 
+	或者git clone https://github.com:jquery/jquery.git 
+查看远程仓库：$ git remote -v
+添加远程仓库：$ git remote add [name] [url] 如：git remote add origin git@github.com:username/repoxxx.git origin是远程库的名字；
+	或者git remote add origin https://github.com:username/repoxxx.git
+	或者git remote add origin git://github.com:username/repoxxx.git
+删除远程仓库：$ git remote rm [name]
+拉取远程仓库：$ git pull [remoteName] [localBranchName]
+推送远程仓库：$ git push [remoteName] [localBranchName] 第一次推送加上 -u 如：git push -u origin master
+
+2）分支(branch)操作相关命令
+查看本地分支：$ git branch
+查看远程分支：$ git branch -r
+创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
+切换分支：$ git checkout [name]
+创建新分支并立即切换到新分支：$ git checkout -b [name]
+删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
+合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
+创建远程分支(本地分支push到远程)：$ git push origin [name]
+删除远程分支：$ git push origin :heads/[name]
+
+3）版本(tag)操作相关命令
+查看版本：$ git tag
+创建版本：$ git tag [name]
+删除版本：$ git tag -d [name]
+查看远程版本：$ git tag -r
+创建远程版本(本地版本push到远程)：$ git push origin [name]
+删除远程版本：$ git push origin :refs/tags/[name]
+
+4) 子模块(submodule)相关操作命令
+添加子模块：$ git submodule add [url] [path]
+初始化子模块：$ git submodule init ----只在首次检出仓库时运行一次就行
+更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
+删除子模块：$ git rm --cached [path]
+
+5）忽略一些文件、文件夹不提交
+在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
+target
+bin
+*.db
+
+6）忽略一些文件、文件夹不提交(之前已经提交过了的)
+git rm -r cached filepath
+
+
+git push exdroid a13jb:a13jb 提交代码到服务器
+git format-patch -1 生成补丁
+git commit --amend 修改最近一次的commit log
+git rebase xxxxxx --interactive 修改某次的commit log
+repo forall -c git push amlogic A601SD:A601SD 整体提交到服务器
+git show-branch A601 A601SD 两个分支之间的对比
+repo forall -c git checkout A602 本地的分支切换
+repo forall -c git checkout -b A602G55 amlogic/A602G55 创建新分支，并且切换
+git stash 将未完成的工作保存
+git stash list 查看保存的清单
+git stash apply --0 恢复保存的工作
+git stash pop
+git stash clear
+repo forall -c git stash list 整体查看
+git revert HEAD^1 [--no-edit] [--no-commit] [-m] 撤销某次commit
+repo forall -c git fetch --all 让本地指向服务器的最新代码
+repo forall -c git checkout -f 清除工作目录下面未保存的修改
+git fetch 从远程获取最新版本
+git merge 合并分支
+git rebase 重组分支
+git pull = git fetch + git merge 更新并且合并
+git pull --rebase = git fetch + git rebase 更新并且重组
+git cherry-pick -x [98f8752b8]
