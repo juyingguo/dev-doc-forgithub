@@ -1,5 +1,5 @@
 一、adb 命令
- 
+	adb logcat -v time 
 二、adb shell 下的命令
 	am start 
 	am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
