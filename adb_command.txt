@@ -1,5 +1,9 @@
 一、adb 命令
-	adb logcat -v time 
+	1.1 logcat
+		adb logcat -v time 
+	1.2 device
+		adb connect ip:port 
+		adb disconnect ip:port 
 二、adb shell 下的命令
 	am start 
 	am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
