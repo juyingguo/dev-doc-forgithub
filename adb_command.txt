@@ -5,5 +5,16 @@
 		adb connect ip:port 
 		adb disconnect ip:port 
 二、adb shell 下的命令
+	am相关
 	am start 
 	am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
+	
+	dumpsys meminfo $package_name or $pid查看应用内存使用情况 adb shell dumpsys meminfo $package_name com.android.music
+	
+	
+	top -m 10 查看内存排行前10位的进程
+	
+	dumpsys activity
+	dumpsys activity -p(包名) 查看当前包下的进程情况
+	
+	/system/bin/screencap -p /sdcard/screenshot.png 截屏 
