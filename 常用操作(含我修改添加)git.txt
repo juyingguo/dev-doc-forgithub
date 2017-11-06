@@ -20,9 +20,11 @@
 	git diff --cached                    ---查看缓存区和仓库的代码差异
 	git diff HEAD                         ---查看工作目录和仓库的代码差异
 	git log                                   ---查看commit的记录
+	git log --pretty=oneline			---查看commit的简洁记录，
 	git log -1                                   ---查看commit的最近一条记录
 	git log origin/master 		---查看服务器commit的记录
 	git show                                ---查看commit的内容
+	git show <commit-hashId> 	便可以显示某次提交的修改内容
   
 (3)撤销修改
 	 git checkout -- file可以丢弃工作区的修改
@@ -32,6 +34,10 @@
 			而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
 			使用git add -i	选择revert子命令先从索引库中删除，再使用git checkout . ，来取消删除
 	 git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
+(5) 版本回退
+	git reflog 用来记录你的每一次命令
+	git reset --hard HEAD^ 回退到上一个版本 ；//只有一次提交记录时，fatal: ambiguous(模棱两可的) argument 'HEAD^': unknown revision or path not in the working tree.
+	git reset --hard commit_id 回退到某一个历史版本 
 1) 远程仓库相关命令
 	检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
 		git clone <repo> <directory> 可以指定检出后的本地仓库的名称directory

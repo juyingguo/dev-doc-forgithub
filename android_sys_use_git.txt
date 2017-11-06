@@ -16,6 +16,8 @@ repo forall -c git checkout master
 最终rom生成地址
 owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
+ (4) 如果是第三方应用，注意将该应用所在的路径下，lib中so库添加完整，Android.mk配置so
+	 如ibotnphone 路径 Z:\android\android\device\actions\common\prebuilt\apk\thirdparty\ibotnphone
 
 3.单独模块编译
 （1）cd android/android下
