@@ -5,16 +5,27 @@
 		adb connect ip:port 
 		adb disconnect ip:port 
 二、adb shell 下的命令
-	am相关
-	am start 
-	am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
+	(2.1)am相关
+		am start 
+		am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
+	(2.2)
+		pm
+		pm clear package_name 清除应用的缓存
 	
-	dumpsys meminfo $package_name or $pid查看应用内存使用情况 adb shell dumpsys meminfo $package_name com.android.music
+	(2.3)内存
+		procrank VSS - Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
+				 RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内存）
+				 PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
+				 USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
 	
+	(2.4)cpu
+	dumpsys meminfo $package_name or $pid查看某一应用内存使用情况 adb shell dumpsys meminfo $package_name com.android.musi
 	
 	top -m 10 查看内存排行前10位的进程
 	
 	dumpsys activity
 	dumpsys activity -p(包名) 查看当前包下的进程情况
+	
+	
 	
 	/system/bin/screencap -p /sdcard/screenshot.png 截屏 
