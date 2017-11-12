@@ -29,6 +29,7 @@
 (3)撤销修改
 	 git checkout -- file可以丢弃工作区的修改
 	 git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
+	 git reset --hard 放弃本地修改，直接覆盖之
 (4) 操作文件
 	 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
 			而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
@@ -49,6 +50,9 @@
 		或者git remote add origin git://github.com:username/repoxxx.git
 	删除远程仓库：$ git remote rm [name]
 	拉取远程仓库：$ git pull [remoteName] [localBranchName]
+	拉取远程仓库冲突处理：：
+		git pull * * 与本地有冲突时，解决方式：1. git stash 先将本地修改存储起来 2. git pull * * 暂存了本地修改之后，就可以pull了。3.git stash pop stash@{0}还原暂存的内容(git stash list可以看到保存的信息)
+		
 	推送远程仓库：$ git push [remoteName] [localBranchName] 第一次推送加上 -u 如：git push -u origin master
 
 2）分支(branch)操作相关命令
