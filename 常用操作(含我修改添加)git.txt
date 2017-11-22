@@ -9,6 +9,8 @@
 	
 ①对代码的操作
 	git add                                  ---将新文件或者修改的代码提交到缓存区
+		当出现【warning：LF will be replaced by CRLF】
+		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
 	git rm                                    ---把代码从仓库中移除
 	git commit                            ---将缓存区的代码提交到仓库中
 	git commit -a = git add + git commit          ---但是不对库外的文件操作
