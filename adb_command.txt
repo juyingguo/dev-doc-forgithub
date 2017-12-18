@@ -1,9 +1,11 @@
 一、adb 命令
 	1.1 logcat
 		adb logcat -v time 
+		adb logcat -c  清除adb logcat缓存
 	1.2 device
 		adb connect ip:port 
 		adb disconnect ip:port 
+	1.3 adb -s "" 切换不同设备
 二、adb shell 下的命令
 	(2.1)am相关
 		am start 
@@ -18,15 +20,23 @@
 				 RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内存）
 				 PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
 				 USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
+		getprop | grep dalvik.vm.heapgrowthlimit java进程申请的java空间阈值	与 Runtime.getRuntime().maxMemory()得到的一样
+		cat /proc/meminfo 查看RAM使用情况	
 	
 	(2.4)cpu
 	dumpsys meminfo $package_name or $pid查看某一应用内存使用情况 adb shell dumpsys meminfo $package_name com.android.musi
 	
 	top -m 10 查看内存排行前10位的进程
 	
-	dumpsys activity
-	dumpsys activity -p(包名) 查看当前包下的进程情况
-	
+	top  -n 1 | grep pid|package_name  获取指定进程的cpu信息	grep后直接跟上进程id或包名
+	dumpsys cpuinfo 得到每个进程使用cpu的详细信息 
 	
 	(2.5) 截屏 
 	/system/bin/screencap -p /sdcard/screenshot.png 截屏 
+	
+	(2.6) dumpsys 系列命令
+		参考 https://www.tuicool.com/articles/EBZjmer
+		dumpsys activity -p(包名) 查看当前包下的进程情况  
+		dumpsys activity s com.sina.weibo  查询某个App所有的Service状态 s为 services 的缩写
+	2.7、
+	
