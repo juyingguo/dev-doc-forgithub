@@ -29,9 +29,12 @@
 	git show <commit-hashId> 	便可以显示某次提交的修改内容
   
 (3)撤销修改
-	 git checkout -- file可以丢弃工作区的修改
+	 git checkout -- file可以丢弃工作区的修改(只放弃了修改的文件)
+	 git checkout . && git clean -df 可以放弃所有修改、新增、删除文件 git clean是从工作目录中移除没有track的文件.
+		
 	 git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
 	 git reset --hard 放弃本地修改，直接覆盖之
+	 
 (4) 操作文件
 	 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
 			而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
@@ -98,8 +101,13 @@
 		/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 		build/    # 忽略 build/ 目录下的所有文件
 		doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
-
+7) Windows下使用Beyond Compare作为git的比对与合并工具
+	beyondcompare_config_git.txt  在.gitconfig(c盘/user目录下)中追加该文件中的内容，需要修改对应的bc版本名称、bc安装路径(其中的路径使用'/');
+	git mergetool 
 ///////////
+////////////
+
+
 git push exdroid a13jb:a13jb 提交代码到服务器
 git format-patch -1 生成补丁
 git commit --amend 修改最近一次的commit log
