@@ -1,0 +1,548 @@
+KR ky_KG lo_LA lt_LT lv_LV mk_MK ml_IN mn_MN mr_IN ms_MY my_MM nb_NO ne_NP nl_BE nl_NL pl_PL pt_BR pt_PT rm_CH ro_RO ru_RU si_LK sk_SK sl_SI sr_RS sv_SE sw_TZ ta_IN te_IN th_TH tl_PH tr_TR uk_UA ur_PK uz_UZ vi_VN zh_CN zh_HK zh_TW zu_ZA
+Warning: AndroidManifest.xml already defines versionCode (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines versionName (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines minSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+
+
+
+
+
+Export includes file: device/actions/common/packages/IbotnLauncher/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/libmsc.so_intermediates/export_includes
+Export includes file: device/actions/common/packages/IbotnLauncher/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/libaudiodetect.so_intermediates/export_includes
+Export includes file: device/actions/common/packages/IbotnLauncher/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/libibotnuart.so_intermediates/export_includes
+Export includes file: device/actions/common/packages/IbotnLauncher/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/libiBotnPeripheral.so_intermediates/export_includes
+Export includes file: device/actions/common/packages/IbotnLauncher/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/libuscasr.so_intermediates/export_includes
+Install: out/target/product/bubble_gum/system/app/IbotnLauncher/IbotnLauncher.apk
+mkdir -p out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm  ;ln -sf /system/lib/libmsc.so out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm/libmsc.so  ;ln -sf /system/lib/libaudiodetect.so out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm/libaudiodetect.so  ;ln -sf /system/lib/libibotnuart.so out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm/libibotnuart.so  ;ln -sf /system/lib/libiBotnPeripheral.so out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm/libiBotnPeripheral.so  ;ln -sf /system/lib/libuscasr.so out/target/product/bubble_gum/system/app/IbotnLauncher/lib/arm/libuscasr.so
+target Prebuilt: glide-37 (out/target/product/bubble_gum/obj/JAVA_LIBRARIES/glide-37_intermediates/javalib.jar)
+make: Leaving directory `/home/juying_dai/android/android'
+
+#### make completed successfully (25 seconds) ####
+
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git status .
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    .proguard.flags.swp
+        modified:   Android.mk
+        deleted:    res/drawable-hdpi/img_person_nor.png
+        deleted:    res/drawable-hdpi/img_person_press.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git log -4
+commit de2056c63bec80a277d38f5df1b01fd21b44a291
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 19:18:44 2017 +0800
+
+    ibotnface 屏蔽
+
+commit f3c579e7223d41e38268500ed7f2f16e95532edb
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 18:18:06 2017 +0800
+
+    arcibotnface
+
+commit ccfeb5710467204b698e30b56799511d68e80faf
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 18:09:21 2017 +0800
+
+    v1.6.29 看图实物实现主动说动物名称显示图片。二维码及登录更换新图标
+
+commit 69d3d4f4f535cf9fc88c09f3024093db52ab4dd8
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 17:07:52 2017 +0800
+
+    考勤模式 arcibotnface
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git show ccfeb5710467204b698e30b56799511d68e80faf
+commit ccfeb5710467204b698e30b56799511d68e80faf
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 18:09:21 2017 +0800
+
+    v1.6.29 看图实物实现主动说动物名称显示图片。二维码及登录更换新图标
+
+diff --git a/actions/common/packages/IbotnLauncher/.proguard.flags.swp b/actions/common/packages/IbotnLauncher/.proguard.flags.swp
+new file mode 100644
+index 0000000..3ab0153
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/.proguard.flags.swp differ
+diff --git a/actions/common/packages/IbotnLauncher/Android.mk b/actions/common/packages/IbotnLauncher/Android.mk
+index c6ddbd6..58504b5 100755
+--- a/actions/common/packages/IbotnLauncher/Android.mk
++++ b/actions/common/packages/IbotnLauncher/Android.mk
+@@ -21,7 +21,7 @@ LOCAL_MODULE_TAGS := optional
+ res_dirs := res \
+ ../qrcodescan/res
+ 
+-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 ibotn_jar msc libqrcodescan accounts-core cloudplay libupdatev3 zxing commonnetlib babyaudio gson BASE64Decoder usc myokhttp 
++LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 ibotn_jar msc libqrcodescan accounts-core cloudplay libupdatev3 zxing commonnetlib babyaudio gson BASE64Decoder usc myokhttp 
+ LOCAL_JNI_SHARED_LIBRARIES := libmsc libaudiodetect libibotnuart libiBotnPeripheral libuscasr
+ #LOCAL_SRC_FILES := $(call all-subdir-java-files)
+ LOCAL_SRC_FILES := $(call all-java-files-under, SDK src)
+@@ -91,7 +91,7 @@ include $(BUILD_PREBUILT)
+ include $(CLEAR_VARS)
+ 
+ LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := ibotn_jar:libs/ibotn_jar.jar msc:libs/Msc.jar libqrcodescan:libs/qrcodescan.jar accounts-core:libs/accounts-core.jar cloudplay:libs/clo
+-        gson:libs/gson-2.8.0.jar BASE64Decoder:libs/sun.misc.BASE64Decoder.jar usc:libs/usc.jar myokhttp:libs/okhttp-3.6.0.jar okhttputils:libs/okhttputils-2_6_2.jar okio:libs
++        gson:libs/gson-2.8.0.jar BASE64Decoder:libs/sun.misc.BASE64Decoder.jar usc:libs/usc.jar myokhttp:libs/okhttp-3.6.0.jar okhttputils:libs/okhttputils-2_6_2.jar okio:libs
+ 
+ include $(BUILD_MULTI_PREBUILT)
+ 
+diff --git a/actions/common/packages/IbotnLauncher/AndroidManifest.xml b/actions/common/packages/IbotnLauncher/AndroidManifest.xml
+index 86c3595..d97dca3 100755
+--- a/actions/common/packages/IbotnLauncher/AndroidManifest.xml
++++ b/actions/common/packages/IbotnLauncher/AndroidManifest.xml
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.ibotn.ibotnlauncher"
+-    android:versionCode="1628"
+-    android:versionName="1.6.28" >
++    android:versionCode="1629"
++    android:versionName="1.6.29" >
+ 
+     <uses-sdk
+         android:minSdkVersion="19"
+@@ -252,6 +252,11 @@
+         <activity android:name=".activity.UserDetailActivity"
+             android:screenOrientation="landscape"
+             android:theme="@style/AppTheme"/>
++        <activity
++            android:name=".activity.ShowImageActivity"
++            android:launchMode="singleTask"
++            android:screenOrientation="landscape"
++            android:theme="@style/AppTheme" />
+     </application>
+ 
+ </manifest>
+diff --git a/actions/common/packages/IbotnLauncher/libs/glide-3.7.0.jar b/actions/common/packages/IbotnLauncher/libs/glide-3.7.0.jar
+new file mode 100755
+index 0000000..9ef5cb6
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/libs/glide-3.7.0.jar differ
+diff --git a/actions/common/packages/IbotnLauncher/proguard.flags b/actions/common/packages/IbotnLauncher/proguard.flags
+index daa3503..191e14e 100755
+--- a/actions/common/packages/IbotnLauncher/proguard.flags
++++ b/actions/common/packages/IbotnLauncher/proguard.flags
+@@ -13,3 +13,9 @@
+ 
+ #-keep class com.ibotn.ibotnlauncher.service.speech.iflytek.IflyResultBean{*;}
+ 
++-keep public class * implements com.bumptech.glide.module.GlideModule
++-keep public class * extends com.bumptech.glide.module.AppGlideModule
++-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
++  **[] $VALUES;
++  public *;
++}
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_normal.png b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_normal.png
+new file mode 100755
+index 0000000..2a59b3e
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_normal.png differ
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_pressed.png b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_pressed.png
+new file mode 100755
+index 0000000..28998b6
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/icon_qr_pressed.png differ
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_nor.png b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_nor.png
+new file mode 100755
+index 0000000..f3cf4ab
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_nor.png differ
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_press.png b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_press.png
+new file mode 100755
+index 0000000..93fed4e
+Binary files /dev/null and b/actions/common/packages/IbotnLauncher/res/drawable-mdpi/img_person_press.png differ
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable/selector_qr.xml b/actions/common/packages/IbotnLauncher/res/drawable/selector_qr.xml
+new file mode 100755
+index 0000000..5866308
+--- /dev/null
++++ b/actions/common/packages/IbotnLauncher/res/drawable/selector_qr.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>^M
++<selector xmlns:android="http://schemas.android.com/apk/res/android">^M
++^M
++    <item android:state_pressed="true" android:drawable="@drawable/icon_qr_normal"/>^M
++    <item android:drawable="@drawable/icon_qr_pressed"/>^M
++</selector>
+\ No newline at end of file
+diff --git a/actions/common/packages/IbotnLauncher/res/layout/activity_home.xml b/actions/common/packages/IbotnLauncher/res/layout/activity_home.xml
+index b26d34b..d5e946e 100755
+--- a/actions/common/packages/IbotnLauncher/res/layout/activity_home.xml
++++ b/actions/common/packages/IbotnLauncher/res/layout/activity_home.xml
+@@ -174,10 +174,10 @@
+         <ImageView
+             android:id="@+id/iv_qr"
+             android:layout_centerInParent="true"
+-            android:layout_width="wrap_content"
+-            android:layout_height="wrap_content"
++            android:layout_width="@dimen/setting_button_icon_size"
++            android:layout_height="@dimen/setting_button_icon_size"
+             android:scaleType="fitCenter"
+-            android:src="@drawable/icon_qr"
++            android:src="@drawable/selector_qr"
+             />
+     </RelativeLayout>
+ 
+diff --git a/actions/common/packages/IbotnLauncher/res/layout/activity_show_image.xml b/actions/common/packages/IbotnLauncher/res/layout/activity_show_image.xml
+new file mode 100755
+index 0000000..fff579a
+--- /dev/null
++++ b/actions/common/packages/IbotnLauncher/res/layout/activity_show_image.xml
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="utf-8"?>^M
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"^M
++    xmlns:tools="http://schemas.android.com/tools"^M
++    android:id="@+id/activity_expression_animation"^M
++    android:layout_width="match_parent"^M
++    android:layout_height="match_parent"^M
++    tools:context="com.ibotn.ibotnlauncher.activity.ShowImageActivity">^M
++    <ImageView^M
++        android:id="@+id/iv_act_show_imgage"^M
++        android:layout_width="match_parent"^M
++        android:layout_height="match_parent"^M
++        />^M
++</RelativeLayout>^M
+diff --git a/actions/common/packages/IbotnLauncher/res/layout/dg_loading.xml b/actions/common/packages/IbotnLauncher/res/layout/dg_loading.xml
+index 9ec42e4..414e7c8 100755
+--- a/actions/common/packages/IbotnLauncher/res/layout/dg_loading.xml
++++ b/actions/common/packages/IbotnLauncher/res/layout/dg_loading.xml
+@@ -7,19 +7,28 @@
+     android:gravity="center_horizontal"
+     >
+     <ProgressBar
+-        android:id="@+id/progressBar"
++        android:visibility="gone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         />
+-    
++    <com.ibotn.ibotnlauncher.view.CircleProgress
++        android:id="@+id/progress_circle"
++        android:layout_width="200dp"
++        android:layout_height="200dp"
++        circleprogress:color1="@android:color/holo_red_light"
++        circleprogress:color2="@android:color/holo_green_light"
++        circleprogress:color3="@android:color/holo_blue_light"
++        />
+     <TextView
+         android:id="@+id/tv_content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:paddingBottom="5dp"
++        android:paddingLeft="@dimen/dp_5"
++        android:paddingRight="@dimen/dp_5"
++        android:paddingBottom="@dimen/dp_5"
+         android:text="@string/text_loading"
+-        android:textSize="24sp"
++        android:textSize="@dimen/sp_24"
+         />
+ 
+ </LinearLayout>
+\ No newline at end of file
+diff --git a/actions/common/packages/IbotnLauncher/res/values-mdpi/dimen.xml b/actions/common/packages/IbotnLauncher/res/values-mdpi/dimen.xml
+index 16c5279..f21947b 100755
+--- a/actions/common/packages/IbotnLauncher/res/values-mdpi/dimen.xml
++++ b/actions/common/packages/IbotnLauncher/res/values-mdpi/dimen.xml
+@@ -64,6 +64,7 @@
+     <dimen name="text_size20">20sp</dimen>
+     <dimen name="text_size12">12sp</dimen>
+     <dimen name="text_size18">18sp</dimen>
++    <dimen name="sp_24">24sp</dimen>
+ 
+     <dimen name="dp_80">80dp</dimen>
+     <dimen name="dp_70">70dp</dimen>
+@@ -73,5 +74,6 @@
+     <dimen name="dp_20">20dp</dimen>
+     <dimen name="dp_16">16dp</dimen>
+     <dimen name="dp_5">5dp</dimen>
++    <dimen name="default_circle_view_size">200dp</dimen>
+     <!-- common end -->
+ </resources>
+diff --git a/actions/common/packages/IbotnLauncher/res/values/attrs.xml b/actions/common/packages/IbotnLauncher/res/values/attrs.xml
+index 127c538..374e5de 100755
+--- a/actions/common/packages/IbotnLauncher/res/values/attrs.xml
++++ b/actions/common/packages/IbotnLauncher/res/values/attrs.xml
+@@ -7,4 +7,9 @@
+     <declare-styleable name="CustomTheme">
+         <attr name="gifMoviewViewStyle" format="reference" />
+     </declare-styleable>
++    <declare-styleable name="CircleProgress">^M
++        <attr name="color1" format="reference|color"/>^M
++        <attr name="color2" format="reference|color"/>^M
++        <attr name="color3" format="reference|color"/>^M
++    </declare-styleable>^M
+ </resources>
+\ No newline at end of file
+diff --git a/actions/common/packages/IbotnLauncher/res/values/dimens.xml b/actions/common/packages/IbotnLauncher/res/values/dimens.xml
+index 295b5a9..fc422fe 100755
+--- a/actions/common/packages/IbotnLauncher/res/values/dimens.xml
++++ b/actions/common/packages/IbotnLauncher/res/values/dimens.xml
+@@ -2,4 +2,5 @@
+     <!-- Default screen margins, per the Android Design guidelines. -->
+     <dimen name="activity_horizontal_margin">16dp</dimen>
+     <dimen name="activity_vertical_margin">16dp</dimen>
++    <dimen name="default_circle_view_size">200dp</dimen>^M
+ </resources>
+diff --git a/actions/common/packages/IbotnLauncher/res/values/styles.xml b/actions/common/packages/IbotnLauncher/res/values/styles.xml
+index 546c2ea..b47eabb 100755
+--- a/actions/common/packages/IbotnLauncher/res/values/styles.xml
++++ b/actions/common/packages/IbotnLauncher/res/values/styles.xml
+@@ -26,6 +26,12 @@
+         <!--全屏属性，当有输入法弹出后只是隐藏标题栏-->
+         <item name="android:windowFullscreen">true</item>
+     </style>
++    <!--透明主题-->
++    <style name="TransparentActivityTheme" parent="AppBaseTheme">
++        <item name="android:windowNoTitle">true</item>
++        <item name="android:windowBackground">@color/transparent</item>
++        <item name="android:windowIsTranslucent">true</item>
++    </style>
+ 
+     <style name="NoTitleDialog" parent="@android:style/Theme.Dialog">
+         <item name="android:windowNoTitle">true</item>
+diff --git a/actions/common/packages/IbotnLauncher/src/com/ibotn/ibotnlauncher/activity/ShowImageActivity.java b/actions/common/packages/IbotnLauncher/src/com/ibotn/ibotnlaunch
+new file mode 100755
+index 0000000..adf456c
+--- /dev/null
++++ b/actions/common/packages/IbotnLauncher/src/com/ibotn/ibotnlauncher/activity/ShowImageActivity.java
+@@ -0,0 +1,139 @@
++package com.ibotn.ibotnlauncher.activity;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.os.SystemClock;
++import android.text.TextUtils;
++import android.view.MotionEvent;
++import android.view.View;
++import android.widget.ImageView;
++
++import com.bumptech.glide.load.resource.drawable.GlideDrawable;
++import com.bumptech.glide.request.RequestListener;
++import com.bumptech.glide.request.target.Target;
++import com.ibotn.ibotnlauncher.FullScreenActivity;
++import com.ibotn.ibotnlauncher.R;
++import com.ibotn.ibotnlauncher.utils.Constants;
++import com.ibotn.ibotnlauncher.utils.GlideUtils;
++import com.ibotn.ibotnlauncher.utils.LogUtil;
++import com.ibotn.ibotnlauncher.view.LoadingDialog;
++
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git status .
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    .proguard.flags.swp
+        modified:   Android.mk
+        deleted:    res/drawable-hdpi/img_person_nor.png
+        deleted:    res/drawable-hdpi/img_person_press.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git rm .proguard.flags.swp res/drawable-hdpi/img_person_nor.png res/drawable-hdpi/img_person_press.png 
+rm 'actions/common/packages/IbotnLauncher/.proguard.flags.swp'
+rm 'actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_nor.png'
+rm 'actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_press.png'
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git status .
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    .proguard.flags.swp
+        deleted:    res/drawable-hdpi/img_person_nor.png
+        deleted:    res/drawable-hdpi/img_person_press.png
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Android.mk
+
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git add Android.mk
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git status .
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    .proguard.flags.swp
+        modified:   Android.mk
+        deleted:    res/drawable-hdpi/img_person_nor.png
+        deleted:    res/drawable-hdpi/img_person_press.png
+
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git commit -m "glide chongtu"
+[master d7a428a] glide chongtu
+ 4 files changed, 2 insertions(+), 2 deletions(-)
+ delete mode 100644 actions/common/packages/IbotnLauncher/.proguard.flags.swp
+ delete mode 100755 actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_nor.png
+ delete mode 100755 actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_press.png
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Warning: Permanently added '192.168.1.21' (ECDSA) to the list of known hosts.
+Counting objects: 58, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 734 bytes | 0 bytes/s, done.
+Total 9 (delta 7), reused 0 (delta 0)
+To ssh://gitolite@192.168.1.21/android/s500_device
+   de2056c..d7a428a  master -> master
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git log -2
+commit d7a428ad2594b6ff7356e38e9a1973794a01b035
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 19:38:55 2017 +0800
+
+    glide chongtu
+
+commit de2056c63bec80a277d38f5df1b01fd21b44a291
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 19:18:44 2017 +0800
+
+    ibotnface 屏蔽
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git pull origin master 
+Warning: Permanently added '192.168.1.21' (ECDSA) to the list of known hosts.
+From ssh://192.168.1.21/android/s500_device
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git status .
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git log -2
+commit d7a428ad2594b6ff7356e38e9a1973794a01b035
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 19:38:55 2017 +0800
+
+    glide chongtu
+
+commit de2056c63bec80a277d38f5df1b01fd21b44a291
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 19:18:44 2017 +0800
+
+    ibotnface 屏蔽
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git show d7a428ad2594b6ff7356e38e9a1973794a01b035
+commit d7a428ad2594b6ff7356e38e9a1973794a01b035
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 19:38:55 2017 +0800
+
+    glide chongtu
+
+diff --git a/actions/common/packages/IbotnLauncher/.proguard.flags.swp b/actions/common/packages/IbotnLauncher/.proguard.flags.swp
+deleted file mode 100644
+index 3ab0153..0000000
+Binary files a/actions/common/packages/IbotnLauncher/.proguard.flags.swp and /dev/null differ
+diff --git a/actions/common/packages/IbotnLauncher/Android.mk b/actions/common/packages/IbotnLauncher/Android.mk
+index 58504b5..e5210fd 100755
+--- a/actions/common/packages/IbotnLauncher/Android.mk
++++ b/actions/common/packages/IbotnLauncher/Android.mk
+@@ -21,7 +21,7 @@ LOCAL_MODULE_TAGS := optional
+ res_dirs := res \
+ ../qrcodescan/res
+ 
+-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 ibotn_jar msc libqrcodescan accounts-core cloudplay libupdatev3 zxing commonnetlib babyaudio gson BASE64Decoder usc myokhttp 
++LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 ibotn_jar msc libqrcodescan accounts-core cloudplay libupdatev3 zxing commonnetlib babyaudio gson BASE64Decoder usc myokhttp 
+ LOCAL_JNI_SHARED_LIBRARIES := libmsc libaudiodetect libibotnuart libiBotnPeripheral libuscasr
+ #LOCAL_SRC_FILES := $(call all-subdir-java-files)
+ LOCAL_SRC_FILES := $(call all-java-files-under, SDK src)
+@@ -91,7 +91,7 @@ include $(BUILD_PREBUILT)
+ include $(CLEAR_VARS)
+ 
+ LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := ibotn_jar:libs/ibotn_jar.jar msc:libs/Msc.jar libqrcodescan:libs/qrcodescan.jar accounts-core:libs/accounts-core.jar cloudplay:libs/clo
+-        gson:libs/gson-2.8.0.jar BASE64Decoder:libs/sun.misc.BASE64Decoder.jar usc:libs/usc.jar myokhttp:libs/okhttp-3.6.0.jar okhttputils:libs/okhttputils-2_6_2.jar okio:libs
++        gson:libs/gson-2.8.0.jar BASE64Decoder:libs/sun.misc.BASE64Decoder.jar usc:libs/usc.jar myokhttp:libs/okhttp-3.6.0.jar okhttputils:libs/okhttputils-2_6_2.jar okio:libs
+ 
+ include $(BUILD_MULTI_PREBUILT)
+ 
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_nor.png b/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_nor.png
+deleted file mode 100755
+index ad0b95a..0000000
+Binary files a/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_nor.png and /dev/null differ
+diff --git a/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_press.png b/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_press.png
+deleted file mode 100755
+index 2fee88c..0000000
+Binary files a/actions/common/packages/IbotnLauncher/res/drawable-hdpi/img_person_press.png and /dev/null differ
+
+[4]+  Stopped                 git show d7a428ad2594b6ff7356e38e9a1973794a01b035
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git branch 
+20160728           20160801           2016/10/29         20170114           master             origin/AD500A      origin/i10_yison   
+20160729           2016-08-07         20161029           FETCH_HEAD         m/master           origin/i10         origin/master      
+2016-07-29-1       20161025           20170109           HEAD               ORIG_HEAD          origin/i10_ADATA   
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ git log origin/master -2
+commit d7a428ad2594b6ff7356e38e9a1973794a01b035
+Author: juying_dai <sw05@ibotn.com>
+Date:   Thu Dec 28 19:38:55 2017 +0800
+
+    glide chongtu
+
+commit de2056c63bec80a277d38f5df1b01fd21b44a291
+Author: bin_yi <sw13@ibotn.com>
+Date:   Thu Dec 28 19:18:44 2017 +0800
+
+    ibotnface 屏蔽
+juying_dai@ibotn-Aspire-TC-705:~/android/android/device/actions/common/packages/IbotnLauncher$ 
