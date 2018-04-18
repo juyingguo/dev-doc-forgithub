@@ -28,6 +28,8 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
 （4）cd 到相关目录 运行mm（例如IbotnLauncher目录是在这里）cd device/actions/common/packages/IbotnLauncher/
 
+（5）编译指令make 、mmm、mm优缺点比较
+
 5.建议
 
 如果习惯使用as的同事可以在as上修改完代码，使用对比工具，将代码对比到我源码里去 ，例如（device/actions/common/packages/IbotnLauncher/）

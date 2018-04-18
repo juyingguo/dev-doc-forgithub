@@ -38,5 +38,7 @@
 		参考 https://www.tuicool.com/articles/EBZjmer
 		dumpsys activity -p(包名) 查看当前包下的进程情况  
 		dumpsys activity s com.sina.weibo  查询某个App所有的Service状态 s为 services 的缩写
+		dumpsys package com.android.music 查看包的信息。版本号，权限等
 	2.7、
+		df 查看磁盘空间使用情况
 	
