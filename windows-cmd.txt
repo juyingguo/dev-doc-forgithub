@@ -1,1 +1,2 @@
 1. ipconfig /all  查看ip，mac地址
+2. chkdsk H:/F。 点电脑上的“开始菜单”－－“运行”－　chkdsk H:/F 　 (H:就是你的SD卡盘符，/F是修复参数。)
