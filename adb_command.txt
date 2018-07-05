@@ -51,3 +51,11 @@
 		x：只计算同属同一个档案系统的档案
 		L：计算所有的档案大小
 		du /etc | sort -nr | more sort 的参数 -nr 表示要以数字排序法进行反向排序，因为我们要对目录大小做排序，所以不可以使用 human-readable 的大小输出，不然目录大小中会有 K、M 等字样，会造成排序不正确。
+		
+三、android抓log
+	1.adb logcat –v time >d:\ logcat.txt
+	2、adb shell dmesg > d:\log-dmesg.txt 
+	3、adb shell cat /proc/kmsg > d:\log_kmsg 
+	
+四、一些自动生成的log
+	1.	/data/sysytem/dropbox/ 
