@@ -10,7 +10,9 @@
 ①对代码的操作
 	git add                                  ---将新文件或者修改的代码提交到缓存区
 		当出现【warning：LF will be replaced by CRLF】
+		rm -rf .git
 		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+		git init 
 	git rm                                    ---把代码从仓库中移除
 	git commit                            ---将缓存区的代码提交到仓库中
 	git commit -a = git add + git commit          ---但是不对库外的文件操作
@@ -25,6 +27,7 @@
 	git log --pretty=oneline			---查看commit的简洁记录，
 	git log -1                                   ---查看commit的最近一条记录
 	git log origin/master 		---查看服务器commit的记录
+	git log -p			-p 按补丁格式显示每个更新之间的差异
 	git show                                ---查看commit的内容
 	git show <commit-hashId> 	便可以显示某次提交的修改内容
   
@@ -99,7 +102,7 @@
 	*.db
 
 6）忽略一些文件、文件夹不提交(之前已经提交过了的),更新了.gitignore文件
-	git rm -r cached . 
+	git rm -r --cached . 
 		git add .
 		git commit -m 'update .gitignore'
 	[A].gitignore文件 编写规则
@@ -111,9 +114,16 @@
 7) Windows下使用Beyond Compare作为git的比对与合并工具
 	beyondcompare_config_git.txt  在.gitconfig(c盘/user目录下)中追加该文件中的内容，需要修改对应的bc版本名称、bc安装路径(其中的路径使用'/');
 	git mergetool 
-///////////
+////////////
 ////////////
 
+8) 异常
+ 当出现【warning：LF will be replaced by CRLF】
+		rm -rf .git
+		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+		git init 
+		git add 
+////////////
 
 git push exdroid a13jb:a13jb 提交代码到服务器
 git format-patch -1 生成补丁
