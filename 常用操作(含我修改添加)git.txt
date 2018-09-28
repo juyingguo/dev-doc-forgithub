@@ -18,7 +18,7 @@
 	git commit -a = git add + git commit          ---但是不对库外的文件操作
 	git commit --amend -m "修改最近一次提交注释说明"
 	git commit --amend 进入编辑界面，修改完成保存即可。类型linux命令vi，输入i a o进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式。按下wq保存退出
-②信息查看
+②信息查看(及退出)
 	git status                               ---查看工作目录下面的代码状态（修改记录）
 	git diff                                   ---查看工作目录和缓存区的代码差异
 	git diff --cached                    ---查看缓存区和仓库的代码差异
@@ -30,6 +30,10 @@
 	git log -p			-p 按补丁格式显示每个更新之间的差异
 	git show                                ---查看commit的内容
 	git show <commit-hashId> 	便可以显示某次提交的修改内容
+	###git log 退出
+	1、ctrl+c (z) 都无法完全退出
+	2、输入q
+	
   
 (3)撤销修改
 	 git checkout -- file可以丢弃工作区的修改(只放弃了修改的文件)
