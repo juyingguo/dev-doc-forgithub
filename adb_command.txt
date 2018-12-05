@@ -44,14 +44,22 @@
 	2.8、查看进程
 		ps
 	2.9、du ：查询档案或目录的磁盘使用空间
-		a：显示全部目录和其次目录下的每个档案所占的磁盘空间
-		b：大小用bytes来表示 (默认值为k bytes)
-		c：最后再加上总计 (默认值)
-		s：只显示各档案大小的总合 (summarize)
+		du  [-H] [-L] [-P] [-a] [-d depth] [-s] [-cghikmnrx] [file...]
+		b：大小用bytes来表示 (默认值为k bytes) （仅为linux命令，非android）
+		-k ：以 KBytes 的容量显示各文件系统
+		-m ：以 MBytes 的容量显示各文件系统；
+		-h ：以人们较易阅读的 GBytes, MBytes, KBytes 等格式自行显示；
+		a：显示全部目录和其次目录下的每个档案所占的磁盘空间 
+		-H ：以 M=1000K 取代 M=1024K 的进位方式；
+		c：最后再加上总计 (默认值)  
+		s：只显示各档案大小的总合 (summarize) 
 		x：只计算同属同一个档案系统的档案
-		L：计算所有的档案大小
+		L：计算所有的档案大小 
 		du /etc | sort -nr | more sort 的参数 -nr 表示要以数字排序法进行反向排序，因为我们要对目录大小做排序，所以不可以使用 human-readable 的大小输出，不然目录大小中会有 K、M 等字样，会造成排序不正确。
-		
+	2.9 修改sdcard读写权限
+		 mount [-r] [-w] [-o options] [-t type] device directory		 
+		 mount -o remount rw  device directory ///-o remount：将一个已经挂下的档案系统重新用不同的方式挂上。例如原先是唯读的系统，现在用可读写的模式重新挂上。
+		 adb reboot //重启生效 
 三、android抓log
 	1.adb logcat –v time >d:/logcat.txt
 	2、adb shell dmesg > d:/log-dmesg.txt 

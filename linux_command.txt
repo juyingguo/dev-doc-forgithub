@@ -9,6 +9,10 @@
 		注意：非正常关闭vi编辑器时会生成一个.swp文件，以后再次编辑文件会提示，可以使用复原即可
 	参考菜鸟教程：http://www.runoob.com/linux/linux-vim.html
 	
+	2.2 vim下显示行号
+		:set number 或者 :set nu 		
+		:set nonumber 或者 :set nonu  ////显示出行号之后我们怎么隐藏行号呢，敲命令
+			
 (3) 文件管理
 	mv Linux mv命令用来为文件或目录改名、或将文件或目录移入其它位置；
 			mv [options] source dest
@@ -20,3 +24,4 @@
 	du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。
 		-h //-h或--human-readable 以K，M，G为单位，提高信息的可读性。
+		

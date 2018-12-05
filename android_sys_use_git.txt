@@ -30,7 +30,7 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
 （5）编译指令make 、mmm、mm优缺点比较
 
-	LOCAL_DEX_PREOPT := false
+（6）LOCAL_DEX_PREOPT := false ///apk opt dex 提示无法单独安装，配置方法
 
 5.建议
 
@@ -48,3 +48,7 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 cd 到android根目录
 repo sync
 务必将代码保持在最新状态，避免其他同事改了其他的bug你没有同步到，或者别的同事也改了相同文件导致你后期提交不了
+
+9、问题
+	error.GitError: --force-sync not enabled; cannot overwrite a local work tree. If you're comfortable with the possibility of losing the work tree's git metadata, use `repo sync --force-sync android/device` to proceed.
+	repo sync --force-sync android/device 
