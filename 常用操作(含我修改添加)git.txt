@@ -84,7 +84,7 @@
 	合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
 	创建远程分支(本地分支push到远程)：$ git push origin [name]
 	删除远程分支：$ git push origin :heads/[name]
-
+	拉取远程分支，本地没有该分支 ，git checkout -b xxx origin/yyy
 3）版本(tag)操作相关命令
 	查看版本：$ git tag
 	创建版本：$ git tag [name]
