@@ -107,9 +107,21 @@ Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_de
 android/frameworks/: leaving new_ui; does not track upstream
 android/packages/: leaving new_ui; does not track upstream
 Git新建本地分支与远程分支关联问题：git branch --set-upstream
+
+提示：：
+The --set-upstream flag is deprecated and will be removed. Consider using --track or --set-upstream-to
+Branch new_model set up to track remote branch new_model from origin.
+
+
+解决方法：
+
+ 使用命令git branch --set-upstream ;实例如下，其中debug为创建的分支
+
+git branch --set-upstream debug origin/debug
 http://www.cnblogs.com/freefish12/p/5819134.html
 
-/// 关联前
+
+///7.1 关联前
 [core]
 	repositoryformatversion = 0
 	filemode = true
@@ -122,6 +134,43 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-//	关联后，
+#7.2 参考bin_yi
+[core]
+	repositoryformatversion = 0
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+[remote "origin"]
+	url = ssh://gitolite@192.168.1.21/android/s500_device
+	projectname = android/s500_device
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "new_ui_nk"]
+	remote = origin
+	merge = refs/heads/new_ui_nk
+
+#7.3	关联后，
+
+
+##7.4 我的git doc test  关联前 
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/juyingguo/dev-doc-forgithub.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[gui]
+	wmstate = normal
+	geometry = 1436x818+19+0 189 218
+[branch "test_2"]
+	remote = origin
+	merge = refs/heads/test_2
+##7.5 关联后
 
 

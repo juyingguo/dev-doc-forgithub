@@ -1,3 +1,4 @@
+一、
 拉取源码：
 	repo init -u gitolite@192.168.1.21:manifests.git -b master
 	repo sync
@@ -91,6 +92,8 @@
 	删除远程分支：$ git push origin :heads/[name]	//本地为空，同下
 		git push origin --delete master // 删除远程分支
 	拉取远程分支，本地没有该分支 ，git checkout -b xxx origin/yyy
+	git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>] // Git新建本地分支与远程分支关联 
+	git branch --unset-upstream [<branchname>] // Git新建本地分支与远程分支解除关联 
 3）版本(tag)操作相关命令
 	查看版本：$ git tag
 	创建版本：$ git tag [name]
@@ -142,29 +145,30 @@
 	https://blog.csdn.net/hanmindaxiongdi/article/details/81433730
 	这个问题主要是由于参数不对，它明明要三个参数「push」「origin」以及「A:A」的，你却给它五个：「push」「origin」「A」「:」「A」。shell 中空格导致的问题不少，比如这个：一个空格引发的惨剧。
 ////////////
+二、
+	git push exdroid a13jb:a13jb 提交代码到服务器
+	git format-patch -1 生成补丁
+	git commit --amend 修改最近一次的commit log
+	git rebase xxxxxx --interactive 修改某次的commit log
+	repo forall -c git push amlogic A601SD:A601SD 整体提交到服务器
+	git show-branch A601 A601SD 两个分支之间的对比
+	repo forall -c git checkout A602 本地的分支切换
+	repo forall -c git checkout -b A602G55 amlogic/A602G55 创建新分支，并且切换
+	git stash 将未完成的工作保存
+	git stash list 查看保存的清单
+	git stash apply --0 恢复保存的工作
+	git stash pop
+	git stash clear
+	repo forall -c git stash list 整体查看
+	git revert HEAD^1 [--no-edit] [--no-commit] [-m] 撤销某次commit
+	repo forall -c git fetch --all 让本地指向服务器的最新代码
+	repo forall -c git checkout -f 清除工作目录下面未保存的修改
+	git fetch 从远程获取最新版本
+	git merge 合并分支
+	git rebase 重组分支
+	git pull = git fetch + git merge 更新并且合并
+	git pull --rebase = git fetch + git rebase 更新并且重组
+	git cherry-pick -x [98f8752b8
 
-git push exdroid a13jb:a13jb 提交代码到服务器
-git format-patch -1 生成补丁
-git commit --amend 修改最近一次的commit log
-git rebase xxxxxx --interactive 修改某次的commit log
-repo forall -c git push amlogic A601SD:A601SD 整体提交到服务器
-git show-branch A601 A601SD 两个分支之间的对比
-repo forall -c git checkout A602 本地的分支切换
-repo forall -c git checkout -b A602G55 amlogic/A602G55 创建新分支，并且切换
-git stash 将未完成的工作保存
-git stash list 查看保存的清单
-git stash apply --0 恢复保存的工作
-git stash pop
-git stash clear
-repo forall -c git stash list 整体查看
-git revert HEAD^1 [--no-edit] [--no-commit] [-m] 撤销某次commit
-repo forall -c git fetch --all 让本地指向服务器的最新代码
-repo forall -c git checkout -f 清除工作目录下面未保存的修改
-git fetch 从远程获取最新版本
-git merge 合并分支
-git rebase 重组分支
-git pull = git fetch + git merge 更新并且合并
-git pull --rebase = git fetch + git rebase 更新并且重组
-git cherry-pick -x [98f8752b8
 
 
