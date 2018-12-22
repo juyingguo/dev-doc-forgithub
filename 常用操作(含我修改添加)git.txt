@@ -132,6 +132,14 @@
 		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
 		git init 
 		git add 
+9)异常
+	git push origin test_2 :test_2
+
+	git 
+	error: dst ref refs/heads/test_2 receives from more than one src.
+	git 
+	https://blog.csdn.net/hanmindaxiongdi/article/details/81433730
+	这个问题主要是由于参数不对，它明明要三个参数「push」「origin」以及「A:A」的，你却给它五个：「push」「origin」「A」「:」「A」。shell 中空格导致的问题不少，比如这个：一个空格引发的惨剧。
 ////////////
 
 git push exdroid a13jb:a13jb 提交代码到服务器
@@ -156,4 +164,6 @@ git merge 合并分支
 git rebase 重组分支
 git pull = git fetch + git merge 更新并且合并
 git pull --rebase = git fetch + git rebase 更新并且重组
-git cherry-pick -x [98f8752b8]
+git cherry-pick -x [98f8752b8
+
+
