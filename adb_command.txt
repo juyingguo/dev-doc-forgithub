@@ -13,6 +13,9 @@
 	(2.2)
 		pm
 		pm clear package_name 清除应用的缓存
+		
+		pm list packages 查看包名
+		pm list packages -f   //应用对应的apk文件在手机上的安装位置
 	
 	(2.3)内存
 		procrank 
@@ -39,6 +42,11 @@
 		dumpsys activity -p(包名) 查看当前包下的进程情况  
 		dumpsys activity s com.sina.weibo  查询某个App所有的Service状态 s为 services 的缩写
 		dumpsys package com.android.music 查看包的信息。版本号，权限等
+		
+		adb shell dumpsys window | findstr mCurrentFocus  ///adb获取当前打开的app的包名
+		adb shell dumpsys window  | findstr mCurrent  ///获得当前活动窗口的信息，包名以及活动窗体： linux 下使用 grep
+		adb shell dumpsys window windows ///可以查看window所有参考数，
+		
 	2.7、
 		df 查看磁盘空间使用情况
 	2.8、查看进程

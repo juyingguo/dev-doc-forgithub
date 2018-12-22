@@ -52,3 +52,6 @@ repo sync
 9°¢Œ Ã‚
 	error.GitError: --force-sync not enabled; cannot overwrite a local work tree. If you're comfortable with the possibility of losing the work tree's git metadata, use `repo sync --force-sync android/device` to proceed.
 	repo sync --force-sync android/device 
+10°¢bootbin/misc.img
+	bootbin/recovery.img
+	config/recovery/atc260x-adckeypad.ko

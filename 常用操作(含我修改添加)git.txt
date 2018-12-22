@@ -26,7 +26,9 @@
 	git log                                   ---查看commit的记录
 	git log --pretty=oneline			---查看commit的简洁记录，
 	git log -1                                   ---查看commit的最近一条记录
-	git log origin/master 		---查看服务器commit的记录
+	git log remotes/origin/master //看远程的提交日志， (origin/master这个都是默认的远程仓库和分支，可以自己改成想看的仓库和想看的分支)
+		git log origin/master 		---查看服务器commit的日志记录，都是默认的远程仓库和分支
+	
 	git log -p			-p 按补丁格式显示每个更新之间的差异
 	git show                                ---查看commit的内容
 	git show <commit-hashId> 	便可以显示某次提交的修改内容
@@ -67,11 +69,14 @@
 		或者git remote add origin https://github.com:username/repoxxx.git
 		或者git remote add origin git://github.com:username/repoxxx.git
 	删除远程仓库：$ git remote rm [name]
-	拉取远程仓库：$ git pull [remoteName] [localBranchName]
+	拉取远程仓库：$ git pull [remoteName] [localBranchName]  
+			git pull <远程主机名> <远程分支名>:<本地分支名>
+			参考教材：https://www.yiibai.com/git/git_pull.html
 	拉取远程仓库冲突处理：：
 		git pull * * 与本地有冲突时，解决方式：1. git stash 先将本地修改存储起来 2. git pull * * 暂存了本地修改之后，就可以pull了。3.git stash pop stash@{0}还原暂存的内容(git stash list可以看到保存的信息)
 		
 	推送远程仓库：$ git push [remoteName] [localBranchName] 第一次推送加上 -u 如：git push -u origin master
+		git push <远程主机名> <本地分支名>:<远程分支名>
 
 2）分支(branch)操作相关命令
 	查看本地分支：$ git branch

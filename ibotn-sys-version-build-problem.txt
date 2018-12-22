@@ -1,0 +1,127 @@
+
+new_ui ，new_ui_nk 分支
+1.
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/frameworks$ git branch  -a
+  NJ_2015A
+  master
+* new_ui
+  new_ui_nk
+  remotes/m/master -> origin/master
+  remotes/origin/NJ_2015A
+  remotes/origin/master
+  remotes/origin/new_ui
+  remotes/origin/new_ui_nk
+ 2. 
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/device$ git branch  -a
+  NJ_2015A
+  master
+* new_ui
+  new_ui_nk
+  remotes/m/master -> origin/master
+  remotes/origin/AD500A
+  remotes/origin/NJ_2015A
+  remotes/origin/i10
+  remotes/origin/i10_ADATA
+  remotes/origin/i10_yison
+  remotes/origin/master
+  remotes/origin/new_ui
+  remotes/origin/new_ui_nk
+3.
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/packages$ git branch  -a
+  master
+* new_ui
+  remotes/m/master -> origin/master
+  remotes/origin/i10
+  remotes/origin/master
+  remotes/origin/new_ui
+  
+  
+问题：：Q01
+On branch new_ui
+Your branch and 'origin/master' have diverged,
+and have 11 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working directory clean  
+Q02 
+secure  crt 
+                                                                                                              [ Read 7 lines ]
+^G Get Help  ^O WriteOut  ^R Read File   ^Y Prev Page  ^K Cut Text         ^C Cur Pos
+^X Exit                                ^J Justify                             ^W Where Is                            ^V Next Page                           ^U UnCut Text                          ^T To Spell
+https://blog.csdn.net/u012313689/article/details/53033681
+
+Q03
+Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_device into new_ui
+		
+
+
+Q04 
+
+secure  crt 
+
+File Name to Write: /home/juying_dai/android/android/device/.git/MERGE_MSG                                                                                                                                                                  
+^G Get Help   M-D DOS Format    M-A Append  M-B Backup File             
+^C Cancel M-M Mac Format  M-P Prepend
+
+
+Q05 
+ 创建分支 new_ui，
+ juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ git log -2
+commit cb020aaf4dc70167bbc92b6b2b8f740d67093439
+Author: sw13 <sw13@ibotn.com>
+Date:   Mon Jun 11 10:37:29 2018 +0800
+
+    add print
+
+commit a472943d301b456c7aef8d53aaa5293f6247ced5
+Author: sw13 <sw13@ibotn.com>
+Date:   Fri Jun 8 15:07:52 2018 +0800
+
+    force refresh time
+juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ git log origin/new_ui -2
+commit 6ae32833ea57315768b5254624ef130db8a06b45
+Author: builder <builder@ibotn.com>
+Date:   Wed Dec 12 18:15:55 2018 +0800
+
+    TAG_20181208
+
+commit 996c2dbf0123288a4dba2eb11264c5b0bf031205
+Author: jlzou <sw18@ibotn.com>
+Date:   Fri Jul 13 09:00:46 2018 +0800
+
+    修改系统默认开关机等的progress
+juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ 
+
+需要 git pull origin new_ui:new_ui
+
+Q06 
+Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_device
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+
+@07 
+android/frameworks/: leaving new_ui; does not track upstream
+android/packages/: leaving new_ui; does not track upstream
+Git新建本地分支与远程分支关联问题：git branch --set-upstream
+http://www.cnblogs.com/freefish12/p/5819134.html
+
+/// 关联前
+[core]
+	repositoryformatversion = 0
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+[remote "origin"]
+	url = ssh://gitolite@192.168.1.21/android/s500_device
+	projectname = android/s500_device
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+//	关联后，
+
+
