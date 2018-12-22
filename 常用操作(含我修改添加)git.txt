@@ -88,7 +88,8 @@
 	删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
 	合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
 	创建远程分支(本地分支push到远程)：$ git push origin [name]
-	删除远程分支：$ git push origin :heads/[name]
+	删除远程分支：$ git push origin :heads/[name]	//本地为空，同下
+		git push origin --delete master // 删除远程分支
 	拉取远程分支，本地没有该分支 ，git checkout -b xxx origin/yyy
 3）版本(tag)操作相关命令
 	查看版本：$ git tag
