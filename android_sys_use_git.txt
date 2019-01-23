@@ -18,6 +18,7 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
  (4) 如果是第三方应用，注意将该应用所在的路径下，lib中so库添加完整，Android.mk配置so
 	 如ibotnphone 路径 Z:\android\android\device\actions\common\prebuilt\apk\thirdparty\ibotnphone
+（5）
 
 3.单独模块编译
 （1）cd android/android下
@@ -26,7 +27,9 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
 （3）lunch 8
 
-（4）cd 到相关目录 运行mm（例如IbotnLauncher目录是在这里）cd device/actions/common/packages/IbotnLauncher/
+（4）cd 到相关目录 运行mm（例如IbotnLauncher目录是在这里）cd device/actions/common/packages/IbotnLauncher/ 【项目目录】
+	（4.1）、/android/device/actions/common/prebuilt/apk/thirdparty/IbotnLauncher ///apk方式编译。
+	（4.2）、编译后生成后的模块应用目录:android\out\target\product\bubble_gum\system\app\IbotnLauncher
 
 （5）编译指令make 、mmm、mm优缺点比较
 
@@ -46,7 +49,7 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
 建议大家早上第一件事
 cd 到android根目录
-repo sync
+repo sync 【只第一次下代码时用一次】【只第一次下代码时用一次】
 务必将代码保持在最新状态，避免其他同事改了其他的bug你没有同步到，或者别的同事也改了相同文件导致你后期提交不了
 
 9、问题
@@ -55,3 +58,4 @@ repo sync
 10、bootbin/misc.img
 	bootbin/recovery.img
 	config/recovery/atc260x-adckeypad.ko
+

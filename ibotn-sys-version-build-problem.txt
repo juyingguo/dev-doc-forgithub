@@ -103,9 +103,12 @@ Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_de
 # Lines starting with '#' will be ignored, and an empty message aborts
 # the commit.
 
-@07 
+@07  repo sync 导致新拉取的远程分支 自动切换到远程master，导致严重问题。
 android/frameworks/: leaving new_ui; does not track upstream
 android/packages/: leaving new_ui; does not track upstream
+
+android/packages/: manifest switched refs/heads/new_ui...master
+android/packages/: discarding 20 commits removed from upstream
 Git新建本地分支与远程分支关联问题：git branch --set-upstream
 
 提示：：
@@ -174,3 +177,157 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 ##7.5 关联后
 
 
+#09  download 代码
+ 默认没有master分支。
+ 拉去代码没有缺少一下两行命令
+ repo forall -c git pull origin master
+	repo forall -c git checkout master
+
+#10 查看apk中的so文件。提取apk中的so文件
+
+#11 裁剪apk
+
+	#11.2 添加新的apk
+		参考：扫描阅读
+			commit e298bfec9b50faca04d8b9c18aeb72d4686821ae
+			Author: jlzou <sw18@ibotn.com>
+			Date:   Sat Jan 27 17:22:52 2018 +0800
+
+			添加扫描阅读apk
+		
+		b/actions/bubble_gum/device.mk 
+		b/actions/common/prebuilt/apk/thirdparty/ibotnQRScan/Android.mk
+	#
+#12 编译后，系统版本号不对
+#13 facer_1.1.21_20181227 没有编译	
+	android/out 删除后，全新编译。就没有改问题了。
+#14 目标文件夹访问被拒绝，您需要权限来执行此操作
+
+方法2、开始 -> 运行 -> control userpasswords2，高级->管理密码->windows凭据，然后把你记住密码的所在服务器名称删除
+USER-20180426NS\juying_dai
+#15 20190107 版本/home/juying_dai/testproject/ibotn_nk
+	 modified:   actions/bubble_gum/device.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/SmartAlarm/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/arcibotnface/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/extFileExplore/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/filemanager/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnCloudPlayer/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnQRScan/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnphone/Android.mk
+
+		 actions/common/prebuilt/apk/thirdparty/IbotnLauncher/app/ibotnLauncher_NK_release_V1.7.94_20190107.apk
+        actions/common/prebuilt/apk/thirdparty/IbotnModuleShare/
+        actions/common/prebuilt/apk/thirdparty/MoboPlayer/
+        actions/common/prebuilt/apk/thirdparty/SmartAlarm/app/SmartAlarm_release_V3.2.10_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/arcibotnface/app/facer_1.1.21_20181227.apk
+        actions/common/prebuilt/apk/thirdparty/extFileExplore/app/FileExplore_release_V2.1.7_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/filemanager/IbotnFileManage_release_V1.0.4_20181214.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnCloudPlayer/app/ibotnCloudPlayer_release_V1.3.48_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnQRScan/app/ibotnQRScan_V1.0.19_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnphone/app/ibotnphone_V1.2.82_20181229_release.apk
+	//////	
+		cp /home/juying_dai/testproject/ibotn_nk/android/device/actions/bubble_gum/device.mk  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/bubble_gum/device.mk
+		
+		cp -r /home/juying_dai/testproject/ibotn_nk/android/device/actions/common/prebuilt/apk/thirdparty/  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/common/prebuilt/apk/
+		cp /home/juying_dai/testproject/ibotn_nk/android/device/actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk
+16、差分升级编译
+	16.1、
+	b、差分升级编译指令：（以9月1日和 8月22日生成差分包为例）
+	在android目录下输入如下指令：
+	builder@ibotn-Aspire-TC-705:~/project/i10v2_std/android$./build/tools/releasetools/ota_from_target_files -i ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-170822.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-170901.zip ../owl/out/s500_android_bubble_gum/images/diff0822_0901.zip
+	
+	builder@ibotn-Aspire-TC-705:~/project/i10v2_std/android$./build/tools/releasetools/ota_from_target_files -i ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-170822.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-170901.zip ../owl/out/s500_android_bubble_gum/images/diff0822_0901.zip
+	
+	编译生成的差分包在：\owl\out\s500_android_bubble_gum\images\diff0822_0901.zip目录下。	
+	
+	////	
+	//ibotn_nk
+	///from * to TAG_I10NK_5110_190107 [bubble_gum-target_files-190107.zip]
+	...***
+	TAG_I10NK_5110_181106
+	TAG_I10NK_5110_181025
+	TAG_I10NK_5110_181009
+	TAG_I10NK_5110_180917
+	TAG_I10NK_5110_180907
+	TAG_I10NK_5110_180821
+	TAG_I10NK_5110_180723
+	TAG_I10NK_5110_180622
+	TAG_I10NK_5110_180602
+	///
+	
+	///  \\192.168.1.21\jlzou\android\alps\Ibotn_NK\android
+	///使用  \\192.168.1.21\jlzou\android\software_version\ibotn_bak
+		../../../software_version/ibotn_bak/bubble_gum-target_files-180602.zip ../../../software_version/ibotn_bak/bubble_gum-target_files-180602.zip 
+		
+		//01 TAG_I10NK_5110_180602 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180602.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180602_190107.zip
+
+		//02 TAG_I10NK_5110_180622 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180622.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180622_190107.zip
+		
+		//03 TAG_I10NK_5110_180723 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180723.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180723_190107.zip
+		
+		//04 TAG_I10NK_5110_180821 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180821.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180821_190107.zip
+		
+		//05 TAG_I10NK_5110_180907 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180907.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180907_190107.zip
+		
+		//06 TAG_I10NK_5110_180917 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180917.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff180917_190107.zip
+		
+		//07 TAG_I10NK_5110_181009 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181009.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff181009_190107.zip
+		
+		//08 TAG_I10NK_5110_181025 - TAG_I10NK_5110_190107		///15:14 
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181025.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff181025_190107.zip
+		
+		//09 TAG_I10NK_5110_181106 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181106.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff181106_190107.zip
+		
+		//10 TAG_I10NK_5110_181121 - TAG_I10NK_5110_190107
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181121.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/diff181121_190107.zip
+	
+	
+	//升级测试，
+	//
+	TAG_I10NK_5110_181121
+	TAG_I10NK_5110_181106 
+	TAG_I10NK_5110_181025
+	TAG_I10NK_5110_181009
+	TAG_I10NK_5110_180917
+	TAG_I10NK_5110_180907
+	TAG_I10NK_5110_180821
+	TAG_I10NK_5110_180723 *
+	TAG_I10NK_5110_180622 
+	TAG_I10NK_5110_180602
+	
+	///待确认，是否做差分包。【已确认，仅临时测试有，无需做差分包，】
+	TAG_I10NK_5110_181217
+	
+	16.2、版本发布后，需要做，备份差分包，备份
+	
+17、基线版本201805月份，不可刷机，烧坏板子。
+
+18、差分升级，
+	18.1、在线
+	18.2、sdcard 导入差分包到 /sdcard/update.zip
+		adb reboot recovery ///执行该行命令。
+19、差分升级失败
+	19.1 diff180723_190107
+	19.2 验证md5及文件大小正常。
+	19.3 使用差分包导入sdcard升级
+	19.4 使用升级失败时所下载的update.zip 使用sdcard方式升级。
+	19.5 服务器脚本文件可能有乱码，不易发现的换行和空格，在linux，去掉空格即可。
+
+	
+		
+	
+	
+	
+	
+	
+	
+	

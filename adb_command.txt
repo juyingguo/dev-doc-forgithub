@@ -68,13 +68,18 @@
 		 mount [-r] [-w] [-o options] [-t type] device directory		 
 		 mount -o remount rw  device directory ///-o remount：将一个已经挂下的档案系统重新用不同的方式挂上。例如原先是唯读的系统，现在用可读写的模式重新挂上。
 		 adb reboot //重启生效 
-三、android抓log
-	1.adb logcat –v time >d:/logcat.txt
-	2、adb shell dmesg > d:/log-dmesg.txt 
-	3、kernal log:
+	2.10、删除系统应用，如IbotnLauncher
 		adb root 
 		adb remount
-		adb shell cat /proc/kmsg > d:/log_kmsg 
-	
+		adb shell 
+		cd /system/app/ 
+		rm -rf IbotnLauncher 
+		
+三、android抓log
+	1.adb logcat –v time >d:/logcat.txt
+	2、kernal log:
+		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
+		(2.2) adb shell ///第一步
+				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
 四、一些自动生成的log
 	1.	/data/sysytem/dropbox/ 
