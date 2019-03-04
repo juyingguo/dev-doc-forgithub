@@ -74,6 +74,10 @@
 		adb shell 
 		cd /system/app/ 
 		rm -rf IbotnLauncher 
+	2.11 操作数据库
+		/data/data/com.android.providers.settings/databases
+		qlite3  settings.db 
+		sqlite> .tables
 		
 三、android抓log
 	1.adb logcat –v time >d:/logcat.txt

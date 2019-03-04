@@ -47,6 +47,8 @@
 		-df 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
 		-d -f 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
 	 git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
+	 use "git reset HEAD <file>..." to unstage)  从暂存区移除，会再次回到工作区。
+	 
 	 A修改，但没有用git add将修改添加到暂存区；//git checkout -- 文件进行修改撤销
 	 B修改，已经使用git add将修改添加到暂存区；//先使用git reset HEAD -- 文件，然后在使用git checkout -- 文件进行修改撤销。
 	 C修改，已经使用git add将修改添加到暂存区，并再次进行修改。//先使用git checkout -- 文件，文件就会变成添加到暂存区后的状态B
@@ -60,23 +62,26 @@
 	git reset --hard HEAD^ 回退到上一个版本 ；//只有一次提交记录时，fatal: ambiguous(模棱两可的) argument 'HEAD^': unknown revision or path not in the working tree.
 	git reset --hard commit_id(HASH) 回退到某一个历史版本 
 	git reset --soft HASH #返回到某个节点。保留修改
+		
 1) 远程仓库相关命令
-	检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
+	A)检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
 		git clone <repo> <directory> 可以指定检出后的本地仓库的名称directory
 		或者git clone git@github.com:jquery/jquery.git 
 		或者git clone https://github.com:jquery/jquery.git 
-	查看远程仓库：$ git remote -v
-	添加远程仓库：$ git remote add [name] [url] 如：git remote add origin git@github.com:username/repoxxx.git origin是远程库的名字；
+	B)查看远程仓库：$ git remote -v
+	C)添加远程仓库：$ git remote add [name] [url] 如：git remote add origin git@github.com:username/repoxxx.git origin是远程库的名字；
 		或者git remote add origin https://github.com:username/repoxxx.git
 		或者git remote add origin git://github.com:username/repoxxx.git
-	删除远程仓库：$ git remote rm [name]
-	拉取远程仓库：$ git pull [remoteName] [localBranchName]  
+	D)删除远程仓库：$ git remote rm [name]
+	E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
 			git pull <远程主机名> <远程分支名>:<本地分支名>
 			参考教材：https://www.yiibai.com/git/git_pull.html
-	拉取远程仓库冲突处理：：
+	F)拉取远程仓库冲突处理：：
 		git pull * * 与本地有冲突时，解决方式：1. git stash 先将本地修改存储起来 2. git pull * * 暂存了本地修改之后，就可以pull了。3.git stash pop stash@{0}还原暂存的内容(git stash list可以看到保存的信息)
-		
-	推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
+			4、解决文件中冲突的的部分
+			打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
+			解决完成之后，就可以正常的提交了。
+	G)推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
 		git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整，以防止提交错误，切记，切记，切记！！！
 
 2）分支(branch)操作相关命令
@@ -146,6 +151,44 @@
 	git 
 	https://blog.csdn.net/hanmindaxiongdi/article/details/81433730
 	这个问题主要是由于参数不对，它明明要三个参数「push」「origin」以及「A:A」的，你却给它五个：「push」「origin」「A」「:」「A」。shell 中空格导致的问题不少，比如这个：一个空格引发的惨剧。
+10) 忽略特殊文件。如忽略source insight 产生的文件（此时采用方式二，就可以了。）
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+
+			Backup of Ibotn_android5.1.1_frameworks.CF3
+			Ibotn_android5.1.1_frameworks.CF3
+			Ibotn_android5.1.1_frameworks.IAB
+			Ibotn_android5.1.1_frameworks.IAD
+			Ibotn_android5.1.1_frameworks.IMB
+			Ibotn_android5.1.1_frameworks.IMD
+			Ibotn_android5.1.1_frameworks.PFI
+			Ibotn_android5.1.1_frameworks.PO
+			Ibotn_android5.1.1_frameworks.PR
+			Ibotn_android5.1.1_frameworks.PRI
+			Ibotn_android5.1.1_frameworks.PS
+			Ibotn_android5.1.1_frameworks.SearchResults
+			Ibotn_android5.1.1_frameworks.WK3
+			
+	【方式一】
+
+		在仓库目录下新建一个名为.gitignore的文件（因为是点开头，没有文件名，没办法直接在windows目录下直接创建，必须通过右键Git Bash，按照linux的方式来新建.gitignore文件）。如下图所示。
+
+		.gitignore文件对其所在的目录及所在目录的全部子目录均有效。通过将.gitignore文件添加到仓库，其他开发者更新该文件到本地仓库，以共享同一套忽略规则。
+	【方式二】
+
+       通过配置.git/info/exclude文件来忽略文件。这种方式对仓库全局有效，只能对自己本地仓库有作用，其他人没办法通过这种方式来共享忽略规则，除非他人也修改其本地仓库的该文件。
+
+ 
+
+	【方式三】
+
+       通过.git/config配置文件的core. Excludesfile选项，指定一个忽略规则文件（完整路径），如下图所示。忽略规则在文件e:/gitignore.txt中（当然该文件名可以任意取）。
+
+       该方式的作用域是也全局的。
+11）Git忽略对文件权限的改变
+	 it status .后发现刚刚克隆下来的文件有很多改动，且只是文件权限的改动。让git忽略检查文件权限的改动：
+	git config core.filemode false执行该命令后即可
 ////////////
 二、
 	git push exdroid a13jb:a13jb 提交代码到服务器

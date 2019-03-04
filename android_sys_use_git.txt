@@ -18,7 +18,7 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 
  (4) 如果是第三方应用，注意将该应用所在的路径下，lib中so库添加完整，Android.mk配置so
 	 如ibotnphone 路径 Z:\android\android\device\actions\common\prebuilt\apk\thirdparty\ibotnphone
-（5）
+（5）如果是新增apk,除了在（4）配置后，还需要在 **/android\device\actions\bubble_gum\device.mk中配置 该应用模块名称。
 
 3.单独模块编译
 （1）cd android/android下
@@ -32,6 +32,11 @@ owl\out\s500_android_bubble_gum\images\s500_android_bubble_gum_170822.fw
 	（4.2）、编译后生成后的模块应用目录:android\out\target\product\bubble_gum\system\app\IbotnLauncher
 
 （5）编译指令make 、mmm、mm优缺点比较
+	mmm ,mmm -B module_dir 
+
+　　我们知道android是由很多的模块组成，该命令加上具体路径就是单独编译某模块的命令，简称单编，需要注意的是有些时候直接mmm的话可能也会漏掉改动，建议后面加上  -B  以完全单编这个模块
+	
+	mm ,mm -B 
 
 （6）LOCAL_DEX_PREOPT := false ///apk opt dex 提示无法单独安装，配置方法
 

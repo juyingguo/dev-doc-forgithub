@@ -1,0 +1,97 @@
+1、apt-get install git-core curl   #先下载这两个工具
+2、mkdir –p ~/android/froyo            #在登录用户的目录下新建android和froyo两个目录
+3、cd ~/android/froyo               #进入这个目录
+4、curl http://Android.git.kernel.org/repo > ./repo  # 【旧方式】从源码网站下载repo脚本，该脚本是Google为了方便源码下载而提供的。通过该脚本可下载整套源码。
+	curl http://android.git.kernel.org/repo > ./repo # 【旧方式】android.git.kernel.org是google以前用来下载android的网址，现在不用了。
+
+	 curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo> ./repo
+	 
+5. chmod a+x repo     #设置该脚本为可执行
+6、 ./repo init -u git://Android.git.kernel.org/platform/manifest.git –bfroyo       #初始化git库
+	repo init -u https://android.googlesource.com/platform/manifest -b Froyo # 
+7、 ./repo sync      #下载源码，大小为2个多GB，网速快估计得要2个多小时。
+--------------------- 
+1.安装git与repo
+  安装git：  sudo apt-get install git-core  安装curl：sudo apt-get install git-core curl  通过curl下载repo：               mkdir ~/bin
+              PATH=~/bin:$PATH              curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo > ~/bin/repo              //cd  ~/bin
+              //curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -o repo 
+               chmod +x repo
+    如果提示无法连接到 gerrit.googlesource.com，可以编辑 ~/bin/repo文件，把 REPO_URL 一行替换成下面的：
+    REPO_URL = 'https://gerrit-googlesource.lug.ustc.edu.cn/git-repo'
+
+2.准备下载，【repo下载中国科技技术大学镜像android源码】
+     (1). 创建工作目录（这个名称随意）
+           mkdir WORKING_DIRECTORY
+           cd WORKING_DIRECTORY
+     (2). 初始化仓库
+           repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest
+           初次安装git，会提示配置git config信息
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+     (3). 下载指定android版本
+          repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b android-8.0.0_r1
+		  repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b android-2.2.3_r2.1
+     (4).开始同步源码树
+          repo sync
+	（5）Kernel的代码必须要单独下载
+	
+		  
+		  
+		  
+三、android kernel源码单独下载
+	1、Goldfish分支（该分支用于构建运行在emulator上的系统内核，而主线则是用于构建运行在实际设备上的内核代码）上的内核代码
+	
+	3、获取特定版本的Linux内核源码
+		# 查看 tag
+		git tag
+		# 切换并拉取代码
+		git checkout -b v2.6.34 v2.6.34
+	4、 git clone git://android.git.kernel.org/kernel/common.gitkernel
+Cloning into 'common.gitkernel'...
+fatal: unable to connect to android.git.kernel.org:
+android.git.kernel.org: Name or service not known
+
+		  
+	5、注：内核代码下载我们也使用[清华源](http://mirrors.ustc.edu.cn/aosp/kernel/),这里需要注意此网站下载速度较慢，因此使用下面命令较快，git库可根据需求进行替换，我下载了模拟器内核
+		git clone https://aosp.tuna.tsinghua.edu.cn/android/kernel/goldfish.git
+		cd goldfish
+		git branch -a
+		git checkout remotes/origin/android-goldfish-2.6.29
+
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
