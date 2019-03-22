@@ -41,4 +41,10 @@
 	du //du会显示指定的目录或文件所占用的磁盘空间。
 		-a或-all 显示目录中个别文件的大小。
 		-h //-h或--human-readable 以K，M，G为单位，提高信息的可读性。
-		
+
+(5)	、ubuntu 安装 vmwaretools 
+	yum -y install perl gcc make kernel-headers kernel-devel
+	yum repolist all //查看拥有的仓库
+	您可以使用 yum-config-manager --enable &lt; 仓库名&gt；来启用仓库
+	原因：centos中使用才可以，我这里使用的是Ubuntu，ubuntu默认软件包管理器不是yum，而是dpkg，安装软件时用apt-get你说的网上常见法解决方法，命令改为代码:sudo apt-get install net-tools，这样就安装好了。
+	

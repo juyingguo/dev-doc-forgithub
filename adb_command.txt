@@ -38,7 +38,9 @@
 	/system/bin/screencap -p /sdcard/screenshot.png 截屏 
 	
 	(2.6) dumpsys 系列命令
-		参考 https://www.tuicool.com/articles/EBZjmer
+		参考https://www.cnblogs.com/JianXu/p/5376642.html 
+			https://www.tuicool.com/articles/EBZjmer
+		dumpsys activity -h  	
 		dumpsys activity -p(包名) 查看当前包下的进程情况  
 		dumpsys activity s com.sina.weibo  查询某个App所有的Service状态 s为 services 的缩写
 		dumpsys package com.android.music 查看包的信息。版本号，权限等
@@ -46,6 +48,8 @@
 		adb shell dumpsys window | findstr mCurrentFocus  ///adb获取当前打开的app的包名
 		adb shell dumpsys window  | findstr mCurrent  ///获得当前活动窗口的信息，包名以及活动窗体： linux 下使用 grep
 		adb shell dumpsys window windows ///可以查看window所有参考数，
+		dumpsys activity s -p com.sp.spmultipleapp //查看应用中的服务 
+		
 		
 	2.7、
 		df 查看磁盘空间使用情况
@@ -85,5 +89,16 @@
 		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
 		(2.2) adb shell ///第一步
 				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
+				
 四、一些自动生成的log
-	1.	/data/sysytem/dropbox/ 
+	1.	/data/sysytem/dropbox/
+	
+五、adb install 安装应用
+Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+2018年09月07日 09:37:18 hpp_1225 阅读数：933
+小米note3 真机测试的时候，安装apk总是报这个错
+
+ Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+用adb -r (取代已经安装的application) 命令装也不行，
+
+解决：除了要打开开发者选项，USB调试，还有打开USB安装选项

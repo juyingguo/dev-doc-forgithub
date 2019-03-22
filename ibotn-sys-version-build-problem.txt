@@ -502,7 +502,25 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 	device/actions/bubble_gum_sd/device.mk: ro.build.display.id=TAG_AD500A_5110_$(VERSION_DATE) \
 	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android$ 
 		
-		
+28、git add 时 异常提示。
+juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android/device$ git status .
+ modified:   actions/bubble_gum/device.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/iFlyIME/Android.mk
+        deleted:    actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libMetaVAD-v1.so
+        deleted:    actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libNativeCrashCollect.so
+
+juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android/device$ git add .
+warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+whose behaviour will change in Git 2.0 with respect to paths you removed.
+Paths like 'actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libMetaVAD-v1.so' that are
+removed from your working tree are ignored with this version of Git.
+
+* 'git add --ignore-removal <pathspec>', which is the current default,
+  ignores paths you removed from your working tree.
+
+* 'git add --all <pathspec>' will let you also record the removals.
+
+Run 'git status' to check the paths you removed from your working tree.		
 		
 		
 		
