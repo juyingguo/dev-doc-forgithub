@@ -77,8 +77,12 @@
 			git pull <远程主机名> <远程分支名>:<本地分支名>
 			参考教材：https://www.yiibai.com/git/git_pull.html
 	F)拉取远程仓库冲突处理：：
-		git pull * * 与本地有冲突时，解决方式：1. git stash 先将本地修改存储起来 2. git pull * * 暂存了本地修改之后，就可以pull了。3.git stash pop stash@{0}还原暂存的内容(git stash list可以看到保存的信息)
-			4、解决文件中冲突的的部分
+		git pull * * 与本地有冲突时，解决方式：
+		1. git stash 先将本地修改存储起来 
+		2. git pull * * 暂存了本地修改之后，就可以pull了。
+		3.git stash pop stash@{0} 还原暂存的内容(git stash list可以看到保存的信息)
+		
+		F.2、解决文件中冲突的的部分
 			打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
 			解决完成之后，就可以正常的提交了。
 	推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
@@ -131,6 +135,8 @@
 		/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 		build/    # 忽略 build/ 目录下的所有文件
 		doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+	6.1）将.gitignore添加到忽略文件与不添加的区别？
+		1.添加后，可以动态改变忽略规则，而不需要删除缓存。
 7) Windows下使用Beyond Compare作为git的比对与合并工具
 	beyondcompare_config_git.txt  在.gitconfig(c盘/user目录下)中追加该文件中的内容，需要修改对应的bc版本名称、bc安装路径(其中的路径使用'/');
 	git mergetool 
