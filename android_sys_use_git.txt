@@ -63,4 +63,6 @@ repo sync 【只第一次下代码时用一次】【只第一次下代码时用一次】
 10、bootbin/misc.img
 	bootbin/recovery.img
 	config/recovery/atc260x-adckeypad.ko
-
+11、使用secureCRT 配置后台编译ssh,不依赖界面显示。
+	界面关闭后，编译依然继续。
+	

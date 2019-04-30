@@ -11,9 +11,24 @@
 ①对代码的操作
 	git add                                  ---将新文件或者修改的代码提交到缓存区
 		当出现【warning：LF will be replaced by CRLF】
-		rm -rf .git
+		rm -rf .git  [如有其它方式，就不要使用该方式]
 		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
 		git init 
+		
+		1.1、git add . 异常记录
+		juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android/device$ git add .
+		warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+		whose behaviour will change in Git 2.0 with respect to paths you removed.
+		Paths like 'actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libMetaVAD-v1.so' that are
+		removed from your working tree are ignored with this version of Git.
+
+		* 'git add --ignore-removal <pathspec>', which is the current default,
+		  ignores paths you removed from your working tree.
+
+		* 'git add --all <pathspec>' will let you also record the removals.
+
+		Run 'git status' to check the paths you removed from your working tree.
+		
 	git rm                                    ---把代码从仓库中移除
 	git commit                            ---将缓存区的代码提交到仓库中
 	git commit -a = git add + git commit          ---但是不对库外的文件操作
@@ -137,12 +152,42 @@
 ////////////
 ////////////
 
-8) 异常
- 当出现【warning：LF will be replaced by CRLF】
-		rm -rf .git
-		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+8) 异常换行问题汇总。 LF,CRLF 。。
+	特别是使用git和svn同时管理项目。如svn用来本地与服务器（公司版本控制服务器端为，svn）,git只是管理本地程序的。使用window会造成冲突。
+	当出现【warning：LF will be replaced by CRLF】
+	
+	8.1 ，解决方式。git bash命令行也可以修改，最终也是修改.gitconfig配置文件：
+	git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+	git config --global core.filemode false 	//文件属性等
+	git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
+	core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
+	8.2
+	或者：.gitattributes 文件
+	在项目的根目录下可以添加一个.gitattributes 文件。它的优先级高于core.autocrlf的设置，可以覆盖core.autocrlf的。它类似于 .gitignore 文件，随提交修改生效，一个项目中可以维持一份相同的配置。所以，它能够避免每个开发人员配置不同的问题。
+
+	作者：于晓飞93
+	链接：https://www.jianshu.com/p/ec9564fe1c2b
+	来源：简书
+	简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+	
+	8.3、
+	或者直接修改文件
+	禁用git的自动换行功能： 
+	在本地路径C:\ Users\ [用户名] \ .gitconfig下修改git配置[core]，如果没有就直接添加上去：
+	
+	
+	[core]
+	autocrlf = false
+	filemode = false
+	safecrlf = true
+			crlf: "\r\n", windows系统的换行方式
+			lf: "\n", Linux系统的换行方式
+			
+	8.4、		
+	rm -rf .git 
 		git init 
-		git add 
+		git add
+		
 9)异常
 	git push origin test_2 :test_2
 

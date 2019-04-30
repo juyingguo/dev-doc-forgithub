@@ -283,6 +283,7 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 	//ibotn_nk
 	///from * to TAG_I10NK_5110_190107 [bubble_gum-target_files-190107.zip]
 	...***
+	TAG_I10NK_5110_181121
 	TAG_I10NK_5110_181106
 	TAG_I10NK_5110_181025
 	TAG_I10NK_5110_181009
@@ -386,6 +387,57 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 		
 	16.5、\\192.168.1.21\jlzou\android\alps\Ibotn_NK\android 下做差分包
 		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190225.zip ../owl/out/s500_android_bubble_gum/images/diff190107_190225.zip
+	
+	16.6  NK 版本 TAG_I10NK_5110_190416
+	////	
+	//ibotn_nk
+	///from * to TAG_I10NK_5110_190416 [bubble_gum-target_files-190416.zip]
+	...***
+	
+	
+	TAG_I10NK_5110_190107
+	TAG_I10NK_5110_181121
+	TAG_I10NK_5110_181106
+	TAG_I10NK_5110_181025
+	TAG_I10NK_5110_181009
+	TAG_I10NK_5110_180917
+	TAG_I10NK_5110_180907
+	TAG_I10NK_5110_180821
+	TAG_I10NK_5110_180723
+	
+	///
+	///  \\192.168.1.21\jlzou\android\alps\Ibotn_NK\android
+	///使用  \\192.168.1.21\jlzou\android\software_version\ibotn_bak
+		../../../software_version/ibotn_bak/bubble_gum-target_files-180723.zip ../../../software_version/ibotn_bak/bubble_gum-target_files-190416.zip 
+		
+		//01 TAG_I10NK_5110_180723 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180723.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff180723_190416.zip
+		//02 TAG_I10NK_5110_180821 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180821.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff180821_190416.zip
+		
+		//03 TAG_I10NK_5110_180907 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180907.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff180907_190416.zip
+		
+		//04 TAG_I10NK_5110_180917 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-180917.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff180917_190416.zip
+		
+		//05 TAG_I10NK_5110_181009 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181009.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff181009_190416.zip
+		
+		//06 TAG_I10NK_5110_181025 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181025.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff181025_190416.zip
+		 
+		 //07 TAG_I10NK_5110_181106 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181106.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff181106_190416.zip
+		
+		 //08 TAG_I10NK_5110_181121 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-181121.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff181121_190416.zip
+		
+		 //09 TAG_I10NK_5110_190107 - TAG_I10NK_5110_190416
+		./build/tools/releasetools/ota_from_target_files -i ../../../software_version/ibotn_bak/bubble_gum-target_files-190107.zip ../owl/out/s500_android_bubble_gum/images/bubble_gum-target_files-190416.zip ../owl/out/s500_android_bubble_gum/images/diff190107_190416.zip
+	 
+	 
+	 
 	 
 	 
 	 
