@@ -25,15 +25,49 @@
 				 USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
 		getprop | grep dalvik.vm.heapgrowthlimit java进程申请的java空间阈值	与 Runtime.getRuntime().maxMemory()得到的一样
 		cat /proc/meminfo 查看RAM使用情况	
+		
+		dumpsys meminfo $package or $pid // 查看某一应用内存使用情况 或者 adb shell dumpsys meminfo $package_name com.android.music
+			dumpsys meminfo $package com.android.music 
+		
 	
-	(2.4)cpu
-	dumpsys meminfo $package_name or $pid查看某一应用内存使用情况 adb shell dumpsys meminfo $package_name com.android.musi
+	(2.4)cpu	
 	
-	top -m 10 查看内存排行前10位的进程
-	
-	top  -n 1 | grep pid|package_name  获取指定进程的cpu信息	grep后直接跟上进程id或包名
-	dumpsys cpuinfo 得到每个进程使用cpu的详细信息 
-	
+		top -m 10 查看内存排行前10位的进程
+			PID:      进程在系统中的ID
+
+			CPU% - 当前瞬时所以使用CPU占用率
+
+			#THR - 程序当前所用的线程数
+
+			UID - 运行当前进程的用户id
+
+			Name - 程序名称org.xmpp.app
+
+			VSS - Virtual Set Size 虚拟耗用内存（包含共享库占用的内存）
+			RSS - Resident Set Size 实际使用物理内存（包含共享库占用的内存）
+			PSS - Proportional Set Size 实际使用的物理内存（比例分配共享库占用的内存）
+			USS - Unique Set Size 进程独自占用的物理内存（不包含共享库占用的内存）
+		
+		top  -n 1 | grep pid|package_name  获取指定进程的cpu信息	grep后直接跟上进程id或包名
+		dumpsys cpuinfo 得到每个进程使用cpu的详细信息 
+			 2.7% 468/system_server: 2.2% user + 0.5% kernel / faults: 73 minor  
+		adb 查看cpu几核		
+			Android系统proc下查看cpuinfo的参数信息
+			cat  /proc/cpuinfo
+				Processor       : ARMv7 Processor rev 1 (v7l)
+				processor       : 0
+				model name      : ARMv7 Processor rev 1 (v7l)
+				BogoMIPS        : 1835.17
+				Features        : swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls
+				CPU implementer : 0x41
+				CPU architecture: 7
+				CPU variant     : 0x4
+				CPU part        : 0xc09
+				CPU revision    : 1
+				
+				Hardware        : gs705a
+				Revision        : 0000
+				Serial          : 0c0b461950030c32
 	(2.5) 截屏 
 	/system/bin/screencap -p /sdcard/screenshot.png 截屏 
 	

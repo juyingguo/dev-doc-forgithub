@@ -1,4 +1,4 @@
-一.SVN代码的回滚： https://blog.csdn.net/coldh/article/details/47336601
+一.SVN代码的回滚：参考博客：https://blog.csdn.net/coldh/article/details/47336601
 
 	1.1 不丢失新建的文件，获得最新的SVN版本控制。TortoiseSVN-ShowLog-选中你要回滚的版本-右键-Export，之后将修改的文件覆盖到你的最新版本，commit即可。
 
@@ -11,3 +11,4 @@
 	1.5 可以直接show log-选中要清除的版本-右键-revert changes from this reversion，这样可以直接解决冲突并提交。但是新建的文件都没有了，选中的这个版本就没有了。
 
 	1.6 show log-选中需要回退到的版本-右键-revert to this reversion，则选中的版本之后的版本就没有了，作废了。
+二、
