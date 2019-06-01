@@ -3,3 +3,4 @@
   D:\juying\work-test\secureCRTlog\log\%S%Y%M%D-%h%m%s.log
   ## On each line : 
 	[%h:%m:%s:%t]
+2.

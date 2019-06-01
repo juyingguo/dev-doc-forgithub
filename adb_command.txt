@@ -49,7 +49,7 @@
 		adb shell dumpsys window  | findstr mCurrent  ///获得当前活动窗口的信息，包名以及活动窗体： linux 下使用 grep
 		adb shell dumpsys window windows ///可以查看window所有参考数，
 		dumpsys activity s -p com.sp.spmultipleapp //查看应用中的服务 
-		
+		dumpsys activity s -p com.ibotn.newapp
 		
 	2.7、
 		df 查看磁盘空间使用情况
