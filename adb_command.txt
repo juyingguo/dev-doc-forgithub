@@ -83,7 +83,7 @@
 		adb shell dumpsys window  | findstr mCurrent  ///获得当前活动窗口的信息，包名以及活动窗体： linux 下使用 grep
 		adb shell dumpsys window windows ///可以查看window所有参考数，
 		dumpsys activity s -p com.sp.spmultipleapp //查看应用中的服务 
-		dumpsys activity s -p com.ibotn.newapp
+		
 		
 	2.7、
 		df 查看磁盘空间使用情况
@@ -128,11 +128,33 @@
 	1.	/data/sysytem/dropbox/
 	
 五、adb install 安装应用
-Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
-2018年09月07日 09:37:18 hpp_1225 阅读数：933
-小米note3 真机测试的时候，安装apk总是报这个错
+	Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+	2018年09月07日 09:37:18 hpp_1225 阅读数：933
+	小米note3 真机测试的时候，安装apk总是报这个错
 
- Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
-用adb -r (取代已经安装的application) 命令装也不行，
+	 Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+	用adb -r (取代已经安装的application) 命令装也不行，
 
-解决：除了要打开开发者选项，USB调试，还有打开USB安装选项
+	解决：除了要打开开发者选项，USB调试，还有打开USB安装选项
+	
+六、Android ADB无线连接 调试
+	具体步骤如下
+
+	1、先借助adb命令在手机上开启无线连接的服务： 
+	使用数据线通过USB接口将手机与电脑连接，在cmd中执行如下命令： 
+	adb tcpip 5555（PS：5555是端口号，可以随意地指定） 
+	执行该命令后如下图所示： 
+	 
+	注意：命令执行完后，要拔掉数据线断开电脑和手机的连接。
+	2、在电脑端执行连接命令： 
+	首先要查找到手机的IP地址，比如我的是192.168.1.41，然后执行连接命令： 
+	adb connect 192.168.1.41:5555 
+	命令执行完后就已连接成功，可以在cmd中执行adb shell命令测试一下啦！
+	--------------------- 
+	作者：Geek-Boy 
+	来源：CSDN 
+	原文：https://blog.csdn.net/YSSJZ960427031/article/details/50864903 
+	版权声明：本文为博主原创文章，转载请附上博文链接！
+	参考：：
+	https://blog.csdn.net/qq_36327203/article/details/79469576
+
