@@ -1,0 +1,418 @@
+1.The owner gets the unadorned db name;adorned 装饰的
+	英 [əˈdɔ:n]   美 [əˈdɔ:rn]  
+			
+2、	type
+	n.
+	类型;铅字;（印刷或打印的）文字;于…类型的
+	vt.& vi.
+	打字
+	vt.
+	[医学]测定（血型）;按类型把…归类;成为…的典型;[印刷]浇铸（铅字等）
+3. 
+It assumes that only the primary user
+     * can have managed profiles.
+	 它假定只有主要用户 *可以具有托管配置文件。
+	 profile
+		profile
+	英 [ˈprəʊfaɪl]   美 [ˈproʊfaɪl]  
+	n.
+	侧面，半面;外形，轮廓;[航]翼型;人物简介
+	vt.
+	描…的轮廓;给…画侧面图;为（某人）写传略;[机]铣出…的轮廓
+	第三人称单数： profiles 复数： profiles 现在分词： profiling 过去式： profiled 过去分词： profiled
+	记忆技巧：pro 向前，在前 + file 纱线 → 表面的线条 → 轮廓
+	
+	
+4、update recovery file every 5 seconds
+	每5秒更新一次恢复文件
+	recovery 
+	recovery
+	英 [rɪˈkʌvəri]   美 [rɪˈkʌvəri]  
+	n.
+	恢复，复原;重获;痊愈;矫正
+5、PRIMARY_PROFILE_CONTROLLED
+	主配置文件控制
+6、Dashboard
+	dashboard
+	英 [ˈdæʃbɔ:d]   美 [ˈdæʃbɔ:rd]  
+	n.
+	仪表板;仪表盘;仪表的控制盘;挡泥板
+7、stash
+	git stash 
+	 stash
+	英 [stæʃ]   美 [stæʃ]  
+	n.
+	隐（贮）藏物;（旧）藏身处
+	v.
+	贮藏;隐藏，藏匿;〈英〉停止
+	第三人称单数： stashes 复数： stashes 现在分词： stashing 过去式： stashed 过去分词： stashed
+	IELTSTOEFL
+8、Relocate
+	relocate
+	英 [ˌri:ləʊˈkeɪt]   美 [ˌri:ˈloʊkeɪt]  
+	vt.& vi.
+	迁移;重新安置
+	
+	locate
+	locate
+	英 [ləʊˈkeɪt]   美 [ˈloʊkeɪt]  
+	vt.
+	位于;说出来源;查找…的地点;确定…的位置
+	vi.
+	定位;定居
+9、Provides a dedicated drawing surface embedded inside of a view hierarchy.
+	 You can control the format of this surface and, if you like, its size; the
+	 SurfaceView takes care of placing the surface at the correct location on the
+	  screen。。
+	  dedicate
+	  
+	  dedicate
+	英 [ˈdedɪkeɪt]   美 [ˈdɛdɪˌket]  
+	vt.
+	奉献，献身;（为表示感情或敬意将著作、乐曲、艺术作品等）题献给（某人、某事业等）(to);（在书、音乐或作品的前部）题献辞;以…供奉
+10、If you need your application to run on platform versions prior to API
+     * level 5
+	  prior to
+	英 [ˈpraiə tu:]   美 [ˈpraɪɚ tu]  
+	在…之前
+11、his mode makes sense for things that will be explicitly started
+     * and stopped to run for arbitrary periods of time, such as a service
+     * performing background music playback.
+	 此模式对于将显式启动和停止以在任意时间段内运行的内容是有意义的。如服务
+	*正在播放背景音乐。
+	arbitrary
+	英 [ˈɑ:bɪtrəri]   美 [ˈɑ:rbətreri]  
+	adj.
+	乱;随意的，任性的，随心所欲的;主观的，武断的;霸道的，专制的，专横的，独断独行的
+	
+	
+12、RecyclerView Adapter notifyItemChanged
+	Notify any registered observers that the item at position has changed with
+      an optional payload object.	通知任何注册观察员位置上的项目已更改 可选的有效负载对象。
+
+	payload	
+	英 [ˈpeɪləʊd]   美 [ˈpeɪloʊd]  
+	n.
+	有效载荷;（航天器、卫星的）装备;（车辆等的）装载货物;（炸弹、导弹的）爆炸力
+	
+13、praise
+	praise
+	英 [preɪz]   美 [preɪz]  
+	n.
+	赞扬，称赞;崇拜;赞词
+	v.
+	歌颂;赞扬，赞美;崇拜
+	
+14、appOrbit 
+
+		orbit
+	英 [ˈɔ:bɪt]   美 [ˈɔ:rbɪt]  
+	n.
+	轨道;眼眶;势力范围;（人生的）旅程，生活过程
+	vt.& vi.
+	在…轨道上运行，环绕轨道运行
+	vi.
+	盘旋;绕轨道运行
+	vt.
+	绕轨道而行;进入轨道
+15、ConnectivityService(  469): NetworkAgentInfo [WIFI () - 100] got DISCONNECTED, was satisfying 2
+	satisfying
+	英 [ˈsætɪsfaɪɪŋ]  
+	adj.
+	令人满意的，令人满足的
+	v.
+	使满意，满足( satisfy的现在分词)
+	派生词： satisfyingly adv.
+16、Pairwise Ciphers   成对密码
+	cipher
+	英 ['saɪfə(r)]   美 [ˈsaɪfɚ]  
+	n.
+	密码;零;不重要的人;无价值的东西
+	vt.
+	用密码书写
+	ciphers
+	n.
+	密码( cipher的名词复数 );零;不重要的人;无价值的东西
+	n.
+	密码( cipher的名词复数 );零;不重要的人;无价值的东西
+17、algorithm
+	英 [ˈælgərɪðəm]   美 [ˈælɡəˌrɪðəm]  
+	n.
+	演算法;运算法则;计算程序
+
+18、roamingFailureBlackListTimeMilli 
+	roaming
+	英 [ˈrəʊmɪŋ]   美 [ˈroʊmɪŋ]  
+	v.
+	漫步;随便走( roam的现在分词 );眼睛或手 （缓慢地）扫遍;摸遍
+19、isConnectedToProvisioningNetworkprovision
+	英 [prəˈvɪʒn]   美 [prəˈvɪʒən]  
+	n.
+	规定，条项，条款;预备，准备，设备;供应，（一批）供应品;生活物质，储备物资
+	vt.& vi.
+	为…提供所需物品（尤指食物
+	
+	provisioning
+	英 [prə'vɪʒənɪŋ]   美 [prə'vɪʒənɪŋ]  
+	[经] 物质供应
+20、WifiStateMachine(  469): WifiStateMachine L2Connected CMD_START_SCAN source -2 38, 41 -> obsolete
+	obsolete
+	英 [ˈɒbsəli:t]   美 [ˌɑ:bsəˈli:t]  
+	adj.
+	废弃的;老式的，已过时的;[生]已废退的
+	n.
+	废词;被废弃的事物
+	vt.
+	淘汰;废弃
+21、JavaRenderThreadProcess
+	render
+	英 [ˈrendə(r)]   美 [ˈrɛndɚ]  
+	v.
+	给予;使成为;递交;表达
+	第三人称单数： renders 现在分词： rendering 过去式： rendered 过去分词： rendered
+	
+22、Reentrant Lock	 可重入锁
+	reentrant
+	英 [ri:'entrənt]   美 [rɪ'entrənt]  
+	n.
+	再进去，凹角
+	adj.
+	再进去的，凹角的
+	
+	entrant
+	英 [ˈentrənt]   美 [ˈɛntrənt]  
+	n.
+	参加者，新加入的;参加竞赛者;新生，新工作者
+23、Acknowledge
+	acknowledge
+	英 [əkˈnɒlɪdʒ]   美 [əkˈnɑ:lɪdʒ]  
+	vt.
+	承认;鸣谢;对…打招呼;告知已收到
+	第三人称单数： acknowledges 现在分词： acknowledging 过去式： acknowledged 过去分词： acknowledged
+24、
+	poll
+	英 [pəʊl]   美 [poʊl]  
+	n.
+	民意调查;投票选举;投票数;头部
+	vt.
+	得到（一定数目的）选票;对…进行调查;修剪;修剪
+	vi.
+	投票;作民意调查
+	
+25、stitchData 编织数据
+	stitch
+	英 [stɪtʃ]   美 [stɪtʃ]  
+	n.
+	（缝纫或编织中的）一针;缝法;衣服;（缝合伤口的）缝线
+	vt.
+	缝;缝补;缝合裂口;缝缀
+	vi.
+	缝针，缝纫
+26 、 
+	Communication Follow Diagram	
+	通信跟踪图
+27、Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.配置“testapi”已过时，并已替换为“testmlementation”。
+	obsolete
+	英 [ˈɒbsəli:t]   美 [ˌɑ:bsəˈli:t]  
+	adj.
+	废弃的;老式的，已过时的;[生]已废退的
+	n.
+	废词;被废弃的事物
+	vt.
+	淘汰;废弃
+28、Carriage Return 
+	Carriage Return
+	英 [ˈkærɪdʒ rɪˈtɜːn]   美 [ˈkærɪdʒ rɪˈtɜːrn]  
+	回车;回车换行;返回字符;滑架返回
+	
+	LF(Line Feed) 代表换行，对应字符 '\n'。
+	Line Feed
+	英 [laɪn fiːd]   美 [laɪn fiːd]  
+	跳行;换行;换行符
+29、permission WRITE_EXTERNAL_STORAGE is not mandatory for Agora RTC SDK, just incase if you wanna save logs to external sdcard
+	agora rtc sdk不强制使用权限写入外部存储，只是为了避免将日志保存到外部SD卡。
+	mandatory
+	英 [ˈmændətəri]   美 [ˈmændətɔːri]  
+	adj.
+	强制的;法定的;义务的
+
+30、Channel is unrecoverably broken and will be disposed
+	通道被不可恢复地破坏，将被处置。
+31 \ 
+	composite
+	英 [ˈkɒmpəzɪt]   美 [kəmˈpɑːzət]  
+	adj.
+	合成的;混成的;复合的
+	n.
+	合成物;混合物;复合材料
+32. lower memory shrinke
+			shrinke
+	缩小
+33.stage
+	英 [steɪdʒ]   美 [steɪdʒ]  
+	n.
+	(发展或进展的)时期，阶段，状态;段;步;步骤;(多指剧场中的)舞台
+	v.
+	上演;举办;举行;组织;筹划;使发生;使出现	
+34、
+	synthetic
+	英 [sɪnˈθetɪk]   美 [sɪnˈθetɪk]  
+	adj.
+	人造的;(人工)合成的;综合(型)的
+	n.
+	合成物;合成纤维(织物);合成剂	
+35、
+	prelude
+	英 [ˈpreljuːd]   美 [ˈpreljuːd]  
+	n.
+	序曲;前奏曲;序幕;前奏;先声
+	第三人称单数： preludes 复数： preludes 现在分词： preuding 过去式： preluded 过去分词： preluded
+	记忆技巧：pre 前 + lud 玩；戏剧 + e → 先演奏 → 序曲
+	
+36、git 
+	You are in 'detached HEAD' state. 
+		detached
+		英 [dɪˈtætʃt]   美 [dɪˈtætʃt]  
+		adj.
+		单独的;独立的;不连接的;不带感情的;超然的;冷漠的;客观的;公正的;无偏见的
+		v.
+		拆卸;(使)分开，脱离;挣脱;摆脱;离开;派遣;分遣;分派
+		detach的过去分词和过去式
+37  preserve 	[linux cp -p]
+	单词：：		 
+			 -p     same as --preserve=mode,ownership,timestamps
+
+				--preserve[=ATTR_LIST]
+				  preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all
+				  preserve
+					英 [prɪˈzɜːv]   美 [prɪˈzɜːrv]  
+					v.
+					保护;维护;保留;维持…的原状;保存;保养;贮存;保鲜
+					n.
+					(某人或群体活动、工作等的)专门领域;果酱;腌菜;泡菜
+				reserve
+				英 [rɪˈzɜːv]   美 [rɪˈzɜːrv]  
+				v.
+				预订，预约(座位、席位、房间等);保留;贮备;拥有，保持，保留(某种权利)
+				n.
+				储备(量);储藏(量);(动植物)保护区;自然保护区;内向;寡言少语;矜持
+				VERB 保留;留出;预留 
+				If something is reserved for a particular person or purpose, it is kept specially for that person or purpose.
+38、
+	Fillet rectangle		
+	圆角矩形
+	圆角矩形
+	circular
+	英 [ˈsɜːkjələ(r)]   美 [ˈsɜːrkjələr]  
+	adj.
+	圆形的;环形的;圆的;环行的;绕圈的;循环论证的(以一种观点证明另一观点，		
+39、
+	redundant
+	英 [rɪˈdʌndənt]   美 [rɪˈdʌndənt]  
+	adj.
+	被裁减的;多余的;不需要的
+40、drop vacant 空投
+	vacant
+	英 [ˈveɪkənt]   美 [ˈveɪkənt]  
+	adj.
+	空着的;未被占用的;(职位)空缺的;无神的;呆滞的;茫然的;若有所失的
+	派生词： vacantly adv.	
+41、
+	collide
+	collide
+	英 [kəˈlaɪd]   美 [kəˈlaɪd]  
+	v.
+	碰撞;相撞;严重不一致;冲突;抵触
+42、
+	collide buttock 碰撞臀部
+	buttock
+	英 [ˈbʌtək]   美 [ˈbʌtək]  
+	n.
+	屁股的一边;臀部
+43、
+	volatile
+	英 [ˈvɒlətaɪl]   美 [ˈvɑːlətl]  
+	adj.
+	易变的;无定性的;无常性的;可能急剧波动的;不稳定的;易恶化的;易挥发的;易发散的
+	派生词： volatility n.
+44、
+	支持面向过程(procedure-oriented)编程
+	procedure
+	英 [prəˈsiːdʒə(r)]   美 [prəˈsiːdʒər]  
+	n.
+	(正常)程序，手续，步骤;(商业、法律或政治上的)程序;手术
+45、
+	int dividend = 20;
+	   int divisor = 0;
+	   int quotient;
+	   dividend
+	英 [ˈdɪvɪdend]   美 [ˈdɪvɪdend]  
+	n.
+	红利;股息;股利;(足球彩票的)彩金
+	被除数。
+		quotient
+	英 [ˈkwəʊʃnt]   美 [ˈkwoʊʃnt]  
+	n.
+	商(除法所得的结果)
+	
+		divisor
+	英 [dɪˈvaɪzə(r)]   美 [dɪˈvaɪzər]  
+	n.
+	除数;除子
+46、
+	amend last commit [for git use]
+		amend
+	英 [əˈmend]   美 [əˈmend]  
+	v.
+	修正，修订(法律文件、声明等)
+47、
+	suspend
+	arch/arm/configs/goldfish_defconfig:289:warning: override: FB_EARLYSUSPEND changes choice state
+	英 [səˈspend]   美 [səˈspend]  
+	v.
+	悬;挂;吊;暂停;中止;使暂停发挥作用(或使用等);延缓;暂缓;推迟
+48、
+	Can't use 'defined(@array)' (Maybe you should just omit the defined()?) at kernel/timeconst.pl 
+	不能使用“defined（@array）”（也许您应该省略defined（）？）在kernel/timeconst.pl
+	omit
+	英 [əˈmɪt]   美 [əˈmɪt]  
+	v.
+	删除;忽略;漏掉;遗漏;不做;未能做
+49、CopyOnWriteArrayList	
+	A thread-safe random-access list.
+	 *
+	 <p>Read operations (including {@link #get}) do not block and may overlap with
+	 update operations. Reads reflect the results of the most recently completed
+	  operations. Aggregate operations like {@link #addAll} and {@link #clear} are
+	 * atomic; they never expose an intermediate state.
+	do not不要; 勿; 请勿
+	overlap部分重叠，交叠; 使部分重叠; 部分重叠; 重叠部分; 重叠部分，重叠量; 重叠时间，交接时期
+	reflect反映; 映出; 反射; 显示，表明，表达
+	completed完成; 结束; 填写; 使完整; 使完美; complete的过去分词和过去式
+	Aggregate总数; 合计; 骨料，集料; 总数的; 总计的; 总计
+	atomic原子的; 与原子有关的; 原子能的; 原子武器的
+	expose陈述，阐述，揭露; 暴露; 显露; 露出; 揭露; 揭穿; 使面临，使遭受
+	intermediate state中间态
+	
+50、getCanonicalName
+	Returns the canonical name of the underlying class as
+		 * defined by the Java Language Specification.	
+		 canonical
+		英 [kəˈnɒnɪkl]   美 [kəˈnɑːnɪkl]  
+		adj.
+		被收入真经篇目的;经典的;按照基督教会教规的;(数学表达式)最简洁的
+51、sink
+	英 [sɪŋk]   美 [sɪŋk]  
+	v.
+	下沉;下陷;沉没;使下沉;使沉没;倒下;坐下
+	n.
+	(厨房里的)洗涤池，洗碗槽
+	adj.
+	位于社会条件差的贫穷地区的;贫民窟的
+52、
+	stamp
+	英 [stæmp]   美 [stæmp]  
+	n.
+	邮票;印;章;戳;印记;戳记
+	v.
+	跺(脚);重踩;重踏;迈着重重的步伐走;在…上盖(字样或图案等);把(字样或图案等)盖在…上
