@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&utm_medium=referral -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>Java常用的八种排序算法与代码实现 - 我心自在 - 博客园</title>
+    <meta property="og:description" content="排序问题一直是程序员工作与面试的重点，今天特意整理研究下与大家共勉！这里列出8种常见的经典排序，基本涵盖了所有的排序算法。 1.直接插入排序 我们经常会到这样一类排序问题：把新的数据插入到已经排好的数">
+    <link type="text/css" rel="stylesheet" href="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/bundle-CodingLife.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/bundle-CodingLife-mobile.css">
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/10158wsj/rss">
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/10158wsj/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/10158wsj/wlwmanifest.xml">
+    <script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/osd.js.下载"></script><script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/amp4ads-host-v0.js.下载"></script><script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/pubads_impl_rendering_2019062401.js.下载"></script><script async="" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/analytics.js.下载"></script><script type="text/javascript" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/encoder.js.下载"></script><script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/jquery-2.2.0.min.js.下载"></script>
+    <script>var currentBlogId=351149;var currentBlogApp='10158wsj',cb_enable_mathjax=false;var isLogined=false;</script>
+    <script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+<link rel="preload" href="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/integrator.js.下载" as="script"><script type="text/javascript" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/integrator.js.下载"></script><script src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/pubads_impl_2019062401.js.下载" async=""></script></head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/10158wsj/"><img id="blogLogo" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/10158wsj/">我心自在</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/10158wsj/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E6%88%91%E5%BF%83%E8%87%AA%E5%9C%A8">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/10158wsj/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/10158wsj/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 30&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 42</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/10158wsj/p/6782124.html">Java常用的八种排序算法与代码实现</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p><span style="font-size: 16px;"><strong>排序问题一直是程序员工作与面试的重点，今天特意整理研究下与大家共勉！这里列出8种常见的经典排序，基本涵盖了所有的排序算法。</strong></span></p>
+<h1>1.直接插入排序</h1>
+<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 我们经常会到这样一类排序问题：把新的数据插入到已经排好的数据列中。将第一个数和第二个数排序，然后构成一个有序序列将第三个数插入进去，构成一个新的有序序列。</span><span style="font-size: 16px;">对第四个数、第五个数……直到最后一个数，重复第二步。如题所示：</span></p>
+<p><span style="font-size: 16px;"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428142931803-787524153.png" alt="" width="478" height="389"></span></p>
+<p><span style="font-size: 16px;">直接插入排序（Straight Insertion Sorting）的基本思想：在要排序的一组数中，假设前面(n-1) [n&gt;=2] 个数已经是排好顺序的，现在要把第n个数插到前面的有序数中，使得这n个数也是排好顺序的。如此反复循环，直到全部排好顺序。</span></p>
+<p><span style="font-size: 16px;"><strong>代码实现：</strong></span></p>
+<p><span style="font-size: 16px;">首先设定插入次数，即循环次数，for(int i=1;i&lt;length;i++)，1个数的那次不用插入。</span></p>
+<p><span style="font-size: 16px;">设定插入数和得到已经排好序列的最后一个数的位数。insertNum和j=i-1。</span></p>
+<p><span style="font-size: 16px;">从最后一个数开始向前循环，如果插入数小于当前数，就将当前数向后移动一位。</span></p>
+<p><span style="font-size: 16px;">将当前数放置到空着的位置，即j+1。</span></p>
+<p><span style="font-size: 16px;">代码如下：</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> insertSort(<span style="color: #0000ff;">int</span><span style="color: #000000;"> [] a){
+</span><span style="color: #008080;"> 2</span>         <span style="color: #0000ff;">int</span> len=a.length;<span style="color: #008000;">//</span><span style="color: #008000;">单独把数组长度拿出来，提高效率</span>
+<span style="color: #008080;"> 3</span>         <span style="color: #0000ff;">int</span> insertNum;<span style="color: #008000;">//</span><span style="color: #008000;">要插入的数</span>
+<span style="color: #008080;"> 4</span>         <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=1;i&lt;len;i++){<span style="color: #008000;">//</span><span style="color: #008000;">因为第一次不用，所以从1开始</span>
+<span style="color: #008080;"> 5</span>             insertNum=<span style="color: #000000;">a[i];
+</span><span style="color: #008080;"> 6</span>             <span style="color: #0000ff;">int</span> j=i-1;<span style="color: #008000;">//</span><span style="color: #008000;">序列元素个数</span>
+<span style="color: #008080;"> 7</span>             <span style="color: #0000ff;">while</span>(j&gt;=0&amp;&amp;a[j]&gt;insertNum){<span style="color: #008000;">//</span><span style="color: #008000;">从后往前循环，将大于insertNum的数向后移动</span>
+<span style="color: #008080;"> 8</span>                 a[j+1]=a[j];<span style="color: #008000;">//</span><span style="color: #008000;">元素向后移动</span>
+<span style="color: #008080;"> 9</span>                 j--<span style="color: #000000;">;
+</span><span style="color: #008080;">10</span> <span style="color: #000000;">            }
+</span><span style="color: #008080;">11</span>             a[j+1]=insertNum;<span style="color: #008000;">//</span><span style="color: #008000;">找到位置，插入当前元素</span>
+<span style="color: #008080;">12</span> <span style="color: #000000;">        }
+</span><span style="color: #008080;">13</span>     }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>2.希尔排序</h1>
+<p><span style="font-size: 16px;">&nbsp; &nbsp; &nbsp; 针对直接插入排序的下效率问题，有人对次进行了改进与升级，这就是现在的希尔排序。<strong>希尔排序</strong>，也称<strong>递减增量排序算法</strong>，是插入排序的一种更高效的改进版本。希尔排序是非稳定排序算法。</span></p>
+<p><span style="font-size: 16px;">希尔排序是基于插入排序的以下两点性质而提出改进方法的：</span></p>
+<ul>
+<li><span style="font-size: 16px;">插入排序在对几乎已经排好序的数据操作时， 效率高， 即可以达到线性排序的效率</span></li>
+<li><span style="font-size: 16px;">但插入排序一般来说是低效的， 因为插入排序每次只能将数据移动一位</span></li>
+</ul>
+<p><span style="font-size: 16px;">如图所示：</span></p>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428150738928-1745428645.png" alt=""></p>
+<p><span style="font-size: 16px;">对于直接插入排序问题，数据量巨大时。</span></p>
+<p><span style="font-size: 16px;">将数的个数设为n，取奇数k=n/2，将下标差值为k的数分为一组，构成有序序列。</span></p>
+<p><span style="font-size: 16px;">再取k=k/2 ，将下标差值为k的书分为一组，构成有序序列。</span></p>
+<p><span style="font-size: 16px;">重复第二步，直到k=1执行简单插入排序。&nbsp;</span></p>
+<p><span style="font-size: 16px;"><strong>代码实现：</strong></span></p>
+<p><span style="font-size: 16px;">首先确定分的组数。</span></p>
+<p><span style="font-size: 16px;">然后对组中元素进行插入排序。</span></p>
+<p><span style="font-size: 16px;">然后将length/2，重复1,2步，直到length=0为止。</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> sheelSort(<span style="color: #0000ff;">int</span><span style="color: #000000;"> [] a){
+</span><span style="color: #008080;"> 2</span>         <span style="color: #0000ff;">int</span> len=a.length;<span style="color: #008000;">//</span><span style="color: #008000;">单独把数组长度拿出来，提高效率</span>
+<span style="color: #008080;"> 3</span>         <span style="color: #0000ff;">while</span>(len!=0<span style="color: #000000;">){
+</span><span style="color: #008080;"> 4</span>             len=len/2<span style="color: #000000;">;
+</span><span style="color: #008080;"> 5</span>             <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=0;i&lt;len;i++){<span style="color: #008000;">//</span><span style="color: #008000;">分组</span>
+<span style="color: #008080;"> 6</span>                 <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> j=i+len;j&lt;a.length;j+=len){<span style="color: #008000;">//</span><span style="color: #008000;">元素从第二个开始</span>
+<span style="color: #008080;"> 7</span>                     <span style="color: #0000ff;">int</span> k=j-len;<span style="color: #008000;">//</span><span style="color: #008000;">k为有序序列最后一位的位数</span>
+<span style="color: #008080;"> 8</span>                     <span style="color: #0000ff;">int</span> temp=a[j];<span style="color: #008000;">//</span><span style="color: #008000;">要插入的元素</span>
+<span style="color: #008080;"> 9</span>                     <span style="color: #008000;">/*</span><span style="color: #008000;">for(;k&gt;=0&amp;&amp;temp&lt;a[k];k-=len){
+</span><span style="color: #008080;">10</span> <span style="color: #008000;">                        a[k+len]=a[k];
+</span><span style="color: #008080;">11</span> <span style="color: #008000;">                    }</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;">12</span>                     <span style="color: #0000ff;">while</span>(k&gt;=0&amp;&amp;temp&lt;a[k]){<span style="color: #008000;">//</span><span style="color: #008000;">从后往前遍历</span>
+<span style="color: #008080;">13</span>                         a[k+len]=<span style="color: #000000;">a[k];
+</span><span style="color: #008080;">14</span>                         k-=len;<span style="color: #008000;">//</span><span style="color: #008000;">向后移动len位</span>
+<span style="color: #008080;">15</span> <span style="color: #000000;">                    }
+</span><span style="color: #008080;">16</span>                     a[k+len]=<span style="color: #000000;">temp;
+</span><span style="color: #008080;">17</span> <span style="color: #000000;">                }
+</span><span style="color: #008080;">18</span> <span style="color: #000000;">            }
+</span><span style="color: #008080;">19</span> <span style="color: #000000;">        }
+</span><span style="color: #008080;">20</span>     }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>3.简单选择排序</h1>
+<p><span style="font-size: 16px;">常用于取序列中最大最小的几个数时。</span></p>
+<p><span style="font-size: 16px;">(如果每次比较都交换，那么就是交换排序；如果每次比较完一个循环再交换，就是简单选择排序。)</span></p>
+<p><span style="font-size: 16px;">遍历整个序列，将最小的数放在最前面。</span></p>
+<p><span style="font-size: 16px;">遍历剩下的序列，将最小的数放在最前面。</span></p>
+<p><span style="font-size: 16px;">重复第二步，直到只剩下一个数。</span></p>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428152457772-193301923.png" alt=""></p>
+<p><span style="font-size: 16px;"><strong>代码实现：</strong></span></p>
+<p><span style="font-size: 16px;">首先确定循环次数，并且记住当前数字和当前位置。</span></p>
+<p><span style="font-size: 16px;">将当前位置后面所有的数与当前数字进行对比，小数赋值给key，并记住小数的位置。</span></p>
+<p><span style="font-size: 16px;">比对完成后，将最小的值与第一个数的值交换。</span></p>
+<p><span style="font-size: 16px;">重复2、3步。</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> selectSort(<span style="color: #0000ff;">int</span><span style="color: #000000;">[]a){
+</span><span style="color: #008080;"> 2</span>         <span style="color: #0000ff;">int</span> len=<span style="color: #000000;">a.length;
+</span><span style="color: #008080;"> 3</span>         <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=0;i&lt;len;i++){<span style="color: #008000;">//</span><span style="color: #008000;">循环次数</span>
+<span style="color: #008080;"> 4</span>             <span style="color: #0000ff;">int</span> value=<span style="color: #000000;">a[i];
+</span><span style="color: #008080;"> 5</span>             <span style="color: #0000ff;">int</span> position=<span style="color: #000000;">i;
+</span><span style="color: #008080;"> 6</span>             <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> j=i+1;j&lt;len;j++){<span style="color: #008000;">//</span><span style="color: #008000;">找到最小的值和位置</span>
+<span style="color: #008080;"> 7</span>                 <span style="color: #0000ff;">if</span>(a[j]&lt;<span style="color: #000000;">value){
+</span><span style="color: #008080;"> 8</span>                     value=<span style="color: #000000;">a[j];
+</span><span style="color: #008080;"> 9</span>                     position=<span style="color: #000000;">j;
+</span><span style="color: #008080;">10</span> <span style="color: #000000;">                }
+</span><span style="color: #008080;">11</span> <span style="color: #000000;">            }
+</span><span style="color: #008080;">12</span>             a[position]=a[i];<span style="color: #008000;">//</span><span style="color: #008000;">进行交换</span>
+<span style="color: #008080;">13</span>             a[i]=<span style="color: #000000;">value;
+</span><span style="color: #008080;">14</span> <span style="color: #000000;">        }
+</span><span style="color: #008080;">15</span>     }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>4.堆排序</h1>
+<p><span style="font-size: 16px;">对简单选择排序的优化。</span></p>
+<p><span style="font-size: 16px;">将序列构建成大顶堆。</span></p>
+<p><span style="font-size: 16px;">将根节点与最后一个节点交换，然后断开最后一个节点。</span></p>
+<p><span style="font-size: 16px;">重复第一、二步，直到所有节点断开</span>。</p>
+<p>&nbsp;<img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428153309272-1368116322.png" alt=""></p>
+<p>代码如下：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span>  <span style="color: #0000ff;">void</span> heapSort(<span style="color: #0000ff;">int</span><span style="color: #000000;">[] a){
+</span><span style="color: #008080;"> 2</span>            <span style="color: #0000ff;">int</span> len=<span style="color: #000000;">a.length;
+</span><span style="color: #008080;"> 3</span>            <span style="color: #008000;">//</span><span style="color: #008000;">循环建堆  </span>
+<span style="color: #008080;"> 4</span>            <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=0;i&lt;len-1;i++<span style="color: #000000;">){
+</span><span style="color: #008080;"> 5</span>                <span style="color: #008000;">//</span><span style="color: #008000;">建堆  </span>
+<span style="color: #008080;"> 6</span>                buildMaxHeap(a,len-1-<span style="color: #000000;">i);
+</span><span style="color: #008080;"> 7</span>                <span style="color: #008000;">//</span><span style="color: #008000;">交换堆顶和最后一个元素  </span>
+<span style="color: #008080;"> 8</span>                swap(a,0,len-1-<span style="color: #000000;">i);
+</span><span style="color: #008080;"> 9</span> <span style="color: #000000;">           }
+</span><span style="color: #008080;">10</span> <span style="color: #000000;">       }
+</span><span style="color: #008080;">11</span>         <span style="color: #008000;">//</span><span style="color: #008000;">交换方法</span>
+<span style="color: #008080;">12</span>        <span style="color: #0000ff;">private</span>  <span style="color: #0000ff;">void</span> swap(<span style="color: #0000ff;">int</span>[] data, <span style="color: #0000ff;">int</span> i, <span style="color: #0000ff;">int</span><span style="color: #000000;"> j) {
+</span><span style="color: #008080;">13</span>            <span style="color: #0000ff;">int</span> tmp=<span style="color: #000000;">data[i];
+</span><span style="color: #008080;">14</span>            data[i]=<span style="color: #000000;">data[j];
+</span><span style="color: #008080;">15</span>            data[j]=<span style="color: #000000;">tmp;
+</span><span style="color: #008080;">16</span> <span style="color: #000000;">       }
+</span><span style="color: #008080;">17</span>        <span style="color: #008000;">//</span><span style="color: #008000;">对data数组从0到lastIndex建大顶堆  </span>
+<span style="color: #008080;">18</span>        <span style="color: #0000ff;">private</span> <span style="color: #0000ff;">void</span> buildMaxHeap(<span style="color: #0000ff;">int</span>[] data, <span style="color: #0000ff;">int</span><span style="color: #000000;"> lastIndex) {
+</span><span style="color: #008080;">19</span>            <span style="color: #008000;">//</span><span style="color: #008000;">从lastIndex处节点（最后一个节点）的父节点开始  </span>
+<span style="color: #008080;">20</span>            <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=(lastIndex-1)/2;i&gt;=0;i--<span style="color: #000000;">){
+</span><span style="color: #008080;">21</span>                <span style="color: #008000;">//</span><span style="color: #008000;">k保存正在判断的节点  </span>
+<span style="color: #008080;">22</span>                <span style="color: #0000ff;">int</span> k=<span style="color: #000000;">i;
+</span><span style="color: #008080;">23</span>                <span style="color: #008000;">//</span><span style="color: #008000;">如果当前k节点的子节点存在  </span>
+<span style="color: #008080;">24</span>                <span style="color: #0000ff;">while</span>(k*2+1&lt;=<span style="color: #000000;">lastIndex){
+</span><span style="color: #008080;">25</span>                    <span style="color: #008000;">//</span><span style="color: #008000;">k节点的左子节点的索引  </span>
+<span style="color: #008080;">26</span>                    <span style="color: #0000ff;">int</span> biggerIndex=2*k+1<span style="color: #000000;">;
+</span><span style="color: #008080;">27</span>                    <span style="color: #008000;">//</span><span style="color: #008000;">如果biggerIndex小于lastIndex，即biggerIndex+1代表的k节点的右子节点存在  </span>
+<span style="color: #008080;">28</span>                    <span style="color: #0000ff;">if</span>(biggerIndex&lt;<span style="color: #000000;">lastIndex){
+</span><span style="color: #008080;">29</span>                        <span style="color: #008000;">//</span><span style="color: #008000;">若果右子节点的值较大  </span>
+<span style="color: #008080;">30</span>                        <span style="color: #0000ff;">if</span>(data[biggerIndex]&lt;data[biggerIndex+1<span style="color: #000000;">]){
+</span><span style="color: #008080;">31</span>                            <span style="color: #008000;">//</span><span style="color: #008000;">biggerIndex总是记录较大子节点的索引  </span>
+<span style="color: #008080;">32</span>                            biggerIndex++<span style="color: #000000;">;
+</span><span style="color: #008080;">33</span> <span style="color: #000000;">                       }
+</span><span style="color: #008080;">34</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">35</span>                    <span style="color: #008000;">//</span><span style="color: #008000;">如果k节点的值小于其较大的子节点的值  </span>
+<span style="color: #008080;">36</span>                    <span style="color: #0000ff;">if</span>(data[k]&lt;<span style="color: #000000;">data[biggerIndex]){
+</span><span style="color: #008080;">37</span>                        <span style="color: #008000;">//</span><span style="color: #008000;">交换他们  </span>
+<span style="color: #008080;">38</span> <span style="color: #000000;">                       swap(data,k,biggerIndex);
+</span><span style="color: #008080;">39</span>                        <span style="color: #008000;">//</span><span style="color: #008000;">将biggerIndex赋予k，开始while循环的下一次循环，重新保证k节点的值大于其左右子节点的值  </span>
+<span style="color: #008080;">40</span>                        k=<span style="color: #000000;">biggerIndex;
+</span><span style="color: #008080;">41</span>                    }<span style="color: #0000ff;">else</span><span style="color: #000000;">{
+</span><span style="color: #008080;">42</span>                        <span style="color: #0000ff;">break</span><span style="color: #000000;">;
+</span><span style="color: #008080;">43</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">44</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;">45</span> <span style="color: #000000;">           }
+</span><span style="color: #008080;">46</span>        }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>5.冒泡排序</h1>
+<p><span style="font-size: 16px;">很简单，用到的很少，据了解，面试的时候问的比较多！</span></p>
+<p>将序列中所有元素两两比较，将最大的放在最后面。</p>
+<p>将剩余序列中所有元素两两比较，将最大的放在最后面。</p>
+<p>重复第二步，直到只剩下一个数。</p>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428154208990-180812772.png" alt=""></p>
+<p><span style="font-size: 16px;">代码实现：</span></p>
+<p><span style="font-size: 16px;">设置循环次数。</span></p>
+<p><span style="font-size: 16px;">设置开始比较的位数，和结束的位数。</span></p>
+<p><span style="font-size: 16px;">两两比较，将最小的放到前面去。</span></p>
+<p><span style="font-size: 16px;">重复2、3步，直到循环次数完毕。</span></p>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span>  <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> bubbleSort(<span style="color: #0000ff;">int</span><span style="color: #000000;"> []a){
+</span><span style="color: #008080;"> 2</span>            <span style="color: #0000ff;">int</span> len=<span style="color: #000000;">a.length;
+</span><span style="color: #008080;"> 3</span>            <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=0;i&lt;len;i++<span style="color: #000000;">){
+</span><span style="color: #008080;"> 4</span>                <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> j=0;j&lt;len-i-1;j++){<span style="color: #008000;">//</span><span style="color: #008000;">注意第二重循环的条件</span>
+<span style="color: #008080;"> 5</span>                    <span style="color: #0000ff;">if</span>(a[j]&gt;a[j+1<span style="color: #000000;">]){
+</span><span style="color: #008080;"> 6</span>                        <span style="color: #0000ff;">int</span> temp=<span style="color: #000000;">a[j];
+</span><span style="color: #008080;"> 7</span>                        a[j]=a[j+1<span style="color: #000000;">];
+</span><span style="color: #008080;"> 8</span>                        a[j+1]=<span style="color: #000000;">temp;
+</span><span style="color: #008080;"> 9</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">10</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;">11</span> <span style="color: #000000;">           }
+</span><span style="color: #008080;">12</span>        }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>6.快速排序</h1>
+<p><span style="font-size: 16px;">要求时间最快时。</span></p>
+<p><span style="font-size: 16px;">选择第一个数为p，小于p的数放在左边，大于p的数放在右边。</span></p>
+<p><span style="font-size: 16px;">递归的将p左边和右边的数都按照第一步进行，直到不能递归。</span></p>
+<p>&nbsp;<img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428154701975-1618466229.png" alt=""></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> quickSort(<span style="color: #0000ff;">int</span>[]a,<span style="color: #0000ff;">int</span> start,<span style="color: #0000ff;">int</span><span style="color: #000000;"> end){
+</span><span style="color: #008080;"> 2</span>            <span style="color: #0000ff;">if</span>(start&lt;<span style="color: #000000;">end){
+</span><span style="color: #008080;"> 3</span>                <span style="color: #0000ff;">int</span> baseNum=a[start];<span style="color: #008000;">//</span><span style="color: #008000;">选基准值</span>
+<span style="color: #008080;"> 4</span>                <span style="color: #0000ff;">int</span> midNum;<span style="color: #008000;">//</span><span style="color: #008000;">记录中间值</span>
+<span style="color: #008080;"> 5</span>                <span style="color: #0000ff;">int</span> i=<span style="color: #000000;">start;
+</span><span style="color: #008080;"> 6</span>                <span style="color: #0000ff;">int</span> j=<span style="color: #000000;">end;
+</span><span style="color: #008080;"> 7</span>                <span style="color: #0000ff;">do</span><span style="color: #000000;">{
+</span><span style="color: #008080;"> 8</span>                    <span style="color: #0000ff;">while</span>((a[i]&lt;baseNum)&amp;&amp;i&lt;<span style="color: #000000;">end){
+</span><span style="color: #008080;"> 9</span>                        i++<span style="color: #000000;">;
+</span><span style="color: #008080;">10</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">11</span>                    <span style="color: #0000ff;">while</span>((a[j]&gt;baseNum)&amp;&amp;j&gt;<span style="color: #000000;">start){
+</span><span style="color: #008080;">12</span>                        j--<span style="color: #000000;">;
+</span><span style="color: #008080;">13</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">14</span>                    <span style="color: #0000ff;">if</span>(i&lt;=<span style="color: #000000;">j){
+</span><span style="color: #008080;">15</span>                        midNum=<span style="color: #000000;">a[i];
+</span><span style="color: #008080;">16</span>                        a[i]=<span style="color: #000000;">a[j];
+</span><span style="color: #008080;">17</span>                        a[j]=<span style="color: #000000;">midNum;
+</span><span style="color: #008080;">18</span>                        i++<span style="color: #000000;">;
+</span><span style="color: #008080;">19</span>                        j--<span style="color: #000000;">;
+</span><span style="color: #008080;">20</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">21</span>                }<span style="color: #0000ff;">while</span>(i&lt;=<span style="color: #000000;">j);
+</span><span style="color: #008080;">22</span>                 <span style="color: #0000ff;">if</span>(start&lt;<span style="color: #000000;">j){
+</span><span style="color: #008080;">23</span> <span style="color: #000000;">                    quickSort(a,start,j);
+</span><span style="color: #008080;">24</span> <span style="color: #000000;">                }       
+</span><span style="color: #008080;">25</span>                 <span style="color: #0000ff;">if</span>(end&gt;<span style="color: #000000;">i){
+</span><span style="color: #008080;">26</span> <span style="color: #000000;">                    quickSort(a,i,end);
+</span><span style="color: #008080;">27</span> <span style="color: #000000;">                }
+</span><span style="color: #008080;">28</span> <span style="color: #000000;">           }
+</span><span style="color: #008080;">29</span>        }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>7.归并排序</h1>
+<p>速度仅次于快速排序，内存少的时候使用，可以进行并行计算的时候使用。</p>
+<p>选择相邻两个数组成一个有序序列。</p>
+<p>选择相邻的两个有序序列组成一个有序序列。</p>
+<p>重复第二步，直到全部组成一个有序序列。</p>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428160557053-2123364404.png" alt=""></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span>  <span style="color: #0000ff;">void</span> mergeSort(<span style="color: #0000ff;">int</span>[] a, <span style="color: #0000ff;">int</span> left, <span style="color: #0000ff;">int</span><span style="color: #000000;"> right) {  
+</span><span style="color: #008080;"> 2</span>            <span style="color: #0000ff;">int</span> t = 1;<span style="color: #008000;">//</span><span style="color: #008000;"> 每组元素个数  </span>
+<span style="color: #008080;"> 3</span>            <span style="color: #0000ff;">int</span> size = right - left + 1<span style="color: #000000;">;  
+</span><span style="color: #008080;"> 4</span>            <span style="color: #0000ff;">while</span> (t &lt;<span style="color: #000000;"> size) {  
+</span><span style="color: #008080;"> 5</span>                <span style="color: #0000ff;">int</span> s = t;<span style="color: #008000;">//</span><span style="color: #008000;"> 本次循环每组元素个数  </span>
+<span style="color: #008080;"> 6</span>                t = 2 *<span style="color: #000000;"> s;  
+</span><span style="color: #008080;"> 7</span>                <span style="color: #0000ff;">int</span> i =<span style="color: #000000;"> left;  
+</span><span style="color: #008080;"> 8</span>                <span style="color: #0000ff;">while</span> (i + (t - 1) &lt;<span style="color: #000000;"> size) {  
+</span><span style="color: #008080;"> 9</span>                    merge(a, i, i + (s - 1), i + (t - 1<span style="color: #000000;">));  
+</span><span style="color: #008080;">10</span>                    i +=<span style="color: #000000;"> t;  
+</span><span style="color: #008080;">11</span> <span style="color: #000000;">               }  
+</span><span style="color: #008080;">12</span>                <span style="color: #0000ff;">if</span> (i + (s - 1) &lt;<span style="color: #000000;"> right)  
+</span><span style="color: #008080;">13</span>                    merge(a, i, i + (s - 1<span style="color: #000000;">), right);  
+</span><span style="color: #008080;">14</span> <span style="color: #000000;">           }  
+</span><span style="color: #008080;">15</span> <span style="color: #000000;">        }  
+</span><span style="color: #008080;">16</span>        
+<span style="color: #008080;">17</span>         <span style="color: #0000ff;">private</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span> merge(<span style="color: #0000ff;">int</span>[] data, <span style="color: #0000ff;">int</span> p, <span style="color: #0000ff;">int</span> q, <span style="color: #0000ff;">int</span><span style="color: #000000;"> r) {  
+</span><span style="color: #008080;">18</span>            <span style="color: #0000ff;">int</span>[] B = <span style="color: #0000ff;">new</span> <span style="color: #0000ff;">int</span><span style="color: #000000;">[data.length];  
+</span><span style="color: #008080;">19</span>            <span style="color: #0000ff;">int</span> s =<span style="color: #000000;"> p;  
+</span><span style="color: #008080;">20</span>            <span style="color: #0000ff;">int</span> t = q + 1<span style="color: #000000;">;  
+</span><span style="color: #008080;">21</span>            <span style="color: #0000ff;">int</span> k =<span style="color: #000000;"> p;  
+</span><span style="color: #008080;">22</span>            <span style="color: #0000ff;">while</span> (s &lt;= q &amp;&amp; t &lt;=<span style="color: #000000;"> r) {  
+</span><span style="color: #008080;">23</span>                <span style="color: #0000ff;">if</span> (data[s] &lt;=<span style="color: #000000;"> data[t]) {  
+</span><span style="color: #008080;">24</span>                    B[k] =<span style="color: #000000;"> data[s];  
+</span><span style="color: #008080;">25</span>                    s++<span style="color: #000000;">;  
+</span><span style="color: #008080;">26</span>                } <span style="color: #0000ff;">else</span><span style="color: #000000;"> {  
+</span><span style="color: #008080;">27</span>                    B[k] =<span style="color: #000000;"> data[t];  
+</span><span style="color: #008080;">28</span>                    t++<span style="color: #000000;">;  
+</span><span style="color: #008080;">29</span> <span style="color: #000000;">               }  
+</span><span style="color: #008080;">30</span>                k++<span style="color: #000000;">;  
+</span><span style="color: #008080;">31</span> <span style="color: #000000;">           }  
+</span><span style="color: #008080;">32</span>            <span style="color: #0000ff;">if</span> (s == q + 1<span style="color: #000000;">)  
+</span><span style="color: #008080;">33</span>                B[k++] = data[t++<span style="color: #000000;">];  
+</span><span style="color: #008080;">34</span>            <span style="color: #0000ff;">else</span>  
+<span style="color: #008080;">35</span>                B[k++] = data[s++<span style="color: #000000;">];  
+</span><span style="color: #008080;">36</span>            <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> i = p; i &lt;= r; i++<span style="color: #000000;">)  
+</span><span style="color: #008080;">37</span>                data[i] =<span style="color: #000000;"> B[i];  
+</span><span style="color: #008080;">38</span>         }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1>8.基数排序</h1>
+<p><span style="font-size: 16px;">用于大量数，很长的数进行排序时。</span></p>
+<p><span style="font-size: 16px;">将所有的数的个位数取出，按照个位数进行排序，构成一个序列。</span></p>
+<p><span style="font-size: 16px;">将新构成的所有的数的十位数取出，按照十位数进行排序，构成一个序列。</span></p>
+<p><span style="font-size: 16px;">&nbsp;代码实现：</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">void</span> baseSort(<span style="color: #0000ff;">int</span><span style="color: #000000;">[] a) {
+</span><span style="color: #008080;"> 2</span>                <span style="color: #008000;">//</span><span style="color: #008000;">首先确定排序的趟数;    </span>
+<span style="color: #008080;"> 3</span>                <span style="color: #0000ff;">int</span> max = a[0<span style="color: #000000;">];
+</span><span style="color: #008080;"> 4</span>                <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> i = 1; i &lt; a.length; i++<span style="color: #000000;">) {
+</span><span style="color: #008080;"> 5</span>                    <span style="color: #0000ff;">if</span> (a[i] &gt;<span style="color: #000000;"> max) {
+</span><span style="color: #008080;"> 6</span>                        max =<span style="color: #000000;"> a[i];
+</span><span style="color: #008080;"> 7</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;"> 8</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;"> 9</span>                <span style="color: #0000ff;">int</span> time = 0<span style="color: #000000;">;
+</span><span style="color: #008080;">10</span>                <span style="color: #008000;">//</span><span style="color: #008000;">判断位数;    </span>
+<span style="color: #008080;">11</span>                <span style="color: #0000ff;">while</span> (max &gt; 0<span style="color: #000000;">) {
+</span><span style="color: #008080;">12</span>                    max /= 10<span style="color: #000000;">;
+</span><span style="color: #008080;">13</span>                    time++<span style="color: #000000;">;
+</span><span style="color: #008080;">14</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;">15</span>                <span style="color: #008000;">//</span><span style="color: #008000;">建立10个队列;    </span>
+<span style="color: #008080;">16</span>                List&lt;ArrayList&lt;Integer&gt;&gt; queue = <span style="color: #0000ff;">new</span> ArrayList&lt;ArrayList&lt;Integer&gt;&gt;<span style="color: #000000;">();
+</span><span style="color: #008080;">17</span>                <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> i = 0; i &lt; 10; i++<span style="color: #000000;">) {
+</span><span style="color: #008080;">18</span>                    ArrayList&lt;Integer&gt; queue1 = <span style="color: #0000ff;">new</span> ArrayList&lt;Integer&gt;<span style="color: #000000;">();
+</span><span style="color: #008080;">19</span> <span style="color: #000000;">                   queue.add(queue1);
+</span><span style="color: #008080;">20</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;">21</span>                <span style="color: #008000;">//</span><span style="color: #008000;">进行time次分配和收集;    </span>
+<span style="color: #008080;">22</span>                <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> i = 0; i &lt; time; i++<span style="color: #000000;">) {
+</span><span style="color: #008080;">23</span>                    <span style="color: #008000;">//</span><span style="color: #008000;">分配数组元素;    </span>
+<span style="color: #008080;">24</span>                    <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> j = 0; j &lt; a.length; j++<span style="color: #000000;">) {
+</span><span style="color: #008080;">25</span>                        <span style="color: #008000;">//</span><span style="color: #008000;">得到数字的第time+1位数;  </span>
+<span style="color: #008080;">26</span>                        <span style="color: #0000ff;">int</span> x = a[j] % (<span style="color: #0000ff;">int</span>) Math.pow(10, i + 1) / (<span style="color: #0000ff;">int</span>) Math.pow(10<span style="color: #000000;">, i);
+</span><span style="color: #008080;">27</span>                        ArrayList&lt;Integer&gt; queue2 =<span style="color: #000000;"> queue.get(x);
+</span><span style="color: #008080;">28</span> <span style="color: #000000;">                       queue2.add(a[j]);
+</span><span style="color: #008080;">29</span> <span style="color: #000000;">                       queue.set(x, queue2);
+</span><span style="color: #008080;">30</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">31</span>                    <span style="color: #0000ff;">int</span> count = 0;<span style="color: #008000;">//</span><span style="color: #008000;">元素计数器;    
+</span><span style="color: #008080;">32</span>                    <span style="color: #008000;">//</span><span style="color: #008000;">收集队列元素;    </span>
+<span style="color: #008080;">33</span>                    <span style="color: #0000ff;">for</span> (<span style="color: #0000ff;">int</span> k = 0; k &lt; 10; k++<span style="color: #000000;">) {
+</span><span style="color: #008080;">34</span>                        <span style="color: #0000ff;">while</span> (queue.get(k).size() &gt; 0<span style="color: #000000;">) {
+</span><span style="color: #008080;">35</span>                            ArrayList&lt;Integer&gt; queue3 =<span style="color: #000000;"> queue.get(k);
+</span><span style="color: #008080;">36</span>                            a[count] = queue3.get(0<span style="color: #000000;">);
+</span><span style="color: #008080;">37</span>                            queue3.remove(0<span style="color: #000000;">);
+</span><span style="color: #008080;">38</span>                            count++<span style="color: #000000;">;
+</span><span style="color: #008080;">39</span> <span style="color: #000000;">                       }
+</span><span style="color: #008080;">40</span> <span style="color: #000000;">                   }
+</span><span style="color: #008080;">41</span> <span style="color: #000000;">               }
+</span><span style="color: #008080;">42</span>         }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-size: 16px;"><strong>新建测试类进行测试</strong></span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> TestSort {
+</span><span style="color: #008080;"> 2</span>     <span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> main(String[] args) {
+</span><span style="color: #008080;"> 3</span>         <span style="color: #0000ff;">int</span> []a=<span style="color: #0000ff;">new</span> <span style="color: #0000ff;">int</span>[10<span style="color: #000000;">];
+</span><span style="color: #008080;"> 4</span>         <span style="color: #0000ff;">for</span>(<span style="color: #0000ff;">int</span> i=1;i&lt;a.length;i++<span style="color: #000000;">){
+</span><span style="color: #008080;"> 5</span>             <span style="color: #008000;">//</span><span style="color: #008000;">a[i]=(int)(new Random().nextInt(100));</span>
+<span style="color: #008080;"> 6</span>             a[i]=(<span style="color: #0000ff;">int</span>)(Math.random()*100<span style="color: #000000;">);
+</span><span style="color: #008080;"> 7</span> <span style="color: #000000;">        }
+</span><span style="color: #008080;"> 8</span>         System.out.println("排序前的数组为："+<span style="color: #000000;">Arrays.toString(a));
+</span><span style="color: #008080;"> 9</span>         Sort s=<span style="color: #0000ff;">new</span><span style="color: #000000;"> Sort();
+</span><span style="color: #008080;">10</span>         <span style="color: #008000;">//</span><span style="color: #008000;">排序方法测试
+</span><span style="color: #008080;">11</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.insertSort(a);
+</span><span style="color: #008080;">12</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.sheelSort(a);
+</span><span style="color: #008080;">13</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.selectSort(a);
+</span><span style="color: #008080;">14</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.heapSort(a);
+</span><span style="color: #008080;">15</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.bubbleSort(a);
+</span><span style="color: #008080;">16</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.quickSort(a, 1, 9);
+</span><span style="color: #008080;">17</span>         <span style="color: #008000;">//</span><span style="color: #008000;">s.mergeSort(a, 3, 7);</span>
+<span style="color: #008080;">18</span> <span style="color: #000000;">        s.baseSort(a);
+</span><span style="color: #008080;">19</span>         System.out.println("排序后的数组为："+<span style="color: #000000;">Arrays.toString(a));
+</span><span style="color: #008080;">20</span> <span style="color: #000000;">    }
+</span><span style="color: #008080;">21</span> 
+<span style="color: #008080;">22</span> }</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<h1><strong>部分结果如下:</strong></h1>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428161942772-1737598672.png" alt=""></p>
+<p><span style="font-size: 16px;">如果要进行比较可已加入时间，输出排序时间，从而比较各个排序算法的优缺点，这里不再做介绍。</span></p>
+<h1><strong>8.总结：</strong></h1>
+<p><span style="font-size: 16px;">一、稳定性:</span></p>
+<p><span style="font-size: 16px;">　&nbsp;&nbsp; 稳定：冒泡排序、插入排序、归并排序和基数排序</span></p>
+<p><span style="font-size: 16px;">　　不稳定：选择排序、快速排序、希尔排序、堆排序</span></p>
+<p><span style="font-size: 16px;">二、平均时间复杂度</span></p>
+<p><span style="font-size: 16px;">　　O(n^2):直接插入排序，简单选择排序，冒泡排序。</span></p>
+<p><span style="font-size: 16px;">　　在数据规模较小时（9W内），直接插入排序，简单选择排序差不多。当数据较大时，冒泡排序算法的时间代价最高。性能为O(n^2)的算法基本上是相邻元素进行比较，基本上都是稳定的。</span></p>
+<p><span style="font-size: 16px;">　　O(nlogn):快速排序，归并排序，希尔排序，堆排序。</span></p>
+<p><span style="font-size: 16px;">　　其中，快排是最好的， 其次是归并和希尔，堆排序在数据量很大时效果明显。</span></p>
+<p><span style="font-size: 16px;">三、排序算法的选择</span></p>
+<p><span style="font-size: 16px;">　　1.数据规模较小</span></p>
+<p><span style="font-size: 16px;">&nbsp; 　　（1）待排序列基本序的情况下，可以选择<strong>直接插入排序</strong>；</span></p>
+<p><span style="font-size: 16px;">&nbsp; 　　（2）对稳定性不作要求宜用简单选择排序，对稳定性有要求宜用插入或冒泡</span></p>
+<p><span style="font-size: 16px;">　　2.数据规模不是很大</span></p>
+<p><span style="font-size: 16px;">　　（1）完全可以用内存空间，序列杂乱无序，对稳定性没有要求，<strong>快速排序</strong>，此时要付出log（N）的额外空间。</span></p>
+<p><span style="font-size: 16px;">　　（2）序列本身可能有序，对稳定性有要求，空间允许下，宜用归并排序</span></p>
+<p><span style="font-size: 16px;">　　3.数据规模很大</span></p>
+<p><span style="font-size: 16px;">&nbsp;&nbsp; 　　（1）对稳定性有求，则可考虑归并排序。</span></p>
+<p><span style="font-size: 16px;">&nbsp;&nbsp;&nbsp; 　　（2）对稳定性没要求，宜用堆排序</span></p>
+<p><span style="font-size: 16px;">　　4.序列初始基本有序（正序），宜用直接插入，冒泡</span></p>
+<p><span style="font-size: 16px;">&nbsp;各算法复杂度如下：</span></p>
+<p><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/1153367-20170428162241834-892470604.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;部分参考资料来源于：</p>
+<p>　　<a href="http://blog.csdn.net/without0815/article/details/7697916">http://blog.csdn.net/without0815/article/details/7697916</a></p>
+<p>&nbsp;</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="https://www.cnblogs.com/10158wsj/category/993120.html" target="_blank">经典算法</a></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6782124,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;9fe8f740-5e29-e711-9fc1-ac853d9f53cc&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/10158wsj/" target="_blank"><img src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/20180301203750.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/10158wsj/">我心自在</a><br>
+            <a href="https://home.cnblogs.com/u/10158wsj/followees">关注 - 2</a><br>
+            <a href="https://home.cnblogs.com/u/10158wsj/followers">粉丝 - 47</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;9fe8f740-5e29-e711-9fc1-ac853d9f53cc&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(6782124,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">4</span>
+    </div>
+    <div class="buryit" onclick="votePost(6782124,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">1</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="https://www.cnblogs.com/10158wsj/p/6780667.html" class="p_n_p_prefix">« </a> 上一篇：<a href="https://www.cnblogs.com/10158wsj/p/6780667.html" title="发布于2017-04-28 11:02">大数据及hadoop相关知识介绍</a><br><a href="https://www.cnblogs.com/10158wsj/p/6796172.html" class="p_n_p_prefix">» </a> 下一篇：<a href="https://www.cnblogs.com/10158wsj/p/6796172.html" title="发布于2017-05-02 15:03">hadoop集群搭建--CentOS部署Hadoop服务</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2017-04-28 16:25</span> <a href="https://www.cnblogs.com/10158wsj/">我心自在</a> 阅读(<span id="post_view_count">59544</span>) 评论(<span id="post_comment_count">15</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6782124" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#" onclick="AddToWz(6782124);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=351149,cb_entryId=6782124,cb_blogApp=currentBlogApp,cb_blogUserGuid='9fe8f740-5e29-e711-9fc1-ac853d9f53cc',cb_entryCreatedDate='2017/4/28 16:25:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3914507" class="layer">#1楼</a><a name="3914507" id="comment_anchor_3914507"></a>  <span class="comment_date">2018-03-03 22:11</span> <a id="a_comment_author_3914507" href="http://home.cnblogs.com/u/1115932/" target="_blank">Young2017</a> <a href="http://msg.cnblogs.com/send/Young2017" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3914507" class="blog_comment_body">归并排序和基数排序的标题都写的是7</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3914507,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3914507,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3916013" class="layer">#2楼</a><a name="3916013" id="comment_anchor_3916013"></a>  <span class="comment_date">2018-03-06 14:12</span> <a id="a_comment_author_3916013" href="http://home.cnblogs.com/u/1115932/" target="_blank">Young2017</a> <a href="http://msg.cnblogs.com/send/Young2017" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3916013" class="blog_comment_body">博主您好，你的MergeSort算法有bug,在使用测试用例{4,3,2}进行排序时会出现2 3 0的结果</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3916013,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3916013,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3929651" class="layer">#3楼</a><a name="3929651" id="comment_anchor_3929651"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2018-03-21 22:56</span> <a id="a_comment_author_3929651" href="https://www.cnblogs.com/10158wsj/" target="_blank">我心自在</a> <a href="http://msg.cnblogs.com/send/%E6%88%91%E5%BF%83%E8%87%AA%E5%9C%A8" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3929651" class="blog_comment_body"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3914507" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3914507);">@</a>
+Young2017<br>非常感谢，我会尽快更正</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3929651,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3929651,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3929651_avatar" style="display:none;">http://pic.cnblogs.com/face/1153367/20180301203750.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3942766" class="layer">#4楼</a><a name="3942766" id="comment_anchor_3942766"></a>  <span class="comment_date">2018-04-04 20:15</span> <a id="a_comment_author_3942766" href="http://home.cnblogs.com/u/723196/" target="_blank">_xiao鱼</a> <a href="http://msg.cnblogs.com/send/_xiao%E9%B1%BC" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3942766" class="blog_comment_body">大哥，你写完都不自己测的么</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3942766,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3942766,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3943293" class="layer">#5楼</a><a name="3943293" id="comment_anchor_3943293"></a>  <span class="comment_date">2018-04-06 10:05</span> <a id="a_comment_author_3943293" href="http://home.cnblogs.com/u/723196/" target="_blank">_xiao鱼</a> <a href="http://msg.cnblogs.com/send/_xiao%E9%B1%BC" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3943293" class="blog_comment_body">除了第一个插入排序while中j &gt; 0 需要改为 j&gt;=0，其余的都可以用，感谢博主，学习了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3943293,&#39;Digg&#39;,this)">支持(2)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3943293,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3967148" class="layer">#6楼</a><a name="3967148" id="comment_anchor_3967148"></a>  <span class="comment_date">2018-05-04 14:00</span> <a id="a_comment_author_3967148" href="http://home.cnblogs.com/u/1381587/" target="_blank">三号小学生</a> <a href="http://msg.cnblogs.com/send/%E4%B8%89%E5%8F%B7%E5%B0%8F%E5%AD%A6%E7%94%9F" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3967148" class="blog_comment_body">支持</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3967148,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3967148,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3972057" class="layer">#7楼</a><a name="3972057" id="comment_anchor_3972057"></a>  <span class="comment_date">2018-05-11 10:28</span> <a id="a_comment_author_3972057" href="https://www.cnblogs.com/ocean-sky/" target="_blank">&lt;虎口脱险&gt;</a> <a href="http://msg.cnblogs.com/send/%26lt%3B%E8%99%8E%E5%8F%A3%E8%84%B1%E9%99%A9%26gt%3B" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3972057" class="blog_comment_body">个人觉得，代码如果不经过测试，就发出来分享，对于程序员来说，太不严谨，算法里面bug太多，建议修正之后在发表出来</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3972057,&#39;Digg&#39;,this)">支持(2)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3972057,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3972057_avatar" style="display:none;">http://pic.cnblogs.com/face/1073968/20180509095020.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3989010" class="layer">#8楼</a><a name="3989010" id="comment_anchor_3989010"></a>  <span class="comment_date">2018-06-02 15:32</span> <a id="a_comment_author_3989010" href="https://www.cnblogs.com/zhunengfei/" target="_blank">MartinBockZhu</a> <a href="http://msg.cnblogs.com/send/MartinBockZhu" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3989010" class="blog_comment_body"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3943293" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3943293);">@</a>
+_xiao鱼<br><fieldset class="comment_quote"><legend><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3943293" title="查看引用原文">引用</a></legend><br>除了第一个插入排序while中j &gt; 0 需要改为 j&gt;=0，其余的都可以用，感谢博主，学习了。<br></fieldset><br>对   难怪我测试的一直不对，博主还没有修改 这很误导人啊</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3989010,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3989010,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3989010_avatar" style="display:none;">http://pic.cnblogs.com/face/646163/20140627161334.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3989779" class="layer">#9楼</a><a name="3989779" id="comment_anchor_3989779"></a>  <span class="comment_date">2018-06-04 11:31</span> <a id="a_comment_author_3989779" href="http://home.cnblogs.com/u/809938/" target="_blank">一生爱你哦</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E7%94%9F%E7%88%B1%E4%BD%A0%E5%93%A6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3989779" class="blog_comment_body">第一个就有问题，你那个赋值是什么东西？ insertNum=a[i];  这是啥意思，将传入的数字覆盖了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3989779,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3989779,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3990363" class="layer">#10楼</a><a name="3990363" id="comment_anchor_3990363"></a>  <span class="comment_date">2018-06-04 23:34</span> <a id="a_comment_author_3990363" href="https://www.cnblogs.com/zhunengfei/" target="_blank">MartinBockZhu</a> <a href="http://msg.cnblogs.com/send/MartinBockZhu" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3990363" class="blog_comment_body"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3989779" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3989779);">@</a>
+一生爱你哦<br> insertNum;//是要插入的数</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3990363,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3990363,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3990363_avatar" style="display:none;">http://pic.cnblogs.com/face/646163/20140627161334.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#4009895" class="layer">#11楼</a><a name="4009895" id="comment_anchor_4009895"></a>  <span class="comment_date">2018-07-01 11:05</span> <a id="a_comment_author_4009895" href="http://home.cnblogs.com/u/1431751/" target="_blank">打包爱</a> <a href="http://msg.cnblogs.com/send/%E6%89%93%E5%8C%85%E7%88%B1" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4009895" class="blog_comment_body">希尔排序例子 32 43 23 13 5 <br>不是将 32 23 5 直接构成一组了吗</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4009895,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4009895,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#4009926" class="layer">#12楼</a><a name="4009926" id="comment_anchor_4009926"></a>  <span class="comment_date">2018-07-01 11:36</span> <a id="a_comment_author_4009926" href="http://home.cnblogs.com/u/1431751/" target="_blank">打包爱</a> <a href="http://msg.cnblogs.com/send/%E6%89%93%E5%8C%85%E7%88%B1" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4009926" class="blog_comment_body">选择排序稳定性到底是稳定还是不稳定，表格跟上面一处地方不一致</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4009926,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4009926,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#4205156" class="layer">#13楼</a><a name="4205156" id="comment_anchor_4205156"></a>  <span class="comment_date">2019-03-17 16:04</span> <a id="a_comment_author_4205156" href="http://home.cnblogs.com/u/1625299/" target="_blank">Ilowen</a> <a href="http://msg.cnblogs.com/send/Ilowen" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4205156" class="blog_comment_body"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#3990363" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3990363);">@</a>
+MartinBockZhu<br>现在的版本是没有问题的</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4205156,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4205156,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#4228405" class="layer">#14楼</a><a name="4228405" id="comment_anchor_4228405"></a>  <span class="comment_date">2019-04-11 15:02</span> <a id="a_comment_author_4228405" href="https://www.cnblogs.com/cchan/" target="_blank">cchan</a> <a href="http://msg.cnblogs.com/send/cchan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4228405" class="blog_comment_body">这里的堆排序的代码实现的时间复杂度应该是O(n2)吧，因为每个循环都重新自下向上调整堆了，建堆的过程是O（n）。我觉得只要第一次才建堆，然后后面直接执行堆的插入，即只调整根节点就好了，这样才是O（logn）。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4228405,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4228405,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_4228405_avatar" style="display:none;">http://pic.cnblogs.com/face/755467/20190222102228.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#4293005" class="layer">#15楼</a><a name="4293005" id="comment_anchor_4293005"></a><span id="comment-maxId" style="display:none;">4293005</span><span id="comment-maxDate" style="display:none;">2019/7/4 9:26:17</span>  <span class="comment_date">2019-07-04 09:26</span> <a id="a_comment_author_4293005" href="https://www.cnblogs.com/panmaze/" target="_blank">panmaze</a> <a href="http://msg.cnblogs.com/send/panmaze" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4293005" class="blog_comment_body"><div class="cnblogs_Highlighter sh-gutter"><div><div id="highlighter_37906" class="syntaxhighlighter  java"><div class="toolbar"><span><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">if</code> <code class="java plain">(start &lt; end) {</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">int</code> <code class="java plain">baseNum = a[start];</code><code class="java comments">//选基准值</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">int</code> <code class="java plain">midNum;</code><code class="java comments">//记录中间值</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">int</code> <code class="java plain">i = start;</code></div><div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">int</code> <code class="java plain">j = end;</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">do</code> <code class="java plain">{</code></div><div class="line number7 index6 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">while</code> <code class="java plain">((a[i] &lt; baseNum) &amp;&amp; i &lt; end) {</code></div><div class="line number8 index7 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">i++;</code></div><div class="line number9 index8 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number10 index9 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">while</code> <code class="java plain">((a[j] &gt; baseNum) &amp;&amp; j &gt; start) {</code></div><div class="line number11 index10 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">j--;</code></div><div class="line number12 index11 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number13 index12 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">if</code> <code class="java plain">(i &lt;= j) {</code></div><div class="line number14 index13 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">midNum = a[i];</code></div><div class="line number15 index14 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">a[i] = a[j];</code></div><div class="line number16 index15 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">a[j] = midNum;</code></div><div class="line number17 index16 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">i++;</code></div><div class="line number18 index17 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number19 index18 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">} </code><code class="java keyword">while</code> <code class="java plain">(i &lt;= j);</code></div><div class="line number20 index19 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">if</code> <code class="java plain">(start &lt; j) {</code></div><div class="line number21 index20 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">quickSort(a, start, j-</code><code class="java value">1</code><code class="java plain">);</code></div><div class="line number22 index21 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number23 index22 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">if</code> <code class="java plain">(end &gt; i) {</code></div><div class="line number24 index23 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">quickSort(a, i, end);</code></div><div class="line number25 index24 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div></div><br>快速排序应该是这个</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4293005,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4293005,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_4293005_avatar" style="display:none;">http://pic.cnblogs.com/face/1053568/20180409164635.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-工控&#39;)">【推荐】超50万C++/C#源码: 大型实时仿真组态图形源码</a><br><a href="https://www.grapecity.com.cn/developer/spreadjs?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=SpreadJS&amp;utm_campaign=community" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-SpreadJS&#39;)">【前端】SpreadJS表格控件，可嵌入系统开发的在线Excel</a><br><a href="https://gitee.com/enterprises?from=bky-1" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-gitee&#39;)">【推荐】码云企业版，高效的企业级软件协作开发管理平台</a><br><a href="https://q.cnblogs.com/" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-博问&#39;)">【推荐】程序员问答平台，解决您开发中遇到的技术难题</a><br></div>
+<div id="opt_under_post"></div>
+<script async="async" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/gpt.js.下载"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id="cnblogs_c1" class="c_ad_block">
+    <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;" data-google-query-id="COi-ypCJneMCFRnRlgodb_wHJw"><div id="google_ads_iframe_/1090369/C1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C1_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/saved_resource.html"></iframe></div></div>
+</div>
+<div id="under_post_news"><div class="recomm-block"><b>相关博文：</b><br>·  <a href="https://www.cnblogs.com/bsjl/p/8608962.html" target="_blank" onclick="clickRecomItmem(8608962)">Java常用的八种排序算法与代码实现</a><br>·  <a href="https://www.cnblogs.com/huangjinyong/p/9766131.html" target="_blank" onclick="clickRecomItmem(9766131)">Java常用的八种排序算法与代码实现</a><br>·  <a href="https://www.cnblogs.com/ynyhl/p/9203411.html" target="_blank" onclick="clickRecomItmem(9203411)">Java常用的八种排序算法与代码实现</a><br>·  <a href="https://www.cnblogs.com/xgjblog/p/9411485.html" target="_blank" onclick="clickRecomItmem(9411485)">Java常用的八种排序算法与代码实现</a><br>·  <a href="https://www.cnblogs.com/printN/p/6853674.html" target="_blank" onclick="clickRecomItmem(6853674)">一遍记住Java常用的八种排序算法与代码实现</a><br></div></div>
+<div id="cnblogs_c2" class="c_ad_block">
+    <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;" data-google-query-id="CMawyZCJneMCFRnRlgodb_wHJw"><div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C2_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C2_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/saved_resource(1).html"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block"><b>最新新闻</b>：<br> ·  <a href="https://news.cnblogs.com/n/627838/" target="_blank">鸿蒙OS可有戏？华为2019开发者大会敲定：见证终端产业革命</a><br> ·  <a href="https://news.cnblogs.com/n/627837/" target="_blank">比特大陆完成员工股权激励计划 赴美IPO再进一步</a><br> ·  <a href="https://news.cnblogs.com/n/627836/" target="_blank">研究证实：钻石含有远古海水盐类沉积物质</a><br> ·  <a href="https://news.cnblogs.com/n/627835/" target="_blank">罚款、诉讼、高管离职，苹果“水逆”还未结束？</a><br> ·  <a href="https://news.cnblogs.com/n/627834/" target="_blank">华裔科学家抗议美国科研环境 “有毒”，Nature、Science齐发声！</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/10158wsj/">我心自在</a><br>园龄：<a href="https://home.cnblogs.com/u/10158wsj/" title="入园时间：2017-04-25">2年2个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/10158wsj/followers/">47</a><br>关注：<a href="https://home.cnblogs.com/u/10158wsj/followees/">2</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;9fe8f740-5e29-e711-9fc1-ac853d9f53cc&#39;)">+加关注</a></div><script>getFollowStatus('9fe8f740-5e29-e711-9fc1-ac853d9f53cc')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2019/06/01&#39;);return false;">&lt;</a></td><td align="center">2019年7月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2019/08/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">30</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td><td class="CalTodayDay" align="center">5</td><td class="CalWeekendDay" align="center">6</td></tr><tr><td class="CalWeekendDay" align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td class="CalWeekendDay" align="center">13</td></tr><tr><td class="CalWeekendDay" align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td align="center">18</td><td align="center">19</td><td class="CalWeekendDay" align="center">20</td></tr><tr><td class="CalWeekendDay" align="center">21</td><td align="center">22</td><td align="center">23</td><td align="center">24</td><td align="center">25</td><td align="center">26</td><td class="CalWeekendDay" align="center">27</td></tr><tr><td class="CalWeekendDay" align="center">28</td><td align="center">29</td><td align="center">30</td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td></tr><tr><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td><td class="CalOtherMonthDay" align="center">10</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/10158wsj/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="https://www.cnblogs.com/10158wsj/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="https://www.cnblogs.com/10158wsj/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="https://www.cnblogs.com/10158wsj/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="https://www.cnblogs.com/10158wsj/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block"></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="https://www.cnblogs.com/10158wsj/category/1463892.html">Elasticsearch(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="https://www.cnblogs.com/10158wsj/category/991533.html">HttpClient研究学习总结(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="https://www.cnblogs.com/10158wsj/category/995090.html">javaEE项目(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="https://www.cnblogs.com/10158wsj/category/990830.html">javaWeb开发研究学习(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="https://www.cnblogs.com/10158wsj/category/1153218.html">Java多线程(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="https://www.cnblogs.com/10158wsj/category/1148559.html">Linux(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="https://www.cnblogs.com/10158wsj/category/1169941.html">netty(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="https://www.cnblogs.com/10158wsj/category/991774.html">servlet学习总结(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="https://www.cnblogs.com/10158wsj/category/1485171.html">SpringBoot框架(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="https://www.cnblogs.com/10158wsj/category/992190.html">WebService学习总结(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="https://www.cnblogs.com/10158wsj/category/992864.html">大数据/hadoop(6)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="https://www.cnblogs.com/10158wsj/category/1486503.html">工具类(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="https://www.cnblogs.com/10158wsj/category/993120.html">经典算法(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="https://www.cnblogs.com/10158wsj/category/1362704.html">设计模式(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="https://www.cnblogs.com/10158wsj/category/1020570.html">项目经验(14)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="https://www.cnblogs.com/10158wsj/archive/2019/06.html">2019年6月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="https://www.cnblogs.com/10158wsj/archive/2019/05.html">2019年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="https://www.cnblogs.com/10158wsj/archive/2018/12.html">2018年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="https://www.cnblogs.com/10158wsj/archive/2018/10.html">2018年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="https://www.cnblogs.com/10158wsj/archive/2018/04.html">2018年4月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="https://www.cnblogs.com/10158wsj/archive/2018/03.html">2018年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="https://www.cnblogs.com/10158wsj/archive/2018/02.html">2018年2月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="https://www.cnblogs.com/10158wsj/archive/2018/01.html">2018年1月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="https://www.cnblogs.com/10158wsj/archive/2017/06.html">2017年6月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="https://www.cnblogs.com/10158wsj/archive/2017/05.html">2017年5月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="https://www.cnblogs.com/10158wsj/archive/2017/04.html">2017年4月 (8)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html#4293005">1. Re:Java常用的八种排序算法与代码实现</a></li>
+        <li class="recent_comment_body">if (start baseNum) &amp;&amp; j &gt; start) { j--; } if (i i......</li>
+        <li class="recent_comment_author">--panmaze</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/10158wsj/p/6767209.html#4285137">2. Re:HttpClient研究学习总结</a></li>
+        <li class="recent_comment_body">可以看看这个 HttpClient中文官网 里面的最新版本用法, <a href="https://www.cnblogs.com/10158wsj/p/6782124.html?utm_source=tuicool&amp;utm_medium=referral" target="_blank">《HttpClient最新版本、HttpClient使用步骤》</a></li>
+        <li class="recent_comment_author">--科尔</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html#4228405">3. Re:Java常用的八种排序算法与代码实现</a></li>
+        <li class="recent_comment_body">这里的堆排序的代码实现的时间复杂度应该是O(n2)吧，因为每个循环都重新自下向上调整堆了，建堆的过程是O（n）。我觉得只要第一次才建堆，然后后面直接执行堆的插入，即只调整根节点就好了，这样才是O（lo......</li>
+        <li class="recent_comment_author">--cchan</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/10158wsj/p/6782124.html#4205156">4. Re:Java常用的八种排序算法与代码实现</a></li>
+        <li class="recent_comment_body">@MartinBockZhu现在的版本是没有问题的...</li>
+        <li class="recent_comment_author">--Ilowen</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/10158wsj/p/8207241.html#4198757">5. Re:Elasticsearch5.4常见问题总结</a></li>
+        <li class="recent_comment_body">好文  有用</li>
+        <li class="recent_comment_author">--李志利</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="https://www.cnblogs.com/10158wsj/p/6782124.html">1. Java常用的八种排序算法与代码实现(59544)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/7050736.html">2. 15位身份证补全为18位身份证算法(21860)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/8214583.html">3. 记一次Hbase查询速度优化经历(8338)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6773510.html">4. WebService应用--使用java开发WebService程序(7600)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6769213.html">5. servlet研究学习总结--OutputStream和PrintWriter的区别(7412)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="https://www.cnblogs.com/10158wsj/p/6782124.html">1. Java常用的八种排序算法与代码实现(15)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/7050736.html">2. 15位身份证补全为18位身份证算法(13)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6802395.html">3. 商城网站--简易购物车实现(4)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6767209.html">4. HttpClient研究学习总结(3)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6773510.html">5. WebService应用--使用java开发WebService程序(2)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="https://www.cnblogs.com/10158wsj/p/7050736.html">1. 15位身份证补全为18位身份证算法(9)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6802395.html">2. 商城网站--简易购物车实现(4)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6782124.html">3. Java常用的八种排序算法与代码实现(4)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/8207241.html">4. Elasticsearch5.4常见问题总结(3)</a></li><li><a href="https://www.cnblogs.com/10158wsj/p/6769213.html">5. servlet研究学习总结--OutputStream和PrintWriter的区别(2)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2019 我心自在
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+
+<iframe id="google_osd_static_frame_2825063010753" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Java常用的八种排序算法与代码实现 - 我心自在 - 博客园_files/saved_resource(2).html"></iframe></body></html>
