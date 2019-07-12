@@ -252,6 +252,11 @@
 11）Git忽略对文件权限的改变
 	 it status .后发现刚刚克隆下来的文件有很多改动，且只是文件权限的改动。让git忽略检查文件权限的改动：
 	git config core.filemode false执行该命令后即可
+12）使用 Git 重命名文件
+	mv file_name new_file_name  //步骤一
+	git add new_file_name       //添加新文件
+	git rm file_name            //删除旧文件
+	git commit -m'添加注释'      //放到暂存区
 ////////////
 二、
 	git push exdroid a13jb:a13jb 提交代码到服务器
