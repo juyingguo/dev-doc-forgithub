@@ -91,7 +91,7 @@
 	E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
 			git pull <远程主机名> <远程分支名>:<本地分支名>
 			参考教材：https://www.yiibai.com/git/git_pull.html
-	F)拉取远程仓库冲突处理：：
+	F)拉取远程仓库冲突及错误处理：：
 		git pull * * 与本地有冲突时，解决方式：
 		1. git stash 先将本地修改存储起来 
 		2. git pull * * 暂存了本地修改之后，就可以pull了。
@@ -100,8 +100,20 @@
 		F.2、解决文件中冲突的的部分
 			打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
 			解决完成之后，就可以正常的提交了。
-	推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
+		推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
 		git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有，以防止提交错误，切记，切记，切记！！！
+		
+		4、合并错误提示。
+				在我们pull代码时，有时候会意外的在vim上出现如下提示（其实就是pull失败了）“ Your branch and 'origin/master' have diverged,(use "git pull" to merge the remote branch into yours)nothing to commit, working tree clean ”问题翻译过来其实就是合并产生了一些冲突，不过这个冲突不是由于代码错误引起的，所以不必过于纠结。
+			
+			方法一：$ git fetch origin$ git reset --hard 	前做的那些事情全部清空，代价太高。
+			方法二：（推荐）将光标放到在vim框的末尾，然后在键盘上 按下 Shift + z z 就可以了
+				解释一下shift+zz就是命令ZZ 退出VIM,如果文本已经经过编辑,则首先保存文件。不用回滚，一条指令解决问题
+			作者：咖啡老师
+			链接：https://www.jianshu.com/p/292268cb2dce
+			
+	G）终止合并
+		git  merge --abort 
 
 2）分支(branch)操作相关命令
 	查看本地分支：$ git branch

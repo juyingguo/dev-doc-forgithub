@@ -416,3 +416,10 @@ It assumes that only the primary user
 	邮票;印;章;戳;印记;戳记
 	v.
 	跺(脚);重踩;重踏;迈着重重的步伐走;在…上盖(字样或图案等);把(字样或图案等)盖在…上
+53、
+	Your branch and 'origin/master' have diverged
+	diverged
+	英 [daɪˈvɜːdʒd]   美 [daɪˈvɜːrdʒd]  
+	v.
+	分叉;岔开;分歧;相异;偏离;背离;违背
+	diverge的过去分词和过去式
