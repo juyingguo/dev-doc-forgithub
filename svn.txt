@@ -1,4 +1,4 @@
-一.SVN代码的回滚： https://blog.csdn.net/coldh/article/details/47336601
+一.SVN代码的回滚：参考博客：https://blog.csdn.net/coldh/article/details/47336601
 
 	1.1 不丢失新建的文件，获得最新的SVN版本控制。TortoiseSVN-ShowLog-选中你要回滚的版本-右键-Export，之后将修改的文件覆盖到你的最新版本，commit即可。
 
@@ -11,3 +11,33 @@
 	1.5 可以直接show log-选中要清除的版本-右键-revert changes from this reversion，这样可以直接解决冲突并提交。但是新建的文件都没有了，选中的这个版本就没有了。
 
 	1.6 show log-选中需要回退到的版本-右键-revert to this reversion，则选中的版本之后的版本就没有了，作废了。
+二、问题记录
+
+2.1,update 异常提示。
+	Working copy */* locked 
+	*/* is already locked 
+	Please execute the 'cleanup' command.
+	
+	解决办法：
+		找到这个.svn的文件夹 找到wc这个数据库。用SQLiteManager打开
+		打开wc_lock文件。删除这条数据就可以了 。
+	
+	或者：
+		work_queue表中记录了SVN的工作队列，需要清空工作队列，让SVN认为已经没有“Previous operation”了，就可以正常执行当前命令了。
+		delete from work_queue" 删除工作队列
+2.2，Cleanup时异常提示
+	Cleanup failed to process the following path:
+	***/**/
+	Previous operation has not finished;run "clear up" if it was interrupted 
+	Please execute the Cleanup command
+	
+	解决办法：https://blog.csdn.net/z_zt_t/article/details/81084039
+
+
+
+
+
+
+
+
+
