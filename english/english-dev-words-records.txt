@@ -424,11 +424,131 @@ It assumes that only the primary user
 	v.
 	分叉;岔开;分歧;相异;偏离;背离;违背
 	diverge的过去分词和过去式
-54、
-	migrate。L 口 te 口 t . migrateExtraStreamToClipData ( ) ;
+54、migrate。L 口 te 口 t . migrateExtraStreamToClipData ( ) ;
 	英 [maɪˈɡreɪt]   美 [ˈmaɪɡreɪt]  
 	v.
 	(随季节变化)迁徙;移居;迁移;移动;转移
 	第三人称单数： migrates 现在分词： migrating 过去式： migrated 过去分词： migrated
 	记忆技巧：migr 迁移 + ate 表动词 → 迁移，移居
+ 
+55、the number of HTTP
+ *         requests issued since this cache was created.
+	HTTP的数目
 
+	*自创建此缓存以来发出的请求。 
+	issued
+	英 [ˈɪʃuːd]   美 [ˈɪʃuːd]  
+	v.
+	宣布;公布;发出;(正式)发给，供给;(尤指通过正式文件)将…诉诸法律
+	issue的过去分词和过去式
+	
+	issue
+	英 [ˈɪʃuː]   美 [ˈɪʃuː]  
+	n.
+	重要议题;争论的问题;(有关某事的)问题，担忧;一期;期号
+	v.
+	宣布;公布;发出;(正式)发给，供给;(尤指通过正式文件)将…诉诸法律
+56、
+	if it is only necessary to force a cached response to be validated by the server, use the more
+	 * efficient {@code max-age=0} directive instead: <pre>   {@code
+	 如果只需要强制服务器验证缓存响应，请使用更多
+
+	*高效@code max age=0指令：<pre>@code
+	
+	directive
+	英 [dəˈrektɪv]   美 [dəˈrektɪv]  
+	n.
+	指示;命令
+	adj.
+	指示的;指导的
+		directly
+	英 [dəˈrektli]   美 [dəˈrektli]  
+	adv.
+	直接地;径直地;坦率地;正;正好地;恰好;立即;立刻
+	conj.
+	一…就…
+57、Transparent GZIP shrinks download sizes.透明gzip缩小下载大小。
+	shrinks
+	英 [ʃrɪŋks]   美 [ʃrɪŋks]  
+	v.
+	(使)缩水，收缩，缩小，皱缩;(使)缩小，减少;退缩;畏缩
+	n.
+	精神病学家;心理学家
+58、There is a cycle between the {@link Call} and {@link Transmitter} that makes this awkward.
+   * This is set after immediately after creating the call instance.	
+   
+   在@link call和@link transmitter之间有一个循环，这使得这变得很尴尬。
+	*这是在创建调用实例后立即设置的。
+	transmitter
+	英 [trænzˈmɪtə(r)]   美 [trænzˈmɪtər]  
+	n.
+	(尤指无线电或电视信号的)发射机，发射台，发报台;传送者;传输者;传播者;传染媒介
+	awkward
+	英 [ˈɔːkwəd]   美 [ˈɔːkwərd]  
+	adj.
+	令人尴尬的;使人难堪的;难对付的;难处理的;不方便的
+	派生词： awkwardly adv.  awkwardness n.
+59、
+The transferer. Set only in constructor, but cannot be declared
+     * as final without further complicating serialization.  Since
+     * this is accessed only at most once per public method, there
+     * isn't a noticeable performance penalty for using volatile
+     * instead of final here.
+	noticeable
+	英 [ˈnəʊtɪsəbl]   美 [ˈnoʊtɪsəbl]  
+	adj.
+	显著的;显而易见的
+	
+	penalty
+	英 [ˈpenəlti]   美 [ˈpenəlti]  
+	n.
+	惩罚;处罚;刑罚;害处;不利;(对犯规者的)判罚	 
+60、 Mutate the AsyncCall so that it shares the AtomicInteger of an existing running call to
+		  // the same host.改变AsyncCall，使其共享现有正在运行的调用的AtomicInteger //同一主机。
+	mutate
+	英 [mjuːˈteɪt]   美 [ˈmjuːteɪt]  
+	v.
+	(使)变异，突变;转变;转换	  
+	mute
+	英 [mjuːt]   美 [mjuːt]  
+	adj.
+	沉默的;不出声的;无声的;哑的
+	n.
+	弱音器;哑巴
+	v.
+	消音;减音;减弱(尤指乐器)的声音;减弱;缓解
+	
+	mutual
+	英 [ˈmjuːtʃuəl]   美 [ˈmjuːtʃuəl]  
+	adj.
+	相互的;彼此的;共有的;共同的
+	派生词： mutuality n.
+	
+	mutex
+	互斥量;互斥体;互斥;互斥锁;互斥对象
+61、or equivalently, if this deque changed as a result of the call
+	或者等效地，如果此deque因调用而更改
+	
+	equivalent
+	英 [ɪˈkwɪvələnt]   美 [ɪˈkwɪvələnt]  
+	adj.
+	(价值、数量、意义、重要性等)相等的，相同的
+	n.
+	相等的东西;等量;对应词
+	
+	equal
+	英 [ˈiːkwəl]   美 [ˈiːkwəl]  
+	adj.
+	(大小、数量、价值等)相同的，同样的;相等的;平等的;同等的;(力气、勇气、能力等)相当的;能胜任的;能应付的
+	n.
+	同等的人;相等物
+62、 If we're forbidden from using the network and the cache is insufficient, fail.如果我们被禁止使用网络，并且缓存不足，则失败。
+	sufficient
+	英 [səˈfɪʃnt]   美 [səˈfɪʃnt]  
+	adj.
+	足够的;充足的
+63、Note that there are no square braces.请注意，没有方括号。
+		braces
+		英 [ˈbreɪsɪz]   美 [ˈbreɪsɪz]  
+		n.
+		箍子;夹子;支架;(儿童)牙箍;吊裤带;背带
