@@ -1,0 +1,15 @@
+一、androidstudio 中android项目，javalib module 控制台乱码问题。
+	解决办法，在java工程目录下的build.gradle添加如下代码，然后重新运行一遍。 
+	1.新版gradle
+
+	tasks.withType(JavaCompile) {
+		options.encoding = "UTF-8"
+	}
+	2.旧版gradle
+
+	tasks.withType(Compile) {
+		options.encoding = "UTF-8"
+	}
+	https://blog.csdn.net/qiumeqiu/article/details/50837576
+二、Android中Gradle常用配置
+	2.1 https://www.jianshu.com/p/7ca459085b96

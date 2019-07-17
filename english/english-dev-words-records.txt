@@ -417,9 +417,18 @@ It assumes that only the primary user
 	v.
 	跺(脚);重踩;重踏;迈着重重的步伐走;在…上盖(字样或图案等);把(字样或图案等)盖在…上
 53、
+
 	Your branch and 'origin/master' have diverged
 	diverged
 	英 [daɪˈvɜːdʒd]   美 [daɪˈvɜːrdʒd]  
 	v.
 	分叉;岔开;分歧;相异;偏离;背离;违背
 	diverge的过去分词和过去式
+54、
+	migrate。L 口 te 口 t . migrateExtraStreamToClipData ( ) ;
+	英 [maɪˈɡreɪt]   美 [ˈmaɪɡreɪt]  
+	v.
+	(随季节变化)迁徙;移居;迁移;移动;转移
+	第三人称单数： migrates 现在分词： migrating 过去式： migrated 过去分词： migrated
+	记忆技巧：migr 迁移 + ate 表动词 → 迁移，移居
+
