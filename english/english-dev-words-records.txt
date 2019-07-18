@@ -434,7 +434,6 @@ It assumes that only the primary user
 55、the number of HTTP
  *         requests issued since this cache was created.
 	HTTP的数目
-
 	*自创建此缓存以来发出的请求。 
 	issued
 	英 [ˈɪʃuːd]   美 [ˈɪʃuːd]  
@@ -552,3 +551,18 @@ The transferer. Set only in constructor, but cannot be declared
 		英 [ˈbreɪsɪz]   美 [ˈbreɪsɪz]  
 		n.
 		箍子;夹子;支架;(儿童)牙箍;吊裤带;背带
+	
+64、 If more than one thread is waiting, one of them is chosen at the discretion of the VM.
+	discretion
+	英 [dɪˈskreʃn]   美 [dɪˈskreʃn]  
+	n.
+	自行决定的自由;自行决定权;谨慎;慎重;审慎
+	
+	
+	pruneAndGetAllocationCount
+	prune
+	英 [pruːn]   美 [pruːn]  
+	n.
+	干梅子;西梅干;李子干
+	v.
+	修剪树枝;打杈;裁减;削减;精简
