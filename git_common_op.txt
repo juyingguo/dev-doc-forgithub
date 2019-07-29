@@ -257,6 +257,14 @@
 	git add new_file_name       //添加新文件
 	git rm file_name            //删除旧文件
 	git commit -m'添加注释'      //放到暂存区
+13）git for windows下的Filename too long
+	在git bash中，运行下列命令： git config --global core.longpaths true //全局设置
+	
+	也可以仅设置当前项目：
+	git config core.longpaths true
+	查看设置状态：
+	git config core.longpaths 	
+	
 ////////////
 二、
 	git push exdroid a13jb:a13jb 提交代码到服务器
