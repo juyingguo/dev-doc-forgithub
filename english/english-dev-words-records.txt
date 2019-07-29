@@ -566,3 +566,69 @@ The transferer. Set only in constructor, but cannot be declared
 	干梅子;西梅干;李子干
 	v.
 	修剪树枝;打杈;裁减;削减;精简
+65、cipherSuites 密码组
+	 cipher
+	英 [ˈsaɪfə(r)]   美 [ˈsaɪfər]  
+	n.
+	密码;暗号;无足轻重的人;无关紧要的东西;(姓名首字母的)拼合字，花押
+	
+	suite
+	英 [swiːt]   美 [swiːt]  
+	n.
+	(尤指旅馆的)一套房间，套房;一套家具;组曲(由三个或更多相关部分组成)
+66、authenticator
+	authenticate
+	英 [ɔːˈθentɪkeɪt]   美 [ɔːˈθentɪkeɪt]  
+	v.
+	证明…是真实的;证实
+67、Elements、 Types、 Filer和Messager等。
+	filer
+	英 [ˈfaɪlə]   美 [ˈfaɪlər]  
+	n.
+	文件编档员，锉磨工人，文件装订员
+	
+	filter
+	英 [ˈfɪltə(r)]   美 [ˈfɪltər]  
+	n.
+	滤器;过滤器;滤光器;滤声器;滤波器;筛选(过滤)程序
+	v.
+	过滤;(用程序)筛选;缓行
+68、stripBody
+	strip
+	英 [strɪp]   美 [strɪp]  
+	v.
+	脱光衣服;脱掉大部分衣服;扒光…的衣服;进行脱衣表演;表演脱衣舞;除去，剥去(一层);(尤指)剥光
+	n.
+	(纸、金属、织物等)条，带;(陆地、海域等)狭长地带;带状水域;队服
+69、approximate
+	approximate
+	英 [əˈprɒksɪmət , əˈprɒksɪmeɪt]  美 [əˈprɑːksɪmət , əˈprɑːksɪmeɪt]  
+	adj.
+	大约的;近似的;接近的
+	v.
+	近似;接近;近似计算;概略估算
+70、ceramic tile 
+	ceramic tile
+	英 [səˈræmɪk taɪl]   美 [səˈræmɪk taɪl]  
+	瓷砖
+	
+	The technological theory and the machinery for deep-processing ceramic tile have been reviewed briefly. 
+
+	本文简要回顾了陶瓷墙地砖深加工的工艺理论和机械设备。
+71、
+	carpet
+	英 [ˈkɑːpɪt]   美 [ˈkɑːrpɪt]  
+	n.
+	地毯;(尤指铺满房间的一块)地毯;覆盖地面的一层厚东西
+	v.
+	用地毯铺(房间的)地;把…厚厚地覆盖;厚厚地铺上;训斥;斥责
+	N-VAR 地毯 
+	A carpet is a thick covering of soft material which is laid over a floor or a staircase.
+	They put down wooden boards, and laid new carpets on top.
+
+	他们铺好木地板,在上面铺上新地毯。
+72、chassis
+	英 [ˈʃæsi]   美 [ˈʃæsi]  
+	n.
+	(车辆的)底盘，底座，底架
+

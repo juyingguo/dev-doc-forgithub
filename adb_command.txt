@@ -84,6 +84,7 @@
 		adb shell dumpsys window windows ///可以查看window所有参考数，
 		dumpsys activity s -p com.sp.spmultipleapp //查看应用中的服务 
 		
+		adb shell dumpsys window displays //adb shell 命令查看屏幕尺寸
 		
 	2.7、
 		df 查看磁盘空间使用情况
