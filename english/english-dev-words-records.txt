@@ -237,7 +237,19 @@ It assumes that only the primary user
 	强制的;法定的;义务的
 
 30、Channel is unrecoverably broken and will be disposed
+	disposed
+	英 [dɪˈspəʊzd]   美 [dɪˈspoʊzd]  
+	adj.
+	倾向于;有意于;乐意;对…有好感(或恶感)
+	v.
+	排列;布置;安排;使倾向于;使有意于;使易于
+	
 	通道被不可恢复地破坏，将被处置。
+	
+	Disposes of the underlying message queue.
+	dispose of
+	英 [dɪˈspəʊz ɒv]   美 [dɪˈspoʊz əv]  
+	丢掉;清除;处理;办妥;处理好;解决
 31 \ 
 	composite
 	英 [ˈkɒmpəzɪt]   美 [kəmˈpɑːzət]  
@@ -632,3 +644,67 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	(车辆的)底盘，底座，底架
 
+73、doExtensiveHealthChecks
+	If this is a brand new connection, we can skip the extensive health checks.
+	extensive
+	英 [ɪkˈstensɪv]   美 [ɪkˈstensɪv]  
+	adj.
+	广阔的;广大的;大量的;广泛的;广博的
+	
+	extension
+	英 [ɪkˈstenʃn]   美 [ɪkˈstenʃn]  
+	n.
+	扩大;延伸;增加的房间;扩建部分;增建部分
+	
+	extend
+	英 [ɪkˈstend]   美 [ɪkˈstend]  
+	v.
+	
+	brand
+	英 [brænd]   美 [brænd]  
+	n.
+	品牌;类型;烙印(尤指农场牲畜身上表示所属的印记)
+	v.
+	(尤指不公正地)丑化(某人)，败坏(某人)名声;给(牲畜)打烙印
+	使伸长;扩大;扩展;延长;使延期;扩大…的范围(或影响)
+74、deallocate
+	allocate
+	英 [ˈæləkeɪt]   美 [ˈæləkeɪt]  
+	v.
+	拨…(给);划…(归);分配…(给)
+	第三人称单数： allocates 现在分词： allocating 过去式： allocated 过去分词： allocated
+	记忆技巧：al 加强 + loc 地方 + ate 表动词 → 不断往地方送 → 分配〔东西〕
+	deallocate
+	释放;解除分配;释放游标;删除一个准备好的查询;归还
+75、If another multiplexed connection to the same address was created concurrently, then
+      // release this connection and acquire that one.
+	  如果同时创建到同一地址的另一个多路复用连接，则
+
+	//释放此连接并获取该连接。
+	multiplexed
+	英 [ˈmʌltɪplɛkst]   美 [ˈmʌltiˌplɛkst]  
+	多路复用;复用;多重化;多路复用的;复合的
+76、This could match due to connection coalescing.
+	由于连接合并，这可能匹配。
+	coalescing
+	英 [ˌkəʊəˈlesɪŋ]   美 [ˌkoʊəˈlesɪŋ]  
+	v.
+	合并;联合;结合
+	coalesce的现在分词
+77、Attempt to use an already-allocated connection. We need to be careful here because our
+      // already-allocated connection may have been restricted from creating new streams.
+	  尝试使用已分配的连接。我们在这里要小心，因为我们
+
+	//可能已限制已分配的连接创建新流。
+	restricted
+	英 [rɪˈstrɪktɪd]   美 [rɪˈstrɪktɪd]  
+	adj.
+	(大小或数量)有限的，很小的;(指能做的事)有限的，受限制的;受(法规)制约的;受控制的;受约束的
+	v.
+	限制，限定(数量、范围等);束缚;妨碍;阻碍;(以法规)限制
+	restrict的过去分词和过去式
+78、isEligible
+	eligible
+	英 [ˈelɪdʒəbl]   美 [ˈelɪdʒəbl]  
+	adj.
+	有资格的;合格的;具备条件的;(指认为可做夫妻的男女)合意的，合适的，中意的
