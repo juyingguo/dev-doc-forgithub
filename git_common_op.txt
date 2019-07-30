@@ -1,4 +1,6 @@
-一、
+一、参考教程
+3.1、参考教材：https://www.yiibai.com/git/git_pull.html
+二、
 拉取源码：
 	repo init -u gitolite@192.168.1.21:manifests.git -b master
 	repo sync
@@ -102,7 +104,17 @@
 			解决完成之后，就可以正常的提交了。
 		推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
 		git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有，以防止提交错误，切记，切记，切记！！！
-		
+			 git push -u origin master。。提交异常。如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。
+			这时，如果你一定要推送，可以使用–force选项。原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_push.html
+			
+			hint: Updates were rejected because the remote contains work that you do
+			hint: not have locally. This is usually caused by another repository pushing
+			hint: to the same ref. You may want to first integrate the remote changes
+			hint: (e.g., 'git pull ...') before pushing again.
+			hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+				https://blog.csdn.net/gongqinglin/article/details/79752398
+				如果确保本地没问题的话，可以直接用git push -f强行上传
 		4、合并错误提示。
 				在我们pull代码时，有时候会意外的在vim上出现如下提示（其实就是pull失败了）“ Your branch and 'origin/master' have diverged,(use "git pull" to merge the remote branch into yours)nothing to commit, working tree clean ”问题翻译过来其实就是合并产生了一些冲突，不过这个冲突不是由于代码错误引起的，所以不必过于纠结。
 			
@@ -264,9 +276,9 @@
 	git config core.longpaths true
 	查看设置状态：
 	git config core.longpaths 	
-	
+		
 ////////////
-二、
+三、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
 	git format-patch -1 生成补丁
 	git commit --amend 修改最近一次的commit log
