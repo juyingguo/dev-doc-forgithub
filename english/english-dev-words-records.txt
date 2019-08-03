@@ -708,3 +708,15 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˈelɪdʒəbl]   美 [ˈelɪdʒəbl]  
 	adj.
 	有资格的;合格的;具备条件的;(指认为可做夫妻的男女)合意的，合适的，中意的
+79、as this method is likely to yield significantly better space and time performance by caching frequently requested values.
+	Integer valueOf(int i)
+	yield
+	英 [jiːld]   美 [jiːld]  
+	v.
+	出产(作物);产生(收益、效益等);提供;屈服;让步;放弃;缴出
+	n.
+	产量;产出;利润
+	significantly
+	英 [sɪɡˈnɪfɪkəntli]   美 [sɪɡˈnɪfɪkəntli]  
+	adv.
+	有重大意义地;显著地;明显地;有某种意义;别有含义地;意味深长地

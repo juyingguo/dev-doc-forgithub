@@ -65,4 +65,10 @@ repo sync 【只第一次下代码时用一次】【只第一次下代码时用一次】
 	config/recovery/atc260x-adckeypad.ko
 11、使用secureCRT 配置后台编译ssh,不依赖界面显示。
 	界面关闭后，编译依然继续。
-	
+12、git status
+	diffall.patch 文件
+	slashActivity.patch
+	进入子目录，使用git status
+13、git status 
+	.swp 文件的产生与解决方法
+	https://blog.csdn.net/qq_42200183/article/details/81531422

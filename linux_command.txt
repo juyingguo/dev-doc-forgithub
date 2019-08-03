@@ -100,6 +100,6 @@
 		sudo su //从普通用户切换到root用户，还可以使用命令：
 		su root //从普通用户切换到root用户
 		exit // ctrl+d  在终端输入exit或logout或使用快捷方式ctrl+d，可以退回到原来用户，其实ctrl+d也是执行的exit命令
-
-		
+(11) Linux中.swp 文件的产生与解决方法
+			https://blog.csdn.net/qq_42200183/article/details/81531422
 		
