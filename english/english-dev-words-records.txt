@@ -85,6 +85,40 @@ It assumes that only the primary user
 	adj.
 	乱;随意的，任性的，随心所欲的;主观的，武断的;霸道的，专制的，专横的，独断独行的
 	
+	notify()
+	The choice is arbitrary and occurs at
+     the discretion of the implementation
+	 
+	discrete
+	英 [dɪˈskriːt]   美 [dɪˈskriːt]  
+	adj.
+	分离的;互不相连的;各别的
+	
+	discretion
+	英 [dɪˈskreʃn]   美 [dɪˈskreʃn]  
+	n.
+	自行决定的自由;自行决定权;谨慎;慎重;审慎
+	
+	The awakened thread will not be able to proceed until the current
+      thread relinquishes the lock on this object.  //唤醒的线程将无法继续，直到当前线程将放弃此对象上的锁
+	
+	relinquish
+	英 [rɪˈlɪŋkwɪʃ]   美 [rɪˈlɪŋkwɪʃ]  
+	v.
+	(尤指不情愿地)放弃
+	
+	proceed
+	英 [prəˈsiːd]   美 [proʊˈsiːd]  
+	v.
+	继续做(或从事、进行);接着做;继而做;行进;前往
+	
+	As in the one argument version, interrupts and spurious wakeups are
+     * possible //在单参数版本中，中断和虚假唤醒是 可能
+	 
+	 spurious
+	英 [ˈspjʊəriəs]   美 [ˈspjʊriəs]  
+	adj.
+	虚假的;伪造的;建立在错误的观念(或思想方法)之上的;谬误的
 	
 12、RecyclerView Adapter notifyItemChanged
 	Notify any registered observers that the item at position has changed with
