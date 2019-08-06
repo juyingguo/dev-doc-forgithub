@@ -570,6 +570,7 @@ The transferer. Set only in constructor, but cannot be declared
 	派生词： mutuality n.
 	
 	mutex
+	mutex lock
 	互斥量;互斥体;互斥;互斥锁;互斥对象
 61、or equivalently, if this deque changed as a result of the call
 	或者等效地，如果此deque因调用而更改
