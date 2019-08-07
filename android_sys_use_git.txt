@@ -8,7 +8,12 @@ repo forall -c git checkout master
 
 
 2.编译
- (1) cd android/device ，打上boardConfig.patch 补丁
+ (1) cd android/device ，打上boardConfig.patch 补丁。
+	//打补丁的目的，单个编译的apk可以单独安装；【注意：这个地方可以不用修改，在单独的apk编译模块修改mk模块即可LOCAL_DEX_PREOPT := false】
+	//文件位置：/android/device/actions/bubble_gum/BoardConfig.mk
+	-WITH_DEXPREOPT :=true
+	+WITH_DEXPREOPT :=false
+	 endif
 
 （2）cp build/autobuild.sh ./
 
