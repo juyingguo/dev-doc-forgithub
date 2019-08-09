@@ -277,7 +277,11 @@
 	查看设置状态：
 	git config core.longpaths 	
 14),如何用git命令生成Patch和打Patch
-	14.1、https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
+	14.1、git format-patch 生成的patch格式和语法
+		http://blog.chinaunix.net/uid-27714502-id-4110752.html
+	
+	14.2、git format-patch 生成的patch格式和语法
+		https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
 ////////////
 三、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器

@@ -762,3 +762,12 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	(通过化学手段或生物过程)合成;(音响)合成;综合
 
+81、Revert 
+	In the car she reverted to the subject uppermost in her mind. 
+	在车里，她又提起了她最关心的话题。
+	
+	Revert
+	英 [rɪˈvɜːt]   美 [rɪˈvɜːrt]  
+	恢复;还原;回滚;复原;返回
+	
+	
