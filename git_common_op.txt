@@ -282,6 +282,7 @@
 	
 	14.2、git format-patch 生成的patch格式和语法
 		https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
+	14.3、
 ////////////
 三、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
