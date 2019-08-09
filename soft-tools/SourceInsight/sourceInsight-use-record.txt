@@ -1,0 +1,7 @@
+一、win7 source insight 窗口闪动的解决办法
+	1、Source Insight 3.50加入了项目后，总是不断的闪屏
+		https://zhidao.baidu.com/question/389186831.html
+		
+		点击打开options-preferences-general选项。
+		然后进入project file synchronization选项。
+		点击取消“background synchronization every * minutes” ，返回即可。

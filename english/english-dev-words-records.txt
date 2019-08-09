@@ -755,3 +755,10 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [sɪɡˈnɪfɪkəntli]   美 [sɪɡˈnɪfɪkəntli]  
 	adv.
 	有重大意义地;显著地;明显地;有某种意义;别有含义地;意味深长地
+80、Key code constant: Directional Pad Up key.
+     * May also be synthesized from trackball motions.	//键码常数：方向垫上键。*也可以由轨迹球运动合成
+	synthesize
+	英 [ˈsɪnθəsaɪz]   美 [ˈsɪnθəsaɪz]  
+	v.
+	(通过化学手段或生物过程)合成;(音响)合成;综合
+

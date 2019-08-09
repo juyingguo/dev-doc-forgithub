@@ -276,7 +276,8 @@
 	git config core.longpaths true
 	查看设置状态：
 	git config core.longpaths 	
-		
+14),如何用git命令生成Patch和打Patch
+	14.1、https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
 ////////////
 三、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
