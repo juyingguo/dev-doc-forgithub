@@ -1,1 +1,4 @@
 一、androidstudio导出config方法。
+	
+	1.1、Android Studio 如何导出和导入设置
+		https://blog.csdn.net/weixin_33698043/article/details/91033625
