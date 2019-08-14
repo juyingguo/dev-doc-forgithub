@@ -769,5 +769,24 @@ The transferer. Set only in constructor, but cannot be declared
 	Revert
 	英 [rɪˈvɜːt]   美 [rɪˈvɜːrt]  
 	恢复;还原;回滚;复原;返回
-	
-	
+82、relevant
+	英 [ˈreləvənt]   美 [ˈreləvənt]  
+	adj.
+	紧密相关的;切题的;有价值的;有意义的
+	派生词： relevance n.  relevantly adv.	
+83、lies dormant until the  lock has been acquired.
+		在获得锁之前处于休眠状态。
+	dormant
+	英 [ˈdɔːmənt]   美 [ˈdɔːrmənt]  
+	adj.
+	休眠的;蛰伏的;暂停活动的
+84、and interruption of lock acquisition is supported 支持锁采集中断
+
+	acquisition
+	英 [ˌækwɪˈzɪʃn]   美 [ˌækwɪˈzɪʃn]  
+	n.
+	(知识、技能等的)获得，得到;(多指贵重的)购得物;购置物;收购的公司;购置的产业;购置;收购
+85、CountDownLatch 倒计时
+	Latch
+	英 [lætʃ]   美 [lætʃ]  
+	锁存器;闩锁;闭锁

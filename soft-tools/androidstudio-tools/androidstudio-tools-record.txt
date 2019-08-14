@@ -1,4 +1,7 @@
 一、androidstudio导出config方法。
+	1.1、Android Studio 如何导出和导入设置
+		https://blog.csdn.net/weixin_33698043/article/details/91033625
+
 二、Process 'command '***\build-tools\25.0.3\aapt.exe'' finished with non-zero exit value 1
 	2.1、https://blog.csdn.net/yi_master/article/details/80363372
 	2.2、https://blog.csdn.net/yi_master/article/details/80363372
@@ -10,3 +13,6 @@
 
 	3.1 、multiDexEnabled true
 		https://www.cnblogs.com/Neo007/p/7823068.html
+
+	
+	
