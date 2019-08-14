@@ -1,0 +1,24 @@
+From bc4bef6bc8076b040526e66ab289790a8c38b479 Mon Sep 17 00:00:00 2001
+From: juyingguo <juying2050@sina.cn>
+Date: Fri, 9 Aug 2019 11:58:59 +0800
+Subject: [PATCH] add
+
+---
+ git_common_op.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/git_common_op.txt b/git_common_op.txt
+index f3d8540..af35411 100644
+--- a/git_common_op.txt
++++ b/git_common_op.txt
+@@ -282,6 +282,7 @@
+ 	
+ 	14.2、git format-patch 生成的patch格式和语法
+ 		https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
++	14.3、
+ ////////////
+ 三、其它命令
+ 	git push exdroid a13jb:a13jb 提交代码到服务器
+-- 
+2.13.3.windows.1
+

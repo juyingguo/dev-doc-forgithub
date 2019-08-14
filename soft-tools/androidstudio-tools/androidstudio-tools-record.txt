@@ -1,1 +1,12 @@
 一、androidstudio导出config方法。
+二、Process 'command '***\build-tools\25.0.3\aapt.exe'' finished with non-zero exit value 1
+	2.1、https://blog.csdn.net/yi_master/article/details/80363372
+	2.2、https://blog.csdn.net/yi_master/article/details/80363372
+	
+	2.3、<android.support.constraint.ConstraintLayout 问题。
+		未引入compile 'com.android.support.constraint:constraint-layout:1.1.3'
+	
+三、 Process 'command '**\jre\bin\java.exe'' finished with non-zero exit value 2
+
+	3.1 、multiDexEnabled true
+		https://www.cnblogs.com/Neo007/p/7823068.html
