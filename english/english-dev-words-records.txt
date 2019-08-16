@@ -790,3 +790,23 @@ The transferer. Set only in constructor, but cannot be declared
 	Latch
 	英 [lætʃ]   美 [lætʃ]  
 	锁存器;闩锁;闭锁
+86、QWERTY
+	qwerty
+	英 [ˈkwɜːti]   美 [ˈkwɜːrti]  
+	adj.
+	标准键盘的，传统键盘的(Q、W、E、R、T和Y各键分布在左侧上排)
+87、subtract
+	subtract
+	英 [səbˈtrækt]   美 [səbˈtrækt]  
+	v.
+	减;减去
+88、Aspect Oriented Programming //面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术
+	aspect
+	英 [ˈæspekt]   美 [ˈæspekt]  
+	n.
+	方面;层面;样子;外观;外表;朝向;方位
+	oriented
+	英 [ˈɔːrientɪd]   美 [ˈɔːrientɪd]  
+	v.
+	朝向;面对;确定方向;使适应;确定方位;认识方向;熟悉;适应
+	orient的过去分词和过去式

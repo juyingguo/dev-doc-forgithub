@@ -46,11 +46,19 @@
 		 
 	3.4	 
 		Linux find命令
-			Linux find命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
+			Linux find命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。
+			如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
 
 			语法
 			find   path   -option   [   -print ]   [ -exec   -ok   command ]   {} \;
 			# find . -name "*.c" //将目前目录及其子目录下所有延伸档名是 c 的文件列出来。
+			## find . -iname "aA" -type d // 查找当前及子目录下，文件夹为aA，忽略大小写。
+			###find  -iname "aA" -type d // 查找当前及子目录下，文件夹为aA，忽略大小写。//如果使用该命令时，不设置任何参数，则find命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。
+				
+				https://www.cnblogs.com/jiftle/p/9707518.html
+				
+				https://jingyan.baidu.com/article/11c17a2cffd0eaf447e39d5a.html
+				
 	3.5
 		 chmod命令
 				参数说明
