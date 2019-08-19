@@ -810,3 +810,10 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	朝向;面对;确定方向;使适应;确定方位;认识方向;熟悉;适应
 	orient的过去分词和过去式
+89、shader
+	ʃeɪdə]   美 [ˈʃeɪdər]  
+	n.
+	著色器;着色程序
+	
+	
+	
