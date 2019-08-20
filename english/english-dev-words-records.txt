@@ -659,9 +659,24 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [səˈræmɪk taɪl]   美 [səˈræmɪk taɪl]  
 	瓷砖
 	
+	ceramic
+	英 [səˈræmɪk]   美 [səˈræmɪk]  
+	n.
+	陶瓷制品;陶瓷器;制陶艺术;陶瓷装潢艺术
+	adj.
+	陶器的，与陶器有关的;陶瓷的，陶制的;制陶的
+	
 	The technological theory and the machinery for deep-processing ceramic tile have been reviewed briefly. 
 
 	本文简要回顾了陶瓷墙地砖深加工的工艺理论和机械设备。
+	
+	tile
+	英 [taɪl]   美 [taɪl]  
+	n.
+	(贴墙或铺地用的)瓷砖，地砖，小方地毯，片状材料;(铺屋顶的)瓦，瓦片;(棋盘游戏的)棋子
+	v.
+	铺瓦;铺地砖;贴瓷砖;平铺显示，并列显示，瓦片式显示(视窗)
+	
 71、
 	carpet
 	英 [ˈkɑːpɪt]   美 [ˈkɑːrpɪt]  
@@ -810,3 +825,10 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	朝向;面对;确定方向;使适应;确定方位;认识方向;熟悉;适应
 	orient的过去分词和过去式
+89、TileMode.CLAMP:用边缘色彩填充多余空间
+	clamp
+	英 [klæmp]   美 [klæmp]  
+	v.
+	(用夹具)夹紧，夹住，固定;紧紧抓住;紧夹住;被抓住;被夹紧;用夹锁锁住(车)
+	n.
+	夹具;夹子;夹钳;车轮夹锁(用于锁住违章停放的车辆)
