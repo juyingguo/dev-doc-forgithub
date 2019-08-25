@@ -838,4 +838,13 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	著色器;着色程序
 	
-
+91、Horizontal space requirements as imposed by the
+     *        parent
+	 impose
+	英 [ɪmˈpəʊz]   美 [ɪmˈpoʊz]  
+	v.
+	推行，采用(规章制度);强制实行;迫使;把…强加于;使(别人)接受自己的意见
+92、instrument
+	英 [ˈɪnstrəmənt]   美 [ˈɪnstrəmənt]  
+	n.
+	器械;仪器;器具;(车辆、机器的)仪器，仪表;促成某事的人(或事物);手段
