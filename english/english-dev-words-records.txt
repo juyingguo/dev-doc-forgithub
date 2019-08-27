@@ -848,3 +848,35 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˈɪnstrəmənt]   美 [ˈɪnstrəmənt]  
 	n.
 	器械;仪器;器具;(车辆、机器的)仪器，仪表;促成某事的人(或事物);手段
+	
+93、RejectedExecutionHandler 
+	reject
+	英 [rɪˈdʒekt , ˈriːdʒekt]   美 [rɪˈdʒekt , ˈriːdʒekt]  
+	v.
+	拒绝接受;不予考虑;拒收;不录用;拒绝接纳;(因质量差)不用，不出售，不出版
+	n.
+	废品;次品;不合格者;被剔除者;被拒收者
+	第三人称单数： rejects 复数： rejects 现在分词： rejecting 过去式： rejected 过去分词： rejected
+	派生词： rejection n.
+	
+	discard
+	英 [dɪˈskɑːd , ˈdɪskɑːd]   美 [dɪˈskɑːrd , ˈdɪskɑːrd]  
+	v.
+	丢弃;抛弃;垫(牌);打出(无用的牌)
+	n.
+	被抛弃的人(或物);(尤指纸牌游戏中)垫出的牌
+	第三人称单数： discards 现在分词： discarding 过去式： discarded 过去分词： discarded
+	
+94、subsequent 
+	subsequent
+	英 [ˈsʌbsɪkwənt]   美 [ˈsʌbsɪkwənt]  
+	adj.
+	随后的;后来的;之后的;接后的
+	
+	sequent
+	英 [ˈsiːkwənt]   美 [ˈsikwənt]  
+	adj.
+	继续的;连续的;随着…而发生的 (on; upon; to)
+	n.
+	后果;接着发生的事;结果
+	
