@@ -880,3 +880,17 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	后果;接着发生的事;结果
 	
+95、 If another editor on this
+         * {@link SharedPreferences} does a regular {@link #commit}
+         * while a {@link #apply} is still outstanding, the
+         * {@link #commit} will block until all async commits are
+         * completed as well as the commit itself.
+	outstanding
+	英 [aʊtˈstændɪŋ]   美 [aʊtˈstændɪŋ]  
+	adj.
+	优秀的;杰出的;出色的;突出的;明显的;重要的;未支付的;未完成的;未解决的
+	v.
+	突出;离港;向海上;停留
+	outstand的现在分词
+	
+	
