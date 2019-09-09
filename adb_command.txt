@@ -159,3 +159,11 @@
 	参考：：
 	https://blog.csdn.net/qq_36327203/article/details/79469576
 
+六、java基于adb命令对android手机的操作
+		6.1、用Java实现adb命令的各种方式
+			https://blog.csdn.net/qq_37217804/article/details/79639083
+			
+		6.2、java基于adb命令对android手机的操作
+			【adb install -r 通过代码实现。】
+			http://www.codexiu.cn/android/blog/14599/
+		
