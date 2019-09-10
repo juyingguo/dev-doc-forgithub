@@ -880,6 +880,7 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	后果;接着发生的事;结果
 	
+
 95、chunk chunk
 	英 [tʃʌŋk]   美 [tʃʌŋk]  
 	n.
@@ -897,5 +898,19 @@ The transferer. Set only in constructor, but cannot be declared
 	(使)缩水，收缩，缩小，皱缩;(使)缩小，减少;退缩;畏缩
 	n.
 	精神病学家;心理学家
+
+97、 If another editor on this
+         * {@link SharedPreferences} does a regular {@link #commit}
+         * while a {@link #apply} is still outstanding, the
+         * {@link #commit} will block until all async commits are
+         * completed as well as the commit itself.
+	outstanding
+	英 [aʊtˈstændɪŋ]   美 [aʊtˈstændɪŋ]  
+	adj.
+	优秀的;杰出的;出色的;突出的;明显的;重要的;未支付的;未完成的;未解决的
+	v.
+	突出;离港;向海上;停留
+	outstand的现在分词
+
 	
 	
