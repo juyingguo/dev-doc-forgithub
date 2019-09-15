@@ -880,7 +880,26 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	后果;接着发生的事;结果
 	
-95、 If another editor on this
+
+95、chunk chunk
+	英 [tʃʌŋk]   美 [tʃʌŋk]  
+	n.
+	厚块;厚片;大块;相当大的量;话语组成部分;组块
+96、ArrayMap。
+	Because this container is intended to better balance memory use, unlike most other
+	 * standard Java containers it will shrink its array as items are removed from it.
+	 因为这个容器的目的是更好地平衡内存使用，而不像其他大多数容器
+
+	*标准Java容器，当项目从中移除时，它会收缩数组。
+	
+	shrink
+	英 [ʃrɪŋk]   美 [ʃrɪŋk]  
+	v.
+	(使)缩水，收缩，缩小，皱缩;(使)缩小，减少;退缩;畏缩
+	n.
+	精神病学家;心理学家
+
+97、 If another editor on this
          * {@link SharedPreferences} does a regular {@link #commit}
          * while a {@link #apply} is still outstanding, the
          * {@link #commit} will block until all async commits are
@@ -892,6 +911,7 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	突出;离港;向海上;停留
 	outstand的现在分词
+
 	
 96、supervise
 	英 [ˈsuːpəvaɪz]   美 [ˈsuːpərvaɪz]  
