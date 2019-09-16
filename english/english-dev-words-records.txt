@@ -913,4 +913,38 @@ The transferer. Set only in constructor, but cannot be declared
 	outstand的现在分词
 
 	
+96、supervise
+	英 [ˈsuːpəvaɪz]   美 [ˈsuːpərvaɪz]  
+	v.
+	监督;管理;指导;主管
 	
+97、taskAffinity 用来指定 Activity 希望归属的枝
+	affinity
+	英 [əˈfɪnəti]   美 [əˈfɪnəti]  
+	n.
+	喜好;喜爱;密切的关系;类同
+
+98、runWithScissor 
+	UiThread .getHandler() . runWithScissors(new Runnable()..
+	scissor
+	英 [ˈsɪzə(r)]   美 [ˈsɪzər]  
+	v.
+	剪断;删除   
+99、outStableinsets  
+	突出的插图 
+		inset
+	英 [ˈɪnset]   美 [ˈɪnset]  
+	n.
+	(套印在大图片、地图等中的)小图，小地图;嵌入物;附加物
+	v.
+	嵌入，插入(作为装饰等);(在大图片、地图等中)套印(小图)
+
+100、标记一压缩（ Mark-Compact ） 算哉
+		compact
+	英 [kəmˈpækt , ˈkɒmpækt]   美 [ˈkɑːmpækt , kəmˈpækt]  
+	adj.
+	小型的;袖珍的;紧凑的;体积小的;紧密的;坚实的
+	n.
+	小汽车;带镜小粉盒;协定;协议;契约;合约
+	v.
+	把…紧压在一起(或压实)
