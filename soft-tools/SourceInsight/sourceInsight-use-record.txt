@@ -5,3 +5,18 @@
 		点击打开options-preferences-general选项。
 		然后进入project file synchronization选项。
 		点击取消“background synchronization every * minutes” ，返回即可。
+
+二、在source insight中添加新的文件类型 
+	
+	2.1、在source insight中添加新的文件类型 
+	
+		https://blog.csdn.net/xuewater/article/details/25132507
+		
+		sourceinsight本身支持很多种文件类型，比如.c/.h/.c++之类的。但我们的使用过程中有时会想在工程中添加一些其他的类型文件（如effect file文件，即.fx文件），这时如果直接按照一般的方法去添加文件，是添加不进工程的。source insight为我们提供了添加新文件类型的功能，具体操作如下：
+ 
+		options-->document options-->add type-->输入你要添加的文件类型名称（这个名称应该可以随便命名，我没试过，但最好还是填写它本身的名字吧）-->在file filter的文本框中填写你这个文件类型对应的文件后缀，具体格式为“*.aidl”(这是我这里的情况哈)，还可以添加多个，具体情况可参见里面C Source File的file filter-->到此差不多已经算是添加成功了，但是要让你在add and remove project files对话框中显示出.aidl文件，还必须勾选document options对话框中的“include when adding to projects”.
+		————————————————
+		版权声明：本文为CSDN博主「xuewater」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+		原文链接：https://blog.csdn.net/xuewater/article/details/25132507
+		
+	2.2、
