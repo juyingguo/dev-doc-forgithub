@@ -948,3 +948,11 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+101、FLAG_ACTIVITY_CLEAR_TASK。This can only be used in conjunction with {@link #FLAG_ACTIVITY_NEW_TASK}.
+	
+	conjunction
+	英 [kənˈdʒʌŋkʃn]   美 [kənˈdʒʌŋkʃn]  
+	n.
+	连词， 连接词 (如and、but、or);(引起某种结果的事物等的)结合，同时发生;(恒星、行星等的)合
+	
+	

@@ -86,6 +86,8 @@
 		
 		adb shell dumpsys window displays //adb shell 命令查看屏幕尺寸
 		
+		adb shell dumpsys activity activities  //activity堆栈状态 
+		
 	2.7、
 		df 查看磁盘空间使用情况
 	2.8、查看进程
