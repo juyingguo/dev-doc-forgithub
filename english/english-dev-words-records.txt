@@ -955,4 +955,23 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	连词， 连接词 (如and、but、or);(引起某种结果的事物等的)结合，同时发生;(恒星、行星等的)合
 	
+102、 The base elevation of this view relative to its parent, in pixels. 
+	elevation
+	英 [ˌelɪˈveɪʃn]   美 [ˌelɪˈveɪʃn]  
+	n.
+	提拔;晋级;提升;(某地方的)高度;(尤指)海拔;高地;高处。
+103、Reciprocal	
+	Reciprocal
+	英 [rɪˈsɪprəkl]   美 [rɪˈsɪprəkl]  
+	倒数;互惠的;相互的;互惠;互惠贸易
 	
+104、ceil
+	v.
+	装天花板；装壁板；装隔板
+	
+	floor
+	英 [flɔː(r)]   美 [flɔːr]  
+	n.
+	地板;地面;(车厢内的)底板;楼层
+	v.
+	使惊奇;使困惑;(尤指体育运动中)击倒，打倒;给…安装地板;给…铺设地面
