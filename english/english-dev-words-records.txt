@@ -975,3 +975,10 @@ The transferer. Set only in constructor, but cannot be declared
 	地板;地面;(车厢内的)底板;楼层
 	v.
 	使惊奇;使困惑;(尤指体育运动中)击倒，打倒;给…安装地板;给…铺设地面
+105、slop 
+	slop
+	英 [slɒp]   美 [slɑːp]  
+	v.
+	晃荡;(常指)溢出，溅出;倒出;使泼出;使溅洒
+	n.
+	泔水;(倒掉的)剩饭菜;污水;脏水
