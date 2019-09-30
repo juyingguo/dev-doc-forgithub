@@ -13,3 +13,6 @@
 	https://blog.csdn.net/qiumeqiu/article/details/50837576
 二、Android中Gradle常用配置
 	2.1 https://www.jianshu.com/p/7ca459085b96
+	
+三、Android Studio 使用Hierarchy Viewer 
+	3.1、Layout Inspector —— Android Studio 替代 Hierarchy Viewer 的新方案
