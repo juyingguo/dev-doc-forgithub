@@ -63,6 +63,8 @@
 		-f 删除 文件
 		-df 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
 		-d -f 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
+		参考：https://git-scm.com/docs/git-clean
+			https://blog.csdn.net/qq_15037231/article/details/83013563
 	 git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
 	 use "git reset HEAD <file>..." to unstage)  从暂存区移除，会再次回到工作区。
 	 
