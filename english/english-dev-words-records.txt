@@ -982,3 +982,60 @@ The transferer. Set only in constructor, but cannot be declared
 	晃荡;(常指)溢出，溅出;倒出;使泼出;使溅洒
 	n.
 	泔水;(倒掉的)剩饭菜;污水;脏水
+106、 If there is no inherent limit then the value {@link
+     * java.lang.Long#MAX_VALUE} will be returned.
+	 inherent
+	英 [ɪnˈherənt]   美 [ɪnˈhɪrənt]  
+	adj.
+	固有的;内在的
+107、fuzzy
+	英 [ˈfʌzi]   美 [ˈfʌzi]  
+	adj.
+	覆有绒毛的;毛茸茸的;紧鬈的;拳曲的;(形状或声音)模糊不清的 
+108、Comparator 。the sign of compare(a,b) must be the opposite of the sign of compare(b,a) for all pairs of (a,b)
+	opposite
+	英 [ˈɒpəzɪt]   美 [ˈɑːpəzɪt]  
+	adj.
+	对面的;另一边的;相反的;迥然不同的
+	n.
+	对立的人(或物);对立面;反面
+	prep.
+	与…相对;在…对面;与…合演;与…联袂演出
+	adv.
+	在对面，对过
+109、Compute a scale that will maintain the original src aspect ratio, but will also ensure
+          that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. The
+          result is centered inside dst.
+	计算一个将保持原始src长宽比的比例，但也将确保
+	src完全符合dst。至少有一个轴（x或y）将完全适合。这个结果在DST中居中。
+	
+	aspect ratio
+	英 [ˈæspekt reɪʃiəʊ]   美 [ˈæspekt reɪʃioʊ]  
+	纵横比；屏幕高宽比 
+	
+	aspect
+	英 [ˈæspekt]   美 [ˈæspekt]  
+	n.
+	方面;层面;样子;外观;外表;朝向;方位
+110、Scale the image uniformly (maintain the image's aspect ratio) so
+        that both dimensions (width and height) of the image will be equal
+        to or larger than the corresponding dimension of the view
+        (minus padding). The image is then centered in the view.
+	均匀缩放图像（保持图像的纵横比），以便
+	图像的两个维度（宽度和高度）将相等
+	大于或等于视图的相应尺寸 （减去填充）。然后图像在视图中居中。
+	uniform
+	英 [ˈjuːnɪfɔːm]   美 [ˈjuːnɪfɔːrm]    
+	n.
+	制服;校服
+	adj.
+	一致的;统一的;一律的
+	
+	minus
+	英 [ˈmaɪnəs]   美 [ˈmaɪnəs]  
+	prep.
+	减;减去;零下;无，欠缺(曾经有过的东西)  
+	n.
+	减号;负号;负值;缺点
+	adj.
+	小于零的;负的;负面的;使显得有欠缺的;略低于A(或B等)
