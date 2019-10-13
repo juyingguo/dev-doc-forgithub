@@ -1046,3 +1046,10 @@ The transferer. Set only in constructor, but cannot be declared
 	不透明的;不透光的;浑浊的;难懂;模糊;隐晦;不清楚
 	n.
 	不透明;晦暗;[建]遮檐;遮光涂料
+112、Applications that use the same resource multiple times in multiple sizes and
+	are willing to trade off some speed and disk space in return for lower bandwidth usage may want to consider using. 
+	如果应用程序在多个大小中多次使用同一资源，并且愿意牺牲一些速度和磁盘空间来换取较低的带宽使用率，则可能需要考虑使用。
+	in return for作为回报;作为交换 
+	trade off以…换取
+	
+	

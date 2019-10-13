@@ -1,0 +1,11 @@
+一、[Android]Android.mk 详解 
+	1.1、[Android]Android.mk 详解 
+		【Younix脏羊】，含android，linux，ubuntu，驱动移植，展讯、mtk,等
+		https://blog.csdn.net/dearsq/article/details/50585537
+		
+	1.2、Android.mk详解 
+		【c++】android。
+		https://blog.csdn.net/ly131420/article/details/9619269
+		
+	1.3、Android.mk文件语法规范（Android.mk File） 
+		https://blog.csdn.net/smfwuxiao/article/details/8530742

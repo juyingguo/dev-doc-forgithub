@@ -1,0 +1,541 @@
+
+new_ui ，new_ui_nk 分支
+1.
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/frameworks$ git branch  -a
+  NJ_2015A
+  master
+* new_ui
+  new_ui_nk
+  remotes/m/master -> origin/master
+  remotes/origin/NJ_2015A
+  remotes/origin/master
+  remotes/origin/new_ui
+  remotes/origin/new_ui_nk
+ 2. 
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/device$ git branch  -a
+  NJ_2015A
+  master
+* new_ui
+  new_ui_nk
+  remotes/m/master -> origin/master
+  remotes/origin/AD500A
+  remotes/origin/NJ_2015A
+  remotes/origin/i10
+  remotes/origin/i10_ADATA
+  remotes/origin/i10_yison
+  remotes/origin/master
+  remotes/origin/new_ui
+  remotes/origin/new_ui_nk
+3.
+juying_dai@ibotn-Aspire-TC-705:/home/bin_yi/android/android/packages$ git branch  -a
+  master
+* new_ui
+  remotes/m/master -> origin/master
+  remotes/origin/i10
+  remotes/origin/master
+  remotes/origin/new_ui
+  
+  
+问题：：Q01
+On branch new_ui
+Your branch and 'origin/master' have diverged,
+and have 11 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working directory clean  
+Q02 
+secure  crt 
+                                                                                                              [ Read 7 lines ]
+^G Get Help  ^O WriteOut  ^R Read File   ^Y Prev Page  ^K Cut Text         ^C Cur Pos
+^X Exit                                ^J Justify                             ^W Where Is                            ^V Next Page                           ^U UnCut Text                          ^T To Spell
+https://blog.csdn.net/u012313689/article/details/53033681
+
+Q03
+Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_device into new_ui
+		
+
+
+Q04 
+
+secure  crt 
+
+File Name to Write: /home/juying_dai/android/android/device/.git/MERGE_MSG                                                                                                                                                                  
+^G Get Help   M-D DOS Format    M-A Append  M-B Backup File             
+^C Cancel M-M Mac Format  M-P Prepend
+
+
+Q05 
+ 创建分支 new_ui，
+ juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ git log -2
+commit cb020aaf4dc70167bbc92b6b2b8f740d67093439
+Author: sw13 <sw13@ibotn.com>
+Date:   Mon Jun 11 10:37:29 2018 +0800
+
+    add print
+
+commit a472943d301b456c7aef8d53aaa5293f6247ced5
+Author: sw13 <sw13@ibotn.com>
+Date:   Fri Jun 8 15:07:52 2018 +0800
+
+    force refresh time
+juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ git log origin/new_ui -2
+commit 6ae32833ea57315768b5254624ef130db8a06b45
+Author: builder <builder@ibotn.com>
+Date:   Wed Dec 12 18:15:55 2018 +0800
+
+    TAG_20181208
+
+commit 996c2dbf0123288a4dba2eb11264c5b0bf031205
+Author: jlzou <sw18@ibotn.com>
+Date:   Fri Jul 13 09:00:46 2018 +0800
+
+    修改系统默认开关机等的progress
+juying_dai@ibotn-Aspire-TC-705:~/android/android/frameworks$ 
+
+需要 git pull origin new_ui:new_ui
+
+Q06 
+Merge HEAD, branches 'new_ui' and 'new_ui' of ssh://192.168.1.21/android/s500_device
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+
+@07  repo sync 导致新拉取的远程分支 自动切换到远程master，导致严重问题。
+android/frameworks/: leaving new_ui; does not track upstream
+android/packages/: leaving new_ui; does not track upstream
+
+android/packages/: manifest switched refs/heads/new_ui...master
+android/packages/: discarding 20 commits removed from upstream
+Git新建本地分支与远程分支关联问题：git branch --set-upstream
+
+提示：：
+The --set-upstream flag is deprecated and will be removed. Consider using --track or --set-upstream-to
+Branch new_model set up to track remote branch new_model from origin.
+
+
+解决方法：
+
+ 使用命令git branch --set-upstream ;实例如下，其中debug为创建的分支
+
+git branch --set-upstream debug origin/debug
+http://www.cnblogs.com/freefish12/p/5819134.html
+
+
+///7.1 关联前
+[core]
+	repositoryformatversion = 0
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+[remote "origin"]
+	url = ssh://gitolite@192.168.1.21/android/s500_device
+	projectname = android/s500_device
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+#7.2 参考bin_yi
+[core]
+	repositoryformatversion = 0
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+[remote "origin"]
+	url = ssh://gitolite@192.168.1.21/android/s500_device
+	projectname = android/s500_device
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "new_ui_nk"]
+	remote = origin
+	merge = refs/heads/new_ui_nk
+
+#7.3	关联后，
+
+
+##7.4 我的git doc test  关联前 
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/juyingguo/dev-doc-forgithub.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[gui]
+	wmstate = normal
+	geometry = 1436x818+19+0 189 218
+[branch "test_2"]
+	remote = origin
+	merge = refs/heads/test_2
+##7.5 关联后
+
+
+#09  download 代码
+ 默认没有master分支。
+ 拉去代码没有缺少一下两行命令
+ repo forall -c git pull origin master
+	repo forall -c git checkout master
+
+#10 查看apk中的so文件。提取apk中的so文件
+
+#11 裁剪apk
+
+	#11.2 添加新的apk
+		参考：扫描阅读
+			commit e298bfec9b50faca04d8b9c18aeb72d4686821ae
+			Author: jlzou <sw18@ibotn.com>
+			Date:   Sat Jan 27 17:22:52 2018 +0800
+
+			添加扫描阅读apk
+		
+		b/actions/bubble_gum/device.mk 
+		b/actions/common/prebuilt/apk/thirdparty/ibotnQRScan/Android.mk
+	#
+#12 编译后，系统版本号不对
+#13 facer_1.1.21_20181227 没有编译	
+	android/out 删除后，全新编译。就没有改问题了。
+#14 一些操作配置
+	##14.1 目标文件夹访问被拒绝，您需要权限来执行此操作
+	1. 解决方案 chmode -R 777 /home/jlzou
+		1.2,引发问题：git status .  时 ，本地文件变动太大。只是文件属性变动
+			1、修改忽略文件权限
+
+			git config core.filemode false
+
+			2、查看配置
+
+			git config --list
+
+			发现core.filemode=false表明成功
+		1.3 、还用问题：
+			1、@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+			@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+			@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+			Permissions 0777 for '/home/jlzou/.ssh/id_rsa' are too open.
+			It is required that your private key files are NOT accessible by others.
+			This private key will be ignored.
+			bad permissions: ignore key: /home/jlzou/.ssh/id_rsa
+			
+			根据提示输入密码即可
+			2. chmod 时，只需修改工程目录。下载源码后的第一层相关配置信息不用修改权限。
+	2. 
+	打开我的电脑，在所在磁盘上右键---》属性--》安全选项卡--》高级--》权限选项卡下点更改权限 在名称下有没有你当前的用户名，没有的话 点添加--》输入你现在的用户名，确定后 勾选完全控制 --》确定 会返回来。在勾选“使用可从此对象继承的权限替换所有子对象权限” 一路确定即可，一定要等他自动完成了。
+	此时应该就可以创建文件夹了，其他盘类是操作
+	
+	##14.2  indows7环境，登录samba服务器后如何注销
+
+	方法1、开始 -> 运行 -> cmd，执行net use * /del，然后根据提示按Y是取消远程连接，N是放弃。执行net use 可以查看所有的远程连接。
+
+	方法2、开始 -> 运行 -> control userpasswords2，高级->管理密码->windows凭据，然后把你记住密码的所在服务器名称删除
+	--------------------- 
+	作者：wangbobit 
+	来源：CSDN 
+	原文：https://blog.csdn.net/bolvtin/article/details/51169981 
+
+	USER-20180426NS\juying_dai
+	
+	##14.3 映射网络驱动器，便于快速进入远端源码仓库目录。
+
+#15 20190107 版本/home/juying_dai/testproject/ibotn_nk
+	 modified:   actions/bubble_gum/device.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/SmartAlarm/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/arcibotnface/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/extFileExplore/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/filemanager/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnCloudPlayer/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnQRScan/Android.mk
+        modified:   actions/common/prebuilt/apk/thirdparty/ibotnphone/Android.mk
+
+		 actions/common/prebuilt/apk/thirdparty/IbotnLauncher/app/ibotnLauncher_NK_release_V1.7.94_20190107.apk
+        actions/common/prebuilt/apk/thirdparty/IbotnModuleShare/
+        actions/common/prebuilt/apk/thirdparty/MoboPlayer/
+        actions/common/prebuilt/apk/thirdparty/SmartAlarm/app/SmartAlarm_release_V3.2.10_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/arcibotnface/app/facer_1.1.21_20181227.apk
+        actions/common/prebuilt/apk/thirdparty/extFileExplore/app/FileExplore_release_V2.1.7_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/filemanager/IbotnFileManage_release_V1.0.4_20181214.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnCloudPlayer/app/ibotnCloudPlayer_release_V1.3.48_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnQRScan/app/ibotnQRScan_V1.0.19_20181229.apk
+        actions/common/prebuilt/apk/thirdparty/ibotnphone/app/ibotnphone_V1.2.82_20181229_release.apk
+	//////	
+		cp /home/juying_dai/testproject/ibotn_nk/android/device/actions/bubble_gum/device.mk  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/bubble_gum/device.mk
+		
+		cp -r /home/juying_dai/testproject/ibotn_nk/android/device/actions/common/prebuilt/apk/thirdparty/  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/common/prebuilt/apk/
+		cp /home/juying_dai/testproject/ibotn_nk/android/device/actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk  /home/jlzou/android/alps/Ibotn_NK/android/device/actions/common/prebuilt/apk/thirdparty/IbotnLauncher/Android.mk
+16、差分升级编译。单独使用一个文件记录
+
+	 
+	 16.7、//单独放到
+	 
+	 
+	 
+	 
+17、基线版本201805月份，不可刷机试产板子，烧坏板子。
+
+18、差分升级，
+	18.1、在线
+	18.2、sdcard 导入差分包到 /sdcard/update.zip
+		adb reboot recovery ///执行该行命令。
+19、差分升级失败
+	19.1 diff180723_190107
+	19.2 验证md5及文件大小正常。
+	19.3 使用差分包导入sdcard升级
+	19.4 使用升级失败时所下载的update.zip 使用sdcard方式升级。
+	19.5 服务器脚本文件可能有乱码，不易发现的换行和空格，在linux，去掉空格即可。
+
+	
+20、git status . ； git  diff 一直没有返回；其它命令可以。数据更新太多，需要等待久。
+
+21、TAG_I10NK_5110_190107 差分升级到 TAG_I10NK_5110_190222 。
+	显示为：TAG_I10NK_5110_190104
+	1.是因为没有删除/android/out/目录
+	2.
+22、用户机器，TAG_I10NK_5110_180602 升级到TAG_I10NK_5110_190107 后开不了机器
+	1.半年没有开过机了。
+	2.版本发布前测试是ok。
+	
+	
+23、炬力s500文档	
+	
+24、全量包升级验证
+  24.1、 180505 版本，检查升级，会到：180507
+  
+  24.2、全量升级与差分升级却别。
+  
+25、修改项没有编译进入新版本中。解决办法
+	1.out不删除，删除修改项对应在out目录下的内容，如修改frameworks\base\packages\SettingsProvider\src\com\android\providers\settings\DatabaseHelper.java
+		则可删除 out下目录  out\*\system\priv-app\SettingsProvider\SettingsProvider.apk
+		这样系统编译时检测没有，就会重新编译。
+	
+	make
+
+　　其实这一步没啥好说的，就是全部编译，简称全编，在已经有out目录存在的时候，它会自动检测哪些地方的代码有修改，然后针对那些地方单编，最后再打包，
+	但这里需要注意是，假设已经有out目录存在，有些地方的改动，例如替换了一个资源文件，在make编的时候可能会没办法自动检测到，所以不会被更新进out目录
+	
+	./aut
+	
+	mmm ,mmm -B module_dir 
+
+　　我们知道android是由很多的模块组成，该命令加上具体路径就是单独编译某模块的命令，简称单编，需要注意的是有些时候直接mmm的话可能也会漏掉改动，建议后面加上  -B  以完全单编这个模块.
+	
+	mm ,mm -B 
+26、android 编译内核后 目录位置 
+		Z:\testproject\ibotn_nk\owl\out\s500_android_bubble_gum\kernel\arch\arm\boot
+	设置中应用，android系统是哪个应用	
+		
+27、android源码编译，版本号什么地方写入		
+	jlzou@ibotn-Aspire-TC-705:~/android/alps/Ibotn_NK/android$ grep -r TAG_I10N device/
+	device/actions/bubble_gum/device.mk:    ro.build.display.id=TAG_I10NK_5110_$(shell date "+%y%m%d") \
+	
+	jlzou@ibotn-Aspire-TC-705:~/android/alps/Ibotn_NK/android$ grep -r ro.build.display.id frameworks/
+	frameworks/native/cmds/dumpstate/dumpstate.c:    property_get("ro.build.display.id", build, "(unknown)");
+	frameworks/base/core/java/android/os/Build.java:    public static final String DISPLAY = getString("ro.build.display.id");
+	
+	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android$ grep -r  ro.build.display
+	build/tools/buildinfo.sh:#echo "ro.build.display.id=$BUILD_DISPLAY_ID"
+	build/tools/releasetools/sign_target_files_apks:      elif key == "ro.build.display.id":
+	bootable/recovery/recovery.cpp:    property_get("ro.build.display.id", recovery_version, "");
+	Binary file out/target/product/bubble_gum/symbols/system/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/symbols/system/bin/recovery matches
+	Binary file out/target/product/bubble_gum/symbols/system/bin/dumpstate matches
+	Binary file out/target/product/bubble_gum/recovery/root/sbin/recovery matches
+	out/target/product/bubble_gum/recovery/root/default.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/dex_bootjars/system/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/system.img matches
+	Binary file out/target/product/bubble_gum/system/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/system/bin/recovery matches
+	Binary file out/target/product/bubble_gum/system/bin/dumpstate matches
+	out/target/product/bubble_gum/system/build.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/dumpstate_intermediates/dumpstate.o matches
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/dumpstate_intermediates/dumpstate matches
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/dumpstate_intermediates/LINKED/dumpstate matches
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/recovery_intermediates/recovery matches
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/recovery_intermediates/recovery.o matches
+	Binary file out/target/product/bubble_gum/obj/EXECUTABLES/recovery_intermediates/LINKED/recovery matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/systemimage_intermediates/system.img matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/SYSTEM/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/SYSTEM/bin/recovery matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/SYSTEM/bin/dumpstate matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/SYSTEM/build.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/RECOVERY/RAMDISK/sbin/recovery matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190302/RECOVERY/RAMDISK/default.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/SYSTEM/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/SYSTEM/bin/recovery matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/SYSTEM/bin/dumpstate matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/SYSTEM/build.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/RECOVERY/RAMDISK/sbin/recovery matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190228/RECOVERY/RAMDISK/default.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/SYSTEM/framework/arm/boot.oat matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/SYSTEM/bin/recovery matches
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/SYSTEM/bin/dumpstate matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/SYSTEM/build.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/RECOVERY/RAMDISK/sbin/recovery matches
+	out/target/product/bubble_gum/obj/PACKAGING/target_files_intermediates/bubble_gum-target_files-190301/RECOVERY/RAMDISK/default.prop:ro.build.display.id=TAG_I10NK_5110_190228
+	Binary file out/target/common/obj/APPS/update_intermediates/classes.dex matches
+	Binary file out/target/common/obj/APPS/update_intermediates/classes/com/actions/utils/Utilities.class matches
+	Binary file out/target/common/obj/APPS/update_intermediates/with-local/classes.dex matches
+	Binary file out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes2.dex matches
+	Binary file out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes/android/os/Build.class matches
+	Binary file out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/with-local/classes2.dex matches
+	frameworks/native/cmds/dumpstate/dumpstate.c:    property_get("ro.build.display.id", build, "(unknown)");
+	frameworks/base/core/java/android/os/Build.java:    public static final String DISPLAY = getString("ro.build.display.id");
+	device/actions/bubble_gum/device.mk:    ro.build.display.id=TAG_I10NK_5110_$(shell date "+%y%m%d") \
+	device/actions/gb5_wxga/device.mk:      ro.build.display.id=TAG_AD500A_5110_$(VERSION_DATE) \
+	device/actions/common/packages/OTA/src/com/actions/utils/Utilities.java:        public static String mSystemVersion = "ro.build.display.id";
+	device/actions/gb5_wxga_sd/device.mk:   ro.build.display.id=TAG_AD500A_5110_$(VERSION_DATE) \
+	device/actions/bubble_gum_sd/device.mk: ro.build.display.id=TAG_AD500A_5110_$(VERSION_DATE) \
+	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android$ 
+		
+28、git add 时 异常提示。
+	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android/device$ git status .
+	 modified:   actions/bubble_gum/device.mk
+			modified:   actions/common/prebuilt/apk/thirdparty/iFlyIME/Android.mk
+			deleted:    actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libMetaVAD-v1.so
+			deleted:    actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libNativeCrashCollect.so
+
+	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk/android/device$ git add .
+	warning: You ran 'git add' with neither '-A (--all)' or '--ignore-removal',
+	whose behaviour will change in Git 2.0 with respect to paths you removed.
+	Paths like 'actions/common/prebuilt/apk/thirdparty/iFlyIME/lib/libMetaVAD-v1.so' that are
+	removed from your working tree are ignored with this version of Git.
+
+	* 'git add --ignore-removal <pathspec>', which is the current default,
+	  ignores paths you removed from your working tree.
+
+	* 'git add --all <pathspec>' will let you also record the removals.
+
+	Run 'git status' to check the paths you removed from your working tree.		
+29、device 目录下，生成的misc.img,recovery.img,atc260x-adckeypad.ko 需要提交吗？
+
+	/*****
+	modified:   actions/bubble_gum/bootbin/misc.img
+        modified:   actions/bubble_gum/bootbin/recovery.img
+        modified:   actions/bubble_gum/config/recovery/atc260x-adckeypad.ko
+	*/
+
+	diff --git a/actions/bubble_gum/bootbin/misc.img b/actions/bubble_gum/bootbin/misc.img
+	index 36d8b2a..8fe16ce 100755
+	Binary files a/actions/bubble_gum/bootbin/misc.img and b/actions/bubble_gum/bootbin/misc.img differ
+	diff --git a/actions/bubble_gum/bootbin/recovery.img b/actions/bubble_gum/bootbin/recovery.img
+	index cabdaea..59ea773 100755
+	Binary files a/actions/bubble_gum/bootbin/recovery.img and b/actions/bubble_gum/bootbin/recovery.img differ
+	diff --git a/actions/bubble_gum/config/recovery/atc260x-adckeypad.ko b/actions/bubble_gum/config/recovery/atc260x-adckeypad.ko
+	index 396e83a..da7eaaf 100644
+	Binary files a/actions/bubble_gum/config/recovery/atc260x-adckeypad.ko and b/actions/bubble_gum/config/recovery/atc260x-adckeypad.ko differ
+	
+	29.1、关于boot.img和recovery.img的修改和编辑 
+		https://blog.csdn.net/love_xsq/article/details/53263025
+	
+	29.2、android中的misc.img是有哪些源文件编译成的 
+		https://zhidao.baidu.com/question/1754941744988315828.html 
+	
+	29.3、Android recovery.img与boot.img简单对比 
+		https://blog.csdn.net/chenliujiang1989/article/details/7088568?locationNum=5&fps=1
+		
+30、ibotnnewapp 手机端编译到机器固件中。
+	30.1、加入ibotnnewapp 后编译失败
+		
+		30.1.1、
+			dex2oatd F 31686 31686 art/runtime/runtime_linux.cc:313] Fault message: 
+			make[1]: *** [out/target/product/bubble_gum/obj/APPS/ibotnnewapp_intermediates/arm/package.odex] Aborted (core dumped)
+			make[1]: *** Deleting file `out/target/product/bubble_gum/obj/APPS/ibotnnewapp_intermediates/arm/package.odex'
+			make[1]: *** Waiting for unfinished jobs....
+			make[1]: Leaving directory `/home/juying_dai/testproject/ibotn_nk/android'
+		
+		30.1.2、
+			/////
+			 --android-root=out/target/product/bubble_gum/system --instruction-set=arm --instruction-set-features=default --include-patch-information --runtime-arg -Xnorelocate --no-include-debug-symbols
+				dex2oatd W 31686 31686 art/runtime/class_linker.cc:5025] Before Android 4.1, method int android.support.v7.widget.DropDownListView.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+			dex2oatd W 31686 31686 art/runtime/class_linker.cc:5025] Before Android 4.1, method int android.support.v7.widget.MenuPopupWindow$MenuDropDownListView.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+			
+			////////////////////////
+			Kris Fei's blog
+			让分享成为一种习惯。
+			【系统调试笔记】
+			[RK3288][Android6.0] 调试笔记 --- 通过adb安装APK时间很长问题
+				https://blog.csdn.net/kris_fei/article/details/72235904
+				
+				
+			现采用，新建一个app,编译到固件中，模拟升级，处理中。
+			
+		30.1.3、
+			target thumb C++: bootanimation <= frameworks/base/cmds/bootanimation/BootAnimation.cpp
+			Import includes file: out/target/product/bubble_gum/obj/SHARED_LIBRARIES/sensors.S500_intermediates/import_includes
+			Export includes file: device/actions/common/hardware/libsensor/libsensor_actions/Android.mk -- out/target/product/bubble_gum/obj/SHARED_LIBRARIES/sensors.S500_intermediates/export_includes
+			In file included from frameworks/base/cmds/bootanimation/BootAnimation.cpp:44:0:
+			external/skia/include/core/SkStream.h:111:18: warning: unused parameter 'position' [-Wunused-parameter]
+				 virtual bool seek(size_t position) { return false; }
+							  ^
+			external/skia/include/core/SkStream.h:117:18: warning: unused parameter 'offset' [-Wunused-parameter]
+				 virtual bool move(long offset) { return false; }
+							  ^
+			In file included from external/skia/include/core/SkShader.h:17:0,
+							 from external/skia/include/core/SkImage.h:24,
+							 from external/skia/include/core/SkImageDecoder.h:12,
+							 from frameworks/base/cmds/bootanimation/BootAnimation.cpp:45:
+			external/skia/include/core/../gpu/GrColor.h:69:20: warning: unused parameter 'c' [-Wunused-parameter]
+			 static inline void GrColorIsPMAssert(GrColor c) {
+								^
+			In file included from external/skia/include/core/SkImage.h:24:0,
+							 from external/skia/include/core/SkImageDecoder.h:12,
+							 from frameworks/base/cmds/bootanimation/BootAnimation.cpp:45:
+			external/skia/include/core/SkShader.h:376:18: warning: unused parameter 'rec' [-Wunused-parameter]
+				 virtual bool asACompose(ComposeRec* rec) const { return false; }
+							  ^
+			external/skia/include/core/SkShader.h:397:18: warning: unused parameter 'customData' [-Wunused-parameter]
+				 virtual bool asACustomShader(void** customData) const { return false; }
+							  ^
+			In file included from frameworks/base/cmds/bootanimation/BootAnimation.cpp:45:0:
+			external/skia/include/core/SkImageDecoder.h:397:18: warning: unused parameter 'width' [-Wunused-parameter]
+				 virtual bool onBuildTileIndex(SkStreamRewindable*, int *width, int *height) {
+							  ^
+			external/skia/include/core/SkImageDecoder.h:397:18: warning: unused parameter 'height' [-Wunused-parameter]
+			external/skia/include/core/SkImageDecoder.h:403:18: warning: unused parameter 'bitmap' [-Wunused-parameter]
+				 virtual bool onDecodeSubset(SkBitmap* bitmap, const SkIRect& rect) {
+							  ^
+			external/skia/include/core/SkImageDecoder.h:403:18: warning: unused parameter 'rect' [-Wunused-parameter]
+			frameworks/base/cmds/bootanimation/BootAnimation.cpp: In member function 'android::status_t android::BootAnimation::playMusic()':
+			frameworks/base/cmds/bootanimation/BootAnimation.cpp:838:22: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+				  defalutfilename = "/system/etc/poweron.mp3";
+								  ^
+			frameworks/base/cmds/bootanimation/BootAnimation.cpp:849:22: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+				  defalutfilename = "/system/etc/poweroff.mp3";
+		
+		
+		
+		
+31、DingshengXb-190925.apk 编译到固件中失败
+	PRODUCT_COPY_FILES device/actions/common/prebuilt/codec/atm7059/media_profiles.xml:system/etc/media_profiles.xml ignored.
+	No private recovery resources for TARGET_DEVICE bubble_gum
+	make[1]: *** No rule to make target `device/actions/common/prebuilt/apk/thirdparty/DingshengXb/app/DingshengXb-190925.apk', needed by `out/target/product/bubble_gum/obj/APPS/DingshengXb_intermediates/package.apk'.  Stop.
+	make[1]: Leaving directory `/home/juying_dai/testproject/ibotn_nk/android'
+
+	#### make failed to build some targets (02:39 (mm:ss)) ####
+
+	make: *** [system] Error 2
+	juying_dai@ibotn-Aspire-TC-705:~/testproject/ibotn_nk$ 
+	
+		no rule to make target `device/actions/common/prebuilt/apk/thirdparty/*/app/*.apk', needed by `out/target/product/*/obj/APPS/*.apk'.  Stop.
+		
+	31.1、单独模块编译其它模块，正常。
+	
+	31.2、单独模块编译DingshengXb。
+		make: *** No rule to make target `device/actions/common/prebuilt/apk/thirdparty/DingshengXb/app/DingshengXb-190925.apk', needed by 					`out/target/product/bubble_gum/obj/APPS/DingshengXb_intermediates/package.apk'.  Stop.
+		make: Leaving directory `/home/juying_dai/testproject/ibotn_nk/android'
+		
+	31.3、Android.mk
+		LOCAL_MODULE_SUFFIX:=.apk 
+		LOCAL_MODULE_PATH := $(TARGET_OUT)/app
+		全部修改成app。且存放apk的文件夹，重新命名为app.
+		
+		参考文献，启发灵感
+		https://blog.csdn.net/roserose0002/article/details/38397537
+		https://stackoverflow.com/questions/17911192/make-no-rule-to-make-target-device-debug-stop
+		https://blog.csdn.net/txk15619567977/article/details/44830547
