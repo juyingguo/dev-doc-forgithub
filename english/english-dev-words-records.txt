@@ -1039,3 +1039,10 @@ The transferer. Set only in constructor, but cannot be declared
 	减号;负号;负值;缺点
 	adj.
 	小于零的;负的;负面的;使显得有欠缺的;略低于A(或B等)
+111、dirtyopaque 肮脏不透明
+	opaque
+	英 [əʊˈpeɪk]   美 [oʊˈpeɪk]  
+	adj.
+	不透明的;不透光的;浑浊的;难懂;模糊;隐晦;不清楚
+	n.
+	不透明;晦暗;[建]遮檐;遮光涂料
