@@ -1052,4 +1052,13 @@ The transferer. Set only in constructor, but cannot be declared
 	in return for作为回报;作为交换 
 	trade off以…换取
 	
+113、SuppressLint 抑制物 
+	suppress 
+	suppress
+	英 [səˈpres]   美 [səˈpres]  
+	v.
+	镇压;(武力)平定;压制;禁止(发表);查禁;封锁;抑制;控制;忍住
+	Lint
+	英 [lɪnt]   美 [lɪnt]  
+	皮棉;棉绒;毛绒;软麻布;绒布
 	

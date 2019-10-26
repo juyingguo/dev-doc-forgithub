@@ -1,9 +1,9 @@
 一、repo command
  1、repo forall -c git checkout A602 本地的分支切换
  2、repo forall -c git checkout -b A602G55 amlogic/A602G55 创建新分支，并且切换
- 3、repo forall -p -c git branch 查看所有本地分支
-	repo forall -p -c git branch -a 查看所有本地及远程分支
- 三、
+ 3、repo forall -p -c git branch 查看所有本地分支。并显示工程头。
+	repo forall -p -c git branch -a 查看所有本地及远程分支。并显示工程头。
+二、repo命令详解
 	Usage: repo forall [<project>...] -c <command> [<arg>...]
 	repo forall -r str1 [str2] ... -c <command> [<arg>...]"
 
@@ -40,3 +40,4 @@
 	来源：CSDN 
 	原文：https://blog.csdn.net/qwaszx523/article/details/54405793 
 	版权声明：本文为博主原创文章，转载请附上博文链接！
+三、
