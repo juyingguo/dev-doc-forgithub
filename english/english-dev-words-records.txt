@@ -1061,4 +1061,23 @@ The transferer. Set only in constructor, but cannot be declared
 	Lint
 	英 [lɪnt]   美 [lɪnt]  
 	皮棉;棉绒;毛绒;软麻布;绒布
+114、interference  
+	Stop scans if necessary to prevent interference while connected
+	必要时停止扫描以防止连接时发生干扰。
+	interference
+	英 [ˌɪntəˈfɪərəns]   美 [ˌɪntərˈfɪrəns]  
+	n.
+	干涉;干预;介入;(无线电信号的)干扰
+115、number increased each time device sends an initial announce or an update message
+	upnp
+	每次设备发送初始通知或更新消息时增加的数目
+		announce
+	英 [əˈnaʊns]   美 [əˈnaʊns]  
+	v.
+	宣布，宣告(决定、计划等);(尤指通过广播)通知;声称;宣称
+	
+116、 identifies port on which device responds to unicast 
+		标识设备响应单播的端口
+		unicast
+		点播;单点广播;单播;单播地址;单点传送
 	

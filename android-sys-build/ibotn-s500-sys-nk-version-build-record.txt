@@ -539,3 +539,9 @@ http://www.cnblogs.com/freefish12/p/5819134.html
 		https://blog.csdn.net/roserose0002/article/details/38397537
 		https://stackoverflow.com/questions/17911192/make-no-rule-to-make-target-device-debug-stop
 		https://blog.csdn.net/txk15619567977/article/details/44830547
+32、framework目录编译后对应的jar分别为哪些？
+33、android/framework出现补丁
+	add_model_select.patch
+			add_model_select_bug_home_recent_gone.patch
+			base/core/res/diff.patch
+			input.patch

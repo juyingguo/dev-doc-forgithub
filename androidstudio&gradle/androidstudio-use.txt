@@ -16,3 +16,23 @@
 	
 三、Android Studio 使用Hierarchy Viewer 
 	3.1、Layout Inspector —— Android Studio 替代 Hierarchy Viewer 的新方案
+	
+四、Android studio xml文件中资源引用错误.编译失败，但没有提示哪一行错误。当前as版本3.4.2
+	4.1、尝试解决方式
+		Errors while building APK. You can find the errors in the 'Messages' view.
+		打包报错：Generate Signed APK: Errors while building APK. You can find the errors in the 'Messages' view.
+		https://blog.csdn.net/qq_30304193/article/details/81704921
+		
+		Process 'command 'D:\juying\java2\sdk\build-tools\25.0.3\aapt.exe'' finished with non-zero exit value 1
+		
+		xml错误，androidstudio 不提示哪一行
+		
+		Android studio xml文件中资源引用错误	
+			Android studio Xml 中部分资源文件不提示
+			https://blog.csdn.net/zgy621101/article/details/75991814
+		
+	
+	4.2、升级后as3.5.2。会显示哪一行错误。
+		No resource found that matches the given name (at 'text' with value '@string/str_i_zhile02').
+		
+		
