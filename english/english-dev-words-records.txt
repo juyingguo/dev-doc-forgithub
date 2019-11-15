@@ -1080,4 +1080,10 @@ The transferer. Set only in constructor, but cannot be declared
 		标识设备响应单播的端口
 		unicast
 		点播;单点广播;单播;单播地址;单点传送
+117、Compressor is a lightweight and powerful android image compression library. Compressor will allow you to compress large photos into smaller sized photos with very less or 	negligible loss in quality of the image.
+	Compressor是一个轻量级和强大的android图像压缩库。压缩器将允许您将大照片压缩成小照片，图像质量损失非常小或可以忽略不计。
+	negligible
+	英 [ˈneɡlɪdʒəbl]   美 [ˈneɡlɪdʒəbl]  
+	adj.
+	微不足道的;不重要的;不值一提的
 	
