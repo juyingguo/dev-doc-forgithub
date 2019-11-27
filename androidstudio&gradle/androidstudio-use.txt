@@ -36,3 +36,12 @@
 		No resource found that matches the given name (at 'text' with value '@string/str_i_zhile02').
 		
 		
+五、Android studio 升级后as3.5.2 
+	很多原有正常的java文件，都是乱码，通过其它文件查看器查看却是正常的。
+	
+	5.1、Android studio3.5 文件显示错乱
+		https://blog.csdn.net/mp624183768/article/details/103102642 
+		
+	5.2、Android Studio3.5 xml文件格式化(Reformat Code)后元素会自动排序的问题 
+		https://blog.csdn.net/choimroc/article/details/100010267 
+		
