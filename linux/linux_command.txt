@@ -107,9 +107,51 @@
 		#表示超级用户，也就是root用户
 	10.3 切换用户
 		su username //切换用户的命令为：
-		sudo su //从普通用户切换到root用户，还可以使用命令：
+		sudo su //从普通用户切换到root用户，还可以使用该命令，此时只需要输入当前用户的密码就可以切换到root用户了。
 		su root //从普通用户切换到root用户
 		exit // ctrl+d  在终端输入exit或logout或使用快捷方式ctrl+d，可以退回到原来用户，其实ctrl+d也是执行的exit命令
 (11) Linux中.swp 文件的产生与解决方法
 			https://blog.csdn.net/qq_42200183/article/details/81531422
+(12) rm 删除数据恢复。
+	12.1、test.txt
+		lsof  | grep test.txt
+		lsof: WARNING: can't stat() fuse.gvfsd-fuse file system /run/user/112/gvfs
+			Output information may be incomplete.
+			有警告没关系，但是没有列出文件。
+			需要root权限，验证root用户下，也是这个提示。
+			如：https://www.jianshu.com/p/e5b9225d4ca9
+				
+			lsof: WARNING: can't stat() fuse.gvfsd-fuse file system
+			
+			参考资料：https://unix.stackexchange.com/questions/171519/lsof-warning-cant-stat-fuse-gvfsd-fuse-file-system
+			
+		
+		
+	12.2、Linux下用rm删除的文件的恢复方法
+		a、https://www.cnblogs.com/rgqancy/p/10169054.html
+		
+		
+		b、Linux恢复误删除的文件或者目录
+		https://www.jianshu.com/p/662293f12a47
+		
+		Linux下用rm删除的文件的恢复方法
+		
+	12.3、lsof 需要root权限吗 
+	
+		
+	12.4、FUSE filesystem
+		1.FUSE简介（译）
+			https://blog.csdn.net/coroutines/article/details/39497601
+		
+		2.FUSE简介(原文)
+			http://www.linux.org/threads/fuse.6211/
+		
+		3.FUSE项目位于http://fuse.sourceforge.net/，是一个开源项目
+		
+(13) linux lsof命令详解 
+	13.1、Linux lsof命令详解
+		https://www.cnblogs.com/sparkbj/p/7161669.html
+	13.2、Linux lsof命令详解
+		https://www.cnblogs.com/muchengnanfeng/p/9554993.html
+		
 		
