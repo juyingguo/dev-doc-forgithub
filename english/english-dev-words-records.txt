@@ -1095,3 +1095,21 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ɪnˈtaɪtl]   美 [ɪnˈtaɪtl]  
 	v.
 	使享有权利;使符合资格;给…命名(或题名)
+
+	
+120、 Choosing a default size of 8 based on analysis of typical  consumption by applications. 根据应用程序的典型消耗分析，选择默认大小8。
+	analysis
+	英 [əˈnæləsɪs]   美 [əˈnæləsɪs]  
+	n.
+	(对事物的)分析，分析结果;(对物质的)分析
+	
+	consumption
+	英 [kənˈsʌmpʃn]   美 [kənˈsʌmpʃn]  
+	n.
+	(能量、食物或材料的)消耗，消耗量;消费;肺病;肺痨;肺结核
+	
+	consume
+	英 [kənˈsjuːm]   美 [kənˈsuːm]  
+	v.
+	消耗，耗费(燃料、能量、时间等);吃;喝;饮;使充满(强烈的感情)
+
