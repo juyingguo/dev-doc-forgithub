@@ -1,0 +1,3 @@
+一、Ubuntu16.04安装python3.7及相应的pip
+	1.1、Ubuntu16.04安装python3.7及相应的pip
+		https://blog.csdn.net/qq_29837161/article/details/83616364
