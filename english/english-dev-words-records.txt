@@ -1086,4 +1086,28 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˈneɡlɪdʒəbl]   美 [ˈneɡlɪdʒəbl]  
 	adj.
 	微不足道的;不重要的;不值一提的
+118、preempt 
+	preempt_count linux 抢占计数linux
+	preempt
+	抢占;先占;取代;占先;抢先
 	
+119、probe score 
+	probe
+	英 [prəʊb]   美 [proʊb]  
+	v.
+	盘问;追问;探究;(用细长工具)探查，查看
+	n.
+	探究;详尽调查;(不载人)航天探测器，宇宙探测航天器;(医生用的)探针
+	
+120、Rational 
+	rational
+	英 [ˈræʃnəl]   美 [ˈræʃnəl]  
+	adj.
+	合理的;理性的;明智的;理智的;清醒的
+	n.
+	合理的事物;[数]有理数;懂道理的人;人类;〈英〉合理的服装
+	
+	ratio
+	英 [ˈreɪʃiəʊ]   美 [ˈreɪʃioʊ]  
+	n.
+	比率;比例
