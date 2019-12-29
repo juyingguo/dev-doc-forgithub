@@ -1082,7 +1082,7 @@ The transferer. Set only in constructor, but cannot be declared
 		点播;单点广播;单播;单播地址;单点传送
 117、Compressor is a lightweight and powerful android image compression library. Compressor will allow you to compress large photos into smaller sized photos with very less or 	negligible loss in quality of the image.
 	Compressor是一个轻量级和强大的android图像压缩库。压缩器将允许您将大照片压缩成小照片，图像质量损失非常小或可以忽略不计。
-	negligible
+	negligible.
 	英 [ˈneɡlɪdʒəbl]   美 [ˈneɡlɪdʒəbl]  
 	adj.
 	微不足道的;不重要的;不值一提的
@@ -1111,3 +1111,30 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˈreɪʃiəʊ]   美 [ˈreɪʃioʊ]  
 	n.
 	比率;比例
+121、The same warning occurs either way 
+	两种情况下都会出现相同的警告。
+	either way不论发生哪一种情况。
+	
+122、entitle。
+	entitle
+	英 [ɪnˈtaɪtl]   美 [ɪnˈtaɪtl]  
+	v.
+	使享有权利;使符合资格;给…命名(或题名)
+
+	
+123、 Choosing a default size of 8 based on analysis of typical  consumption by applications. 根据应用程序的典型消耗分析，选择默认大小8。
+	analysis
+	英 [əˈnæləsɪs]   美 [əˈnæləsɪs]  
+	n.
+	(对事物的)分析，分析结果;(对物质的)分析
+	
+	consumption
+	英 [kənˈsʌmpʃn]   美 [kənˈsʌmpʃn]  
+	n.
+	(能量、食物或材料的)消耗，消耗量;消费;肺病;肺痨;肺结核
+	
+	consume 
+	英 [kənˈsjuːm]   美 [kənˈsuːm]  
+	v.
+	消耗，耗费(燃料、能量、时间等);吃;喝;饮;使充满(强烈的感情)
+
