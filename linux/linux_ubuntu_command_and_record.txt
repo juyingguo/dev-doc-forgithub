@@ -157,3 +157,9 @@
 			-p : 当关机的时候，顺便做关闭电源（poweroff）的动作
 		6.4、
 			poweroff
+			
+五、ubuntu 16.04忘记登录密码的解决办法 
+	5.1、ubuntu 16.04忘记登录密码的解决办法 
+		https://blog.csdn.net/jacke121/article/details/80456046
+	5.2、https://blog.csdn.net/qq_27182767/article/details/79660452 
+	
