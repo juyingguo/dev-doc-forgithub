@@ -21,4 +21,12 @@
 		
 	2.2、Source Insight添加新文件类型 
 	
+三、SourceInsight 不断无响应的有关问题 
+	3.1、SourceInsight 不断无响应的有关问题 
+		https://www.cnblogs.com/xfdarm/p/3662553.html
 		
+		1.去掉同步，options->perferences->general->backgroud synchronization every [ ] 前面的钩；
+
+		2.updata revoery file every[ ]改一个大参数
+		
+		 
