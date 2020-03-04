@@ -93,6 +93,8 @@
 (9) 备份压缩
 
 	9.1 Linux tar命令
+		https://www.runoob.com/linux/linux-comm-tar.html
+		
 		tar -xzvf test.tar.gz //解压文件
 		tar -czvf test.tar.gz a.c   //压缩 a.c文件为test.tar.gz
 (10) 账户相关。

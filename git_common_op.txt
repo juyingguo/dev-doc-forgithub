@@ -170,8 +170,14 @@
 	target
 	bin
 	*.db
+	folder_name01 //会忽略本git管理项目中的所有名为folder_name01的文件夹。
+	
+	5.1、
 
 6）忽略一些文件、文件夹不提交(之前已经提交过了的),更新了.gitignore文件
+	https://blog.csdn.net/revitalizing/article/details/51337509
+	
+	解决方法：先把不想记录文件的本地缓存删除，再在 .gitignore 中添加忽略该文件，然后再提交。
 	git rm -r --cached . 
 		git add .
 		git commit -m 'update .gitignore'
@@ -194,36 +200,36 @@
 	当出现【warning：LF will be replaced by CRLF】
 	
 	8.1 ，解决方式。git bash命令行也可以修改，最终也是修改.gitconfig配置文件：
-	git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
-	git config --global core.filemode false 	//文件属性等
-	git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
-	core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
+		git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+		git config --global core.filemode false 	//文件属性等
+		git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
+		core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
 	8.2
-	或者：.gitattributes 文件
-	在项目的根目录下可以添加一个.gitattributes 文件。它的优先级高于core.autocrlf的设置，可以覆盖core.autocrlf的。它类似于 .gitignore 文件，随提交修改生效，一个项目中可以维持一份相同的配置。所以，它能够避免每个开发人员配置不同的问题。
+		或者：.gitattributes 文件
+		在项目的根目录下可以添加一个.gitattributes 文件。它的优先级高于core.autocrlf的设置，可以覆盖core.autocrlf的。它类似于 .gitignore 文件，随提交修改生效，一个项目中可以维持一份相同的配置。所以，它能够避免每个开发人员配置不同的问题。
 
-	作者：于晓飞93
-	链接：https://www.jianshu.com/p/ec9564fe1c2b
-	来源：简书
-	简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+		作者：于晓飞93
+		链接：https://www.jianshu.com/p/ec9564fe1c2b
+		来源：简书
+		简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
 	
 	8.3、
-	或者直接修改文件
-	禁用git的自动换行功能： 
-	在本地路径C:\ Users\ [用户名] \ .gitconfig下修改git配置[core]，如果没有就直接添加上去：
-	
-	
-	[core]
-	autocrlf = false
-	filemode = false
-	safecrlf = true
-			crlf: "\r\n", windows系统的换行方式
-			lf: "\n", Linux系统的换行方式
+		或者直接修改文件
+		禁用git的自动换行功能： 
+		在本地路径C:\ Users\ [用户名] \ .gitconfig下修改git配置[core]，如果没有就直接添加上去：
+		
+		
+		[core]
+		autocrlf = false
+		filemode = false
+		safecrlf = true
+				crlf: "\r\n", windows系统的换行方式
+				lf: "\n", Linux系统的换行方式
 			
 	8.4、		
-	rm -rf .git 
-		git init 
-		git add
+		rm -rf .git 
+			git init 
+			git add
 		
 9)异常
 	git push origin test_2 :test_2
