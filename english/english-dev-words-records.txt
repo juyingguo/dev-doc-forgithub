@@ -848,12 +848,28 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	著色器;着色程序
 	
-91、Horizontal space requirements as imposed by the
-     *        parent
-	 impose
+91、Horizontal space requirements as imposed by the parent。
+
+	Default cache usage mode. If the navigation type doesn't impose any
+    specific behavior, use cached resources when they are available
+      and not expired, otherwise load resources from the network.
+      Use with {@link #setCacheMode}.
+	 
+	impose
 	英 [ɪmˈpəʊz]   美 [ɪmˈpoʊz]  
 	v.
 	推行，采用(规章制度);强制实行;迫使;把…强加于;使(别人)接受自己的意见
+	第三人称单数： imposes现在分词： imposing过去式： imposed过去分词： imposed
+	记忆技巧：im 使…；加以…；饰以… + pos 放 + e → 强行放置 → 把…强加于
+	
+	expire
+	英 [ɪkˈspaɪə(r)]   美 [ɪkˈspaɪər]  
+	v.
+	(因到期而)失效，终止;到期;届满;逝世;去世;故去
+	第三人称单数： expires现在分词： expiring过去式： expired过去分词： expired
+	派生词： expired adj.
+	记忆技巧：ex 除去 + pir〔=spir〕呼吸 + e → 没有呼吸 → 断气，注意：ex后接s开头的词根缩写成ex
+
 92、instrument
 	英 [ˈɪnstrəmənt]   美 [ˈɪnstrəmənt]  
 	n.
@@ -1286,4 +1302,17 @@ The transferer. Set only in constructor, but cannot be declared
 	说明用法的;操作指南的
 	复数： instructions
 	记忆技巧：instruct 指导，教导 + ion 表动作，intruct的名词 → 教导，指导
+	
+137、echo 
+	
+	英 [ˈekəʊ]   美 [ˈekoʊ]  
+	n.
+	回响;回声;回音;映现;暗示;启示;反响;共鸣;附和;重复
+	v.
+	回响;回荡;发出回声;产生回响;充满回声;重复，附和(想法或看法)
+	1
+	He heard nothing but the echoes of his own voice. 
+
+	他只听见了自己的回音。
+
 	
