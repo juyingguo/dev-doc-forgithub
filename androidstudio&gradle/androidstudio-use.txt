@@ -1,4 +1,5 @@
 一、androidstudio 中android项目，javalib module 控制台乱码问题。
+一、androidstudio 中android项目，javalib module 控制台乱码问题。
 	解决办法，在java工程目录下的build.gradle添加如下代码，然后重新运行一遍。 
 	1.新版gradle
 
@@ -44,4 +45,12 @@
 		
 	5.2、Android Studio3.5 xml文件格式化(Reformat Code)后元素会自动排序的问题 
 		https://blog.csdn.net/choimroc/article/details/100010267 
+		
+6. android studio 断点调试步骤及含义详解 
+	6.1 Android studio断点调试（全在这里） 
+		https://blog.csdn.net/lengyue1084/article/details/76576858?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
+	
+	6.2 Android Studio 你需要掌握的Debug调试技巧 
+		https://blog.csdn.net/csdn_aiyang/article/details/79483848
+		原文http://blog.csdn.net/yaoobs/article/details/51296198
 		

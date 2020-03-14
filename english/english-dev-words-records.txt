@@ -1199,6 +1199,7 @@ The transferer. Set only in constructor, but cannot be declared
 	
 	integration
 	英 /ˌɪntɪˈɡreɪʃn/  
+	
 	integrate
 	英 /ˈɪntɪɡreɪt/ 
 	vt. 使…完整；使…成整体；求…的积分；表示…的总和
@@ -1314,5 +1315,122 @@ The transferer. Set only in constructor, but cannot be declared
 	He heard nothing but the echoes of his own voice. 
 
 	他只听见了自己的回音。
+138. evaluate
+	英 [ɪˈvæljueɪt]   美 [ɪˈvæljueɪt]  
+	v.
+	估计;评价;评估
+	第三人称单数： evaluates现在分词： evaluating过去式： evaluated过去分词： evaluated
+	派生词： evaluation n. evaluative adj.
+	记忆技巧：e 出 + valu 价值 + ate 表动词 → 出价 → 估价 
 
+139. alpha
+	英 [ˈælfə]   美 [ˈælfə]  
+	n.
+	希腊字母表的第1个字母
+	 
+	 alphabet
+	英 [ˈælfəbet]   美 [ˈælfəbet]  
+	n.
+	(一种语言的)字母表，全部字母
+	复数： alphabets
 	
+	alphabetical
+	英 [ˌælfəˈbetɪkl]   美 [ˌælfəˈbetɪkl]  
+	adj.
+	按字母(表)顺序的
+	派生词： alphabetically adv.
+140. mile
+	英 [maɪl]   美 [maɪl]  
+	n.
+	英里(= 1 609米或1 760码);大面积;长距离;很多;远远地
+	 
+	 milestone
+	英 [ˈmaɪlstəʊn]   美 [ˈmaɪlstoʊn]  
+	n.
+	重要事件;重要阶段;转折点;里程碑
+	
+141. denote
+	英 [dɪˈnəʊt]   美 [dɪˈnoʊt]  
+	v.
+	标志;预示;象征;表示;意指 
+	
+	There was a message waiting, denoting that someone had been here ahead of her. 
+
+	有了一条留言，这表示有人已先于她到了这儿。
+142 candidate
+	英 [ˈkændɪdət]   美 [ˈkændɪdət]  
+	n.
+	(竞选或求职的)候选人，申请人;投考者;应试者;参加考试的人;被认定适合者;被认定有某种结局者
+	复数： candidates
+	记忆技巧：candid〔= cand〕白；发光 + ate 表人 → 古希腊人穿白袍候选 → 候选人 
+143 purge
+	英 [pɜːdʒ]   美 [pɜːrdʒ]  
+	v.
+	清除，清洗(组织中的异己分子);净化(心灵、风气等);涤荡(污秽)
+	n.
+	(对异己的)清洗，清除，排除
+	第三人称单数： purges复数： purges现在分词： purging过去式： purged过去分词： purged
+	
+	He closed his eyes and lay still, trying to purge his mind of anxiety 
+
+	他闭上眼睛躺着不动，试图消除内心的焦虑。
+	
+	pure .adj. 纯的；纯洁的
+	
+	impure .adj. 不纯的
+
+144 enumerate
+	英 [ɪˈnjuːməreɪt]   美 [ɪˈnuːməreɪt]  
+	v.
+	列举;枚举
+	第三人称单数： enumerates现在分词： enumerating过去式： enumerated过去分词： enumerated
+	派生词： enumeration n.
+	记忆技巧：e 表加强 + numer 数，计数 + ate 表动词 → 用数表示 → 列举
+	
+145 compromised 
+	If you did not attempt to sign in to your account, your password may be compromised。如果您没有尝试登录到您的帐户，您的密码可能会被泄露
+	compromise
+	英 [ˈkɒmprəmaɪz]   美 [ˈkɑːmprəmaɪz]  
+	n.
+	妥协;折中;互让;和解;妥协(或折中)方案;达成妥协(或和解)
+	v.
+	(为达成协议而)妥协，折中，让步;违背(原则);达不到(标准);(尤指因行为不很明智)使陷入危险，使受到怀疑
+	第三人称单数： compromises复数： compromises现在分词： compromising过去式： compromised过去分词： compromised
+	
+	promise
+	英 [ˈprɒmɪs]   美 [ˈprɑːmɪs]  
+	v.
+	许诺;承诺;答应;保证;使很可能;预示
+	n.
+	诺言;许诺;承诺;获得成功的迹象;吉兆;迹象
+	第三人称单数： promises复数： promises现在分词： promising过去式： promised过去分词： promised
+	
+	If you make a promise, you should keep it 
+	如果做出了承诺，就应该遵守
+146. retain
+	英 [rɪˈteɪn]   美 [rɪˈteɪn]  
+	v.
+	保持;持有;保留;继续拥有;继续容纳;聘请(律师等)
+	第三人称单数： retains现在分词： retaining过去式： retained过去分词： retained
+	记忆技巧：re 重新 + tain 拿住 → 重新拿回 → 保留 
+	
+	keep; hold; retain; maintain
+	If you decide to enable two-factor authentication, ensure you retain access to one or more account recovery methods
+	如果决定启用双因素身份验证，请确保保留对一个或多个帐户恢复方法的访问权
+	
+145. daemon  
+	Daemon
+	英 [ˈdiːmən]   美 [ˈdiːmən]  
+	程序;守护线程;背景程序;守护进程;守护程序
+	A new network caching daemon has also been introduced to improve performance when resolving using DNS. 
+
+	引入了一个新的网络缓存守护进程，它可以提高使用DNS解析名称时的性能
+	
+	resolve
+	英 [rɪˈzɒlv]   美 [rɪˈzɑːlv]  
+	v.
+	解决(问题或困难);决心;决定;作出决定;作出决议;表决
+	n.
+	决心;坚定的信念
+	第三人称单数： resolves复数： resolves现在分词： resolving过去式： resolved过去分词： resolved
+	记忆技巧：re 重新 + solve 解决 → 重新松解〔困难〕→ 解决

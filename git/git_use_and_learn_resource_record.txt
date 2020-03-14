@@ -1,0 +1,8 @@
+1. git教程
+	1.1 廖雪峰的git教程
+		https://www.liaoxuefeng.com/wiki/896043488029600/896067074338496
+		
+2.  ! [rejected]        master     -> master  (non-fast-forward)
+	 git push origin master : master //错误，":" 两边不能有空格。否则引发该错误。
+	 
+	 
