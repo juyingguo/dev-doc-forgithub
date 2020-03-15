@@ -1434,3 +1434,11 @@ The transferer. Set only in constructor, but cannot be declared
 	决心;坚定的信念
 	第三人称单数： resolves复数： resolves现在分词： resolving过去式： resolved过去分词： resolved
 	记忆技巧：re 重新 + solve 解决 → 重新松解〔困难〕→ 解决
+146. error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+	outstanding
+	英 [aʊtˈstændɪŋ]   美 [aʊtˈstændɪŋ]  
+	adj.
+	优秀的;杰出的;出色的;突出的;明显的;重要的;未支付的;未完成的;未解决的
+	v.
+	突出;离港;向海上;停留
+	outstand的现在分词
