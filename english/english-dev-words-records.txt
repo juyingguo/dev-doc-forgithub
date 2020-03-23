@@ -1442,3 +1442,13 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	突出;离港;向海上;停留
 	outstand的现在分词
+	
+147. precede 
+	precede
+	英 [prɪˈsiːd]   美 [prɪˈsiːd]  
+	v.
+	在…之前发生(或出现);先于;走在…前面
+	第三人称单数： precedes现在分词： preceding过去式： preceded过去分词： preceded
+	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
+	
+	free space  preceding // 之前的空余空间。
