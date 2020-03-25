@@ -1476,4 +1476,12 @@ The transferer. Set only in constructor, but cannot be declared
 	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
 	
 	free space  preceding // 之前的空余空间。
+151. proximity 
+	英 [prɒkˈsɪməti]   美 [prɑːkˈsɪməti]  
+	n.
+	(时间或空间)接近，邻近，靠近
+	记忆技巧：proxim 接近，靠近 + ity 具备某种性质，状况 → 接近	
+	
+	
+	
 	
