@@ -1442,7 +1442,6 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	突出;离港;向海上;停留
 	outstand的现在分词
-	
 147. zoom
 	英 [zuːm]   美 [zuːm]  
 	v.
@@ -1467,3 +1466,14 @@ The transferer. Set only in constructor, but cannot be declared
 	adj.
 	无礼的;轻率的;冒失的
 	第三人称单数： flips现在分词： flipping过去式： flipped过去分词： flipped比较级： flipper最高级： flippest 
+
+150. precede 
+	precede
+	英 [prɪˈsiːd]   美 [prɪˈsiːd]  
+	v.
+	在…之前发生(或出现);先于;走在…前面
+	第三人称单数： precedes现在分词： preceding过去式： preceded过去分词： preceded
+	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
+	
+	free space  preceding // 之前的空余空间。
+	
