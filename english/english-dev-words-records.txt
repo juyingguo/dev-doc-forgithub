@@ -1442,3 +1442,28 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	突出;离港;向海上;停留
 	outstand的现在分词
+	
+147. zoom
+	英 [zuːm]   美 [zuːm]  
+	v.
+	快速移动;迅速前往;急剧增长;猛涨
+	n.
+	(车辆等)疾驰的声音
+	第三人称单数： zooms复数： zooms现在分词： zooming过去式： zoomed过去分词： zooming 
+	
+148 affine 
+	仿射变换(Affine Transformation) 
+	affine美 [əˈfaɪn]  
+	adj.
+	亲合的；仿射的；拟似的；远交的
+	n.
+	姻亲
+149. flip
+	英 [flɪp]   美 [flɪp]  
+	v.
+	(使)快速翻转，迅速翻动;按(开关);按(按钮);开(或关)(机器等);(用手指)轻抛，轻掷
+	n.
+	轻抛;捻掷;空翻;浏览;草草翻阅
+	adj.
+	无礼的;轻率的;冒失的
+	第三人称单数： flips现在分词： flipping过去式： flipped过去分词： flipped比较级： flipper最高级： flippest 
