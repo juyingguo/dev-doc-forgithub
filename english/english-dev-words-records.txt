@@ -1452,3 +1452,23 @@ The transferer. Set only in constructor, but cannot be declared
 	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
 	
 	free space  preceding // 之前的空余空间。
+148.  * No warranty is given; refer to the file DISCLAIMER within the package.
+	
+	* Function calls for spawning child processes.
+	不提供任何保证；请参阅包中的文件免责声明。
+	*函数调用派生子进程。
+	
+	disclaim
+	英 [dɪsˈkleɪm]   美 [dɪsˈkleɪm]  
+	v.
+	公开否认;拒绝承认;放弃(财产、头衔等的权利)
+
+	
+	spawn
+	英 [spɔːn]   美 [spɔːn]  
+	v.
+	产卵;引发;引起;导致;造成
+	n.
+	(鱼、蛙等的)卵
+
+ 
