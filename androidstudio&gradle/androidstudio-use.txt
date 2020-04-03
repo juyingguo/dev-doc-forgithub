@@ -43,6 +43,13 @@
 	5.1、Android studio3.5 文件显示错乱
 		https://blog.csdn.net/mp624183768/article/details/103102642 
 		
+		关闭studio
+
+		删除该文件夹
+
+		C:\Users\用户名\.AndroidStudio3.5\system\caches
+		重启即可
+		
 	5.2、Android Studio3.5 xml文件格式化(Reformat Code)后元素会自动排序的问题 
 		https://blog.csdn.net/choimroc/article/details/100010267 
 		

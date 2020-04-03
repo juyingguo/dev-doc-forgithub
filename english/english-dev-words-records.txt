@@ -1503,5 +1503,22 @@ The transferer. Set only in constructor, but cannot be declared
 	产卵;引发;引起;导致;造成
 	n.
 	(鱼、蛙等的)卵
+153 android sdk package includes the Android platform and sources pertaining to an API level by default.
+	pertain
+	英 [pəˈteɪn]   美 [pərˈteɪn]  
+	v.
+	存在;适用
+	第三人称单数： pertains现在分词： pertaining过去式： pertained过去分词： pertained
+	记忆技巧：per 自始至终 + tain 拿住 → 始终握住不让两者分开 →〔两者〕从属；相关
+154 there are case where you  deliberately want to stick with an old version 
+	有些情况下，你故意要坚持旧版本
+	
+	deliberately
+	英 [dɪˈlɪbərətli]   美 [dɪˈlɪbərətli]  
+	adv.
+	故意;蓄意;存心;不慌不忙地;小心翼翼地;从容不迫地
+	
+	however ,you may simply not be aware that a more recent version is available,that is what this link checks help you find .
+	但是，您可能根本不知道有更新的版本可用，这就是此链接检查帮助您找到的内容。
 
  
