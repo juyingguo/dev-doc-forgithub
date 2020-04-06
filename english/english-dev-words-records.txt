@@ -1470,5 +1470,12 @@ The transferer. Set only in constructor, but cannot be declared
 	产卵;引发;引起;导致;造成
 	n.
 	(鱼、蛙等的)卵
-
- 
+149. subtract
+	Add, subtract, multiply and divide //加减乘除 
+	subtract
+	英 [səbˈtrækt]   美 [səbˈtrækt]  
+	v.
+	减;减去 
+	第三人称单数： subtracts现在分词： subtracting过去式： subtracted过去分词： subtracted
+	派生词： subtraction n.
+	记忆技巧：sub 下 + tract 拉，拖 → 拉下去 → 减去

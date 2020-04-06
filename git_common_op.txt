@@ -72,10 +72,16 @@
 	 B修改，已经使用git add将修改添加到暂存区；//先使用git reset HEAD -- 文件，然后在使用git checkout -- 文件进行修改撤销。
 	 C修改，已经使用git add将修改添加到暂存区，并再次进行修改。//先使用git checkout -- 文件，文件就会变成添加到暂存区后的状态B
 (4) 操作文件
-	 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
+	 4.1 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
 			而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
 			使用git add -i	选择revert子命令先从索引库中删除，再使用git checkout . ，来取消删除
-	 git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
+	 4.2 git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
+	 
+	 4.3 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet] [--] <file>…
+			https://www.yiibai.com/git/git_rm.html
+			//。 当给出--cached时，暂存区内容必须与分支的提示或磁盘上的文件相匹配，从而仅将文件从索引中删除。
+		
+		
 (5) 版本回退
 	git reflog 用来记录你的每一次命令
 	git reset --hard HEAD^ 回退到上一个版本 ；//只有一次提交记录时，fatal: ambiguous(模棱两可的) argument 'HEAD^': unknown revision or path not in the working tree.
@@ -181,6 +187,7 @@
 	git rm -r --cached . 
 		git add .
 		git commit -m 'update .gitignore'
+		
 	[A].gitignore文件 编写规则
 		*.a       # 忽略所有 .a 结尾的文件
 		!lib.a    # 但 lib.a 除外
