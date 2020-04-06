@@ -1442,8 +1442,32 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	突出;离港;向海上;停留
 	outstand的现在分词
+147. zoom
+	英 [zuːm]   美 [zuːm]  
+	v.
+	快速移动;迅速前往;急剧增长;猛涨
+	n.
+	(车辆等)疾驰的声音
+	第三人称单数： zooms复数： zooms现在分词： zooming过去式： zoomed过去分词： zooming 
 	
-147. precede 
+148 affine 
+	仿射变换(Affine Transformation) 
+	affine美 [əˈfaɪn]  
+	adj.
+	亲合的；仿射的；拟似的；远交的
+	n.
+	姻亲
+149. flip
+	英 [flɪp]   美 [flɪp]  
+	v.
+	(使)快速翻转，迅速翻动;按(开关);按(按钮);开(或关)(机器等);(用手指)轻抛，轻掷
+	n.
+	轻抛;捻掷;空翻;浏览;草草翻阅
+	adj.
+	无礼的;轻率的;冒失的
+	第三人称单数： flips现在分词： flipping过去式： flipped过去分词： flipped比较级： flipper最高级： flippest 
+
+150. precede 
 	precede
 	英 [prɪˈsiːd]   美 [prɪˈsiːd]  
 	v.
@@ -1452,7 +1476,16 @@ The transferer. Set only in constructor, but cannot be declared
 	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
 	
 	free space  preceding // 之前的空余空间。
-148.  * No warranty is given; refer to the file DISCLAIMER within the package.
+151. proximity 
+	英 [prɒkˈsɪməti]   美 [prɑːkˈsɪməti]  
+	n.
+	(时间或空间)接近，邻近，靠近
+	记忆技巧：proxim 接近，靠近 + ity 具备某种性质，状况 → 接近	
+	
+	
+	
+	
+152.  * No warranty is given; refer to the file DISCLAIMER within the package.
 	
 	* Function calls for spawning child processes.
 	不提供任何保证；请参阅包中的文件免责声明。
@@ -1470,7 +1503,27 @@ The transferer. Set only in constructor, but cannot be declared
 	产卵;引发;引起;导致;造成
 	n.
 	(鱼、蛙等的)卵
-149. subtract
+153 android sdk package includes the Android platform and sources pertaining to an API level by default.
+	pertain
+	英 [pəˈteɪn]   美 [pərˈteɪn]  
+	v.
+	存在;适用
+	第三人称单数： pertains现在分词： pertaining过去式： pertained过去分词： pertained
+	记忆技巧：per 自始至终 + tain 拿住 → 始终握住不让两者分开 →〔两者〕从属；相关
+154 there are case where you  deliberately want to stick with an old version 
+	有些情况下，你故意要坚持旧版本
+	
+	deliberately
+	英 [dɪˈlɪbərətli]   美 [dɪˈlɪbərətli]  
+	adv.
+	故意;蓄意;存心;不慌不忙地;小心翼翼地;从容不迫地
+	
+	however ,you may simply not be aware that a more recent version is available,that is what this link checks help you find .
+	但是，您可能根本不知道有更新的版本可用，这就是此链接检查帮助您找到的内容。
+
+ 
+
+155. subtract 
 	Add, subtract, multiply and divide //加减乘除 
 	subtract
 	英 [səbˈtrækt]   美 [səbˈtrækt]  
