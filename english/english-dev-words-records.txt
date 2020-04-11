@@ -1532,3 +1532,6 @@ The transferer. Set only in constructor, but cannot be declared
 	第三人称单数： subtracts现在分词： subtracting过去式： subtracted过去分词： subtracted
 	派生词： subtraction n.
 	记忆技巧：sub 下 + tract 拉，拖 → 拉下去 → 减去
+156 radix 
+	radix
+	进制;基数;鼻根
