@@ -1535,3 +1535,20 @@ The transferer. Set only in constructor, but cannot be declared
 156 radix 
 	radix
 	进制;基数;鼻根
+157  GitHub found 7 vulnerabilities on your project's default branch (1 high, 6 moderate). To find out more, visit:it 
+	GitHub在项目的默认分支上发现7个漏洞（1个高漏洞，6个中等漏洞）。要了解更多信息，请访问：it  
+	vulnerability
+	英 [ˌvʌlnərə'bɪlətɪ]   美 [ˌvʌlnərə'bɪləti]  
+	n.
+	弱点;脆弱性;易伤性;可捕性。
+	
+	moderate
+	英 [ˈmɒdərət , ˈmɒdəreɪt]   美 [ˈmɑːdərət , ˈmɑːdəreɪt]  
+	adj.
+	适度的;中等的;温和的;不激烈的;不偏激的;适中的;合理的
+	v.
+	缓和;使适中;审核评分(查看不同阅卷人所打分数是否公平一致);主持(讨论、辩论等)
+	n.
+	持温和观点者(尤指政见)
+	第三人称单数： moderates现在分词： moderating过去式： moderated过去分词： moderated
+	记忆技巧：moder〔= mod〕方式；风度 + ate 具有…的 → 有度的 → 适度的
