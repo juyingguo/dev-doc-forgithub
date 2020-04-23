@@ -1552,3 +1552,10 @@ The transferer. Set only in constructor, but cannot be declared
 	持温和观点者(尤指政见)
 	第三人称单数： moderates现在分词： moderating过去式： moderated过去分词： moderated
 	记忆技巧：moder〔= mod〕方式；风度 + ate 具有…的 → 有度的 → 适度的
+158 ethernet  
+	Ethernet
+	英 [ˈiːθənet]   美 [ˈiːθərnet]  
+	n.
+	以太网
+	IBM's implementation uses Shared Ethernet and Virtual SCSI to allow for sharing network and disk I/ O. 
+	IBM的实现方法使用了共享以太网和虚拟SCSI来支持共享网络和磁盘I/O。
