@@ -1559,3 +1559,18 @@ The transferer. Set only in constructor, but cannot be declared
 	以太网
 	IBM's implementation uses Shared Ethernet and Virtual SCSI to allow for sharing network and disk I/ O. 
 	IBM的实现方法使用了共享以太网和虚拟SCSI来支持共享网络和磁盘I/O。
+159 TTL（Transistor Transistor Logic）即晶体管-晶体管逻辑，TTL电平信号由TTL器件产生。TTL器件是数字集成电路的一大门类。 
+	transistor
+	英 [trænˈzɪstə(r)]   美 [trænˈzɪstər]  
+	n.
+	晶体管;晶体管收音机
+	
+160 Serial Peripheral Interface 
+	串行外围接口
+	peripheral
+	英 [pəˈrɪfərəl]   美 [pəˈrɪfərəl]  
+	adj.
+	次要的;附带的;外围的;周边的;与计算机相连的
+	n.
+	外围设备;周边设备
+	
