@@ -329,6 +329,22 @@
 		
 	14.3、git apply、git am打补丁.diff 和 .patch
 		https://www.jianshu.com/p/e5d801b936b6
+15 git配置用户名和邮箱 
+	15.1 git配置用户名和邮箱
+		https://blog.csdn.net/xingbaozhen1210/article/details/80342212
+		
+		2.1 设置用户名
+			git config --global user.name "username"
+			2.2 设置邮箱 (没有双引号)
+			git config --global user.email useremail@qq.com 
+			3 . 查看用户名和密码
+			git config user.name
+			git config user.email
+			4 . 查看其他配置信息(git设置列表)
+			git config --list  
+			————————————————
+			版权声明：本文为CSDN博主「BlueKitty1210」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+			原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
 ////////////
 三、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
