@@ -7,14 +7,13 @@
 拉取源码：
 	repo init -u gitolite@192.168.1.21:manifests.git -b master
 	repo sync
-
-本地工作操作：
-(1)对仓库的操作
-	git init 在当前文件夹下创建本地仓库
-	rm -rf .git删除本地仓库
+三、本地工作操作：
+	1.对仓库的操作
+		git init 在当前文件夹下创建本地仓库
+		rm -rf .git删除本地仓库
 	
-①对代码的操作
-	git add                                  ---将新文件或者修改的代码提交到缓存区
+	2.对代码的操作
+		git add                                  ---将新文件或者修改的代码提交到缓存区
 		当出现【warning：LF will be replaced by CRLF】
 		rm -rf .git  [如有其它方式，就不要使用该方式]
 		config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
@@ -34,319 +33,331 @@
 
 		Run 'git status' to check the paths you removed from your working tree.
 		
-	git rm                                    ---把代码从仓库中移除
-	git commit                            ---将缓存区的代码提交到仓库中
-	git commit -a = git add + git commit          ---但是不对库外的文件操作
-	git commit --amend -m "修改最近一次提交注释说明"
-	git commit --amend 进入编辑界面，修改完成保存即可。类型linux命令vi，输入i a o进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式。按下wq保存退出
-②信息查看(及退出)
-	git status                               ---查看工作目录下面的代码状态（修改记录）
-	git diff                                   ---查看工作目录和缓存区的代码差异
-	git diff --cached                    ---查看缓存区和仓库的代码差异
-	git diff HEAD                         ---查看工作目录和仓库的代码差异
-	git log                                   ---查看commit的记录
-	git log --pretty=oneline			---查看commit的简洁记录，
-	git log -1                                   ---查看commit的最近一条记录
-	git log remotes/origin/master //看远程的提交日志， (origin/master这个都是默认的远程仓库和分支，可以自己改成想看的仓库和想看的分支)
-		git log origin/master 		---查看服务器commit的日志记录，都是默认的远程仓库和分支
-	
-	git log -p			-p 按补丁格式显示每个更新之间的差异
-	git show                                ---查看commit的内容
-	git show <commit-hashId> 	便可以显示某次提交的修改内容
-	###git log 退出
-	1、ctrl+c (z) 都无法完全退出
-	2、输入q
+		git rm                                    ---把代码从仓库中移除
+		git commit                            ---将缓存区的代码提交到仓库中
+		git commit -a = git add + git commit          ---但是不对库外的文件操作
+		git commit --amend -m "修改最近一次提交注释说明"
+		git commit --amend 进入编辑界面，修改完成保存即可。类型linux命令vi，输入i a o进入输入模式，按下esc进入命令模式，在命令模式下按下:（英文冒号）就进入了底线命令模式。按下wq保存退出
+	3.信息查看(及退出)
+		git status                               ---查看工作目录下面的代码状态（修改记录）
+		git diff                                   ---查看工作目录和缓存区的代码差异
+		git diff --cached                    ---查看缓存区和仓库的代码差异
+		git diff HEAD                         ---查看工作目录和仓库的代码差异
+		git log                                   ---查看commit的记录
+		git log --pretty=oneline			---查看commit的简洁记录，
+		git log -1                                   ---查看commit的最近一条记录
+		git log remotes/origin/master //看远程的提交日志， (origin/master这个都是默认的远程仓库和分支，可以自己改成想看的仓库和想看的分支)
+			git log origin/master 		---查看服务器commit的日志记录，都是默认的远程仓库和分支
+		
+		git log -p			-p 按补丁格式显示每个更新之间的差异
+		git show                                ---查看commit的内容
+		git show <commit-hashId> 	便可以显示某次提交的修改内容
+		###git log 退出
+		1、ctrl+c (z) 都无法完全退出
+		2、输入q
 	
   
-(3)撤销修改
-	 git checkout -- file可以丢弃工作区的修改(只放弃了修改的文件)
-	 git checkout . && git clean -df 可以放弃所有修改、新增、删除文件 
-	 git clean是从工作目录中移除没有track的文件.
-		-n 显示 将要 删除的 文件 和  目录
-		-f 删除 文件
-		-df 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
-		-d -f 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
-		参考：https://git-scm.com/docs/git-clean
-			https://blog.csdn.net/qq_15037231/article/details/83013563
-	 git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
-	 use "git reset HEAD <file>..." to unstage)  从暂存区移除，会再次回到工作区。
-	 
-	 A修改，但没有用git add将修改添加到暂存区；//git checkout -- 文件进行修改撤销
-	 B修改，已经使用git add将修改添加到暂存区；//先使用git reset HEAD -- 文件，然后在使用git checkout -- 文件进行修改撤销。
-	 C修改，已经使用git add将修改添加到暂存区，并再次进行修改。//先使用git checkout -- 文件，文件就会变成添加到暂存区后的状态B
-(4) 操作文件
-	 4.1 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
-			而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
-			使用git add -i	选择revert子命令先从索引库中删除，再使用git checkout . ，来取消删除
-	 4.2 git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
-	 
-	 4.3 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet] [--] <file>…
+	4.撤销修改
+		 git checkout -- file可以丢弃工作区的修改(只放弃了修改的文件)
+		 git checkout . && git clean -df 可以放弃所有修改、新增、删除文件 
+		 git clean是从工作目录中移除没有track的文件.
+			-n 显示 将要 删除的 文件 和  目录
+			-f 删除 文件
+			-df 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
+			-d -f 删除 文件 和 目录 （-d表示同时移除目录,-f表示force）
+			参考：https://git-scm.com/docs/git-clean
+				https://blog.csdn.net/qq_15037231/article/details/83013563
+		 git stash #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
+		 use "git reset HEAD <file>..." to unstage)  从暂存区移除，会再次回到工作区。
+		 
+		 A修改，但没有用git add将修改添加到暂存区；//git checkout -- 文件进行修改撤销
+		 B修改，已经使用git add将修改添加到暂存区；//先使用git reset HEAD -- 文件，然后在使用git checkout -- 文件进行修改撤销。
+		 C修改，已经使用git add将修改添加到暂存区，并再次进行修改。//先使用git checkout -- 文件，文件就会变成添加到暂存区后的状态B
+	5. 操作文件
+		 5.1 git rm 命令用于从工作区和索引中删除文件。再执行git commit -m "commit message or mark" 提交时，会自动将删除该文件的操作提交上去。
+				而对于用 rm 命令直接删除的文件，执行 git commit -m "commit message or mark"提交时，则不会将删除该文件的操作提交上去
+				使用git add -i	选择revert子命令先从索引库中删除，再使用git checkout . ，来取消删除
+		 5.2 git rm -r 删除文件夹，并把它从git的仓库管理系统中移除
+		 
+		 5.3 git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet] [--] <file>…
 			https://www.yiibai.com/git/git_rm.html
 			//。 当给出--cached时，暂存区内容必须与分支的提示或磁盘上的文件相匹配，从而仅将文件从索引中删除。
 		
 		
-(5) 版本回退
-	git reflog 用来记录你的每一次命令
-	git reset --hard HEAD^ 回退到上一个版本 ；//只有一次提交记录时，fatal: ambiguous(模棱两可的) argument 'HEAD^': unknown revision or path not in the working tree.
-	git reset --hard commit_id(HASH) 回退到某一个历史版本 
-	git reset --soft HASH #返回到某个节点。保留修改
-		
-1) 远程仓库相关命令
-	A)检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
-		git clone <repo> <directory> 可以指定检出后的本地仓库的名称directory
-		或者git clone git@github.com:jquery/jquery.git 
-		或者git clone https://github.com:jquery/jquery.git 
-	B)查看远程仓库：$ git remote -v
-	C)添加远程仓库：$ git remote add [name] [url] 如：git remote add origin git@github.com:username/repoxxx.git origin是远程库的名字；
-		或者git remote add origin https://github.com:username/repoxxx.git
-		或者git remote add origin git://github.com:username/repoxxx.git
-	D)删除远程仓库：$ git remote rm [name]
-	E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
-			git pull <远程主机名> <远程分支名>:<本地分支名>
-			参考教材：https://www.yiibai.com/git/git_pull.html
-	F)拉取远程仓库冲突及错误处理：：
-		git pull * * 与本地有冲突时，解决方式：
-		1. git stash 先将本地修改存储起来 
-		2. git pull * * 暂存了本地修改之后，就可以pull了。
-		3.git stash pop stash@{0} 还原暂存的内容(git stash list可以看到保存的信息)
-		
-		F.2、解决文件中冲突的的部分
-			打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
-			解决完成之后，就可以正常的提交了。
-		推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
-		git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有，以防止提交错误，切记，切记，切记！！！
-			 git push -u origin master。。提交异常。如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。
-			这时，如果你一定要推送，可以使用–force选项。原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_push.html
-			
-			hint: Updates were rejected because the remote contains work that you do
-			hint: not have locally. This is usually caused by another repository pushing
-			hint: to the same ref. You may want to first integrate the remote changes
-			hint: (e.g., 'git pull ...') before pushing again.
-			hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-				https://blog.csdn.net/gongqinglin/article/details/79752398
-				如果确保本地没问题的话，可以直接用git push -f强行上传
-		4、合并错误提示。
-				在我们pull代码时，有时候会意外的在vim上出现如下提示（其实就是pull失败了）“ Your branch and 'origin/master' have diverged,(use "git pull" to merge the remote branch into yours)nothing to commit, working tree clean ”问题翻译过来其实就是合并产生了一些冲突，不过这个冲突不是由于代码错误引起的，所以不必过于纠结。
-			
-			方法一：$ git fetch origin$ git reset --hard 	前做的那些事情全部清空，代价太高。
-			方法二：（推荐）将光标放到在vim框的末尾，然后在键盘上 按下 Shift + z z 就可以了
-				解释一下shift+zz就是命令ZZ 退出VIM,如果文本已经经过编辑,则首先保存文件。不用回滚，一条指令解决问题
-			作者：咖啡老师
-			链接：https://www.jianshu.com/p/292268cb2dce
-			
-	G）终止合并
-		git  merge --abort 
-	H）git pull origin master 中断异常。
-		error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
-		
-		git config --global http.sslVerify "false" //
-		https://blog.csdn.net/hoiyook/article/details/81870068
-
-2）分支(branch)操作相关命令
-	查看本地分支：$ git branch
-	查看远程分支：$ git branch -r
-	查看所有分支：$ git branch -a
-	创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
-	切换分支：$ git checkout [name]
-	创建新分支并立即切换到新分支：$ git checkout -b [name]
-	删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
-	合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
-	创建远程分支(本地分支push到远程)：$ git push origin [name]
-	删除远程分支：$ git push origin :heads/[name]	//本地为空，同下
-		git push origin --delete master // 删除远程分支
-	git checkout -b xxx origin/yyy  拉取远程分支，本地没有该分支 ，就创建 ；然后使用 需与远程分支关联；否则repo sync 时 会自动切换掉。android/build/: manifest switched refs/heads/NJ_2015A...master；android/build/: discarding 3 commits removed from upstream
-		
-	git branch --set-upstream [localbranch] <远程主机名>/<远程分支名> /// Git新建本地分支与远程分支解除关联。【好用，虽有提示】
-		git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]  [<远程分支名>]// Git新建本地分支与远程分支关联 。【不好用，提示 fatal: branch 'origin/new_model' does not exist】
-		git branch --unset-upstream [<branchname>] [<远程分支名>] // Git新建本地分支与远程分支解除关联 。不好用
-3）版本(tag)操作相关命令
-	查看版本：$ git tag
-	创建版本：$ git tag [name]
-	删除版本：$ git tag -d [name]
-	查看远程版本：$ git tag -r
-	创建远程版本(本地版本push到远程)：$ git push origin [name]
-	删除远程版本：$ git push origin :refs/tags/[name]
-
-4) 子模块(submodule)相关操作命令
-	添加子模块：$ git submodule add [url] [path]
-	初始化子模块：$ git submodule init ----只在首次检出仓库时运行一次就行
-	更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
-	删除子模块：$ git rm --cached [path]
-
-5）忽略一些文件、文件夹不提交
-	在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
-	target
-	bin
-	*.db
-	folder_name01 //会忽略本git管理项目中的所有名为folder_name01的文件夹。
+	6. 版本回退
+		git reflog 用来记录你的每一次命令
+		git reset --hard HEAD^ 回退到上一个版本 ；//只有一次提交记录时，fatal: ambiguous(模棱两可的) argument 'HEAD^': unknown revision or path not in the working tree.
+		git reset --hard commit_id(HASH) 回退到某一个历史版本 
+		git reset --soft HASH #返回到某个节点。保留修改
 	
-	5.1、
+	7.	远程仓库相关命令
+		A)检出仓库：$ git clone git://github.com/jquery/jquery.git 默认协议git:
+			git clone <repo> <directory> 可以指定检出后的本地仓库的名称directory
+			或者git clone git@github.com:jquery/jquery.git 
+			或者git clone https://github.com:jquery/jquery.git 
+		B)查看远程仓库：$ git remote -v
+		C)添加远程仓库：$ git remote add [name] [url] 如：git remote add origin git@github.com:username/repoxxx.git origin是远程库的名字；
+			或者git remote add origin https://github.com:username/repoxxx.git
+			或者git remote add origin git://github.com:username/repoxxx.git
+		D)删除远程仓库：$ git remote rm [name]
+		E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
+				git pull <远程主机名> <远程分支名>:<本地分支名>
+				参考教材：https://www.yiibai.com/git/git_pull.html
+		F)拉取远程仓库冲突及错误处理：：
+			git pull * * 与本地有冲突时，解决方式：
+			1. git stash 先将本地修改存储起来 
+			2. git pull * * 暂存了本地修改之后，就可以pull了。
+			3.git stash pop stash@{0} 还原暂存的内容(git stash list可以看到保存的信息)
+			
+			F.2、解决文件中冲突的的部分
+				打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
+				解决完成之后，就可以正常的提交了。
+			推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
+			git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有，以防止提交错误，切记，切记，切记！！！
+				 git push -u origin master。。提交异常。如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。
+				这时，如果你一定要推送，可以使用–force选项。原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_push.html
+				
+				hint: Updates were rejected because the remote contains work that you do
+				hint: not have locally. This is usually caused by another repository pushing
+				hint: to the same ref. You may want to first integrate the remote changes
+				hint: (e.g., 'git pull ...') before pushing again.
+				hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-6）忽略一些文件、文件夹不提交(之前已经提交过了的),更新了.gitignore文件
-	https://blog.csdn.net/revitalizing/article/details/51337509
-	
-	解决方法：先把不想记录文件的本地缓存删除，再在 .gitignore 中添加忽略该文件，然后再提交。
-	git rm -r --cached . 
-		git add .
-		git commit -m 'update .gitignore'
+					https://blog.csdn.net/gongqinglin/article/details/79752398
+					如果确保本地没问题的话，可以直接用git push -f强行上传
+			4、合并错误提示。
+					在我们pull代码时，有时候会意外的在vim上出现如下提示（其实就是pull失败了）“ Your branch and 'origin/master' have diverged,(use "git pull" to merge the remote branch into yours)nothing to commit, working tree clean ”问题翻译过来其实就是合并产生了一些冲突，不过这个冲突不是由于代码错误引起的，所以不必过于纠结。
+				
+				方法一：$ git fetch origin$ git reset --hard 	前做的那些事情全部清空，代价太高。
+				方法二：（推荐）将光标放到在vim框的末尾，然后在键盘上 按下 Shift + z z 就可以了
+					解释一下shift+zz就是命令ZZ 退出VIM,如果文本已经经过编辑,则首先保存文件。不用回滚，一条指令解决问题
+				作者：咖啡老师
+				链接：https://www.jianshu.com/p/292268cb2dce
+				
+		G）终止合并
+			git  merge --abort 
+		H）git pull origin master 中断异常。
+			error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+			
+			git config --global http.sslVerify "false" //
+			https://blog.csdn.net/hoiyook/article/details/81870068
+
+	8. 分支(branch)操作相关命令
+		8.1 查看本地分支：$ git branch
+		8.2	查看远程分支：$ git branch -r
+		8.3 查看所有分支：$ git branch -a
+		8.4 创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
+		8.5 切换分支：$ git checkout [name]
+		8.6 创建新分支并立即切换到新分支：$ git checkout -b [name]
+		8.7 删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
+		8.8 合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
+		8.9 创建远程分支(本地分支push到远程)：$ git push origin [name]
+		8.10 删除远程分支：$ git push origin :heads/[name]	//本地为空，同下
+			git push origin --delete master // 删除远程分支
+		8.11 拉取远程分支，本地没有该分支 ，就创建。
+			https://www.yiibai.com/git/git_checkout.html
+			https://blog.csdn.net/tterminator/article/details/52225720
+			
+			git checkout -b localbranch_xxx origin/remotebranch_yyy  拉取远程分支，本地没有该分支 ，就创建 ；然后使用 需与远程分支关联；否则repo sync 时 会自动切换掉。android/build/: manifest switched refs/heads/NJ_2015A...master；android/build/: discarding 3 commits removed from upstream
+			git checkout -b 本地分支名x origin/远程分支名x //使用该方式会在本地新建分支x，并自动切换到该本地分支x。采用此种方法建立的本地分支会和远程分支建立映射关系。
+			
+			8.11.1 本地分支和远程分支建立映射关系的作用
+				https://blog.csdn.net/tterminator/article/details/78108550
+				查看本地分支与远程分支的映射关系
+				git branch -vv
+				
+				git branch --set-upstream [localbranch] <远程主机名>/<远程分支名> /// Git新建本地分支与远程分支关联。【好用，虽有提示】
+				git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]  [<远程分支名>]// Git新建本地分支与远程分支关联 。【不好用，提示 fatal: branch 'origin/new_model' does not exist】
+				git branch --unset-upstream [<branchname>] [<远程分支名>] // Git新建本地分支与远程分支解除关联 。不好用
+	9.版本(tag)操作相关命令
+		查看版本：$ git tag
+		创建版本：$ git tag [name]
+		删除版本：$ git tag -d [name]
+		查看远程版本：$ git tag -r
+		创建远程版本(本地版本push到远程)：$ git push origin [name]
+		删除远程版本：$ git push origin :refs/tags/[name]
+
+	10.子模块(submodule)相关操作命令
+		添加子模块：$ git submodule add [url] [path]
+		初始化子模块：$ git submodule init ----只在首次检出仓库时运行一次就行
+		更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
+		删除子模块：$ git rm --cached [path]
+
+	11.忽略一些文件、文件夹不提交
+		在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
+		target
+		bin
+		*.db
+		folder_name01 //会忽略本git管理项目中的所有名为folder_name01的文件夹。
 		
-	[A].gitignore文件 编写规则
-		*.a       # 忽略所有 .a 结尾的文件
-		!lib.a    # 但 lib.a 除外
-		/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
-		build/    # 忽略 build/ 目录下的所有文件
-		doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
-	6.1）将.gitignore添加到忽略文件与不添加的区别？
-		1.添加后，可以动态改变忽略规则，而不需要删除缓存。
-7) Windows下使用Beyond Compare作为git的比对与合并工具
-	beyondcompare_config_git.txt  在.gitconfig(c盘/user目录下)中追加该文件中的内容，需要修改对应的bc版本名称、bc安装路径(其中的路径使用'/');
-	git mergetool 
+		5.1、
+
+	12.忽略一些文件、文件夹不提交(之前已经提交过了的),更新了.gitignore文件
+		https://blog.csdn.net/revitalizing/article/details/51337509
+		
+		解决方法：先把不想记录文件的本地缓存删除，再在 .gitignore 中添加忽略该文件，然后再提交。
+		git rm -r --cached . 
+			git add .
+			git commit -m 'update .gitignore'
+			
+		[A].gitignore文件 编写规则
+			*.a       # 忽略所有 .a 结尾的文件
+			!lib.a    # 但 lib.a 除外
+			/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+			build/    # 忽略 build/ 目录下的所有文件
+			doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+		6.1）将.gitignore添加到忽略文件与不添加的区别？
+			1.添加后，可以动态改变忽略规则，而不需要删除缓存。
+	13. Windows下使用Beyond Compare作为git的比对与合并工具
+		beyondcompare_config_git.txt  在.gitconfig(c盘/user目录下)中追加该文件中的内容，需要修改对应的bc版本名称、bc安装路径(其中的路径使用'/');
+		git mergetool 
+		
+	14. checkout 用法总结 
+		https://www.yiibai.com/git/git_checkout.html
+		https://www.jianshu.com/p/cad4d2ec4da5
+四.问题及解决记录。
+	4.1 异常换行问题汇总。 LF,CRLF 。。
+		特别是使用git和svn同时管理项目。如svn用来本地与服务器（公司版本控制服务器端为，svn）,git只是管理本地程序的。使用window会造成冲突。
+		当出现【warning：LF will be replaced by CRLF】
+		
+		4.1.1 ，解决方式。git bash命令行也可以修改，最终也是修改.gitconfig配置文件：
+			git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
+			git config --global core.filemode false 	//文件属性等
+			git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
+			core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
+		4.1.2
+			或者：.gitattributes 文件
+			在项目的根目录下可以添加一个.gitattributes 文件。它的优先级高于core.autocrlf的设置，可以覆盖core.autocrlf的。它类似于 .gitignore 文件，随提交修改生效，一个项目中可以维持一份相同的配置。所以，它能够避免每个开发人员配置不同的问题。
+
+			作者：于晓飞93
+			链接：https://www.jianshu.com/p/ec9564fe1c2b
+			来源：简书
+			简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+		
+		4.1.3、
+			或者直接修改文件
+			禁用git的自动换行功能： 
+			在本地路径C:\ Users\ [用户名] \ .gitconfig下修改git配置[core]，如果没有就直接添加上去：
+			
+			
+			[core]
+			autocrlf = false
+			filemode = false
+			safecrlf = true
+					crlf: "\r\n", windows系统的换行方式
+					lf: "\n", Linux系统的换行方式
+				
+		4.1.4、		
+			rm -rf .git 
+				git init 
+				git add
+			
+	4.2 异常
+		git push origin test_2 :test_2
+
+		git 
+		error: dst ref refs/heads/test_2 receives from more than one src.
+		git 
+		https://blog.csdn.net/hanmindaxiongdi/article/details/81433730
+		这个问题主要是由于参数不对，它明明要三个参数「push」「origin」以及「A:A」的，你却给它五个：「push」「origin」「A」「:」「A」。shell 中空格导致的问题不少，比如这个：一个空格引发的惨剧。
+	4.3. 忽略特殊文件。如忽略source insight 产生的文件（此时采用方式二，就可以了。）
+
+		Untracked files:
+		  (use "git add <file>..." to include in what will be committed)
+
+				Backup of Ibotn_android5.1.1_frameworks.CF3
+				Ibotn_android5.1.1_frameworks.CF3
+				Ibotn_android5.1.1_frameworks.IAB
+				Ibotn_android5.1.1_frameworks.IAD
+				Ibotn_android5.1.1_frameworks.IMB
+				Ibotn_android5.1.1_frameworks.IMD
+				Ibotn_android5.1.1_frameworks.PFI
+				Ibotn_android5.1.1_frameworks.PO
+				Ibotn_android5.1.1_frameworks.PR
+				Ibotn_android5.1.1_frameworks.PRI
+				Ibotn_android5.1.1_frameworks.PS
+				Ibotn_android5.1.1_frameworks.SearchResults
+				Ibotn_android5.1.1_frameworks.WK3
+				
+		【方式一】
+
+			在仓库目录下新建一个名为.gitignore的文件（因为是点开头，没有文件名，没办法直接在windows目录下直接创建，必须通过右键Git Bash，按照linux的方式来新建.gitignore文件）。如下图所示。
+
+			.gitignore文件对其所在的目录及所在目录的全部子目录均有效。通过将.gitignore文件添加到仓库，其他开发者更新该文件到本地仓库，以共享同一套忽略规则。
+		【方式二】
+
+		   通过配置.git/info/exclude文件来忽略文件。这种方式对仓库全局有效，只能对自己本地仓库有作用，其他人没办法通过这种方式来共享忽略规则，除非他人也修改其本地仓库的该文件。
+
+	 
+
+		【方式三】
+
+		   通过.git/config配置文件的core. Excludesfile选项，指定一个忽略规则文件（完整路径），如下图所示。忽略规则在文件e:/gitignore.txt中（当然该文件名可以任意取）。
+
+		   该方式的作用域是也全局的。
+	4.4 Git忽略对文件权限的改变
+		 it status .后发现刚刚克隆下来的文件有很多改动，且只是文件权限的改动。让git忽略检查文件权限的改动：
+		git config core.filemode false执行该命令后即可
+	4.5 使用 Git 重命名文件
+		mv file_name new_file_name  //步骤一
+		git add new_file_name       //添加新文件
+		git rm file_name            //删除旧文件
+		git commit -m'添加注释'      //放到暂存区
+	4.6 git for windows下的Filename too long
+		在git bash中，运行下列命令： git config --global core.longpaths true //全局设置
+		
+		也可以仅设置当前项目：
+		git config core.longpaths true
+		查看设置状态：
+		git config core.longpaths 	
+	4.7,如何用git命令生成Patch和打Patch
+		14.1、git format-patch 生成的patch格式和语法
+			http://blog.chinaunix.net/uid-27714502-id-4110752.html
+		
+		14.2、如何用git命令生成Patch和打Patch
+			https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
+			
+			git format-patch
+
+			$ git format-patch HEAD^ 　　　　　　　　　　　　　   #生成最近的1次commit的patch
+
+			$ git format-patch HEAD^^　　　　　　　　　　　　　  #生成最近的2次commit的patch
+
+			$ git format-patch <r1>..<r2>                                              #生成两个commit间的修改的patch（包含两个commit. <r1>和<r2>都是具体的commit号)
+			$ git format-patch -1 <r1>                                                   #生成单个commit的patch
+			$ git format-patch <r1>                                                       #生成某commit以来的修改patch（不包含该commit）
+			$ git format-patch --root <r1>　　　　　　　　　　　　   #生成从根到r1提交的所有patch
+			
+			$ git apply --stat 0001-limit-log-function.patch   　　　　  # 查看patch的情况
+			$ git apply --check 0001-limit-log-function.patch   　　　  # 检查patch是否能够打上，如果没有任何输出，则说明无冲突，可以打上
+				(注：git apply是另外一种打patch的命令，其与git am的区别是，git apply并不会将commit message等打上去，打完patch后需要重新git add和git commit，而git am会直接将patch的所有信息打上去，而且不用重新git add和git commit,author也是patch的author而不是打patch的人)
+			
+			$ git am 0001-limit-log-function.patch                                # 将名字为0001-limit-log-function.patch的patch打上
+			$ git am --signoff 0001-limit-log-function.patch                  # 添加-s或者--signoff，还可以把自己的名字添加为signed off by信息，作用是注明打patch的人是谁，因为有时打patch的人并不是patch的作者
+			$ git am ~/patch-set/*.patch　　　　　　　　　　　　　# 将路径~/patch-set/*.patch 按照先后顺序打上
+			$ git am --abort                                                                   # 当git am失败时，用以将已经在am过程中打上的patch废弃掉(比如有三个patch，打到第三个patch时有冲突，那么这条命令会把打上的前两个patch丢弃掉，返回没有打patch的状态)
+			$ git am --resolved                                                             #当git am失败，解决完冲突后，这条命令会接着打patch
+			
+		14.3、git apply、git am打补丁.diff 和 .patch
+			https://www.jianshu.com/p/e5d801b936b6
+	4.8 git配置用户名和邮箱 
+		4.8.1 git配置用户名和邮箱
+			https://blog.csdn.net/xingbaozhen1210/article/details/80342212
+			
+			2.1 设置用户名
+				git config --global user.name "username"
+				2.2 设置邮箱 (没有双引号)
+				git config --global user.email useremail@qq.com 
+				3 . 查看用户名和密码
+				git config user.name
+				git config user.email
+				4 . 查看其他配置信息(git设置列表)
+				git config --list  
+				————————————————
+				版权声明：本文为CSDN博主「BlueKitty1210」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+				原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
 ////////////
-////////////
-
-8) 异常换行问题汇总。 LF,CRLF 。。
-	特别是使用git和svn同时管理项目。如svn用来本地与服务器（公司版本控制服务器端为，svn）,git只是管理本地程序的。使用window会造成冲突。
-	当出现【warning：LF will be replaced by CRLF】
-	
-	8.1 ，解决方式。git bash命令行也可以修改，最终也是修改.gitconfig配置文件：
-		git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
-		git config --global core.filemode false 	//文件属性等
-		git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
-		core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
-	8.2
-		或者：.gitattributes 文件
-		在项目的根目录下可以添加一个.gitattributes 文件。它的优先级高于core.autocrlf的设置，可以覆盖core.autocrlf的。它类似于 .gitignore 文件，随提交修改生效，一个项目中可以维持一份相同的配置。所以，它能够避免每个开发人员配置不同的问题。
-
-		作者：于晓飞93
-		链接：https://www.jianshu.com/p/ec9564fe1c2b
-		来源：简书
-		简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
-	
-	8.3、
-		或者直接修改文件
-		禁用git的自动换行功能： 
-		在本地路径C:\ Users\ [用户名] \ .gitconfig下修改git配置[core]，如果没有就直接添加上去：
-		
-		
-		[core]
-		autocrlf = false
-		filemode = false
-		safecrlf = true
-				crlf: "\r\n", windows系统的换行方式
-				lf: "\n", Linux系统的换行方式
-			
-	8.4、		
-		rm -rf .git 
-			git init 
-			git add
-		
-9)异常
-	git push origin test_2 :test_2
-
-	git 
-	error: dst ref refs/heads/test_2 receives from more than one src.
-	git 
-	https://blog.csdn.net/hanmindaxiongdi/article/details/81433730
-	这个问题主要是由于参数不对，它明明要三个参数「push」「origin」以及「A:A」的，你却给它五个：「push」「origin」「A」「:」「A」。shell 中空格导致的问题不少，比如这个：一个空格引发的惨剧。
-10) 忽略特殊文件。如忽略source insight 产生的文件（此时采用方式二，就可以了。）
-
-	Untracked files:
-	  (use "git add <file>..." to include in what will be committed)
-
-			Backup of Ibotn_android5.1.1_frameworks.CF3
-			Ibotn_android5.1.1_frameworks.CF3
-			Ibotn_android5.1.1_frameworks.IAB
-			Ibotn_android5.1.1_frameworks.IAD
-			Ibotn_android5.1.1_frameworks.IMB
-			Ibotn_android5.1.1_frameworks.IMD
-			Ibotn_android5.1.1_frameworks.PFI
-			Ibotn_android5.1.1_frameworks.PO
-			Ibotn_android5.1.1_frameworks.PR
-			Ibotn_android5.1.1_frameworks.PRI
-			Ibotn_android5.1.1_frameworks.PS
-			Ibotn_android5.1.1_frameworks.SearchResults
-			Ibotn_android5.1.1_frameworks.WK3
-			
-	【方式一】
-
-		在仓库目录下新建一个名为.gitignore的文件（因为是点开头，没有文件名，没办法直接在windows目录下直接创建，必须通过右键Git Bash，按照linux的方式来新建.gitignore文件）。如下图所示。
-
-		.gitignore文件对其所在的目录及所在目录的全部子目录均有效。通过将.gitignore文件添加到仓库，其他开发者更新该文件到本地仓库，以共享同一套忽略规则。
-	【方式二】
-
-       通过配置.git/info/exclude文件来忽略文件。这种方式对仓库全局有效，只能对自己本地仓库有作用，其他人没办法通过这种方式来共享忽略规则，除非他人也修改其本地仓库的该文件。
-
- 
-
-	【方式三】
-
-       通过.git/config配置文件的core. Excludesfile选项，指定一个忽略规则文件（完整路径），如下图所示。忽略规则在文件e:/gitignore.txt中（当然该文件名可以任意取）。
-
-       该方式的作用域是也全局的。
-11）Git忽略对文件权限的改变
-	 it status .后发现刚刚克隆下来的文件有很多改动，且只是文件权限的改动。让git忽略检查文件权限的改动：
-	git config core.filemode false执行该命令后即可
-12）使用 Git 重命名文件
-	mv file_name new_file_name  //步骤一
-	git add new_file_name       //添加新文件
-	git rm file_name            //删除旧文件
-	git commit -m'添加注释'      //放到暂存区
-13）git for windows下的Filename too long
-	在git bash中，运行下列命令： git config --global core.longpaths true //全局设置
-	
-	也可以仅设置当前项目：
-	git config core.longpaths true
-	查看设置状态：
-	git config core.longpaths 	
-14),如何用git命令生成Patch和打Patch
-	14.1、git format-patch 生成的patch格式和语法
-		http://blog.chinaunix.net/uid-27714502-id-4110752.html
-	
-	14.2、如何用git命令生成Patch和打Patch
-		https://www.cnblogs.com/ArsenalfanInECNU/p/8931377.html
-		
-		git format-patch
-
-		$ git format-patch HEAD^ 　　　　　　　　　　　　　   #生成最近的1次commit的patch
-
-		$ git format-patch HEAD^^　　　　　　　　　　　　　  #生成最近的2次commit的patch
-
-		$ git format-patch <r1>..<r2>                                              #生成两个commit间的修改的patch（包含两个commit. <r1>和<r2>都是具体的commit号)
-		$ git format-patch -1 <r1>                                                   #生成单个commit的patch
-		$ git format-patch <r1>                                                       #生成某commit以来的修改patch（不包含该commit）
-		$ git format-patch --root <r1>　　　　　　　　　　　　   #生成从根到r1提交的所有patch
-		
-		$ git apply --stat 0001-limit-log-function.patch   　　　　  # 查看patch的情况
-		$ git apply --check 0001-limit-log-function.patch   　　　  # 检查patch是否能够打上，如果没有任何输出，则说明无冲突，可以打上
-			(注：git apply是另外一种打patch的命令，其与git am的区别是，git apply并不会将commit message等打上去，打完patch后需要重新git add和git commit，而git am会直接将patch的所有信息打上去，而且不用重新git add和git commit,author也是patch的author而不是打patch的人)
-		
-		$ git am 0001-limit-log-function.patch                                # 将名字为0001-limit-log-function.patch的patch打上
-		$ git am --signoff 0001-limit-log-function.patch                  # 添加-s或者--signoff，还可以把自己的名字添加为signed off by信息，作用是注明打patch的人是谁，因为有时打patch的人并不是patch的作者
-		$ git am ~/patch-set/*.patch　　　　　　　　　　　　　# 将路径~/patch-set/*.patch 按照先后顺序打上
-		$ git am --abort                                                                   # 当git am失败时，用以将已经在am过程中打上的patch废弃掉(比如有三个patch，打到第三个patch时有冲突，那么这条命令会把打上的前两个patch丢弃掉，返回没有打patch的状态)
-		$ git am --resolved                                                             #当git am失败，解决完冲突后，这条命令会接着打patch
-		
-	14.3、git apply、git am打补丁.diff 和 .patch
-		https://www.jianshu.com/p/e5d801b936b6
-15 git配置用户名和邮箱 
-	15.1 git配置用户名和邮箱
-		https://blog.csdn.net/xingbaozhen1210/article/details/80342212
-		
-		2.1 设置用户名
-			git config --global user.name "username"
-			2.2 设置邮箱 (没有双引号)
-			git config --global user.email useremail@qq.com 
-			3 . 查看用户名和密码
-			git config user.name
-			git config user.email
-			4 . 查看其他配置信息(git设置列表)
-			git config --list  
-			————————————————
-			版权声明：本文为CSDN博主「BlueKitty1210」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-			原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
-////////////
-三、其它命令
+五、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
 	git format-patch -1 生成补丁
 	git commit --amend 修改最近一次的commit log
@@ -370,6 +381,6 @@
 	git pull = git fetch + git merge 更新并且合并
 	git pull --rebase = git fetch + git rebase 更新并且重组
 	git cherry-pick -x [98f8752b8
-
+六.
 
 
