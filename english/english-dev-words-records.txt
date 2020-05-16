@@ -1472,7 +1472,7 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [prɪˈsiːd]   美 [prɪˈsiːd]  
 	v.
 	在…之前发生(或出现);先于;走在…前面
-	第三人称单数： precedes现在分词： preceding过去式： preceded过去分词： preceded
+	第三人称单数： precedes 现在分词： preceding 过去式： preceded 过去分词： preceded
 	记忆技巧：pre 前；预先 + ced 走 + e → 走在〔时间〕前面 → 先于
 	
 	free space  preceding // 之前的空余空间。
@@ -1573,4 +1573,46 @@ The transferer. Set only in constructor, but cannot be declared
 	次要的;附带的;外围的;周边的;与计算机相连的
 	n.
 	外围设备;周边设备
+	
+161 install Shield 
+	安装防护罩
+	shield
+	英 [ʃiːld]   美 [ʃiːld]  
+	n.
+	盾(牌);保护人;保护物;掩护物;屏障;(保护机器和操作者的)护罩，防护屏，挡板
+	v.
+	保护某人或某物(免遭危险、伤害或不快);给…加防护罩
+162 Licensed Software: means the enclosed SOFTWARE LIBRARY, EXAMPLES, PROJECT TEMPLATE and all the related documentation and design tools licensed in the form of object and/or source code as the case maybe. 
+	许可软件：指随附的软件库、示例、项目模板以及所有相关的文档和设计工具，许可形式为对象和/或源代码（视情况而定）。
+	
+	enclosed
+	英 [ɪnˈkləʊzd]   美 [ɪnˈkloʊzd]  
+	adj.
+	(用墙等)围住的，封闭的;随函附上的;附上的;与外界隔绝的
+	v.
+	(用墙、篱笆等)把…围起来;围住;附入;随函(或包裹等)附上
+	enclose的过去分词和过去式
+163 parallel 
+	parallel
+	英 [ˈpærəlel]   美 [ˈpærəlel]  
+	adj.
+	平行的;极相似的;同时发生的;相应的;对应的;并行的
+	n.
+	(尤指不同地点或时间的)极其相似的人(或情况、事件等);相似特征;相似特点;(地球或地图的)纬线，纬圈
+	v.
+	与…相似;与…同时发生;与…媲美;比得上
+	adv.
+	平行地，并列地
+	
+164. contrast
+	contrast
+	英 [ˈkɒntrɑːst , kənˈtrɑːst]   美 [ˈkɑːntræst , kənˈtræst]  
+	n.
+	明显的差异;对比;对照;明显不同的人(或事物);(摄影或绘画中的)颜色反差，明暗对比
+	v.
+	对比;对照;(靠近或作比较时)显出明显的差异，形成对比
+	
+	The two visitors provided a startling contrast in appearance 
+	这两位访客的外表截然不同
+
 	
