@@ -1615,4 +1615,12 @@ The transferer. Set only in constructor, but cannot be declared
 	The two visitors provided a startling contrast in appearance 
 	这两位访客的外表截然不同
 
-	
+165. Compact Disc Read-Only Memory 
+	compact
+	英 [kəmˈpækt , ˈkɒmpækt]   美 [ˈkɑːmpækt , kəmˈpækt]  
+	adj.
+	小型的;袖珍的;紧凑的;体积小的;紧密的;坚实的
+	n.
+	小汽车;带镜小粉盒;协定;协议;契约;合约
+	v.
+	把…紧压在一起(或压实)
