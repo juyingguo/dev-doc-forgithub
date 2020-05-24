@@ -99,6 +99,12 @@ It assumes that only the primary user
 	n.
 	自行决定的自由;自行决定权;谨慎;慎重;审慎
 	
+	discrete
+	英 [dɪˈskriːt]   美 [dɪˈskriːt]  
+	adj.
+	分离的;互不相连的;各别的
+	派生词： discretely adv. discreteness n.
+	
 	The awakened thread will not be able to proceed until the current
       thread relinquishes the lock on this object.  //唤醒的线程将无法继续，直到当前线程将放弃此对象上的锁
 	
