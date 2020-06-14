@@ -1630,3 +1630,26 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+166 disjoint  
+	We read from the log in two disjoint operations 我们从日志中读到两个不相交的操作
+	disjoint
+	英 [dɪsˈdʒɔɪnt]   美 [dɪsˈdʒɔɪnt]  
+	v.
+	（使）脱节，（使）解体，（使）脱臼 
+167 We do this now
+ because if we partially fail, we can end up with clobbered log
+   entries that encroach on readable buffer.
+	我们现在就这么做
+	因为如果我们部分失败，我们会以失败告终
+	侵占可读缓冲区的条目。
+	
+	clobbered
+	英 [ˈklɒbəd]   美 [ˈklɑːbərd]  
+	v.
+	狠击;狠揍;猛打;极大地打击;惩罚;使受到(严重经济损失);彻底战胜(或击败)
+	
+	encroach
+	英 [ɪnˈkrəʊtʃ]   美 [ɪnˈkroʊtʃ]  
+	v.
+	侵占(某人的时间);侵犯(某人的权利);扰乱(某人的生活等);侵蚀，蚕食(土地)
+	
