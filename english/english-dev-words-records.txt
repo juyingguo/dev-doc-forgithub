@@ -1652,4 +1652,16 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ɪnˈkrəʊtʃ]   美 [ɪnˈkroʊtʃ]  
 	v.
 	侵占(某人的时间);侵犯(某人的权利);扰乱(某人的生活等);侵蚀，蚕食(土地)
+168 ，bust
+	英 [bʌst]   美 [bʌst]  
+	v.
+	打破;摔碎;突击搜查(或搜捕);(使)降级，降低军阶
+	n.
+	(石或金属的)半身像;(尤指衣服或尺寸)女子的胸部，胸围;(警方的)突击搜捕，突击搜查
+	adj.
+	破碎;毁坏;破产
+	第三人称单数： busts复数： busts现在分词： busting过去式： busted过去分词： busted 
+169，No handler, we'll have to terminate things with extreme prejudice. 
+	没有处理者，我们将不得不带着极端的偏见终止一切。 
+	
 	
