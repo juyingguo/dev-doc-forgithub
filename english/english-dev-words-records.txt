@@ -367,6 +367,12 @@ It assumes that only the primary user
 	英 [rɪˈdʌndənt]   美 [rɪˈdʌndənt]  
 	adj.
 	被裁减的;多余的;不需要的
+	
+	Something that is redundant is no longer needed because its job is being done by something else or because its job is no longer necessary or useful.
+	Changes in technology may mean that once-valued skills are now redundant.
+
+	技术上的革新可能意味着曾经被重视的技术现在已变得多余。
+	
 40、drop vacant 空投
 	vacant
 	英 [ˈveɪkənt]   美 [ˈveɪkənt]  
@@ -603,6 +609,11 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [səˈfɪʃnt]   美 [səˈfɪʃnt]  
 	adj.
 	足够的;充足的
+	
+	insufficient
+	英 [ˌɪnsəˈfɪʃnt]   美 [ˌɪnsəˈfɪʃnt]  
+	adj.
+	不充分的;不足的;不够重要的
 63、Note that there are no square braces.请注意，没有方括号。
 		braces
 		英 [ˈbreɪsɪz]   美 [ˈbreɪsɪz]  
@@ -1624,3 +1635,69 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+	
+167 agnostic 
+	This cleanly combines a set of
+	device-specific aspects (drivers) with a device-agnostic
+	product configuration (apps)
+	这个干净的组合了一组 与设备无关的设备特定方面（驱动程序） 产品配置（应用程序）
+	agnostic
+	英 [æɡˈnɒstɪk]   美 [æɡˈnɑːstɪk]  
+	n.
+	不可知论者(认为上帝存在与否是不可知的)
+	adj.
+	不可知论（者）的
+	
+168 Disinfectant
+	消毒液
+169 assemble release //装配发布 
+	assemble
+	英 [əˈsembl]   美 [əˈsembl]  
+	v.
+	聚集;集合;收集;装配;组装
+	第三人称单数： assembles现在分词： assembling过去式： assembled过去分词： assembled
+
+170 revise 
+	revise
+	英 [rɪˈvaɪz]   美 [rɪˈvaɪz]  
+	v.
+	改变，修改(意见或计划);修改，修订(书刊、估算等);复习;温习
+	第三人称单数： revises现在分词： revising过去式： revised过去分词： revised
+	记忆技巧：re 一再 + vis 看 + e → 一看再看 → 一改再改 → 修正
+	
+171 optical 
+	optical
+	英 [ˈɒptɪkl]   美 [ˈɑːptɪkl]  
+	adj.
+	视力的;视觉的;光学的;有助于视力的;光读取的;光存储的
+	
+172 pump 
+	英 [pʌmp]   美 [pʌmp]  
+	n.
+	抽水机;泵;打气筒;轻软舞鞋;轻便帆布鞋
+	v.
+	用泵(或泵样器官等)输送;涌出;涌流;奔流;上下(或内外)快速摇动;急速摇晃
+	第三人称单数： pumps复数： pumps现在分词： pumping过去式： pumped过去分词： pumped
+	
+	charge pump 
+173 lane
+	英 [leɪn]   美 [leɪn]  
+	n.
+	(乡间)小路;小巷;胡同;里弄;车道 
+174 spare gpio 
+	spare
+	英 [speə(r)]   美 [sper]  
+	adj.
+	不用的;闲置的;备用的;外加的;空闲的;空余的
+	v.
+	抽出;拨出;留出;匀出;省得;免去;饶恕;赦免;放过;使逃脱
+	n.
+	备用品;备用轮胎
+175 check disc from defect 
+	检查制动盘是否有缺陷
+	defect
+	英 [ˈdiːfekt , dɪˈfekt]   美 [ˈdiːfekt , dɪˈfekt]  
+	n.
+	缺点;缺陷;毛病
+	v.
+	背叛;叛变;投敌

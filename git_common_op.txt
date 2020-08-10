@@ -3,6 +3,12 @@
 	2. git仓库配置 
 		2.1 Linux(Ubuntu)搭建局域网git服务器 
 			1. https://blog.csdn.net/psy6653/article/details/80834024
+			
+	3. 关于.gitignore文件使用说明 
+		https://www.cnblogs.com/andking/p/5646088.html
+		
+		3.1 gitignore.io-程序猿值得拥有的智能生成gitignore文件的秘密武器 
+			https://www.cnblogs.com/andking/p/6868231.html
 二、
 拉取源码：
 	repo init -u gitolite@192.168.1.21:manifests.git -b master
@@ -141,6 +147,14 @@
 			
 			git config --global http.sslVerify "false" //
 			https://blog.csdn.net/hoiyook/article/details/81870068
+			
+		I） git 从远程仓库获取所有分支
+			https://blog.csdn.net/wu1169668869/article/details/83345633
+			
+			git clone http://myrepo.xxx.com/project/.git  //检出远程仓库。
+			git branch -a，列出所有分支名称
+			git checkout -b branch_dev origin/branch_dev，作用是checkout远程的branch_dev分支，在本地起名为branch_dev分支，并切换到本地的branch_dev分支
+			
 
 	8. 分支(branch)操作相关命令
 		8.1 查看本地分支：$ git branch
@@ -206,6 +220,7 @@
 			/TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 			build/    # 忽略 build/ 目录下的所有文件
 			doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+			#为注释
 		6.1）将.gitignore添加到忽略文件与不添加的区别？
 			1.添加后，可以动态改变忽略规则，而不需要删除缓存。
 	13. Windows下使用Beyond Compare作为git的比对与合并工具

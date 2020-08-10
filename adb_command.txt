@@ -1,5 +1,8 @@
 001. adb 相关学习资源，网站等
 	001.1 https://adbshell.com
+	
+	001.2 https://github.com/mzlogin/awesome-adb#%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8-%E8%B0%83%E8%B5%B7-activity 
+		
 
 一、adb 命令
 	1.1 logcat
@@ -13,12 +16,13 @@
 	(2.1)am相关
 		am start 
 		am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
-	(2.2)
-		pm
-		pm clear package_name 清除应用的缓存
-		
-		pm list packages 查看包名
-		pm list packages -f   //应用对应的apk文件在手机上的安装位置
+	(2.2)pm系列命令。
+		2.2.1 清除应用的缓存
+			pm clear package_name 
+			pm clear [--user USER_ID] PACKAGE
+		2.2.2 pm查看包名
+			pm list packages
+			pm list packages -f   //应用对应的apk文件在手机上的安装位置
 	
 	(2.3)内存
 		procrank 
@@ -140,7 +144,12 @@
 		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
 		(2.2) adb shell ///第一步
 				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
-				
+	3. recovery 
+		adb devices //显示如下。
+		0123456789ABCDEF        recovery
+		3.1 recovery 模式下如何抓取日志。应用logcat及内核日志
+		
+		
 四、一些自动生成的log
 	1.	/data/sysytem/dropbox/
 	
