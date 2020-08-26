@@ -371,6 +371,9 @@
 				————————————————
 				版权声明：本文为CSDN博主「BlueKitty1210」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 				原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
+	4.9 git: git add --ignore-removal & git add --all 区别
+		https://blog.csdn.net/JNingWei/article/details/78494478
+		  
 ////////////
 五、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器

@@ -99,6 +99,12 @@ It assumes that only the primary user
 	n.
 	自行决定的自由;自行决定权;谨慎;慎重;审慎
 	
+	discrete
+	英 [dɪˈskriːt]   美 [dɪˈskriːt]  
+	adj.
+	分离的;互不相连的;各别的
+	派生词： discretely adv. discreteness n.
+	
 	The awakened thread will not be able to proceed until the current
       thread relinquishes the lock on this object.  //唤醒的线程将无法继续，直到当前线程将放弃此对象上的锁
 	
@@ -1635,6 +1641,13 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+
+166 disjoint  
+	We read from the log in two disjoint operations 我们从日志中读到两个不相交的操作
+	disjoint
+	英 [dɪsˈdʒɔɪnt]   美 [dɪsˈdʒɔɪnt]  
+	v.
+	（使）脱节，（使）解体，（使）脱臼 
 	
 167 agnostic 
 	This cleanly combines a set of
@@ -1701,3 +1714,32 @@ The transferer. Set only in constructor, but cannot be declared
 	缺点;缺陷;毛病
 	v.
 	背叛;叛变;投敌
+
+176 We do this now
+ because if we partially fail, we can end up with clobbered log
+   entries that encroach on readable buffer.
+	我们现在就这么做
+	因为如果我们部分失败，我们会以失败告终
+	侵占可读缓冲区的条目。
+	
+	clobbered
+	英 [ˈklɒbəd]   美 [ˈklɑːbərd]  
+	v.
+	狠击;狠揍;猛打;极大地打击;惩罚;使受到(严重经济损失);彻底战胜(或击败)
+	
+	encroach
+	英 [ɪnˈkrəʊtʃ]   美 [ɪnˈkroʊtʃ]  
+	v.
+	侵占(某人的时间);侵犯(某人的权利);扰乱(某人的生活等);侵蚀，蚕食(土地)
+177 ，bust
+	英 [bʌst]   美 [bʌst]  
+	v.
+	打破;摔碎;突击搜查(或搜捕);(使)降级，降低军阶
+	n.
+	(石或金属的)半身像;(尤指衣服或尺寸)女子的胸部，胸围;(警方的)突击搜捕，突击搜查
+	adj.
+	破碎;毁坏;破产
+	第三人称单数： busts复数： busts现在分词： busting过去式： busted过去分词： busted 
+178，No handler, we'll have to terminate things with extreme prejudice. 
+	没有处理者，我们将不得不带着极端的偏见终止一切。 
+	
