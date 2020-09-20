@@ -1664,4 +1664,11 @@ The transferer. Set only in constructor, but cannot be declared
 169，No handler, we'll have to terminate things with extreme prejudice. 
 	没有处理者，我们将不得不带着极端的偏见终止一切。 
 	
+170,The Binder defines and implements a distributed component architecture similar in broad strokes to COM on Windows and CORBA on Unix.
+	Binder定义并实现了一个分布式组件体系结构，大致类似于Windows上的COM和Unix上的CORBA。
+	broad 宽阔的 ; 广阔的 ; …宽 ; 涉及各种各样的人的 ; 广泛的 ; 婆娘
+	strokes 击球 ; 一下，一击 ; 划水动作 ; 划桨动作 ; 轻抚，抚摩 ;
+	broad strokes
+	英 [brɔːd strəʊks]   美 [brɔːd stroʊks]  
+	广义的方面	
 	
