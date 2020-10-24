@@ -106,6 +106,15 @@
 		
 		adb shell dumpsys activity activities  //activity堆栈状态 
 		
+		2.6.2 
+			如果直接运行adb shell 		dumpsys，将会获得所有的系统服务信息，那是非常多的，为了更容易管理输出，可以指定你想要检查的服务，例如：
+			adb shell dumpsys –l
+
+			adb shell service list 系统服务查询 
+			
+		2.6.3查看系统wifi服务。并保存到文件中。
+			adb shell dumpsys wifi -l >d:/1.txt
+		
 	2.7、
 		df 查看磁盘空间使用情况
 	2.8、查看进程
@@ -213,5 +222,19 @@
 			
 			Android Studio 找不到虚拟机和真机的解决办法
 			adb下载地址： http://adbshell.com/downloads
+9. adb pull命令介绍：
+	adb pull 拷贝文件保持源文件的时间属性
+	https://blog.csdn.net/isyanye/article/details/84984644
+	
+	在adb shell环境下，输入adb 可以查看命令帮助说明的。
+	
+	adb pull [-p] [-a] <remote> [<local>]命令:从设备中复制一个文件/目录出来（[]表示可有可无的参数）
 
+	-p 参数指定，显示传输进度
+
+	-a 指复制的时间戳和模式。
+
+	当我们从手机中复制文件到电脑中时，不希望改变文件的“修改时间”等信息时，可以加上“-p”，这样复制的文件的“修改时间”就是源文件的“修改时间”，而不是创建时的时间了。
+
+	格式：adb pull -a <remote> [<local>]
 			

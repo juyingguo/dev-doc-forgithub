@@ -462,6 +462,18 @@ It assumes that only the primary user
 	expose陈述，阐述，揭露; 暴露; 显露; 露出; 揭露; 揭穿; 使面临，使遭受
 	intermediate state中间态
 	
+	inter
+	英 [ɪnˈtɜː(r)]   美 [ɪnˈtɜːr]  
+	v.
+	埋葬(遗体)
+	第三人称单数： inters现在分词： interring过去式： interred过去分词： interred
+	记忆技巧：in 进入 + ter〔= terr〕土地 → 进入土里 → 埋葬
+	
+	mediate
+	英 [ˈmiːdieɪt]   美 [ˈmiːdieɪt]  
+	v.
+	调停;调解;斡旋;为解决分歧找到(方法);促成(协议);影响…的发生;使…可能发生
+	
 50、getCanonicalName
 	Returns the canonical name of the underlying class as
 		 * defined by the Java Language Specification.	
@@ -1435,6 +1447,13 @@ The transferer. Set only in constructor, but cannot be declared
 	If you decide to enable two-factor authentication, ensure you retain access to one or more account recovery methods
 	如果决定启用双因素身份验证，请确保保留对一个或多个帐户恢复方法的访问权
 	
+	power retention功率保持
+	retention
+	英 [rɪˈtenʃn]   美 [rɪˈtenʃn]  
+	n.
+	保持;维持;保留;(液体、热量等的)保持，阻滞;记忆力;记性
+	记忆技巧：re 重新 + ten 拿住 + tion，retain 的名词 → 保留；持久力
+	
 145. daemon  
 	Daemon
 	英 [ˈdiːmən]   美 [ˈdiːmən]  
@@ -1641,6 +1660,8 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+	Windows CE 
+	Windows Embedded Compact(即 Windows CE)是微软公司嵌入式、移动计算平台的基础，它是一个开放的、可升级的32位嵌入式操作系统，是基于掌上型电脑类的电子设备操作系统
 
 166 disjoint  
 	We read from the log in two disjoint operations 我们从日志中读到两个不相交的操作
@@ -1743,3 +1764,86 @@ The transferer. Set only in constructor, but cannot be declared
 178，No handler, we'll have to terminate things with extreme prejudice. 
 	没有处理者，我们将不得不带着极端的偏见终止一切。 
 	
+	prejudice
+	英 [ˈpredʒudɪs]   美 [ˈpredʒudɪs]  
+	n.
+	偏见;成见
+	v.
+	使怀有(或形成)偏见;损害;有损于
+	第三人称单数： prejudices复数： prejudices现在分词： prejudicing过去式： prejudiced
+	记忆技巧：pre 预先 + judic 判断；法律 + e → 预先的判断 → 偏见
+	
+179，caption
+	caption
+	英 [ˈkæpʃn]   美 [ˈkæpʃn]  
+	n.
+	(图片、漫画等的)说明文字
+	v.
+	给(图片、照片等)加说明文字
+	第三人称单数： captions复数： captions现在分词： captioning过去式： captioned过去分词： captioned
+	记忆技巧：cap 抓 + tion 表名词 → 抓住〔文章的大意〕→ 标题
+180，aka
+	英 [ˌeɪ keɪ ˈeɪ]   美 [ˌeɪ keɪ ˈeɪ]  
+	abbr.
+	又名;亦称
+	warning: initialization of 'HANDLE' {aka 'void *'} from 'uintptr_t' {aka 'long long unsigned int'} makes pointer from integer without a cast [-Wint-conversion]|
+181，whether the prerequisites for
+     * connecting to displays have been met.
+	是否已满足连接到显示器的要求。
+	
+	requisite 
+	英 [ˈrekwɪzɪt]   美 [ˈrekwɪzɪt]  
+	adj.
+	必需的;必备的;必不可少的
+	n.
+	必需的事物
+	复数： requisites
+	记忆技巧：re 一再 + quis 寻求；获得 + ite 表物 → 一再需求的物品 → 必需品 →〔必需品是〕必要的
+	
+	prerequisite
+	英 [ˌpriːˈrekwəzɪt]   美 [ˌpriːˈrekwəzɪt]  
+	n.
+	先决条件;前提;必备条件
+	adj.
+	必须先具备的，必要的;先决条件的
+	
+182. free of royalties  免版税
+	royalties
+	英 [ˈrɔɪəltiz]   美 [ˈrɔɪəltiz]  
+	n.
+	王室成员;版税;矿区土地使用费(由采矿或石油公司等付给土地所有人)
+	royalty的复数
+	
+183 regular 
+	英 [ˈreɡjələ(r)]   美 [ˈreɡjələr]  
+	adj.
+	规则的;有规律的;间隙均匀的;定时的;频繁的;经常做(或发生)的;经常做某事的;常去某地的
+	n.
+	常客;老主顾;主力(或正式)队员;(电视节目的)老主持人;经常参加某项活动的人;正规军人;职业军人
+	regulator
+	英 [ˈreɡjuleɪtə(r)]   美 [ˈreɡjuleɪtər]  
+	n.
+	(某行业等的)监管者，监管机构;(速度、温度、压力的)自动调节器
+184 supplication
+	supplication
+	英 [ˌsʌplɪˈkeɪʃn]   美 [ˌsʌplɪˈkeɪʃn]  
+	n.
+	恳求;哀求;祈求
+	
+	supply
+	英 [səˈplaɪ]   美 [səˈplaɪ]  
+	n.
+	供应量;供给量;储备;(军队或探险队等的)补给，补给品;供应;供给;提供;补给
+	v.
+	(尤指大量)供应，供给，提供
+184  infrastructure 
+	infrastructure
+	英 [ˈɪnfrəstrʌktʃə(r)]   美 [ˈɪnfrəstrʌktʃər]  
+	n.
+	(国家或机构的)基础设施，基础建设
+	
+	infra
+	infra
+	英 [ˈɪnfrə]   美 [ˈɪnfrə]  
+	adv.
+	〈拉〉在下；（在）以下
