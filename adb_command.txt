@@ -1,5 +1,8 @@
 001. adb 相关学习资源，网站等
 	001.1 https://adbshell.com
+	
+	001.2 https://github.com/mzlogin/awesome-adb#%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8-%E8%B0%83%E8%B5%B7-activity 
+		
 
 一、adb 命令
 	1.1 logcat
@@ -13,12 +16,13 @@
 	(2.1)am相关
 		am start 
 		am start -n com.android.music/com.android.music.MusicBrowserActivity 开启activity
-	(2.2)
-		pm
-		pm clear package_name 清除应用的缓存
-		
-		pm list packages 查看包名
-		pm list packages -f   //应用对应的apk文件在手机上的安装位置
+	(2.2)pm系列命令。
+		2.2.1 清除应用的缓存
+			pm clear package_name 
+			pm clear [--user USER_ID] PACKAGE
+		2.2.2 pm查看包名
+			pm list packages
+			pm list packages -f   //应用对应的apk文件在手机上的安装位置
 	
 	(2.3)内存
 		procrank 
@@ -102,6 +106,15 @@
 		
 		adb shell dumpsys activity activities  //activity堆栈状态 
 		
+		2.6.2 
+			如果直接运行adb shell 		dumpsys，将会获得所有的系统服务信息，那是非常多的，为了更容易管理输出，可以指定你想要检查的服务，例如：
+			adb shell dumpsys –l
+
+			adb shell service list 系统服务查询 
+			
+		2.6.3查看系统wifi服务。并保存到文件中。
+			adb shell dumpsys wifi -l >d:/1.txt
+		
 	2.7、
 		df 查看磁盘空间使用情况
 	2.8、查看进程
@@ -140,7 +153,12 @@
 		(2.1) adb shell cat /proc/kmsg > d:/log_kmsg.txt  //直接保存在电脑中
 		(2.2) adb shell ///第一步
 				cat /proc/kmsg > /sdcard/log_kmsg.txt  //第二步骤，保存着设备中
-				
+	3. recovery 
+		adb devices //显示如下。
+		0123456789ABCDEF        recovery
+		3.1 recovery 模式下如何抓取日志。应用logcat及内核日志
+		
+		
 四、一些自动生成的log
 	1.	/data/sysytem/dropbox/
 	
@@ -204,5 +222,19 @@
 			
 			Android Studio 找不到虚拟机和真机的解决办法
 			adb下载地址： http://adbshell.com/downloads
+9. adb pull命令介绍：
+	adb pull 拷贝文件保持源文件的时间属性
+	https://blog.csdn.net/isyanye/article/details/84984644
+	
+	在adb shell环境下，输入adb 可以查看命令帮助说明的。
+	
+	adb pull [-p] [-a] <remote> [<local>]命令:从设备中复制一个文件/目录出来（[]表示可有可无的参数）
 
+	-p 参数指定，显示传输进度
+
+	-a 指复制的时间戳和模式。
+
+	当我们从手机中复制文件到电脑中时，不希望改变文件的“修改时间”等信息时，可以加上“-p”，这样复制的文件的“修改时间”就是源文件的“修改时间”，而不是创建时的时间了。
+
+	格式：adb pull -a <remote> [<local>]
 			

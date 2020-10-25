@@ -373,6 +373,12 @@ It assumes that only the primary user
 	英 [rɪˈdʌndənt]   美 [rɪˈdʌndənt]  
 	adj.
 	被裁减的;多余的;不需要的
+	
+	Something that is redundant is no longer needed because its job is being done by something else or because its job is no longer necessary or useful.
+	Changes in technology may mean that once-valued skills are now redundant.
+
+	技术上的革新可能意味着曾经被重视的技术现在已变得多余。
+	
 40、drop vacant 空投
 	vacant
 	英 [ˈveɪkənt]   美 [ˈveɪkənt]  
@@ -455,6 +461,18 @@ It assumes that only the primary user
 	atomic原子的; 与原子有关的; 原子能的; 原子武器的
 	expose陈述，阐述，揭露; 暴露; 显露; 露出; 揭露; 揭穿; 使面临，使遭受
 	intermediate state中间态
+	
+	inter
+	英 [ɪnˈtɜː(r)]   美 [ɪnˈtɜːr]  
+	v.
+	埋葬(遗体)
+	第三人称单数： inters现在分词： interring过去式： interred过去分词： interred
+	记忆技巧：in 进入 + ter〔= terr〕土地 → 进入土里 → 埋葬
+	
+	mediate
+	英 [ˈmiːdieɪt]   美 [ˈmiːdieɪt]  
+	v.
+	调停;调解;斡旋;为解决分歧找到(方法);促成(协议);影响…的发生;使…可能发生
 	
 50、getCanonicalName
 	Returns the canonical name of the underlying class as
@@ -609,6 +627,11 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [səˈfɪʃnt]   美 [səˈfɪʃnt]  
 	adj.
 	足够的;充足的
+	
+	insufficient
+	英 [ˌɪnsəˈfɪʃnt]   美 [ˌɪnsəˈfɪʃnt]  
+	adj.
+	不充分的;不足的;不够重要的
 63、Note that there are no square braces.请注意，没有方括号。
 		braces
 		英 [ˈbreɪsɪz]   美 [ˈbreɪsɪz]  
@@ -1427,6 +1450,13 @@ The transferer. Set only in constructor, but cannot be declared
 	If you decide to enable two-factor authentication, ensure you retain access to one or more account recovery methods
 	如果决定启用双因素身份验证，请确保保留对一个或多个帐户恢复方法的访问权
 	
+	power retention功率保持
+	retention
+	英 [rɪˈtenʃn]   美 [rɪˈtenʃn]  
+	n.
+	保持;维持;保留;(液体、热量等的)保持，阻滞;记忆力;记性
+	记忆技巧：re 重新 + ten 拿住 + tion，retain 的名词 → 保留；持久力
+	
 145. daemon  
 	Daemon
 	英 [ˈdiːmən]   美 [ˈdiːmən]  
@@ -1633,13 +1663,83 @@ The transferer. Set only in constructor, but cannot be declared
 	小汽车;带镜小粉盒;协定;协议;契约;合约
 	v.
 	把…紧压在一起(或压实)
+	Windows CE 
+	Windows Embedded Compact(即 Windows CE)是微软公司嵌入式、移动计算平台的基础，它是一个开放的、可升级的32位嵌入式操作系统，是基于掌上型电脑类的电子设备操作系统
+
 166 disjoint  
 	We read from the log in two disjoint operations 我们从日志中读到两个不相交的操作
 	disjoint
 	英 [dɪsˈdʒɔɪnt]   美 [dɪsˈdʒɔɪnt]  
 	v.
 	（使）脱节，（使）解体，（使）脱臼 
-167 We do this now
+	
+167 agnostic 
+	This cleanly combines a set of
+	device-specific aspects (drivers) with a device-agnostic
+	product configuration (apps)
+	这个干净的组合了一组 与设备无关的设备特定方面（驱动程序） 产品配置（应用程序）
+	agnostic
+	英 [æɡˈnɒstɪk]   美 [æɡˈnɑːstɪk]  
+	n.
+	不可知论者(认为上帝存在与否是不可知的)
+	adj.
+	不可知论（者）的
+	
+168 Disinfectant
+	消毒液
+169 assemble release //装配发布 
+	assemble
+	英 [əˈsembl]   美 [əˈsembl]  
+	v.
+	聚集;集合;收集;装配;组装
+	第三人称单数： assembles现在分词： assembling过去式： assembled过去分词： assembled
+
+170 revise 
+	revise
+	英 [rɪˈvaɪz]   美 [rɪˈvaɪz]  
+	v.
+	改变，修改(意见或计划);修改，修订(书刊、估算等);复习;温习
+	第三人称单数： revises现在分词： revising过去式： revised过去分词： revised
+	记忆技巧：re 一再 + vis 看 + e → 一看再看 → 一改再改 → 修正
+	
+171 optical 
+	optical
+	英 [ˈɒptɪkl]   美 [ˈɑːptɪkl]  
+	adj.
+	视力的;视觉的;光学的;有助于视力的;光读取的;光存储的
+	
+172 pump 
+	英 [pʌmp]   美 [pʌmp]  
+	n.
+	抽水机;泵;打气筒;轻软舞鞋;轻便帆布鞋
+	v.
+	用泵(或泵样器官等)输送;涌出;涌流;奔流;上下(或内外)快速摇动;急速摇晃
+	第三人称单数： pumps复数： pumps现在分词： pumping过去式： pumped过去分词： pumped
+	
+	charge pump 
+173 lane
+	英 [leɪn]   美 [leɪn]  
+	n.
+	(乡间)小路;小巷;胡同;里弄;车道 
+174 spare gpio 
+	spare
+	英 [speə(r)]   美 [sper]  
+	adj.
+	不用的;闲置的;备用的;外加的;空闲的;空余的
+	v.
+	抽出;拨出;留出;匀出;省得;免去;饶恕;赦免;放过;使逃脱
+	n.
+	备用品;备用轮胎
+175 check disc from defect 
+	检查制动盘是否有缺陷
+	defect
+	英 [ˈdiːfekt , dɪˈfekt]   美 [ˈdiːfekt , dɪˈfekt]  
+	n.
+	缺点;缺陷;毛病
+	v.
+	背叛;叛变;投敌
+
+176 We do this now
  because if we partially fail, we can end up with clobbered log
    entries that encroach on readable buffer.
 	我们现在就这么做
@@ -1655,7 +1755,7 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ɪnˈkrəʊtʃ]   美 [ɪnˈkroʊtʃ]  
 	v.
 	侵占(某人的时间);侵犯(某人的权利);扰乱(某人的生活等);侵蚀，蚕食(土地)
-168 ，bust
+177 ，bust
 	英 [bʌst]   美 [bʌst]  
 	v.
 	打破;摔碎;突击搜查(或搜捕);(使)降级，降低军阶
@@ -1664,17 +1764,100 @@ The transferer. Set only in constructor, but cannot be declared
 	adj.
 	破碎;毁坏;破产
 	第三人称单数： busts复数： busts现在分词： busting过去式： busted过去分词： busted 
-169，No handler, we'll have to terminate things with extreme prejudice. 
+178，No handler, we'll have to terminate things with extreme prejudice. 
 	没有处理者，我们将不得不带着极端的偏见终止一切。 
 	
-170,The Binder defines and implements a distributed component architecture similar in broad strokes to COM on Windows and CORBA on Unix.
+	prejudice
+	英 [ˈpredʒudɪs]   美 [ˈpredʒudɪs]  
+	n.
+	偏见;成见
+	v.
+	使怀有(或形成)偏见;损害;有损于
+	第三人称单数： prejudices复数： prejudices现在分词： prejudicing过去式： prejudiced
+	记忆技巧：pre 预先 + judic 判断；法律 + e → 预先的判断 → 偏见
+	
+179，caption
+	caption
+	英 [ˈkæpʃn]   美 [ˈkæpʃn]  
+	n.
+	(图片、漫画等的)说明文字
+	v.
+	给(图片、照片等)加说明文字
+	第三人称单数： captions复数： captions现在分词： captioning过去式： captioned过去分词： captioned
+	记忆技巧：cap 抓 + tion 表名词 → 抓住〔文章的大意〕→ 标题
+180，aka
+	英 [ˌeɪ keɪ ˈeɪ]   美 [ˌeɪ keɪ ˈeɪ]  
+	abbr.
+	又名;亦称
+	warning: initialization of 'HANDLE' {aka 'void *'} from 'uintptr_t' {aka 'long long unsigned int'} makes pointer from integer without a cast [-Wint-conversion]|
+181，whether the prerequisites for
+     * connecting to displays have been met.
+	是否已满足连接到显示器的要求。
+	
+	requisite 
+	英 [ˈrekwɪzɪt]   美 [ˈrekwɪzɪt]  
+	adj.
+	必需的;必备的;必不可少的
+	n.
+	必需的事物
+	复数： requisites
+	记忆技巧：re 一再 + quis 寻求；获得 + ite 表物 → 一再需求的物品 → 必需品 →〔必需品是〕必要的
+	
+	prerequisite
+	英 [ˌpriːˈrekwəzɪt]   美 [ˌpriːˈrekwəzɪt]  
+	n.
+	先决条件;前提;必备条件
+	adj.
+	必须先具备的，必要的;先决条件的
+	
+182. free of royalties  免版税
+	royalties
+	英 [ˈrɔɪəltiz]   美 [ˈrɔɪəltiz]  
+	n.
+	王室成员;版税;矿区土地使用费(由采矿或石油公司等付给土地所有人)
+	royalty的复数
+	
+183 regular 
+	英 [ˈreɡjələ(r)]   美 [ˈreɡjələr]  
+	adj.
+	规则的;有规律的;间隙均匀的;定时的;频繁的;经常做(或发生)的;经常做某事的;常去某地的
+	n.
+	常客;老主顾;主力(或正式)队员;(电视节目的)老主持人;经常参加某项活动的人;正规军人;职业军人
+	regulator
+	英 [ˈreɡjuleɪtə(r)]   美 [ˈreɡjuleɪtər]  
+	n.
+	(某行业等的)监管者，监管机构;(速度、温度、压力的)自动调节器
+184 supplication
+	supplication
+	英 [ˌsʌplɪˈkeɪʃn]   美 [ˌsʌplɪˈkeɪʃn]  
+	n.
+	恳求;哀求;祈求
+	
+	supply
+	英 [səˈplaɪ]   美 [səˈplaɪ]  
+	n.
+	供应量;供给量;储备;(军队或探险队等的)补给，补给品;供应;供给;提供;补给
+	v.
+	(尤指大量)供应，供给，提供
+184  infrastructure 
+	infrastructure
+	英 [ˈɪnfrəstrʌktʃə(r)]   美 [ˈɪnfrəstrʌktʃər]  
+	n.
+	(国家或机构的)基础设施，基础建设
+	
+	infra
+	infra
+	英 [ˈɪnfrə]   美 [ˈɪnfrə]  
+	adv.
+	〈拉〉在下；（在）以下
+185,The Binder defines and implements a distributed component architecture similar in broad strokes to COM on Windows and CORBA on Unix.
 	Binder定义并实现了一个分布式组件体系结构，大致类似于Windows上的COM和Unix上的CORBA。
 	broad 宽阔的 ; 广阔的 ; …宽 ; 涉及各种各样的人的 ; 广泛的 ; 婆娘
 	strokes 击球 ; 一下，一击 ; 划水动作 ; 划桨动作 ; 轻抚，抚摩 ;
 	broad strokes
 	英 [brɔːd strəʊks]   美 [brɔːd stroʊks]  
 	广义的方面	
-180 There is NO WARRANTY, to the extent permitted by law.
+186 There is NO WARRANTY, to the extent permitted by law.
 	在法律允许的范围内，没有担保。
 	extent
 	英 [ɪkˈstent]   美 [ɪkˈstent]  

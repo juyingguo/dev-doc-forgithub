@@ -5,4 +5,16 @@
 2.  ! [rejected]        master     -> master  (non-fast-forward)
 	 git push origin master : master //错误，":" 两边不能有空格。否则引发该错误。
 	 
+3. git合并时冲突<<<<<<< HEAD
+	3.1 git合并时冲突<<<<<<< HEAD
+		https://www.cnblogs.com/ziye/p/11175988.html
+		
+		<<<<<<< HEAD
+		本地代码
+		=======
+		拉下来的代码
+		>>>>>>>
+		
+		
+	 
 	 
