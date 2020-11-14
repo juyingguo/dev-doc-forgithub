@@ -1829,6 +1829,8 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˌsʌplɪˈkeɪʃn]   美 [ˌsʌplɪˈkeɪʃn]  
 	n.
 	恳求;哀求;祈求
+	supplicant
+	(尤指向神灵或有权势者)恳求者，哀求者，祈求者
 	
 	supply
 	英 [səˈplaɪ]   美 [səˈplaɪ]  
@@ -1836,6 +1838,12 @@ The transferer. Set only in constructor, but cannot be declared
 	供应量;供给量;储备;(军队或探险队等的)补给，补给品;供应;供给;提供;补给
 	v.
 	(尤指大量)供应，供给，提供
+	
+	supplement
+	英 [ˈsʌplɪmənt , ˈsʌplɪment] 
+	增补(物);补充(物);添加物;(报纸的)增刊;(书籍的)补编，补遗
+	v.
+	增补;补充
 184  infrastructure 
 	infrastructure
 	英 [ˈɪnfrəstrʌktʃə(r)]   美 [ˈɪnfrəstrʌktʃər]  
@@ -1855,3 +1863,60 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [brɔːd strəʊks]   美 [brɔːd stroʊks]  
 	广义的方面	
 	
+186 disposable 
+	disposable
+	英 [dɪˈspəʊzəbl]   美 [dɪˈspoʊzəbl]  
+	adj.
+	用后即丢弃的;一次性的;可动用的;可自由支配的
+	n.
+	〈美口〉使用后随即抛掉的东西（尤指容器等）
+	
+	1
+	用后即丢弃的；一次性的
+	made to be thrown away after use
+	2
+	(finance 财) 可动用的；可自由支配的
+	available for use
+187 将亮度参量（Y：Luminance或Luma）和色度参量（UV：Chrominance或Chroma）
+	Luminance
+	英 [ˈluːmɪnəns]   美 [ˈluːmɪnəns]  
+	亮度;光亮度;照度;明度;发光率
+	
+	Chrominance美 [ˈkroʊmənəns]  
+	色度;彩度;于对色度;色度学;彩色信号
+	
+188 rewind 
+	英 [ˌriːˈwaɪnd]   美 [ˌriːˈwaɪnd]  
+	v.
+	重绕(磁带等);倒带;倒片
+	n.
+	重绕;倒带器
+	
+	wind
+	英 [wɪnd , waɪnd]   美 [wɪnd , waɪnd]  
+	n.
+	风;气流;(随食物或饮料)吞下的气;胃气;肠气;(运动或吹奏乐器时的)呼吸
+	
+	
+189	PLEASE NOTE: Microsoft Corporation (or based on where you live, one of its affiliates) licenses this supplement to you.
+	请注意：Microsoft Corporation（或根据您居住的位置，其附属公司之一）向您授权此补充
+	affiliates
+	英 [əˈfɪlieɪts]
+	v.
+	使隶属，使并入(较大的团体、公司);加入;与…有关;为…工作
+	n.
+	附属机构;分支机构
+190 fabricate an event to pass up 编造一个事件来放弃
+	英 [ˈfæbrɪkeɪt]  
+	v.
+	编造;捏造;制造;装配;组装
+	记忆技巧：fabric 织物 + ate 表动词 → 捏造；制作
+	
+	pass up
+	英 [pɑːs ʌp]
+	放弃，错过（机会）
+191 combo
+	英 [ˈkɒmbəʊ]   美 [ˈkɑːmboʊ]  
+	n.
+	小型爵士乐队;混合物;(尤指食物的)杂烩，组合餐
+

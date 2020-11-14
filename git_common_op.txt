@@ -123,14 +123,7 @@
 				 git push -u origin master。。提交异常。如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。
 				这时，如果你一定要推送，可以使用–force选项。原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_push.html
 				
-				hint: Updates were rejected because the remote contains work that you do
-				hint: not have locally. This is usually caused by another repository pushing
-				hint: to the same ref. You may want to first integrate the remote changes
-				hint: (e.g., 'git pull ...') before pushing again.
-				hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-					https://blog.csdn.net/gongqinglin/article/details/79752398
-					如果确保本地没问题的话，可以直接用git push -f强行上传
+				
 			4、合并错误提示。
 					在我们pull代码时，有时候会意外的在vim上出现如下提示（其实就是pull失败了）“ Your branch and 'origin/master' have diverged,(use "git pull" to merge the remote branch into yours)nothing to commit, working tree clean ”问题翻译过来其实就是合并产生了一些冲突，不过这个冲突不是由于代码错误引起的，所以不必过于纠结。
 				
@@ -237,7 +230,6 @@
 		
 		4.1.1 ，解决方式。git bash命令行也可以修改，最终也是修改.gitconfig配置文件：
 			git config --global core.autocrlf false  当设置成false时，line endings将不做转换操作。文本文件保持原来的样子。
-			git config --global core.filemode false 	//文件属性等
 			git config --global core.safecrlf [true | false | warn  // true 禁止提交混合换行符的文本文件(git add 的时候会被拦截，提示异常) 
 			core.autocrlf 的配置依赖于每一位参与项目的开发机器上的配置，这很难确保每个人都能正确配置
 		4.1.2
@@ -373,7 +365,45 @@
 				原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
 	4.9 git: git add --ignore-removal & git add --all 区别
 		https://blog.csdn.net/JNingWei/article/details/78494478
-		  
+	4.10 git中忽略文件权限或文件拥有者的改变
+		https://www.cnblogs.com/itsharehome/p/4866837.html
+		
+		git config --global core.filemode false 	//文件属性等
+		
+		
+		解决办法：
+
+		git中可以加入忽略文件权限的配置，具体如下：
+
+		$ git config core.filemode false  // 当前版本库
+		$ git config --global core.fileMode false // 所有版本库
+		这样就设置了忽略文件权限。查看下配置：
+
+		$ cat .git/config // 查看git的配置文件
+	4.11 git status 提示。
+		Your branch and 'origin/a' have diverged,
+		and have 1 and 1 different commit each, respectively.
+			(use "git pull" to merge the remote branch into yours)
+			
+		如果确保本地没问题的话，可以直接用git pull -f强行拉取。
+	4.12 git push were rejected.
+		hint: Updates were rejected because the remote contains work that you do
+		hint: not have locally. This is usually caused by another repository pushing
+		hint: to the same ref. You may want to first integrate the remote changes
+		hint: (e.g., 'git pull ...') before pushing again.
+		hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+			https://blog.csdn.net/gongqinglin/article/details/79752398
+			如果确保本地没问题的话，可以直接用git push -f强行上传
+			
+	4.13 git pull origin a:a
+		! [rejected]        a     -> a  (non-fast-forward)
+		
+		Git错误non-fast-forward的解决方法
+		https://blog.csdn.net/weixin_41287260/article/details/89742151
+		
+		git push时rejected，解决non-fast-forward errors的办法
+		https://blog.csdn.net/index20001/article/details/99764558
 ////////////
 五、其它命令
 	git push exdroid a13jb:a13jb 提交代码到服务器
