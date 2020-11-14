@@ -1116,6 +1116,9 @@ The transferer. Set only in constructor, but cannot be declared
 	Lint
 	英 [lɪnt]   美 [lɪnt]  
 	皮棉;棉绒;毛绒;软麻布;绒布
+	
+	suppress warning message
+	禁止显示警告消息
 114、interference  
 	Stop scans if necessary to prevent interference while connected
 	必要时停止扫描以防止连接时发生干扰。
@@ -1920,3 +1923,12 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	小型爵士乐队;混合物;(尤指食物的)杂烩，组合餐
 
+182 There is NO WARRANTY, to the extent permitted by law.
+	在法律允许的范围内，没有担保。
+	extent
+	英 [ɪkˈstent]   美 [ɪkˈstent]  
+	n.
+	程度;限度;大小;面积;范围
+	复数： extents
+	记忆技巧：ex 出 + tent 伸展 →〔身体〕伸展开 → 程度
+	
