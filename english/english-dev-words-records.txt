@@ -70,6 +70,7 @@ It assumes that only the primary user
 	英 [ˈdedɪkeɪt]   美 [ˈdɛdɪˌket]  
 	vt.
 	奉献，献身;（为表示感情或敬意将著作、乐曲、艺术作品等）题献给（某人、某事业等）(to);（在书、音乐或作品的前部）题献辞;以…供奉
+	dedicated 专用
 10、If you need your application to run on platform versions prior to API
      * level 5
 	  prior to
@@ -307,6 +308,7 @@ It assumes that only the primary user
 	合成的;混成的;复合的
 	n.
 	合成物;混合物;复合材料
+	compositor 排字工
 32. lower memory shrinke
 			shrinke
 	缩小
@@ -1935,3 +1937,25 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [stʌn]   美 [stʌn]  
 	v.
 	使昏迷;(尤指)打昏;使震惊(目瞪口呆);给(某人)以深刻印象;使深深感动
+194. the SurfaceView punches a hole in its window to allow its  surface to be displayed
+	SurfaceView在其窗口上打一个孔，以显示其表面
+	punch
+	英 [pʌntʃ]   美 [pʌntʃ]  
+	v.
+	拳打;以拳痛击;给…打孔;
+	hole
+	英 [həʊl]   美 [hoʊl]  
+	n.
+	洞;孔;坑;裂口;开口;
+	
+195.  By
+  itself it will not keep its parent consumer from being reclaimed.
+  通过
+   本身不会阻止其父级消费者被回收
+   reclaim
+	英 [rɪˈkleɪm]   美 [rɪˈkleɪm]  
+	v.
+	取回;拿回;要求归还;开垦，利用
+	
+	retrieve; recover; reclaim; recovery，recycle
+	
