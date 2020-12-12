@@ -309,6 +309,11 @@ It assumes that only the primary user
 	n.
 	合成物;混合物;复合材料
 	compositor 排字工
+	
+	composer
+	英 [kəmˈpəʊzə(r)]
+	n.
+	(尤指古典音乐的)创作者;作曲者;作曲家
 32. lower memory shrinke
 			shrinke
 	缩小
@@ -576,18 +581,28 @@ The transferer. Set only in constructor, but cannot be declared
      * isn't a noticeable performance penalty for using volatile
      * instead of final here.
 	noticeable
-	英 [ˈnəʊtɪsəbl]   美 [ˈnoʊtɪsəbl]  
+	英 [ˈnəʊtɪsəbl]   
 	adj.
 	显著的;显而易见的
 	
 	penalty
-	英 [ˈpenəlti]   美 [ˈpenəlti]  
+	英 [ˈpenəlti]   
 	n.
 	惩罚;处罚;刑罚;害处;不利;(对犯规者的)判罚	 
+	
+	complicate
+	英 [ˈkɒmplɪkeɪt]  
+	v.
+	使复杂化
+	
+	compliance
+	英 [kəmˈplaɪəns] 
+	n.
+	服从;顺从;遵从
 60、 Mutate the AsyncCall so that it shares the AtomicInteger of an existing running call to
 		  // the same host.改变AsyncCall，使其共享现有正在运行的调用的AtomicInteger //同一主机。
 	mutate
-	英 [mjuːˈteɪt]   美 [ˈmjuːteɪt]  
+	英 [mjuːˈteɪt]   
 	v.
 	(使)变异，突变;转变;转换	  
 	mute
@@ -1958,4 +1973,25 @@ The transferer. Set only in constructor, but cannot be declared
 	取回;拿回;要求归还;开垦，利用
 	
 	retrieve; recover; reclaim; recovery，recycle
+196. geometry
+	英 [dʒiˈɒmətri]   美 [dʒiˈɑːmətri]  
+	n.
+	几何(学);几何形状;几何图形;几何结构
+	记忆技巧：geo 地，地球 + metry 测量 → 测量地面 → 几何学
+197. analogous
+	This  is  analogous  to the effect of the combination O_CREAT | O_EXCL for open(2).这类似于O_CREAT | O_EXCL组合的效果 打开（2）
+   英 [əˈnæləɡəs]   美 [əˈnæləɡəs]  
+	adj.
+	相似的;类似的
 	
+198. estimate
+	英 [ˈestɪmət , ˈestɪmeɪt]   美 [ˈestɪmət , ˈestɪmeɪt]  
+	n.
+	(对数量、成本等的)估计;估价;估计的成本
+	v.
+	估价;估算
+199. synopsis 
+	ynopsis
+	英 [sɪˈnɒpsɪs]  
+	n.
+	(著作、剧本等的)大纲，提要，概要，梗概
