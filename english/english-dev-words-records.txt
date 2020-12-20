@@ -1923,7 +1923,7 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	小型爵士乐队;混合物;(尤指食物的)杂烩，组合餐
 
-182 There is NO WARRANTY, to the extent permitted by law.
+192 There is NO WARRANTY, to the extent permitted by law.
 	在法律允许的范围内，没有担保。
 	extent
 	英 [ɪkˈstent]   美 [ɪkˈstent]  
@@ -1932,3 +1932,24 @@ The transferer. Set only in constructor, but cannot be declared
 	复数： extents
 	记忆技巧：ex 出 + tent 伸展 →〔身体〕伸展开 → 程度
 	
+193. In this paper, a new intra prediction algorithm for enhancement layer in spatially scalable video coding is proposed. 
+
+	针对空间可扩展视频编码，提出了一种新的增强层上的帧内预测算法。
+	intra
+	英 [ˈɪntrə]
+	帧内编码;内在的;帧内
+194. clockwise
+	clockwise rotation
+	clockwise
+	英 [ˈklɒkwaɪz]   美 [ˈklɑːkwaɪz]  
+	adv./adj.
+	顺时针方向(的)
+195. compensate the mirror
+	补偿镜子
+	compensate
+	英 [ˈkɒmpenseɪt] 
+	补偿;弥补;给(某人)赔偿(或赔款).
+	记忆技巧：com 加强 + pens 花费 + ate 使… → 花费的钱〔全部拿回来〕→ 赔偿
+	
+	Her lawyers say she should be compensated for the suffering she had been caused. 
+	她的律师说她应该为所遭受的痛苦得到赔偿。
