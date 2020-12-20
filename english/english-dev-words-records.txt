@@ -2016,3 +2016,27 @@ The transferer. Set only in constructor, but cannot be declared
 	
 	Her lawyers say she should be compensated for the suffering she had been caused. 
 	她的律师说她应该为所遭受的痛苦得到赔偿。
+203 If you find FFmpeg useful, you are welcome to contribute by donating
+	如果您发现FFmpeg有用，欢迎您捐赠
+	contribute
+	英 [kənˈtrɪbjuːt]  
+	v.
+	捐献，捐赠(尤指款或物);捐助;是…的原因之一;增加
+	donate
+	英 [dəʊˈneɪt]
+	v.
+	(尤指向慈善机构)捐赠，赠送;献(血)
+	contribute有捐款，贡献的意思；donate意为捐赠。差别还是挺大的。
+	
+204 trailer
+	Error writing trailer of pic.jpg: Invalid argument
+	trailer
+	英 [ˈtreɪlə(r)]  
+	n.
+	拖车;挂车;(拖车式)活动房屋，活动工作室;(电影或电视节目的)预告片
+	tail
+	英 [teɪl]
+	n.
+	尾;尾巴;有…尾巴的;尾部
+	v.
+	跟踪;尾随;盯梢
