@@ -203,7 +203,11 @@
 		https://blog.csdn.net/revitalizing/article/details/51337509
 		
 		解决方法：先把不想记录文件的本地缓存删除，再在 .gitignore 中添加忽略该文件，然后再提交。
+<<<<<<< HEAD
 		git rm -r --cached file
+=======
+		git rm -r --cached xxx   //xxx表示不再想版本控制的文件，然后在  .gitignore 文件中加入该忽略的文件  
+>>>>>>> b1b54dbfd77c4ccd5c056f1d57adb4b7bfb3f195
 			git add .
 			git commit -m 'update .gitignore'
 			

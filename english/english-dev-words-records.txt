@@ -2005,21 +2005,67 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [sɪˈnɒpsɪs]  
 	n.
 	(著作、剧本等的)大纲，提要，概要，梗概
-200.  Cocos Creator focused on content creation, which has realized features like thorough scriptability
+
+200. In this paper, a new intra prediction algorithm for enhancement layer in spatially scalable video coding is proposed. 
+
+	针对空间可扩展视频编码，提出了一种新的增强层上的帧内预测算法。
+	intra
+	英 [ˈɪntrə]
+	帧内编码;内在的;帧内
+201. clockwise
+	clockwise rotation
+	clockwise
+	英 [ˈklɒkwaɪz]   美 [ˈklɑːkwaɪz]  
+	adv./adj.
+	顺时针方向(的)
+202. compensate the mirror
+	补偿镜子
+	compensate
+	英 [ˈkɒmpenseɪt] 
+	补偿;弥补;给(某人)赔偿(或赔款).
+	记忆技巧：com 加强 + pens 花费 + ate 使… → 花费的钱〔全部拿回来〕→ 赔偿
+	
+	Her lawyers say she should be compensated for the suffering she had been caused. 
+	她的律师说她应该为所遭受的痛苦得到赔偿。
+203 If you find FFmpeg useful, you are welcome to contribute by donating
+	如果您发现FFmpeg有用，欢迎您捐赠
+	contribute
+	英 [kənˈtrɪbjuːt]  
+	v.
+	捐献，捐赠(尤指款或物);捐助;是…的原因之一;增加
+	donate
+	英 [dəʊˈneɪt]
+	v.
+	(尤指向慈善机构)捐赠，赠送;献(血)
+	contribute有捐款，贡献的意思；donate意为捐赠。差别还是挺大的。
+	
+204 trailer
+	Error writing trailer of pic.jpg: Invalid argument
+	trailer
+	英 [ˈtreɪlə(r)]  
+	n.
+	拖车;挂车;(拖车式)活动房屋，活动工作室;(电影或电视节目的)预告片
+	tail
+	英 [teɪl]
+	n.
+	尾;尾巴;有…尾巴的;尾部
+	v.
+	跟踪;尾随;盯梢
+	
+205.  Cocos Creator focused on content creation, which has realized features like thorough scriptability
 	Cocos Creator专注于内容创建，该功能实现了诸如彻底的脚本编写功能
 	thorough
 	英 [ˈθʌrə]   美 [ˈθɜːroʊ]  
 	adj.
 	彻底的;完全的;深入的;细致的;
-201. impair
+206. impair
 	英 [ɪmˈpeə(r)] 
 	v.
 	损害;削弱
 	
-202. reveal
+207. reveal
 	reveal in file explorer
 	reveal
 	英 [rɪˈviːl]   
 	v.
 	揭示;显示;透露;
-	
