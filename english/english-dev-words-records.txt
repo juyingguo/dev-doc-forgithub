@@ -301,6 +301,13 @@ It assumes that only the primary user
 	dispose of
 	英 [dɪˈspəʊz ɒv]   美 [dɪˈspoʊz əv]  
 	丢掉;清除;处理;办妥;处理好;解决
+	
+	dispose
+	
+	disposition
+	英 [ˌdɪspəˈzɪʃn]
+	n.
+	性格;性情;倾向;意向;排列;布置;安排
 31 \ 
 	composite
 	英 [ˈkɒmpəzɪt]   美 [kəmˈpɑːzət]  
@@ -1983,6 +1990,9 @@ The transferer. Set only in constructor, but cannot be declared
    英 [əˈnæləɡəs]   美 [əˈnæləɡəs]  
 	adj.
 	相似的;类似的
+	effect
+	英 [ɪˈfekt] 
+	效应;影响;结果 影响 influence, affect, effect
 	
 198. estimate
 	英 [ˈestɪmət , ˈestɪmeɪt]   美 [ˈestɪmət , ˈestɪmeɪt]  
@@ -1995,3 +2005,21 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [sɪˈnɒpsɪs]  
 	n.
 	(著作、剧本等的)大纲，提要，概要，梗概
+200.  Cocos Creator focused on content creation, which has realized features like thorough scriptability
+	Cocos Creator专注于内容创建，该功能实现了诸如彻底的脚本编写功能
+	thorough
+	英 [ˈθʌrə]   美 [ˈθɜːroʊ]  
+	adj.
+	彻底的;完全的;深入的;细致的;
+201. impair
+	英 [ɪmˈpeə(r)] 
+	v.
+	损害;削弱
+	
+202. reveal
+	reveal in file explorer
+	reveal
+	英 [rɪˈviːl]   
+	v.
+	揭示;显示;透露;
+	
