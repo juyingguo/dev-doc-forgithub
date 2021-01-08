@@ -401,14 +401,13 @@ It assumes that only the primary user
 	派生词： vacantly adv.	
 41、
 	collide
-	collide
-	英 [kəˈlaɪd]   美 [kəˈlaɪd]  
+	英 [kəˈlaɪd]
 	v.
 	碰撞;相撞;严重不一致;冲突;抵触
 42、
 	collide buttock 碰撞臀部
 	buttock
-	英 [ˈbʌtək]   美 [ˈbʌtək]  
+	英 [ˈbʌtək] 
 	n.
 	屁股的一边;臀部
 43、
@@ -832,7 +831,7 @@ The transferer. Set only in constructor, but cannot be declared
 	significantly
 	英 [sɪɡˈnɪfɪkəntli]   美 [sɪɡˈnɪfɪkəntli]  
 	adv.
-	有重大意义地;显著地;明显地;有某种意义;别有含义地;意味深长地
+	有重大意义地;显著地;明显地;
 80、Key code constant: Directional Pad Up key.
      * May also be synthesized from trackball motions.	//键码常数：方向垫上键。*也可以由轨迹球运动合成
 	synthesize
@@ -1104,20 +1103,26 @@ The transferer. Set only in constructor, but cannot be declared
 	图像的两个维度（宽度和高度）将相等
 	大于或等于视图的相应尺寸 （减去填充）。然后图像在视图中居中。
 	uniform
-	英 [ˈjuːnɪfɔːm]   美 [ˈjuːnɪfɔːrm]    
+	英 [ˈjuːnɪfɔːm] 
 	n.
 	制服;校服
 	adj.
 	一致的;统一的;一律的
 	
+	Unified headers
+	unify
+	英 [ˈjuːnɪfaɪ] 
+	v.
+	统一;使成一体;使一元化
+	
 	minus
-	英 [ˈmaɪnəs]   美 [ˈmaɪnəs]  
+	英 [ˈmaɪnəs]
 	prep.
 	减;减去;零下;无，欠缺(曾经有过的东西)  
 	n.
 	减号;负号;负值;缺点
 	adj.
-	小于零的;负的;负面的;使显得有欠缺的;略低于A(或B等)
+	小于零的;负的;负面的;
 111、dirtyopaque 肮脏不透明
 	opaque
 	英 [əʊˈpeɪk]   美 [oʊˈpeɪk]  
@@ -1814,6 +1819,16 @@ The transferer. Set only in constructor, but cannot be declared
 	abbr.
 	又名;亦称
 	warning: initialization of 'HANDLE' {aka 'void *'} from 'uintptr_t' {aka 'long long unsigned int'} makes pointer from integer without a cast [-Wint-conversion]|
+	
+	conversion
+	英 [kənˈvɜːʃn]
+	n.
+	转变;转换;转化
+	convert
+	英 [kənˈvɜːt , ˈkɒnvɜːt] 
+	v.
+	(使)转变，转换，转化
+	改变宗教(或信仰、观点)的人;皈依者
 181，whether the prerequisites for
      * connecting to displays have been met.
 	是否已满足连接到显示器的要求。
@@ -2001,7 +2016,7 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	估价;估算
 199. synopsis 
-	ynopsis
+	
 	英 [sɪˈnɒpsɪs]  
 	n.
 	(著作、剧本等的)大纲，提要，概要，梗概
@@ -2069,3 +2084,110 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [rɪˈviːl]   
 	v.
 	揭示;显示;透露;
+208 ledge
+	英 [ledʒ] 
+	n.
+	悬崖岩石突出部;岩架;(平窄的)壁架，横档;(尤指)窗台
+	
+	a narrow flat shelf fixed to a wall, especially one below a window
+	固定在墙上的狭窄的扁平架子，尤其是窗户下面的架子
+	shelf
+	英 [ʃelf]
+	n.
+	(固定在墙上的或橱柜、书架等的)架子，搁板;(悬崖上或海底)突出的岩石;陆架;陆棚
+209 dude
+	英 [duːd] 
+	n.
+	男人,花花公子
+210 bounce
+	英 [baʊnd]   美 [baʊnd]  
+	adj.
+	一定会;很可能会;受(法律、义务或情况)约束(必须做某事);有义务(做某事);因…受阻(或不能正常工作)
+	v.
+	跳跃着跑;形成…的边界(或界限)
+	n.
+	蹦跳;跳跃
+	bind的过去分词和过去式
+	
+	The elasticity of the Body when colliding. bounce.x/y = 1 means full rebound, bounce.x/y = 0.5 means 50% rebound velocity.
+	碰撞时身体的弹性。 bounce.x / y = 1表示完全反弹，bounce.x / y = 0.5表示50％反弹速度。
+	elasticity
+	英 [ˌiːlæˈstɪsəti] 
+	n.
+	弹性;弹力
+
+211 "If you want your children to be intelligent,  read them fairy tales."
+	* "If you want them to be more intelligent, read them more fairy tales."	
+	“如果您想让孩子变得聪明，请给他们读童话故事。”
+	*“如果您希望他们变得更聪明，请阅读更多童话故事。”
+	
+212 flappy
+	adj.
+	飞扬的 
+213 snippet
+	英 [ˈsnɪpɪt]  
+	n.
+	一小条(消息);一则(新闻); 
+	
+	I read a snippet she had cut from a magazine. 
+	我读了她从杂志上剪下来的一段文字。
+	
+214  A scale mode that shows the entire game while maintaining proportions
+	在保持比例的同时显示整个游戏的比例模式
+	proportion
+	英 [prəˈpɔːʃn]
+	n.
+	部分;份额;比例
+215 If you require a notarized NDK for macOS, make sure you download the App Bundle rather than the zip file.
+	如果对于macOS需要经过公证的NDK，请确保您下载了App Bundle，而不是zip文件。
+	
+	notarize
+	notarized
+	英 [ˈnəʊtəraɪzd] 
+	v.
+	公证;由公证人证实
+	
+	According to the German law every buying and selling contract must be notarized. 
+	在德国，按法律规定，买卖合同必须公证。
+	
+216 a CPU profiler for Android. Android的CPU分析器
+	profiler
+	英 [ˈprəʊfaɪlə]  
+	n.
+	分析器，分析工具；
+217 RenderScript tools are not present (not a regression from r11) 
+	RenderScript工具不存在（不是r11的回归）
+	regress
+	英 [rɪˈɡres]  
+	v.
+	倒退;回归;
+218
+	There are significant changes to the DSL of the plugin.  We understand that many of the changes are frustrating and seem unnecessary, and our goal is to remove some of these current changes to minimize the migration process from the traditional plugin in the future.
+	插件的DSL有重大变化。 我们知道许多更改令人沮丧并且似乎是不必要的，我们的目标是删除一些当前更改，以最大程度地减少将来从传统插件进行的迁移过程。
+	significant-[n:79]
+	frustrate
+	英 [frʌˈstreɪt] 
+	v.
+	使懊丧;使懊恼;使沮丧;
+	migration
+	
+219 atlas URL 
+	地图集URL
+	atlas
+	英 [ˈætləs]
+220 hinder
+	英 [ˈhɪndə(r)]  
+	v.
+	阻碍;妨碍
+221 This call doesn't descend down children, so if you have a Group inside of this group, the property will be set on the group but not its children.
+	If you need that ability please see Group.setAllChildren. 	
+	该调用不会降低子级，因此，如果您在该组内有一个组，则将在该组上设置该属性，但不会在其子级上设置该属性。
+	如果您需要该功能，请参阅Group.setAllChildren	
+	descend
+	英 [dɪˈsend]
+	v.
+	下来;下去;下降;
+	descendant
+	英 [dɪˈsendənt] 
+	n.
+	后裔;后代;

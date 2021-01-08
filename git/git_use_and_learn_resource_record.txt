@@ -14,7 +14,45 @@
 		=======
 		拉下来的代码
 		>>>>>>>
-		
-		
-	 
+4. GitHub加速
+	4.1 Chrome 应用商店，安装插件。
+	4.2 GitHub加速及重新关联远端地址
+		https://blog.csdn.net/wangshuaiwsws95/article/details/104730741
+			博主使用的是码云。
+			这时候克隆到本地的项目关联的是码云Gitee的地址，已经和原来的GitHub项目完全脱离了，是另外一个副本。需要重新关联。
+		重新关联远端地址
+		用文本编辑器打开.git文件夹中的config配置文件
+		[remote "origin"].url字段重新关联到原来位于GitHub上的GitHub项目地址
+	4.3 提高国内访问Github速度 
+		https://blog.csdn.net/codinglover5/article/details/107826097
+		1. GitHub 镜像访问
+		这里提供两个最常用的镜像地址：
+
+		https://github.com.cnpmjs.org
+
+		https://hub.fastgit.org
+		也就是说上面的镜像就是一个克隆版的Github，你可以访问上面的镜像网站，网站的内容跟Github是完整同步的镜像，然后在这个网站里面进行下载克隆等操作。
+		2.
+		3.
+		...
+		博文中有8种方式可以参考
+	
+5. 在原有仓库主分支上创建分支后提交到github服务器上。
+	
+	Administrator@USER-20190225WN MINGW64 /d/juying/workspace/hbuilder-workspace/games (debug_add_log_and_feature)
+	$ git push origin debug_add_log_and_feature:debug_add_log_and_feature #执行的新分支提交命令。
+	
+	Username for 'https://github.com': juyingguo
+	Total 0 (delta 0), reused 0 (delta 0)
+	remote:
+	remote: Create a pull request for 'debug_add_log_and_feature' on GitHub by visiting:
+	remote:      https://github.com/juyingguo/games/pull/new/debug_add_log_and_feature
+	remote:
+	To https://github.com/juyingguo/games.git
+	 * [new branch]      debug_add_log_and_feature -> debug_add_log_and_feature
+
+	分析：
+	提交非常快，1s中就完成了，好像并没有提交该分支代码到服务器，服务器端也创建分支成功了。
+	原理是什么？待分析。
+	
 	 
