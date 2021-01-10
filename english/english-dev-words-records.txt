@@ -2191,3 +2191,80 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [dɪˈsendənt] 
 	n.
 	后裔;后代;
+222  Design of a home surveillance system based on the android platform. 2015 12th International Conference on Fuzzy Systems and Knowledge Discovery (FSKD). 
+	基于android平台的家庭监控系统设计。 2015年第12届模糊系统与知识发现国际会议
+	surveillance
+	英 [sɜːˈveɪləns] 
+	监视
+	The company is planning to place surveillance equipment at both ends of the tunnel 
+	该公司计划在隧道两端安装监视设备。
+	tudy of the network topology of computer surveil and control system in power plant
+	电站计算机监控系统网络拓扑研究
+	
+	相近词：
+	keep watch on; keep a lookout over; guard; monitoring
+	Fuzzy ：【107】
+223 The server is responsible for the video acquisition and the H.264 video encoding.
+	acquirement 仅指精神上的获得
+	
+	acquire
+	英 [əˈkwaɪə(r)]  
+	v.
+	(通过努力、能力、行为表现)获得
+	
+	acquisition可以指泛泛的概念
+	the acquisition/acquirement of knowledge知识的获得
+	
+	英 [ˌækwɪˈzɪʃn]
+	n.
+	(知识、技能等的)获得，得到;
+234 A larger delay will
+	result in a greater impact on the real-time, and the confusion of
+	data packets during transmission will cause adverse effects on
+	decoding and playing at the receiving end.
+	
+	confuse
+	英 [kənˈfjuːz
+	v.
+	使糊涂;使迷惑;
+	adverse
+	英 [ˈædvɜːs]  
+	adj.
+	不利的;有害的
+	记忆技巧：ad 做… + vers 转 + e → 一再转 → 逆反的
+	vers
+	英 [vɜːs]  
+	n.
+	与比较;对;作为的函数;随而转移
+	
+235 if the RTP packets are
+	encapsulated in longer payload length, the IP layer will divide
+	them themselves, before deliver them to the lower layer.
+	如果RTP数据包是
+	封装在更长的有效载荷长度中，IP层将划分
+	它们本身，然后再将它们传递到较低层。
+	encapsulate
+	英 [ɪnˈkæpsjuleɪt]  
+	v.
+	简述;概括;压缩
+	
+236  that is a NALU
+	is decentralized into multiple RTP packets and packaged before
+	sending
+	
+	decentralize
+	英 [ˌdiːˈsentrəlaɪz] 
+	v.
+	分散，下放(权力);
+237 OpenCV (Open Source Computer Vision Library) library to
+achieve the face detection
+	achieve
+	英 [əˈtʃiːv] 
+	v.
+	(凭长期努力)达到(某目标、地位);完成
+	archive
+	英 [ˈɑːkaɪv]   
+	n.
+	档案;档案室
+	v.
+	把…存档;
