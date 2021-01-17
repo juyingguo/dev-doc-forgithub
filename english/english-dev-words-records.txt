@@ -631,9 +631,9 @@ The transferer. Set only in constructor, but cannot be declared
 	互斥量;互斥体;互斥;互斥锁;互斥对象
 61、or equivalently, if this deque changed as a result of the call
 	或者等效地，如果此deque因调用而更改
-	
+	Primitive Types and Native Equivalents //基本类型和本地等效项
 	equivalent
-	英 [ɪˈkwɪvələnt]   美 [ɪˈkwɪvələnt]  
+	英 [ɪˈkwɪvələnt] 
 	adj.
 	(价值、数量、意义、重要性等)相等的，相同的
 	n.
@@ -2268,3 +2268,25 @@ achieve the face detection
 	档案;档案室
 	v.
 	把…存档;
+238  Progressive 逐行扫描和 Interlaced （隔行扫描〉
+
+	progressive
+	英 [prəˈɡresɪv]  
+	adj.
+	进步的;先进的;开明的
+	interlace
+	英 [ˌɪntəˈleɪs] 
+	v.
+	(使)编结，交错
+	interlaced
+	英 [ˌɪntəˈleɪst] 
+	adj.
+	交织的;交错的
+	Research on Interlaced Code used for Reliability of Wireless Communication 
+	交织码在无线通信可靠性中的应用研究
+239 Custom Quant 、 Lossless Video Coding 
+	自定义量化，无损视频编码
+	Quant
+	英 [kwɒnt]   美 [kwænt]  
+	宽客;金融工程师;定量;量化分析师;
+	Quantitative analyst 
