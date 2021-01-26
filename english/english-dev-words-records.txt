@@ -2331,3 +2331,10 @@ achieve the face detection
 	(为竞赛获胜者颁发的)奖品，奖杯 
 	His name was inscribed on the trophy. 
 	他的名字刻在奖杯上。
+243 seesaw
+	seesaw
+	英 [ˈsiː sɔː , ˈsiːsɔː] 
+	adv.
+	上下动地[的];前后动地[的];交互地[的];拉锯性地[的]
+	n.
+	动摇;跷跷板(戏)
