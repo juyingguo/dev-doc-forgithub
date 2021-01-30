@@ -226,7 +226,9 @@
 		
 	14. checkout 用法总结 
 		https://www.yiibai.com/git/git_checkout.html
-		https://www.jianshu.com/p/cad4d2ec4da5
+		https://www.jianshu.com/p/cad4d2ec4da5 
+	15 git统计提交次数
+		git log --since="Oct 27 9:16:10 2017 +0800"  --pretty=oneline | wc -l
 四.问题及解决记录。
 	4.1 异常换行问题汇总。 LF,CRLF 。。
 		特别是使用git和svn同时管理项目。如svn用来本地与服务器（公司版本控制服务器端为，svn）,git只是管理本地程序的。使用window会造成冲突。

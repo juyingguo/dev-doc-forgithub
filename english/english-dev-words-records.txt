@@ -325,11 +325,14 @@ It assumes that only the primary user
 			shrinke
 	缩小
 33.stage
-	英 [steɪdʒ]   美 [steɪdʒ]  
+	英 [steɪdʒ]   
 	n.
 	(发展或进展的)时期，阶段，状态;段;步;步骤;(多指剧场中的)舞台
 	v.
 	上演;举办;举行;组织;筹划;使发生;使出现	
+	
+	 parsing stage done! 
+	 解析阶段完成！
 34、
 	synthetic
 	英 [sɪnˈθetɪk]   美 [sɪnˈθetɪk]  
@@ -605,6 +608,10 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [kəmˈplaɪəns] 
 	n.
 	服从;顺从;遵从
+	
+	compliant
+	英 [kəmˈplaɪənt] 
+	顺从的;百依百顺的
 60、 Mutate the AsyncCall so that it shares the AtomicInteger of an existing running call to
 		  // the same host.改变AsyncCall，使其共享现有正在运行的调用的AtomicInteger //同一主机。
 	mutate
@@ -2290,3 +2297,21 @@ achieve the face detection
 	英 [kwɒnt]   美 [kwænt]  
 	宽客;金融工程师;定量;量化分析师;
 	Quantitative analyst 
+250 returns a cJSON object you can interrogate
+	interrogate 
+	interrogate
+	英 [ɪnˈterəɡeɪt] 
+	v.
+	讯问;审问;盘问;(在计算机或其他机器上)查询，询问
+251 fuzzing
+	英 [ˈfʌzɪŋ] 
+	模糊测试;模糊化处理;黑盒测试;起毛 
+252 cJSON only supports UTF-8 encoded input. In most cases it doesn't reject invalid UTF-8 as input though, it just propagates it through as is.
+	cJSON仅支持UTF-8编码输入。 但是在大多数情况下，它不会拒绝无效的UTF-8作为输入，而只是将其原样传播。
+	propagate
+	英 [ˈprɒpəɡeɪt]
+	v.
+	传播;宣传;繁殖;
+253 Caveats 注意事项
+	英 [ˈkeɪvɪæts]   美 [ˈkeɪviˌæts]  
+	告诫;警告;诉讼手续;正告
