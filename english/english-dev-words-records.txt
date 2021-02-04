@@ -1174,6 +1174,18 @@ The transferer. Set only in constructor, but cannot be declared
 		标识设备响应单播的端口
 		unicast
 		点播;单点广播;单播;单播地址;单点传送
+		
+		英 [aɪˈdentɪfaɪ]  
+	v.
+	确认;认出;鉴定
+	
+	 The versions of these functions with the _l suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+	这些带有_l后缀的函数的版本相同，除了它们使用传入的locale参数代替当前线程的语言环境。
+	
+	identical
+	英 [aɪˈdentɪkl]
+	adj.
+	完全同样的; 
 117、Compressor is a lightweight and powerful android image compression library. Compressor will allow you to compress large photos into smaller sized photos with very less or 	negligible loss in quality of the image.
 	Compressor是一个轻量级和强大的android图像压缩库。压缩器将允许您将大照片压缩成小照片，图像质量损失非常小或可以忽略不计。
 	negligible.
@@ -2296,7 +2308,43 @@ achieve the face detection
 	Quant
 	英 [kwɒnt]   美 [kwænt]  
 	宽客;金融工程师;定量;量化分析师;
-	Quantitative analyst 
+	Quantitative analyst
+	240 perpetual calendar
+	perpetual
+	英 [pəˈpetʃuəl]
+	adj.
+	不间断的;持续的;永久的
+	
+	permanent
+	英 [ˈpɜːmənənt] 
+	
+	leap year
+	
+	leap
+	英 [liːp]   美 [liːp]  
+	v.
+	跳;跳跃;跳越;猛冲  
+241 Goat village chief  山羊村长
+	chief
+	英 [tʃiːf] 
+	adj.
+	最重要的;首要的;为首的;首席的
+	n.
+	(公司或机构的)首领，头目，最高领导人;首领;
+242 
+	trophy 
+	英 [ˈtrəʊfi] 
+	n.
+	(为竞赛获胜者颁发的)奖品，奖杯 
+	His name was inscribed on the trophy. 
+	他的名字刻在奖杯上。
+243 seesaw
+	seesaw
+	英 [ˈsiː sɔː , ˈsiːsɔː] 
+	adv.
+	上下动地[的];前后动地[的];交互地[的];拉锯性地[的]
+	n.
+	动摇;跷跷板(戏)
 250 returns a cJSON object you can interrogate
 	interrogate 
 	interrogate
@@ -2315,3 +2363,4 @@ achieve the face detection
 253 Caveats 注意事项
 	英 [ˈkeɪvɪæts]   美 [ˈkeɪviˌæts]  
 	告诫;警告;诉讼手续;正告
+
