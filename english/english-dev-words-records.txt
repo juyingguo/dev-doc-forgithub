@@ -2345,6 +2345,27 @@ achieve the face detection
 	上下动地[的];前后动地[的];交互地[的];拉锯性地[的]
 	n.
 	动摇;跷跷板(戏)
+244 aux 
+	英 ['əʊ]  
+	adj.
+	辅助的
+	auxiliary
+	英 [ɔːɡˈzɪliəri]   美 [ɔːɡˈzɪliəri]  
+	adj.
+	辅助的;备用的
+245 glClear takes a single argument that is the bitwise OR of several values indicating which buffer is to be cleared.
+	glClear采用单个参数，该参数是几个值的按位或，指示要清除哪个缓冲区。 
+	bitwise
+	按位;逐位;位运算;
+246. The best stream is determined according to various heuristics as the most  likely to be what the user expects.
+	最佳流是根据各种启发式方法确定为最有可能是用户期望的内容。 
+	heuristic
+	英 [hjuˈrɪstɪk]   美 [hjuˈrɪstɪk]  
+	adj.
+	(教学或教育)启发式的
+	
+	The Study and Implementation of Heuristic Algorithm for Services Composition.
+	启发式算法在服务组合中的研究与实现
 250 returns a cJSON object you can interrogate
 	interrogate 
 	interrogate
