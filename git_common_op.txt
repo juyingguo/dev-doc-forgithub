@@ -218,6 +218,7 @@
 			build 	  # 这种写法效果同 build/ 
 			doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 			#为注释
+			/为当前目录
 		6.1）将.gitignore添加到忽略文件与不添加的区别？
 			1.添加后，可以动态改变忽略规则，而不需要删除缓存。
 				但是忽略文件本身没有添加到版本库中。
