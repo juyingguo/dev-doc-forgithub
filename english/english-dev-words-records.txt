@@ -1186,6 +1186,13 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [aɪˈdentɪkl]
 	adj.
 	完全同样的; 
+	
+	portable
+	英 [ˈpɔːtəbl]   美 [ˈpɔːrtəbl]  
+	adj.
+	便携式的;手提的;轻便的
+	n.
+	便携机;(尤指)手提电脑
 117、Compressor is a lightweight and powerful android image compression library. Compressor will allow you to compress large photos into smaller sized photos with very less or 	negligible loss in quality of the image.
 	Compressor是一个轻量级和强大的android图像压缩库。压缩器将允许您将大照片压缩成小照片，图像质量损失非常小或可以忽略不计。
 	negligible.
@@ -2366,6 +2373,12 @@ achieve the face detection
 	
 	The Study and Implementation of Heuristic Algorithm for Services Composition.
 	启发式算法在服务组合中的研究与实现
+247 obituary
+	英 [əˈbɪtʃuəri]   美 [oʊˈbɪtʃueri]  
+	n.
+	讣闻;讣告
+	
+	binder death recipient //binder 死亡接受者 
 250 returns a cJSON object you can interrogate
 	interrogate 
 	interrogate
