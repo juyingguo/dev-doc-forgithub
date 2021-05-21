@@ -2331,6 +2331,13 @@ achieve the face detection
 	英 [liːp]   美 [liːp]  
 	v.
 	跳;跳跃;跳越;猛冲  
+240 vsftpd now powers some of the largest and most prestigious sites on the
+	internet.
+	现在，vsftpd为该网站上一些最大和最负盛名的网站提供了强大的支持互联网。
+	prestigious
+	英 [preˈstɪdʒəs]
+	adj.
+	有威望的;声誉高的
 241 Goat village chief  山羊村长
 	chief
 	英 [tʃiːf] 
@@ -2397,4 +2404,6 @@ achieve the face detection
 253 Caveats 注意事项
 	英 [ˈkeɪvɪæts]   美 [ˈkeɪviˌæts]  
 	告诫;警告;诉讼手续;正告
-
+254 Rebuilding the project will cause the deletion of all object files and building it from scratch.
+	重建项目将导致删除所有目标文件并从头开始构建它。
+	
