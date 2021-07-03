@@ -283,10 +283,13 @@ It assumes that only the primary user
 29、permission WRITE_EXTERNAL_STORAGE is not mandatory for Agora RTC SDK, just incase if you wanna save logs to external sdcard
 	agora rtc sdk不强制使用权限写入外部存储，只是为了避免将日志保存到外部SD卡。
 	mandatory
-	英 [ˈmændətəri]   美 [ˈmændətɔːri]  
+	英 [ˈmændətəri]
 	adj.
 	强制的;法定的;义务的
-
+	Calling this function will become mandatory if using network
+	protocols at some major version bump.
+	如果使用网络，则必须调用此函数
+   一些主要版本的协议。
 30、Channel is unrecoverably broken and will be disposed
 	disposed
 	英 [dɪˈspəʊzd]   美 [dɪˈspoʊzd]  
@@ -972,7 +975,13 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	后果;接着发生的事;结果
 	
-
+	 Scale the image slice in srcSlice and put the resulting scaled slice in the image in dst. A slice is a sequence of consecutive rows in an image.
+	 
+	 在 srcSlice 中缩放图像切片并将结果缩放在 dst 中对图像进行切片。 一个切片是一个连续的序列图像中的行。
+	consecutive
+	英 [kənˈsekjətɪv]
+	adj.
+	连续不断的
 95、chunk chunk
 	英 [tʃʌŋk]   美 [tʃʌŋk]  
 	n.

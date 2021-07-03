@@ -119,8 +119,8 @@
 			F.2、解决文件中冲突的的部分
 				打开冲突的文件，其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
 				解决完成之后，就可以正常的提交了。
-			推送远程仓库：$ git push [remoteName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
-			git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有，以防止提交错误，切记，切记，切记！！！
+			推送远程仓库：$ git push [remoteRepositoryName] [localBranchName] //只有一个master分支时可以这样简写；第一次推送加上 -u 如：git push -u origin master
+			git push <远程主机名> <本地分支名>:<远程分支名>	////有多个分支时，需要写完整,本地分支与远程分支之间仅有英文冒号":"，以防止提交错误，切记，切记，切记！！！
 				 git push -u origin master。。提交异常。如果远程主机的版本比本地版本更新，推送时Git会报错，要求先在本地做git pull合并差异，然后再推送到远程主机。
 				这时，如果你一定要推送，可以使用–force选项。原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/git/git_push.html
 				
@@ -166,7 +166,7 @@
 		8.7 删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
 		8.8 合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
 		8.9 创建远程分支(本地分支push到远程)：$ git push origin [name]
-		8.10 删除远程分支：$ git push origin :heads/[name]	//本地为空，同下
+		8.10 删除远程分支：$ git push origin :heads/[name]	//本地为空，同下面一行的命令
 			git push origin --delete master // 删除远程分支
 		8.11 拉取远程分支，本地没有该分支 ，就创建。
 			https://www.yiibai.com/git/git_checkout.html
@@ -381,7 +381,15 @@
 				版权声明：本文为CSDN博主「BlueKitty1210」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 				原文链接：https://blog.csdn.net/xingbaozhen1210/article/details/80342212
 	4.9 git: git add --ignore-removal & git add --all 区别
-		https://blog.csdn.net/JNingWei/article/details/78494478
+		https://blog.csdn.net/JNingWei/article/details/78494478 
+		
+		4.9.1 git add -A 和 git add . 的区别 
+			https://blog.csdn.net/caseywei/article/details/90945295 
+			git add . ：他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
+
+			git add -u ：他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）
+			git add -A ：是上面两个功能的合集（git add --all的缩写）
+
 	4.10 git中忽略文件权限或文件拥有者的改变
 		https://www.cnblogs.com/itsharehome/p/4866837.html
 		
