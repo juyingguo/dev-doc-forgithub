@@ -479,16 +479,23 @@ It assumes that only the primary user
 	intermediate state中间态
 	
 	inter
-	英 [ɪnˈtɜː(r)]   美 [ɪnˈtɜːr]  
+	英 [ɪnˈtɜː(r)]
 	v.
 	埋葬(遗体)
 	第三人称单数： inters现在分词： interring过去式： interred过去分词： interred
 	记忆技巧：in 进入 + ter〔= terr〕土地 → 进入土里 → 埋葬
 	
 	mediate
-	英 [ˈmiːdieɪt]   美 [ˈmiːdieɪt]  
+	英 [ˈmiːdieɪt]
 	v.
 	调停;调解;斡旋;为解决分歧找到(方法);促成(协议);影响…的发生;使…可能发生
+	
+	aggregate
+	英 [ˈæɡrɪɡeɪt]
+	n.
+	总数;合计;(可成混凝土或修路等用的)骨料，集料
+	adj.
+	总数的
 	
 50、getCanonicalName
 	Returns the canonical name of the underlying class as
@@ -896,11 +903,11 @@ The transferer. Set only in constructor, but cannot be declared
 	orient的过去分词和过去式
 89、TileMode.CLAMP:用边缘色彩填充多余空间
 	clamp
-	英 [klæmp]   美 [klæmp]  
+	英 [klæmp]
 	v.
-	(用夹具)夹紧，夹住，固定;紧紧抓住;紧夹住;被抓住;被夹紧;用夹锁锁住(车)
+	(用夹具)夹紧，夹住，固定
 	n.
-	夹具;夹子;夹钳;车轮夹锁(用于锁住违章停放的车辆)
+	夹具;夹子;夹钳
 
 90、shader
 	ʃeɪdə]   美 [ˈʃeɪdər]  
@@ -1270,6 +1277,10 @@ The transferer. Set only in constructor, but cannot be declared
 		n.
 		必不可少的东西;必需品;要点;要素;实质
 		Something that is essential is extremely important or absolutely necessary to a particular subject, situation, or activity.
+		
+		contiguous
+		英 [kənˈtɪɡjuəs]
+		相接的;相邻的
 126、use fast but imperfect dependency generation //使用快速但不完全的依赖项生成
 		imperfect
 		英 [ɪmˈpɜːfɪkt]   美 [ɪmˈpɜːrfɪkt]  
@@ -2034,7 +2045,7 @@ The transferer. Set only in constructor, but cannot be declared
 	effect
 	英 [ɪˈfekt] 
 	效应;影响;结果 影响 influence, affect, effect
-	
+	In effect  实际上
 198. estimate
 	英 [ˈestɪmət , ˈestɪmeɪt]   美 [ˈestɪmət , ˈestɪmeɪt]  
 	n.
@@ -2407,3 +2418,20 @@ achieve the face detection
 254 Rebuilding the project will cause the deletion of all object files and building it from scratch.
 	重建项目将导致删除所有目标文件并从头开始构建它。
 	
+255 Browser Compatibility
+	浏览器兼容性
+	compatible
+	英 [kəmˈpætəbl]
+	可共用的;兼容的
+	capable
+	英 [ˈkeɪpəbl]
+	adj.
+	有能力;有才能
+	capability
+	英 [ˌkeɪpəˈbɪləti] 
+	能力;才能
+256 replicating the luminance value three times for red, green, and blue  
+	replicate
+	英 [ˈreplɪkeɪt]
+	v.
+	复制;(精确地)仿制;再造

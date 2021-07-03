@@ -107,8 +107,9 @@
 			或者git remote add origin git://github.com:username/repoxxx.git
 		D)删除远程仓库：$ git remote rm [name]
 		E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
-				git pull <远程主机名> <远程分支名>:<本地分支名>
-				参考教材：https://www.yiibai.com/git/git_pull.html
+			E1	git pull <远程主机名> <远程分支名>:<本地分支名>
+				参考教材：https://www.yiibai.com/git/git_pull.html 
+				
 		F)拉取远程仓库冲突及错误处理：：
 			git pull * * 与本地有冲突时，解决方式：
 			1. git stash 先将本地修改存储起来 
@@ -147,7 +148,13 @@
 			git clone http://myrepo.xxx.com/project/.git  //检出远程仓库。
 			git branch -a，列出所有分支名称
 			git checkout -b branch_dev origin/branch_dev，作用是checkout远程的branch_dev分支，在本地起名为branch_dev分支，并切换到本地的branch_dev分支
+		J)git fetch 用法
+			https://www.cnblogs.com/runnerjack/p/9342362.html 
+			git fetch <远程主机名> //这个命令将某个远程主机的更新全部取回本地 
+			git fetch <远程主机名> <分支名> //注意之间有空格 //如果只想取回特定分支的更新，可以指定分支名：  
+			git log -p FETCH_HEAD //取回更新后，会返回一个FETCH_HEAD ，指的是某个branch在服务器上的最新状态，我们可以在本地通过它查看刚取回的更新信息
 			
+			git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的分支中
 
 	8. 分支(branch)操作相关命令
 		8.1 查看本地分支：$ git branch
