@@ -2444,3 +2444,12 @@ achieve the face detection
 	英 [ˈreplɪkeɪt]
 	v.
 	复制;(精确地)仿制;再造
+257 magnification
+	英 [ˌmæɡnɪfɪˈkeɪʃn]
+	放大;放大率/倍数;
+	
+	The telescope has a magnification of 50. //这个望远镜可以放大50倍。 
+	
+	amplify; magnify; boost; enlarge; blow up; gain; amplification; enhancement; multiplication; magnification; magnifying:
+	
+	
