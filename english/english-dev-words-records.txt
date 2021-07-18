@@ -1880,16 +1880,16 @@ The transferer. Set only in constructor, but cannot be declared
 	是否已满足连接到显示器的要求。
 	
 	requisite 
-	英 [ˈrekwɪzɪt]   美 [ˈrekwɪzɪt]  
+	英 [ˈrekwɪzɪt]
 	adj.
-	必需的;必备的;必不可少的
+	必需的;必备的;
 	n.
 	必需的事物
 	复数： requisites
 	记忆技巧：re 一再 + quis 寻求；获得 + ite 表物 → 一再需求的物品 → 必需品 →〔必需品是〕必要的
 	
 	prerequisite
-	英 [ˌpriːˈrekwəzɪt]   美 [ˌpriːˈrekwəzɪt]  
+	英 [ˌpriːˈrekwəzɪt] 
 	n.
 	先决条件;前提;必备条件
 	adj.
