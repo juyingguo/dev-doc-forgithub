@@ -2283,6 +2283,13 @@ The transferer. Set only in constructor, but cannot be declared
 	n.
 	与比较;对;作为的函数;随而转移
 	
+	delay 
+	postpone
+	英 [pəˈspəʊn]   美 [poʊˈspoʊn]  
+	vt.
+	推迟;延期;
+	We'll have to postpone the meeting until next week. 
+	我们将不得不把会议推迟到下周举行。
 235 if the RTP packets are
 	encapsulated in longer payload length, the IP layer will divide
 	them themselves, before deliver them to the lower layer.
@@ -2452,4 +2459,41 @@ achieve the face detection
 	
 	amplify; magnify; boost; enlarge; blow up; gain; amplification; enhancement; multiplication; magnification; magnifying:
 	
+258 Diagnostic
+	英 [ˌdaɪəɡˈnɒstɪk]
+	诊断;诊断程序;诊断性的;诊断信息
+	Unable to execute Clang-Tidy: Cannot create property=Diagnostics for JavaBean
+	
+	tidy
+		
+	英 [ˈtaɪdi] 
+	adj.
+	整齐的;整洁的;
+	v.
+	整理;使整洁;使有条理 
+259 I can revoke my consent at any time by visiting the Opt-Out page.
+	我可以随时通过访问“选择退出”页面来撤销我的同意。 
+	revoke
+	英 [rɪˈvəʊk]
+	vt.
+	撤销;取消;
+	consent
+	英 [kənˈsent] 
+	n,v.
+	同意;准许;
+	:agree; consent; approve; agreement 
+260. Generally speaking, any class that implements the Comparable interface and violates this condition should clearly indicate this fact.
+	The recommended language is "Note: this class has a natural ordering that is inconsistent with equals." 
+	一般来说，任何实现 Comparable 接口并违反此条件的类都应该清楚地表明这一事实。 推荐的语言是“注意：这个类有一个与 equals 不一致的自然顺序。”.
+	violate
+	英 [ˈvaɪəleɪt]
+	vt.
+	违反;违犯;违背(法律、协议等);
+	
+261 Predecessor
+	英 [ˈpriːdəsesə(r)]
+	前任;前驱;前趋;前身;
+262 Flutter
+	英 [ˈflʌtə(r)]
+	摆动;颤动;花鸟;
 	
