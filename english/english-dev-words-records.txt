@@ -2502,3 +2502,32 @@ achieve the face detection
 	英 [ˈfjʊəri]
 	n.
 	愤怒;狂怒;
+264 many supertypes available ,please specify the one you mean in angle bracket.
+	许多超类型可用，请在尖括号中指定您的意思。
+	angle bracket
+	英 [ˈæŋɡl brækɪt] 
+	n.
+	尖角括号
+	英 [ˈæŋɡl]   美 [ˈæŋɡl]  
+	n.
+	角;斜角;角度
+	v.
+	斜移;斜置;从(某角度)报道;垂钓;钓鱼
+	
+	钓鱼[diào yú]
+	angle; go fishing; fishing
+	
+	bracket
+	英 [ˈbrækɪt]   美 [ˈbrækɪt]  
+	n.
+	支架;括号;(价格等的)等级;
+	vt.
+	用括弧括上;把…等同考虑;把…相提并论.
+	
+	把…相提并论：
+	[近]put on a par with
+	
+	par
+	英 [pɑː(r)]
+	n.
+	标准杆数;(股票的)面值，票面价值
