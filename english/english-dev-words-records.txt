@@ -2531,3 +2531,19 @@ achieve the face detection
 	英 [pɑː(r)]
 	n.
 	标准杆数;(股票的)面值，票面价值
+265 perform exhaustive search
+	exhaustive
+	英 [ɪɡˈzɔːstɪv]   美 [ɪɡˈzɔːstɪv]  
+	adj.
+	详尽的;彻底的;全面的
+	exhaust
+	英 [ɪɡˈzɔːst]
+	vt.
+	耗尽;花光;详尽讨论(或研究)
+266 Leave Object-parameterized types raw //保留对象参数化类型原始
+	leave
+	英 [liːv]  
+	v.
+	离开(某人或某处);遗弃;丢弃
+	n.
+	休假;假期;准许
