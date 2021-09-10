@@ -2446,6 +2446,17 @@ achieve the face detection
 	capability
 	英 [ˌkeɪpəˈbɪləti] 
 	能力;才能
+	
+	cap
+	英 [kæp]
+	n.
+	帽子;(尤指男用有帽舌的)便帽 
+	vt.
+	用…覆盖顶部(或端部);限额收取(或支出);胜过
+	 制服帽:A cap is a special hat which is worn as part of a uniform.
+	 Her cap fell off in the street and blew away . 她的帽子掉在大街上，被风吹走了。
+	The government has placed a cap on local council spending.  政府给地方议会的经费支出规定了最高限额。
+	
 256 replicating the luminance value three times for red, green, and blue  
 	replicate
 	英 [ˈreplɪkeɪt]
@@ -2547,3 +2558,14 @@ achieve the face detection
 	离开(某人或某处);遗弃;丢弃
 	n.
 	休假;假期;准许
+267 Innovation in the Open //Google I/O 寓为“开放中创新”
+	innovate
+	英 [ˈɪnəveɪt]
+	v.
+	引入(新事物、思想或方法);创新;改革
+268 artificial intelligence 
+	人工智能 
+	artificial
+	英 [ˌɑːtɪˈfɪʃl]
+	adj.
+	人造的;人工的;
