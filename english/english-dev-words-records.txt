@@ -1160,7 +1160,6 @@ The transferer. Set only in constructor, but cannot be declared
 	trade off以…换取
 	
 113、SuppressLint 抑制物 
-	suppress 
 	suppress
 	英 [səˈpres]   美 [səˈpres]  
 	v.
@@ -2547,3 +2546,14 @@ achieve the face detection
 	离开(某人或某处);遗弃;丢弃
 	n.
 	休假;假期;准许
+	
+267 cs 
+	computer science 。计算机科学的意思 游戏的话 就是counter - strike 反恐精英的意思”
+	counter
+	英 [ˈkaʊntə(r)] 
+	n.
+	(商店)柜台;计算器
+	v.
+	反驳;
+	adv.
+	逆向地;相反地;反对地
