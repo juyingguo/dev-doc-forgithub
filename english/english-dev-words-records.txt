@@ -2557,3 +2557,13 @@ achieve the face detection
 	反驳;
 	adv.
 	逆向地;相反地;反对地
+268 Strange corner case, which we don't take care of here. //奇怪的角落情况，我们在这里不处理
+	strange
+	英 [streɪndʒ]
+	adj.
+	奇怪的;奇特的; 
+269 retrofitted 
+	retrofit
+	英 [ˈretrəʊfɪt]
+	vt.
+	给机器设备装配(新部件);翻新;改型
