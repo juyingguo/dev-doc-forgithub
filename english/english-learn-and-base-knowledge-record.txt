@@ -1,11 +1,11 @@
-1. ���ʹ�ȥʽ����ȥ�ִʱ仯��������ܽ� 
-	1.1 ���ʹ�ȥʽ����ȥ�ִʱ仯��������ܽ�
+1. 动词过去式及过去分词变化规则归纳总结 
+	1.1 动词过去式及过去分词变化规则归纳总结
 		https://wenku.baidu.com/view/2065a630c850ad02df80413b.html
 		
-2. ��i.e.��e.g.��etc.������ʲô?����Ū������Щ��д!
+2. “i.e.、e.g.、etc.”都是什么?终于弄懂了这些缩写!
 	http://www.360doc.com/content/18/0206/09/31667578_728058335.shtml 
-3. ��һ�ڶ��������ĵ���������ߵڰ˵ھŵ�ʮ��Ӣ����ôд
-	�Լ�������������Ӣ�ı�ʾ��
+3. 第一第二第三第四第五第六第七第八第九第十用英文怎么写
+	以及阿拉伯数字用英文表示。
 	https://zhidao.baidu.com/question/308445621.html
 		First,
 
@@ -27,16 +27,27 @@
 
 		tenth
 
-		��չ����
-		����bai�����ִ�1��10��Ӣdu��Ϊone��zhitwo��three��four��five��six��seven��eight��nine��ten��dao
-4. �Ӽ��˳�
+		扩展资料
+		阿拉bai伯数字从1到10的英du文为one，zhitwo，three，four，five，six，seven，eight，nine，ten。dao
+4. 加减乘除
 	Addition, subtraction, multiplication and division
 	subtraction
-	Ӣ [s?b'tr?k?(?)n]
+	英 [s?b'tr?k?(?)n]
 	n.
-	�۳�;
+	扣除;
 	
-5. ����pie��pigΪʲô�м��i�����������з����Ͳ�ͬ����?����ѧ�����ʱ��iֻ��һ����ѽ
-��ô����Ϊʲô�أ�
+5. 比如pie和pig为什么中间的i在两个单词中发音就不同了呢?我在学音标的时候i只读一个音呀
+那么这是为什么呢？
 	https://qb.zuoyebang.com/xfe-question/question/d50a7a824df942d6065fa353249b71c3.html
-	��pie��,i��˫Ԫ��/ai/.����pig��,i��Ԫ��/i/. 
+	在pie中,i发双元音/ai/.而在pig中,i发元音/i/. 
+	
+6. 英语每日一句
+	6.1 Victory won't come to me unless I go to it.  ——M. Moore
+		除非我去，否则胜利不会降临到我身上。 ——M。 摩尔 
+	6.2 Choose a life of action, not one of ostentation.  ——C. Nepos
+		选择一种行动的生活，而不是一种炫耀的生活。  - C。 尼波斯
+		
+		ostentation
+		英 [ˌɒstenˈteɪʃn]
+		n.
+		炫耀;(对财富、知识、技能的)卖弄;夸示
