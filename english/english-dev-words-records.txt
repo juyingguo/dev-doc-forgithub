@@ -871,7 +871,7 @@ The transferer. Set only in constructor, but cannot be declared
 83、lies dormant until the  lock has been acquired.
 		在获得锁之前处于休眠状态。
 	dormant
-	英 [ˈdɔːmənt]   美 [ˈdɔːrmənt]  
+	英 [ˈdɔːmənt]
 	adj.
 	休眠的;蛰伏的;暂停活动的
 84、and interruption of lock acquisition is supported 支持锁采集中断
@@ -2588,3 +2588,5 @@ achieve the face detection
 	英 [ˌɑːtɪˈfɪʃl]
 	adj.
 	人造的;人工的;
+	
+272

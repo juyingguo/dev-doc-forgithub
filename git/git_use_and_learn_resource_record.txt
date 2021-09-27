@@ -63,4 +63,21 @@
 	提交非常快，1s中就完成了，好像并没有提交该分支代码到服务器，服务器端也创建分支成功了。
 	原理是什么？待分析。
 	
+6. 【Git】如何更新或取消GitHub上fork的Repository
+	https://blog.csdn.net/hongwei15732623364/article/details/80148376 
+	
+	6.2 github上fork了别人的项目后，再同步更新别人的提交
+		https://blog.csdn.net/qq1332479771/article/details/56087333 
 	 
+7. git中tag与release的创建以及两者的区别
+	7.1 https://www.jianshu.com/p/79ecf4fe5079 
+		创建lightweight类型的tag：
+
+		$ git tag v1.4-lw
+		创建annotated类型的tag：
+
+		$ git tag -a v1.4 -m "my version 1.4"
+		
+		$ git push origin v1.4 //提交
+	7.2 创建 Releases 
+		https://www.jianshu.com/p/b6e7c6b851ae 
