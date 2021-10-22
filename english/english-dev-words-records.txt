@@ -2589,4 +2589,9 @@ achieve the face detection
 	adj.
 	人造的;人工的;
 	
-272
+272 
+	Subversion exists to be universally recognized and adopted as an open-source, centralized version control system characterized by its reliability as a safe haven for valuable data.//Subversion 作为一种开源、集中式版本控制系统而被普遍认可和采用，其特点是作为有价值数据的避风港的可靠性。
+	haven
+	英 [ˈheɪvn]
+	n.
+	港口;避难所;
