@@ -2595,3 +2595,21 @@ achieve the face detection
 	英 [ˈheɪvn]
 	n.
 	港口;避难所;
+273 lease //租赁
+
+	英 [liːs]
+	n.
+	租赁;租契
+	vt.
+	租用，
+	rent; lease; hire
+274 The only caveat is that if the client and server minor release numbers don't match (e.g., 1.0 and 1.1), 
+	then some of the features of the newer release may not be activated.
+	caveat
+	英 [ˈkæviæt]
+	n.
+	警告;
+275 tunnel
+	英 [ˈtʌnl]
+	n.
+	地下通道;地道	
