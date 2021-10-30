@@ -2613,3 +2613,8 @@ achieve the face detection
 	英 [ˈtʌnl]
 	n.
 	地下通道;地道	
+276 The input file contains a delimiter between each propagation. 
+	输入文件的每次传播之间包含一个分隔符。
+	delimiter
+	n.
+	定界符，分隔符 
