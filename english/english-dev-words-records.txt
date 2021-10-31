@@ -2618,3 +2618,17 @@ achieve the face detection
 	delimiter
 	n.
 	定界符，分隔符 
+277 Or test that your code survives in awkward-to-reproduce situations like 500 errors or slow-loading responses.
+	或者测试您的代码在难以重现的情况下（例如 500 个错误或缓慢加载响应）是否能正常运行。 
+	awkward
+	英 [ˈɔːkwəd]   美 [ˈɔːkwərd]  
+	adj.
+	令人尴尬的;使人难堪的;难对付的;
+278 mock
+	英 [mɒk]   美 [mɑːk]  
+	v.
+	(模仿)嘲弄;嘲笑;不尊重;蔑视
+	adj.
+	模拟的;模仿的;虚假的;不诚实的
+	n.
+	(英国)模拟考试
