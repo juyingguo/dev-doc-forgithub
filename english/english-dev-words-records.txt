@@ -1633,7 +1633,10 @@ The transferer. Set only in constructor, but cannot be declared
 	
 	however ,you may simply not be aware that a more recent version is available,that is what this link checks help you find .
 	但是，您可能根本不知道有更新的版本可用，这就是此链接检查帮助您找到的内容。
-
+	aware
+	英 [əˈweə(r)]   美 [əˈwer]  
+	adj.
+	意识到的;意识到;知道;
  
 
 155. subtract 
@@ -2632,3 +2635,22 @@ achieve the face detection
 	模拟的;模仿的;虚假的;不诚实的
 	n.
 	(英国)模拟考试
+279 
+	the Bitmap at the end of that queue is evicted and may become eligible for garbage collection.
+	该队列末尾的位图被逐出并可能有资格进行垃圾收集。
+	eligible
+	英 [ˈelɪdʒəbl]   美 [ˈelɪdʒəbl]  
+	adj.
+	有资格的;合格的;具备条件的;
+	
+	evict
+	英 [ɪˈvɪkt]
+	vt.
+	驱逐;(尤指依法从房屋或土地上)赶出;逐出
+280 This class is tolerant of some I/O errors.[DiskLruCache]
+	tolerant
+	英 [ˈtɒlərənt]
+	adj.
+	宽容的;容忍的;忍受的;
+281 Updates and removals after the call do not impact ongoing reads.[DiskLruCache]
+	调用后的更新和删除不会影响正在进行的读取
