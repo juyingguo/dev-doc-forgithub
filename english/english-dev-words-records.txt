@@ -290,15 +290,13 @@ It assumes that only the primary user
 	protocols at some major version bump.
 	如果使用网络，则必须调用此函数
    一些主要版本的协议。
-30、Channel is unrecoverably broken and will be disposed
+30、Channel is unrecoverably broken and will be disposed.通道被不可恢复地破坏，将被处置。
 	disposed
 	英 [dɪˈspəʊzd]   美 [dɪˈspoʊzd]  
 	adj.
 	倾向于;有意于;乐意;对…有好感(或恶感)
 	v.
-	排列;布置;安排;使倾向于;使有意于;使易于
-	
-	通道被不可恢复地破坏，将被处置。
+	排列;布置;安排;使倾向于;使有意于;使易于	
 	
 	Disposes of the underlying message queue.
 	dispose of
@@ -2613,3 +2611,82 @@ achieve the face detection
 	英 [ˈtʌnl]
 	n.
 	地下通道;地道	
+276. PixiJS has full WebGL support and seamlessly falls back to HTML5's canvas if needed.
+	PixiJS 具有完整的 WebGL 支持，并在需要时无缝回退到 HTML5 的画布。
+	
+	seam
+	英 [siːm]
+	n.
+	接缝;煤层;
+	seamless
+	英 [ˈsiːmləs]
+	adj.
+	无(接)缝的;不停顿的
+277 
+	Out of the box cross-platform compatibility and graceful degradation mean you have less work to do and have more fun doing it! If you want to create polished and refined experiences relatively quickly, without delving into dense, low level code, all while avoiding the headaches of browser inconsistencies, then sprinkle your next project with some PixiJS magic!
+	开箱即用的跨平台兼容性和优雅的降级意味着您要做的工作更少，而且做起来更有趣！如果您想相对较快地创建精美和精致的体验，而无需深入研究密集的低级代码，同时避免浏览器不一致的问题，那么请在您的下一个项目中加入一些 PixiJS 魔法！
+	polish
+	英 [ˈpɒlɪʃ]
+	v.
+	磨光;润色;擦光
+	n.
+	抛光;擦亮;
+	polished
+	英 [ˈpɒlɪʃt]
+	adj.
+	抛光的;磨光的;擦亮的;优雅的
+	
+	grade
+	英 [ɡreɪd] 
+	n.
+	等级;(产品、材料的)品级;
+	degrade
+	英 [dɪˈɡreɪd] 
+	v.
+	降低;分解;降低…身份;
+	
+	refine
+	英 [rɪˈfaɪn]
+	vt.
+	精炼;提纯;	
+	refined
+	英 [rɪˈfaɪnd]
+	adj.
+	精炼 的;精制的;有礼貌的;优雅的
+	
+	headaches
+	英 [ˈhɛdeɪks]
+	n.
+	头痛;令人头痛的人(或事物);
+278. 
+	"the differences between this protocol and SSL 3.0 are not dramatic, but they are significant enough to preclude interoperability between TLS 1.0 and SSL 3.0"（本协议和SSL 3.0之间的差异并不是显著，却足以排除TLS 1.0和SSL 3.0之间的互操作性）
+279 A source that keeps a buffer internally so that callers can do small reads without a performance penalty.
+	在内部保留缓冲区的源，以便调用者可以在不影响性能的情况下进行少量读取 
+	penal
+	英 [ˈpiːnl]   美 [ˈpiːnl]  
+	adj.
+	惩罚的;刑罚的;不利的。
+280 Typically this approach works best when it complements a corresponding fix on the webserver!
+	通常，这种方法在补充网络服务器上的相应修复时效果最佳！
+	complement
+	英 [ˈkɒmplɪment , ˈkɒmplɪmənt]
+	vt.
+	补足;补充;使完美;使更具吸引力
+	n.
+	补语;补充物;
+	complete
+	英 [kəmˈpliːt]   美 [kəmˈpliːt]  
+	vt.
+	完成;结束;填写(表格);使完整
+	adj.
+	完整的;(用以强调)完全的
+281 If you’re in a tricky situation and prepared to deal with the consequences, rewriting response headers is a powerful way to work around problems
+	如果您遇到棘手的情况并准备处理后果，那么重写响应标头是解决问题的有效方法。
+	tricky
+	英 [ˈtrɪki]
+	adj.
+	棘手的;狡猾的;难办的;
+282 replaceStaleEntry
+	Stale
+	英 [steɪl] 
+	失效;陈旧;陈旧的;过期; 
