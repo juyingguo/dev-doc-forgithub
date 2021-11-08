@@ -1631,7 +1631,10 @@ The transferer. Set only in constructor, but cannot be declared
 	
 	however ,you may simply not be aware that a more recent version is available,that is what this link checks help you find .
 	但是，您可能根本不知道有更新的版本可用，这就是此链接检查帮助您找到的内容。
-
+	aware
+	英 [əˈweə(r)]   美 [əˈwer]  
+	adj.
+	意识到的;意识到;知道;
  
 
 155. subtract 
@@ -2690,3 +2693,41 @@ achieve the face detection
 	Stale
 	英 [steɪl] 
 	失效;陈旧;陈旧的;过期; 
+282 The input file contains a delimiter between each propagation. 
+	输入文件的每次传播之间包含一个分隔符。
+	delimiter
+	n.
+	定界符，分隔符 
+283 Or test that your code survives in awkward-to-reproduce situations like 500 errors or slow-loading responses.
+	或者测试您的代码在难以重现的情况下（例如 500 个错误或缓慢加载响应）是否能正常运行。 
+	awkward
+	英 [ˈɔːkwəd]   美 [ˈɔːkwərd]  
+	adj.
+	令人尴尬的;使人难堪的;难对付的;
+284 mock
+	英 [mɒk]   美 [mɑːk]  
+	v.
+	(模仿)嘲弄;嘲笑;不尊重;蔑视
+	adj.
+	模拟的;模仿的;虚假的;不诚实的
+	n.
+	(英国)模拟考试
+285 
+	the Bitmap at the end of that queue is evicted and may become eligible for garbage collection.
+	该队列末尾的位图被逐出并可能有资格进行垃圾收集。
+	eligible
+	英 [ˈelɪdʒəbl]   美 [ˈelɪdʒəbl]  
+	adj.
+	有资格的;合格的;具备条件的;
+	
+	evict
+	英 [ɪˈvɪkt]
+	vt.
+	驱逐;(尤指依法从房屋或土地上)赶出;逐出
+286 This class is tolerant of some I/O errors.[DiskLruCache]
+	tolerant
+	英 [ˈtɒlərənt]
+	adj.
+	宽容的;容忍的;忍受的;
+287 Updates and removals after the call do not impact ongoing reads.[DiskLruCache]
+	调用后的更新和删除不会影响正在进行的读取
