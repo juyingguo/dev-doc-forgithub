@@ -2731,3 +2731,30 @@ achieve the face detection
 	宽容的;容忍的;忍受的;
 287 Updates and removals after the call do not impact ongoing reads.[DiskLruCache]
 	调用后的更新和删除不会影响正在进行的读取
+288 occupation; profession; vocation
+	职业
+289
+	When using basic code completion (Ctrl+空格), you don't need to type upper-case letters in CamelHump names. It is enough to type the initial letters of the camel names in lower case, and they will be smartly recognized.
+	使用基本代码补全（Ctrl+空格）时，不需要在驼峰名称中键入大写字母。 用小写字母输入骆驼名字的首字母就足够了，它们会被巧妙地识别出来。
+	Hump
+	英 [hʌmp] 
+	驼峰;驼背;隆起;
+	camel
+	英 [ˈkæml]
+	n.
+	骆驼
+	type
+	英 [taɪp] 
+	n.
+	类型;种类;具有…特征的
+	v.
+	(用计算机或打字机)打字;测定…的类型;分型;
+	
+	initial
+	英 [ɪˈnɪʃl]
+	adj.
+	最初的;开始的;第一的
+	n.
+	(名字的)首字母;(全名的)首字母
+	vt.
+	用姓名的首字母作标记(或签名)于
