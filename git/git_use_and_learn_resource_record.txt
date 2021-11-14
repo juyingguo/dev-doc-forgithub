@@ -81,3 +81,50 @@
 		$ git push origin v1.4 //提交
 	7.2 创建 Releases 
 		https://www.jianshu.com/p/b6e7c6b851ae 
+
+	7.3 git checkout tag 提示信息
+		git checkout v3
+		Note: switching to 'v3'.
+
+		You are in 'detached HEAD' state. You can look around, make experimental
+		changes and commit them, and you can discard any commits you make in this
+		state without impacting any branches by switching back to a branch.
+
+		If you want to create a new branch to retain commits you create, you may
+		do so (now or later) by using -c with the switch command. Example:
+
+		  git switch -c <new-branch-name>
+
+		Or undo this operation with:
+
+		  git switch -
+
+		Turn off this advice by setting config variable advice.detachedHead to false
+
+		HEAD is now at 371c79c OK, can run
+
+		
+	7.4 git基于某个Tag修改提交
+		https://blog.csdn.net/adojayfan/article/details/88808731 
+		https://www.cnblogs.com/steven158/p/15118011.html#_label0_1 
+		git tag版本代码快速修复
+		https://blog.csdn.net/zixiao217/article/details/73655633? 
+		[可以部分参考]
+		
+		如果要在某个tag的基础上做修改，直接切换到tab，修改后是无法提交的。
+
+		因为这时HEAD指向了一个具体的commit id，而没有处在一个分支中。
+		
+		先根据这个tag新建一个分支
+		git checkout -b 新分支 tag名
+
+		$ git checkout -b newbranch tag1.1
+			或者使用 git switch -c newbranch v3 //-c --create;
+		1
+		然后在这个新分支上修改后，提交代码
+	7.5 git tag和分支的区别_一文讲透 Git 底层数据结构和原理
+		https://blog.csdn.net/weixin_39777019/article/details/110660950 
+		
+8. 工具系列 | git checkout 可替换命令 git switch 和 git restore
+	https://blog.csdn.net/qq756684177/article/details/104454371 
+	
