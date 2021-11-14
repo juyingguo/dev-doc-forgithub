@@ -2758,3 +2758,7 @@ achieve the face detection
 	(名字的)首字母;(全名的)首字母
 	vt.
 	用姓名的首字母作标记(或签名)于
+290 ambiguous
+	英 [æmˈbɪɡjuəs]
+	adj.
+	模棱两可的;含混不清的;
