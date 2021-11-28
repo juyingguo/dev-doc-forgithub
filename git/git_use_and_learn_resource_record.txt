@@ -127,4 +127,25 @@
 		
 8. 工具系列 | git checkout 可替换命令 git switch 和 git restore
 	https://blog.csdn.net/qq756684177/article/details/104454371 
+9. 仓库中包含子仓库。
+	异常提示：
+	username@mypc MINGW64 /i/juying/android/android-source/android-5.1.1_r1/packages (master)
+	$ git add .
+	warning: adding embedded git repository: apps/BasicSmsReceiver
+	hint: You've added another git repository inside your current repository.
+	hint: Clones of the outer repository will not contain the contents of
+	hint: the embedded repository and will not know how to obtain it.
+	hint: If you meant to add a submodule, use:
+	hint:
+	hint:   git submodule add <url> apps/BasicSmsReceiver
+	hint:
+	hint: If you added this path by mistake, you can remove it from the
+	hint: index with:
+	hint:
+	hint:   git rm --cached apps/BasicSmsReceiver
+	hint:
+	hint: See "git help submodule" for more information.
+	warning: adding embedded git repository: apps/Bluetooth
+	warning: adding embedded git repository: apps/Browser
+
 	
