@@ -2762,3 +2762,25 @@ achieve the face detection
 	英 [æmˈbɪɡjuəs]
 	adj.
 	模棱两可的;含混不清的;
+291 ArrayBlockingQueue #ref doc.
+	However, a queue constructed with fairness set to {@code true} grants threads access in FIFO order. Fairness generally decreases throughput but reduces variability and avoids  starvation.
+	但是，将公平性设置为 {@code true} 构造的队列以 FIFO 顺序授予线程访问权限。公平通常会降低吞吐量，但会减少可变性并避免饥饿。
+	
+	grant
+	英 [ɡrɑːnt]
+	vt.
+	授予;(尤指正式地或法律上)同意，准予，允许;(勉强)承认，同意
+	n.
+	(政府、机构的)拨款
+	
+	throughput
+	英 [ˈθruːpʊt]
+	n.
+	吞吐量;生产量，接待人数
+	
+	starvation
+	英 [stɑːˈveɪʃn]
+	n.
+	饥饿;挨饿;饿死
+	
+	hunger
