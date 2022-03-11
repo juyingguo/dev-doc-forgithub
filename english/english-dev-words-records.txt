@@ -2784,3 +2784,12 @@ achieve the face detection
 	饥饿;挨饿;饿死
 	
 	hunger
+292 Welcome to ISSUE #115 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team.
+	欢迎来到 The Overflow 的第 115 期！ 这份时事通讯由开发人员为开发人员编写，由 Stack Overflow 团队和 Cassidy Williams 撰写和策划.
+	curate
+	英 [ˈkjʊərət , kjʊəˈreɪt]
+	n.
+	(某教区的)助理牧师
+	vt.
+	当（博物馆;美术馆;图书馆）馆长
+	curated 策划
