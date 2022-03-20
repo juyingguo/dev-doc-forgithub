@@ -2770,3 +2770,34 @@ achieve the face detection
 	accumulate
 	英 /ə'kjuːmjʊleɪt/
 	vi. 累积；积聚
+294 ArrayBlockingQueue #ref doc.
+	However, a queue constructed with fairness set to {@code true} grants threads access in FIFO order. Fairness generally decreases throughput but reduces variability and avoids  starvation.
+	但是，将公平性设置为 {@code true} 构造的队列以 FIFO 顺序授予线程访问权限。公平通常会降低吞吐量，但会减少可变性并避免饥饿。
+	
+	grant
+	英 [ɡrɑːnt]
+	vt.
+	授予;(尤指正式地或法律上)同意，准予，允许;(勉强)承认，同意
+	n.
+	(政府、机构的)拨款
+	
+	throughput
+	英 [ˈθruːpʊt]
+	n.
+	吞吐量;生产量，接待人数
+	
+	starvation
+	英 [stɑːˈveɪʃn]
+	n.
+	饥饿;挨饿;饿死
+	
+	hunger
+295 Welcome to ISSUE #115 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team.
+	欢迎来到 The Overflow 的第 115 期！ 这份时事通讯由开发人员为开发人员编写，由 Stack Overflow 团队和 Cassidy Williams 撰写和策划.
+	curate
+	英 [ˈkjʊərət , kjʊəˈreɪt]
+	n.
+	(某教区的)助理牧师
+	vt.
+	当（博物馆;美术馆;图书馆）馆长
+	curated 策划
