@@ -2762,3 +2762,11 @@ achieve the face detection
 	英 [æmˈbɪɡjuəs]
 	adj.
 	模棱两可的;含混不清的;
+291 comprise
+	These fields comprise the doubly linked list used for iteration. 这些字段包括用于迭代的双向链表。
+292 Rehash the bucket using the minimum number of field writes.  This is the most subtle and delicate code in the class.
+	使用最少的字段写入次数重新哈希存储桶。 这是该类中最微妙和最精致的代码。
+293 If the Camera is idle, update the parameters immediately, otherwise accumulate them in mUpdateSet and update later.
+	accumulate
+	英 /ə'kjuːmjʊleɪt/
+	vi. 累积；积聚
