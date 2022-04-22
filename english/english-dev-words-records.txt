@@ -2428,6 +2428,11 @@ achieve the face detection
 	英 [ˈprɒpəɡeɪt]
 	v.
 	传播;宣传;繁殖;
+	If the caller asked that this activity (and all above it) be cleared when the task is reset, don't lose that information, but propagate it up to the next activity.
+	如果调用者要求在重置任务时清除此活动（及其之上的所有活动），请不要丢失该信息，而是将其传播到下一个活动
+	
+	propagate it up to 
+	up to 高达 ; 到 ; 干 ; 胜任 ; …的责任
 253 Caveats 注意事项
 	英 [ˈkeɪvɪæts]   美 [ˈkeɪviˌæts]  
 	告诫;警告;诉讼手续;正告
@@ -2563,7 +2568,7 @@ achieve the face detection
 	counter
 	英 [ˈkaʊntə(r)] 
 	n.
-	(商店)柜台;计算器
+	(商店)柜台;计算器,反对
 	v.
 	反驳;
 	adv.
@@ -2793,3 +2798,63 @@ achieve the face detection
 	vt.
 	当（博物馆;美术馆;图书馆）馆长
 	curated 策划
+293 Any allocated fields in codec that have a corresponding field in par are freed and replaced with duplicates of the corresponding field in par. Fields in codec that do not have a counterpart in par are not touched.
+	编解码器中任何在 par 中具有相应字段的已分配字段都将被释放并替换为 par 中相应字段的副本。 编解码器中在 par 中没有对应项的字段不会被触及。
+	duplicate
+	英 [ˈdjuːplɪkeɪt , ˈdjuːplɪkət]
+	vt.
+	复制;(尤指不必要时)重复
+	adj.
+	完全一样的;
+	n.
+	复制品;副本
+	
+	counterpart
+	英 [ˈkaʊntəpɑːt] 
+	n.
+	对应方;职位(或作用)相当的人;
+294  If NULL, then the codec-specific defaults won't be initialized, which may result in suboptimal default settings (this is important mainly for encoders, e.g. libx264).//如果为 NULL，则不会初始化编解码器特定的默认值，这可能会导致不理想的默认设置（这主要对编码器很重要，例如 libx264）。
+	optimal
+	英 [ˈɒptɪməl]
+	adj.
+	最优的;
+	suboptimal
+	次优的;
+295 Duration of the stream, in AV_TIME_BASE fractional seconds. Only set this value if you know none of the individual stream durations and also do not set any of them. This is deduced from the AVStream values if not set.
+	流的持续时间，以 AV_TIME_BASE 小数秒为单位。 仅当您不知道任何单个流持续时间并且不设置任何一个时才设置此值。 如果未设置，则从 AVStream 值推导出来。 
+	
+	fractional
+	英 [ˈfrækʃənl]
+	adj.
+	很小的;很少的;分数的;
+	
+	[此例子中为分数]
+	
+	deduce
+	英 [dɪˈdjuːs]
+	vt.
+	推论;推断;
+296 as
+	as that of.
+	像
+	The weather of this year is not the same as that of the past years.
+	今年的气候同往年不一样。
+297 This implementation returns null if this ViewGroup does not have a parent,  if this ViewGroup is already fully invalidated 
+	or if the dirty rectangle  does not intersect with this ViewGroup's bounds.
+	如果此 ViewGroup 没有父视图、此 ViewGroup 已完全无效或脏矩形不与此 ViewGroup 的边界相交，则此实现返回 null。
+	intersect
+	英 [ˌɪntəˈsekt]
+	v.
+	横断;相交;交叉;
+	
+	sectio
+	n.
+	节;切片
+298 When this flag is set, this view is running an animation on behalf of its  children and 
+	should therefore not cancel invalidate requests, even if they lie outside of this view's bounds.
+	设置此标志时，此视图正在代表其子级运行动画，因此不应取消无效请求，即使它们位于此视图的边界之外。
+	behalf
+	英 [bɪˈhɑːf] 
+	n.
+	利益;代表
+	
