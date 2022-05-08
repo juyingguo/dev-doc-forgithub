@@ -2420,6 +2420,13 @@ achieve the face detection
 	
 	The Study and Implementation of Heuristic Algorithm for Services Composition.
 	启发式算法在服务组合中的研究与实现
+	
+	account for
+	英 [əˈkaʊnt fɔː(r)]
+	对…负有责任;（数量或比例上）占;导致，解释（某种事实或情况）;解释，说明（某事）;（某人）对（行动、政策等）负有责任;
+	
+	Together they account for less than five per cent of the population.
+	他们总共占不到总人口的5%。
 247 obituary
 	英 [əˈbɪtʃuəri]   美 [oʊˈbɪtʃueri]  
 	n.
