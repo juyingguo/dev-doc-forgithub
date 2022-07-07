@@ -70,3 +70,12 @@
 		英 [ˌɒstenˈteɪʃn]
 		n.
 		炫耀;(对财富、知识、技能的)卖弄;夸示
+	6.3 
+		We thank all donators!
+		It's not all about money
+		We really appreciate if you donate money, however, manpower is also needed!
+		You're welcome to contribute to this project!
+		我们感谢所有捐赠者！
+		这不仅仅是钱的问题
+		如果您捐款我们非常感谢，但是也需要人力！
+		欢迎您为这个项目做出贡献！

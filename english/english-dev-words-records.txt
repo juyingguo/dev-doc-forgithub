@@ -1668,6 +1668,10 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˌvʌlnərə'bɪlətɪ]   美 [ˌvʌlnərə'bɪləti]  
 	n.
 	弱点;脆弱性;易伤性;可捕性。
+  157.2 TortoiseGit is written in C/C++ and is, therefore, not affected by the recent Log4J vulnerability.
+	TortoiseGit 是用 C/C++ 编写的，因此不受最近的 Log4J 漏洞的影响。
+  157.3 Thanks for using TortoiseGit.You can show your appreciation and support future development by donating!
+	感谢您使用 TortoiseGit。您可以通过捐赠来表达您的感激之情并支持未来的发展！
 	
 	moderate
 	英 [ˈmɒdərət , ˈmɒdəreɪt]   美 [ˈmɑːdərət , ˈmɑːdəreɪt]  
@@ -2895,3 +2899,16 @@ achieve the face detection
 	英 [dɪˈdjuːs]
 	vt.
 	推论;推断;
+304 per user billed annually
+	按用户按年计费。
+	英 [bɪl]
+	n.
+	(餐馆的)账单;(提交议会讨论的)议案，法案。
+		vt.
+	给(某人)开账单，发账单(要求付款);
+	annually
+	英 [ˈænjuəli]
+	adv.
+	一年一次地
+
+	
