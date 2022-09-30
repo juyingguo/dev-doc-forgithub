@@ -397,6 +397,28 @@ It assumes that only the primary user
 
 	技术上的革新可能意味着曾经被重视的技术现在已变得多余。
 	
+	Maintaining redundancy of long-lived TLS connections, especially when a UA is solely  responsible for their establishment,
+	could also be cumbersome.
+	维护长寿命TLS连接的冗余性，特别是当UA单独负责建立它们时，也可能很麻烦。
+	
+	redundancy
+	英 [rɪˈdʌndənsi]   美 [rɪˈdʌndənsi]  
+	n.
+	冗余;多余;
+	
+	sole
+	英 [səʊl]
+	n.
+	鞋底;脚掌;
+	adj.
+	唯一的;
+	adv.
+	solely
+	
+	cumbersome
+	英 [ˈkʌmbəsəm]   美 [ˈkʌmbərsəm]  
+	adj.
+	大而笨重的;累赘的;
 40、drop vacant 空投
 	vacant
 	英 [ˈveɪkənt]   美 [ˈveɪkənt]  
@@ -700,6 +722,15 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [swiːt]   美 [swiːt]  
 	n.
 	(尤指旅馆的)一套房间，套房;一套家具;组曲(由三个或更多相关部分组成)
+	
+	This introduces some valid scalability concerns,  especially for intensive ciphersuites.
+	这引入了一些有效的可伸缩性问题，特别是对于密集的密码套件。
+	
+	intensive
+	英 [ɪnˈtensɪv]   美 [ɪnˈtensɪv]  
+	adj.
+	短时间内集中紧张进行的;密集的;
+	
 66、authenticator
 	authenticate
 	英 [ɔːˈθentɪkeɪt]   美 [ɔːˈθentɪkeɪt]  
@@ -830,11 +861,7 @@ The transferer. Set only in constructor, but cannot be declared
 	v.
 	限制，限定(数量、范围等);束缚;妨碍;阻碍;(以法规)限制
 	restrict的过去分词和过去式
-78、isEligible
-	eligible
-	英 [ˈelɪdʒəbl]   美 [ˈelɪdʒəbl]  
-	adj.
-	有资格的;合格的;具备条件的;(指认为可做夫妻的男女)合意的，合适的，中意的
+78、
 79、as this method is likely to yield significantly better space and time performance by caching frequently requested values.
 	Integer valueOf(int i)
 	yield
@@ -1297,9 +1324,6 @@ The transferer. Set only in constructor, but cannot be declared
 		必不可少的东西;必需品;要点;要素;实质
 		Something that is essential is extremely important or absolutely necessary to a particular subject, situation, or activity.
 		
-		contiguous
-		英 [kənˈtɪɡjuəs]
-		相接的;相邻的
 126、use fast but imperfect dependency generation //使用快速但不完全的依赖项生成
 		imperfect
 		英 [ɪmˈpɜːfɪkt]   美 [ɪmˈpɜːrfɪkt]  
@@ -1356,6 +1380,10 @@ The transferer. Set only in constructor, but cannot be declared
 	使湿透;浸透;使充满;使饱和
 	第三人称单数： saturates现在分词： saturating过去式： saturated过去分词： saturated
 	
+	If step 2 fails either because thread apparently not eligible or CAS fails 
+	or count saturated, chain to version with full retry loop.
+	如果步骤2由于线程明显不合格或CAS失败而失败
+	或计数饱和，链到版本，具有完全重试循环。
 131、calibrate 
 	英 /ˈkælɪbreɪt/ 
 	v. 校正；标定；调整；测定口径
@@ -1764,6 +1792,11 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [dɪsˈdʒɔɪnt]   美 [dɪsˈdʒɔɪnt]  
 	v.
 	（使）脱节，（使）解体，（使）脱臼 
+	You can readily extend Gradle#你可以轻松地扩展Gradle*
+	readily
+	英 [ˈredɪli]
+	adv.
+	便利地;快捷地;
 	
 167 agnostic 
 	This cleanly combines a set of
@@ -2749,6 +2782,15 @@ achieve the face detection
 	adj.
 	有资格的;合格的;具备条件的;
 	
+	isEligible
+	
+	Returns true if the current thread, when trying to acquire the read lock, and otherwise eligible to do so,
+	should block because of policy for overtaking other waiting threads.
+	overtaking
+	英 [ˌəʊvəˈteɪkɪŋ]
+	v.
+	超过;赶上;(在数量或重要性方面)大于;(不愉快的事情)突然发生
+	
 	evict
 	英 [ɪˈvɪkt]
 	vt.
@@ -2910,5 +2952,74 @@ achieve the face detection
 	英 [ˈænjuəli]
 	adv.
 	一年一次地
-
+305 
+	contiguous
+	英 [kənˈtɪɡjuəs]
+	相接的;相邻的
 	
+	TLS only allows SIP entities to authenticate servers to which they are adjacent.
+	TLS只允许SIP实体对与它们相邻的服务器进行身份验证。
+	英 [əˈdʒeɪsnt]
+	adj.
+	相邻;邻近的
+	
+	n.
+	adjacence
+306 It may also be arduous for a local outbound proxy server and/or
+   registrar to maintain many simultaneous long-lived TLS connections
+   with numerous UAs.  
+   对于本地出站代理服务器和/或注册器来说，同时维护多个使用多个UAs的长时间TLS连接可能也很困难。
+   arduous
+	英 [ˈɑːdjuəs]
+	adj.
+	艰苦的;艰难的
+	The work was arduous. 
+	这项工作很艰巨。
+	register
+	英 [ˈredʒɪstə(r)]
+	v.
+	登记;注册;
+	registrar
+	英 [ˌredʒɪˈstrɑː(r)]   美 [ˈredʒɪstrɑːr]  
+	n.
+	登记员;户籍管理员;
+	registry
+	英 [ˈredʒɪstri]   美 [ˈredʒɪstri]  
+	n.
+	登记处;注册处
+	
+	simultaneous
+	英 [ˌsɪmlˈteɪniəs]   美 [ˌsaɪmlˈteɪniəs]  
+	adj.
+	同时的;同步的;	
+		-synchronous
+	
+	numerous
+	英 [ˈnjuːmərəs]   美 [ˈnuːmərəs]  
+	adj.
+	很多的;众多的
+307 it is based on or derives from projects below
+	它基于或源自以下项目
+	derive
+	英 [dɪˈraɪv]
+	v.
+	得到;(使)起源
+308 Returns the number of exclusive holds represented in count.
+	返回count中表示的独占持有数。
+	exclusive
+	英 [ɪkˈskluːsɪv]
+	adj.
+	独占的;排外的;不包括
+309 
+	writers can always barge.写的操作者总是可以驳斥。
+	ReentrantReadWriteLock.NonfairSync#writerShouldBlock
+	
+310     /* As a heuristic to avoid indefinite writer starvation, 
+		block if the thread that momentarily appears to be head  of queue, if one exists, is a waiting writer. 
+		 This is only a probabilistic effect since a new reader will not block 
+		 if there is a waiting writer behind other enabled  readers 
+		that have not yet drained from the queue. 
+	ref:ReentrantReadWriteLock.NonfairSync#readerShouldBlock
+	
+	作为避免无限写入程序饥饿的启发式方法，如果暂时显示为队列头的线程（如果存在）是等待写入程序，则阻塞。
+	这只是一种概率效应，因为如果在尚未从队列中排出的其他启用的读卡器后面有一个等待写入程序，则新读卡器不会阻塞。

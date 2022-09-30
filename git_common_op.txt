@@ -2,6 +2,7 @@
 	1、参考教材：https://www.yiibai.com/git/git_pull.html
 		https://www.w3cschool.cn/doc_git/git-git-prune.html
 		http://www.verydoc.net/git/
+		https://www.runoob.com/git/git-tutorial.html
 	2. git仓库配置 
 		2.1 Linux(Ubuntu)搭建局域网git服务器 
 			1. https://blog.csdn.net/psy6653/article/details/80834024
@@ -108,10 +109,14 @@
 			或者git remote add origin https://github.com:username/repoxxx.git
 			或者git remote add origin git://github.com:username/repoxxx.git
 		D)删除远程仓库：$ git remote rm [name]
-		E)拉取远程仓库：$ git pull [remoteName] [localBranchName]  
+		E)拉取远程仓库：$ git pull [remote host] [localBranchName]:[localBranchName]  
 			E1	git pull <远程主机名> <远程分支名>:<本地分支名>
 				参考教材：https://www.yiibai.com/git/git_pull.html 
 				
+			git pull后面不指定内容时，会将所有主机端分支（已有的和新增的）索引同步下来。
+			git pull origin master:master//远程主机的master分支与本地分支master合并
+			如果远程分支是与当前分支合并，则冒号后面的部分可以省略。
+			#git pull origin master
 		F)拉取远程仓库冲突及错误处理：：
 			git pull * * 与本地有冲突时，解决方式：
 			1. git stash 先将本地修改存储起来 
