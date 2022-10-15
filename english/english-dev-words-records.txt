@@ -1184,6 +1184,18 @@ The transferer. Set only in constructor, but cannot be declared
 	减号;负号;负值;缺点
 	adj.
 	小于零的;负的;负面的;
+	
+	Several Flexisip instances can be used together in order to scale a large deployment and tolerate faults.多个Flexisip实例可以一起使用，以扩展大型部署并容忍故障。
+	scale
+		英 [skeɪl]   美 [skeɪl]  
+		n.
+		天平，秤盘;比例尺，缩尺;
+		v.
+		攀登，爬越;到达…顶点;（按比例或缩尺）绘制;调节;（阶梯）逐步升高;衡量（鳞片般地）剥落，脱落;
+	tolerate
+	英 [ˈtɒləreɪt]
+	vt.
+	容许，允许(不同意或不喜欢的事物);忍受;能经受(困难条件)
 111、dirtyopaque 肮脏不透明
 	opaque
 	英 [əʊˈpeɪk]   美 [oʊˈpeɪk]  
@@ -2835,6 +2847,11 @@ achieve the face detection
 	模棱两可的;含混不清的;
 291 comprise
 	These fields comprise the doubly linked list used for iteration. 这些字段包括用于迭代的双向链表。
+	
+	comprise
+	英 [kəmˈpraɪz]
+	vt.
+	包含;包括;
 292 Rehash the bucket using the minimum number of field writes.  This is the most subtle and delicate code in the class.
 	使用最少的字段写入次数重新哈希存储桶。 这是该类中最微妙和最精致的代码。
 293 If the Camera is idle, update the parameters immediately, otherwise accumulate them in mUpdateSet and update later.
@@ -3023,3 +3040,20 @@ achieve the face detection
 	
 	作为避免无限写入程序饥饿的启发式方法，如果暂时显示为队列头的线程（如果存在）是等待写入程序，则阻塞。
 	这只是一种概率效应，因为如果在尚未从队列中排出的其他启用的读卡器后面有一个等待写入程序，则新读卡器不会阻塞。
+311 FlexSip offering “out of the box” all the required behaviours to deploy a SIP service tuned for mobile applications.
+	提供“开箱即用”的所有必要行为，以部署针对移动应用程序优化的SIP服务
+	开箱即用;即开即用
+	tuned
+	英 [tjuːnd]
+	v.
+	(为乐器)调音，校音;调整,调频道 ; tune的过去分词
+312 Flexisip's underlying SIP stack is a forked version of sofia-sip, that provides excellent performance and robust, asynchronous transport layer. 
+	Flexisip的底层SIP堆栈是sofia-SIP的分叉版本，它提供了出色的性能和健壮的异步传输层。
+	robust 
+	英 [rəʊˈbʌst]   美 [roʊˈbʌst]  
+	adj.
+	强健的;强劲的;
+313 troubleshoot
+	英 [ˈtrʌblʃuːt] 
+	v.
+	检修；（为公司、机构等）分析解决（难题）
