@@ -44,3 +44,17 @@
 	原文：https://blog.csdn.net/qwaszx523/article/details/54405793 
 	版权声明：本文为博主原创文章，转载请附上博文链接！
 三、
+4. repo sync 指定分支后再同步
+	repo同步代码_Android repo技巧：介绍repo sync是同步远端服务器的哪个分支
+		https://blog.csdn.net/weixin_39946239/article/details/111614226
+	
+	
+		查看 repo help sync 命令的帮助说明，该命令的格式如下：
+
+		Usage: repo sync [...]
+		可以看到，它没有提供参数来指定要同步的远端服务器分支。那么在执行 repo sync 时，它同步的是远端服务器的哪个分支？
+
+		实际上，repo sync 默认同步在 repo init 时由 -b 选项指定的分支，这也是 repo 所跟踪的分支。
+		—
+	Android repo技巧：详解repo sync如何单独同步一个或多个仓库
+		http://www.it619.net/index.php?doc-view-3032.html
