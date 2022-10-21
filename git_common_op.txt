@@ -152,9 +152,14 @@
 		I） git 从远程仓库获取所有分支
 			https://blog.csdn.net/wu1169668869/article/details/83345633
 			
+			Git 项目克隆下来如何切换远程分支流程
+				https://blog.csdn.net/kaikai_gege/article/details/118512204
+			
 			git clone http://myrepo.xxx.com/project/.git  //检出远程仓库。
 			git branch -a，列出所有分支名称
-			git checkout -b branch_dev origin/branch_dev，作用是checkout远程的branch_dev分支，在本地起名为branch_dev分支，并切换到本地的branch_dev分支
+			git checkout -b branch_dev remotes/origin/branch_dev，作用是checkout远程的branch_dev分支，在本地起名为branch_dev分支，并切换到本地的branch_dev分支
+			
+			git push origin branch_dev:branch_dev //将本地branch_dev分支的代码提交到远程的branch_dev上(如果远程branch_dev没有的话会被创建)
 		J)git fetch 用法
 			https://www.cnblogs.com/runnerjack/p/9342362.html 
 			git fetch <远程主机名> //这个命令将某个远程主机的更新全部取回本地 
@@ -205,6 +210,39 @@
 		初始化子模块：$ git submodule init ----只在首次检出仓库时运行一次就行
 		更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
 		删除子模块：$ git rm --cached [path]
+		
+		10.2 
+			Subproject commit ** -dirty
+			https://blog.csdn.net/qq_20515461/article/details/107772278
+			解决办法：
+			Git diff says subproject is dirty：
+			https://stackoverflow.com/questions/4873980/git-diff-says-subproject-is-dirty
+			方法1：撤销对子模块的修改
+
+			git submodule foreach --recursive git checkout . && git clean -df
+			方法2：删除子模块目录重新拉取代码
+
+			rm -r {submoudle_path}
+			git submodule update --init --recursive
+			
+			方法3：取消跟踪子模块的修改
+
+			git status --ignore-submodules=dirty
+			如果不行就使用[git restore]
+			
+		10.3 git status . 出现modified, (modified content)
+			modified:   mscodec2 (modified content)
+			modified:   mssilk (modified content)
+			
+			先查看文件夹如果为空，直接rm -rf mssilk
+			在执行git status . 出现
+				deleted:   mssilk
+			再执行，git checkout .
+			在执行git status . [ok]
+			
+			{参考：}
+				当运行git status的时候提示如下modified: xxx(modified content, untracked content)：
+				https://blog.csdn.net/dd602350527/article/details/105963637
 
 	11.忽略一些文件、文件夹不提交
 		在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
@@ -274,7 +312,11 @@
 		}
 		
 		16.2 git stash pop前可以先和合并吗
-			
+	17 git restore
+		##https://baijiahao.baidu.com/s?id=1683763863529120088&wfr=spider&for=pc
+		##
+		git restore -h
+		git restore --recurse-submodules *
 		
 四.问题及解决记录。
 	4.1 异常换行问题汇总。 LF,CRLF 。。

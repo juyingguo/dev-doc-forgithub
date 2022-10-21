@@ -89,3 +89,17 @@
 	3.4 repo upload
 		repo upload [PROJECT_LIST]
 		使用该命令，会将本地代码上传到远程服务器，一般为Gerrit服务器，Gerrit服务器的地址是在.repo/manifests.xml中指定的。如果没有指定PROJECT_LIST，那么upload会找出所有git库的改动;如果某个git库有多个分支，upload会提供一个交互界面，提示选择其中若干个分支进行上传操作。
+4. repo sync 指定分支后再同步
+	repo同步代码_Android repo技巧：介绍repo sync是同步远端服务器的哪个分支
+		https://blog.csdn.net/weixin_39946239/article/details/111614226
+	
+	
+		查看 repo help sync 命令的帮助说明，该命令的格式如下：
+
+		Usage: repo sync [...]
+		可以看到，它没有提供参数来指定要同步的远端服务器分支。那么在执行 repo sync 时，它同步的是远端服务器的哪个分支？
+
+		实际上，repo sync 默认同步在 repo init 时由 -b 选项指定的分支，这也是 repo 所跟踪的分支。
+		—
+	Android repo技巧：详解repo sync如何单独同步一个或多个仓库
+		http://www.it619.net/index.php?doc-view-3032.html
