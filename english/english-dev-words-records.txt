@@ -1723,6 +1723,12 @@ The transferer. Set only in constructor, but cannot be declared
 	持温和观点者(尤指政见)
 	第三人称单数： moderates现在分词： moderating过去式： moderated过去分词： moderated
 	记忆技巧：moder〔= mod〕方式；风度 + ate 具有…的 → 有度的 → 适度的
+	
+	157.4 Loading, running, or building a Maven project may execute potentially malicious code from its build scripts.
+		malicious
+		英 [məˈlɪʃəs]
+		adj.
+		恶意的
 158 ethernet  
 	Ethernet
 	英 [ˈiːθənet]   美 [ˈiːθərnet]  
