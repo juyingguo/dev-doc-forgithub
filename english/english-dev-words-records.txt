@@ -485,40 +485,7 @@ It assumes that only the primary user
 	英 [əˈmɪt]   美 [əˈmɪt]  
 	v.
 	删除;忽略;漏掉;遗漏;不做;未能做
-49、CopyOnWriteArrayList	
-	A thread-safe random-access list.
-	 *
-	 <p>Read operations (including {@link #get}) do not block and may overlap with
-	 update operations. Reads reflect the results of the most recently completed
-	  operations. Aggregate operations like {@link #addAll} and {@link #clear} are
-	 * atomic; they never expose an intermediate state.
-	do not不要; 勿; 请勿
-	overlap部分重叠，交叠; 使部分重叠; 部分重叠; 重叠部分; 重叠部分，重叠量; 重叠时间，交接时期
-	reflect反映; 映出; 反射; 显示，表明，表达
-	completed完成; 结束; 填写; 使完整; 使完美; complete的过去分词和过去式
-	Aggregate总数; 合计; 骨料，集料; 总数的; 总计的; 总计
-	atomic原子的; 与原子有关的; 原子能的; 原子武器的
-	expose陈述，阐述，揭露; 暴露; 显露; 露出; 揭露; 揭穿; 使面临，使遭受
-	intermediate state中间态
-	
-	inter
-	英 [ɪnˈtɜː(r)]
-	v.
-	埋葬(遗体)
-	第三人称单数： inters现在分词： interring过去式： interred过去分词： interred
-	记忆技巧：in 进入 + ter〔= terr〕土地 → 进入土里 → 埋葬
-	
-	mediate
-	英 [ˈmiːdieɪt]
-	v.
-	调停;调解;斡旋;为解决分歧找到(方法);促成(协议);影响…的发生;使…可能发生
-	
-	aggregate
-	英 [ˈæɡrɪɡeɪt]
-	n.
-	总数;合计;(可成混凝土或修路等用的)骨料，集料
-	adj.
-	总数的
+49、
 	
 50、getCanonicalName
 	Returns the canonical name of the underlying class as
@@ -893,6 +860,9 @@ The transferer. Set only in constructor, but cannot be declared
 	adj.
 	紧密相关的;切题的;有价值的;有意义的
 	派生词： relevance n.  relevantly adv.	
+	Shows a previously hidden fragment. This is only relevant for fragments whose views have been added to a container, 
+	as this will cause the view to be shown.
+	这仅适用于视图已添加到容器中的片段，因为这将导致视图显示。
 83、lies dormant until the  lock has been acquired.
 		在获得锁之前处于休眠状态。
 	dormant
@@ -1037,7 +1007,22 @@ The transferer. Set only in constructor, but cannot be declared
 	(使)缩水，收缩，缩小，皱缩;(使)缩小，减少;退缩;畏缩
 	n.
 	精神病学家;心理学家
-
+	intended 英 / ɪnˈtendɪd 美 / [ɪnˈtendɪd]
+	adj.
+	预定的;意欲达到的;打算的;计划的;为…打算(或设计)的
+	v.
+	打算;计划;
+	
+	This file is intentionally very generic and is intended to support a broad rang of keyboards
+	该文件故意非常通用，旨在支持广泛的键盘。
+	intent 英 / ɪnˈtent 美 / [ɪnˈtent]
+	  n.
+	意图;意向;目的
+	adj.
+	专注;热切的;
+	intentionally 英 / ɪnˈtɛnʃənli 美 / [ɪnˈtɛnʃənəli]
+	adv.
+	故意;有意地
 97、 If another editor on this
          * {@link SharedPreferences} does a regular {@link #commit}
          * while a {@link #apply} is still outstanding, the
@@ -1093,7 +1078,8 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [kənˈdʒʌŋkʃn]   美 [kənˈdʒʌŋkʃn]  
 	n.
 	连词， 连接词 (如and、but、or);(引起某种结果的事物等的)结合，同时发生;(恒星、行星等的)合
-	
+	in conjunction with
+	与sth一起
 102、 The base elevation of this view relative to its parent, in pixels. 
 	elevation
 	英 [ˌelɪˈveɪʃn]   美 [ˌelɪˈveɪʃn]  
@@ -2027,6 +2013,8 @@ The transferer. Set only in constructor, but cannot be declared
 	2
 	(finance 财) 可动用的；可自由支配的
 	available for use
+	
+	dispose
 187 将亮度参量（Y：Luminance或Luma）和色度参量（UV：Chrominance或Chroma）
 	Luminance
 	英 [ˈluːmɪnəns]   美 [ˈluːmɪnəns]  
@@ -2223,6 +2211,7 @@ The transferer. Set only in constructor, but cannot be declared
 	英 [ˌiːlæˈstɪsəti] 
 	n.
 	弹性;弹力
+	elastic
 
 211 "If you want your children to be intelligent,  read them fairy tales."
 	* "If you want them to be more intelligent, read them more fairy tales."	
@@ -2502,6 +2491,17 @@ achieve the face detection
 	
 	propagate it up to 
 	up to 高达 ; 到 ; 干 ; 胜任 ; …的责任
+	
+	all Permission checks are relegated to org.apache.shiro.realm.
+	The Realm could use the semantics described here, or it could utilize some other mechanism entirely - it is always up to the application developer.
+	所有权限检查都被归入org.apache.Shiro领域。Realm可以使用这里描述的语义，也可以完全使用其他机制——这始终取决于应用程序开发人员。
+	
+	relegate
+	英 [ˈrelɪɡeɪt] 
+	vt.
+	降级;使贬职;
+	is up to sb.取决于某人
+	
 253 Caveats 注意事项
 	英 [ˈkeɪvɪæts]   美 [ˈkeɪviˌæts]  
 	告诫;警告;诉讼手续;正告
@@ -2625,6 +2625,13 @@ achieve the face detection
 	英 [ɪɡˈzɔːst]
 	vt.
 	耗尽;花光;详尽讨论(或研究)
+	
+	Called when the message queue has run out of messages and will now wait for more. 
+		当消息队列已用完消息并将等待更多消息时调用。
+		#android.os.MessageQueue.IdleHandler#queueIdle
+	run out of
+		英 [rʌn aʊt ɒv]   美 [rʌn aʊt əv]  
+		用完，耗尽;从……跑出
 266 Leave Object-parameterized types raw //保留对象参数化类型原始
 	leave
 	英 [liːv]  
@@ -2813,7 +2820,15 @@ achieve the face detection
 	adj.
 	宽容的;容忍的;忍受的;
 287 Updates and removals after the call do not impact ongoing reads.[DiskLruCache]
-	调用后的更新和删除不会影响正在进行的读取
+	调用后的更新和删除不会影响正在进行的读取。
+	
+	As a side effect, this method expunges all stale entries in the  "run" containing the stale entry. 
+	#java.lang.ThreadLocal.ThreadLocalMap#replaceStaleEntry
+	expunge
+	英 [ɪkˈspʌndʒ]   美 [ɪkˈspʌndʒ]  
+	vt.
+	消除;除去;抹去;删去
+	side effect 副作用 ; 意外的连带后果
 288 occupation; profession; vocation
 	职业
 289
@@ -2973,7 +2988,8 @@ achieve the face detection
 	contiguous
 	英 [kənˈtɪɡjuəs]
 	相接的;相邻的
-	
+	Unlike ListView adapters, types need not be contiguous.
+		与ListView适配器不同，类型不需要是连续的
 	TLS only allows SIP entities to authenticate servers to which they are adjacent.
 	TLS只允许SIP实体对与它们相邻的服务器进行身份验证。
 	英 [əˈdʒeɪsnt]
@@ -3057,3 +3073,355 @@ achieve the face detection
 	英 [ˈtrʌblʃuːt] 
 	v.
 	检修；（为公司、机构等）分析解决（难题）
+314 
+	A Permission is the most granular, or atomic, unit in a system's security policy and is the cornerstone upon which fine-grained security models are built.
+	权限是系统安全策略中最细粒度或原子性的单元，是构建细粒度安全模型的基石。
+	
+	granular
+	英 [ˈɡrænjələ(r)] 
+	adj.
+	由颗粒构成的;含颗粒的;
+	granula
+	n.
+	（颗）粒
+	cornerstone
+	英 [ˈkɔːnəstəʊn]
+	n.
+	基石;奠基石;
+	grained
+	英 [ɡreɪnd] 
+	adj.
+	有纹理的;
+	grain
+	英 [ɡreɪn]
+	n.
+	粮食;谷物;颗粒;谷粒;细粒
+315 
+	Under this paradigm, permissions are immutable and reflect an application's raw functionality (opening files, accessing a web URL, creating users, etc).
+	在这种模式下，权限是不可变的，并反映了应用程序的原始功能
+	英 [ˈpærədaɪm] 
+	n. 范式;   范例;
+	英 [ɪˈmjuːtəbl] 
+	adj. 不变的;   不可改变的;
+316 
+	It is not normally necessary to specify the target entity explicitly since it can usually be inferred from the type of the object being referenced. 
+	
+	#javax.persistence.ManyToOne
+	
+	infer
+	英 [ɪnˈfɜː(r)]   美 [ɪnˈfɜːr]  
+	v.
+	推断;推论;
+	inferred
+	英 [ɪnˈfɜːd]   美 [ɪnˈfɜːrd]  
+	v.
+	推断;推论;推理
+317 Loading, running, or building a Maven project may execute potentially
+malicious code from its build scripts.
+	malicious
+	英 [məˈlɪʃəs] 
+	adj.
+	恶意的;恶毒的
+	
+	The request was rejected because the URL contained a potentially malicious String ";"
+318 
+	Like most Spring Getting Started guides, you can start from scratch and complete each step or you can bypass basic setup steps that are already familiar to you. Either way, you end up with working code.
+	与大多数Spring入门指南一样，您可以从头开始并完成每个步骤，也可以跳过您已经熟悉的基本设置步骤。无论哪种方式，你都会得到有效的代码。
+	bypass
+	英 [ˈbaɪpɑːs]
+	n.
+	旁路;(绕过城市的)旁道;(给心脏接旁通管的)分流术;旁通管
+	vt.
+	绕过;避开
+319 
+	You will build a Spring MVC application that secures the page with a login form that is backed by a fixed list of users.
+	您将构建一个SpringMVC应用程序，该应用程序使用一个由固定用户列表支持的登录表单来保护页面。
+	backed
+	英 [bækt]   美 [bækt]  
+	v.
+	(使)后退，倒退;帮助;支持;
+320 CSRF的全称是（Cross Site Request Forgery） ， 可译为跨域请求伪造
+	forgery
+	英 [ˈfɔːdʒəri]
+	n.
+	伪造;伪造罪;伪造品;
+	
+	赝品[yàn pǐn]
+	counterfeit; fake; sham; forgery;
+	counterfeit
+	英 [ˈkaʊntəfɪt] 
+	
+321 
+	Enable encryption and mutual authentication between cluster.
+	
+	ref:Elasticsearch/config/*.yml
+	启用群集节点之间的加密和相互身份验证.
+	英 [ˈmjuːtʃuəl] 
+	adj. 相互的;   彼此的;   共有的;   
+	n. 互助公司;   互助基金; 
+	
+	All elements in the list must be mutually comparable using the specified comparator 
+	列表中的所有元素必须使用指定的比较器进行相互比较
+	#java.util.Collections#sort(java.util.List<T>, java.util.Comparator<? super T>)
+	
+	Sorts the specified list according to the order induced by the specified comparator.
+	induce
+	英 [ɪnˈdjuːs]   美 [ɪnˈduːs]  
+	vt.
+	诱导;引起;导致;
+	
+	introduce
+	英 [ˌɪntrəˈdjuːs]   美 [ˌɪntrəˈduːs]  
+	vt.
+	介绍(讲演者或演员);把…介绍(给);引见;
+322 Im stumped and any help would be much appreciated!
+	我被难住了，任何帮助都将不胜感激！
+	英 [stʌmpt]   美 [stʌmpt]  
+	v.
+	把…难住;难倒;
+	stump的过去分词和过去式
+	appreciated
+	英 [əˈpriːʃieɪtɪd]   美 [əˈpriːʃieɪtɪd]  
+	v.
+	欣赏;赏识;重视;感激;
+323 Referer
+	referer
+	引用;引用页;推荐人;
+324 
+	java.util.stream.Stream#distinct
+	
+	英语阅读。
+325 This website uses cookies to improve user experience. By using our website you consent to all cookies 
+	in accordance with our Cookie Policy. Read more
+	ACCEPT ALL
+	DECLINE ALL
+	本网站使用cookie来改善用户体验。通过使用我们的网站，您同意根据我们的Cookie政策使用所有Cookie。阅读更多信息
+	全部接受
+	全部拒绝
+	
+	英 [kənˈsent] 
+	美 [kənˈsent] 
+	n. 同意;   准许;   允许;   
+	vi. 同意; 
+	accord
+	英 [əˈkɔːd]   美 [əˈkɔːrd]  
+	v.
+	一致;给予;赠予;授予(权力、地位、某种待遇);(与…)符合
+	n. 协议;
+	记忆技巧：ac 加强 + cord 心，心脏 → 心贴心 → 一致
+	
+	第三人称单数： accords现在分词： according过去式： accorded过去分词： accorded
+	
+	according to
+	英 [əˈkɔːdɪŋ tə]   美 [əˈkɔːrdɪŋ tə]  
+	prep.
+	根据;据(…所说);
+******	
+326-250 idea （android studio） ide tool use word
+326	quick definition(view - quick definition):
+	to preview the definition or the content of symbol at the caret,without opening in seperate editor tab.	
+	快速定义（视图-快速定义）：
+	在插入符号处预览符号的定义或内容，而无需在单独的编辑器选项卡中打开。
+	
+	caret
+	英 [ˈkærət]   美 [ˈkærət]  
+	n.
+	脱字号;补注号;插入符号(光标处)
+327 The state of a Gradle build process (daemon) may be corrupt. Stopping all Gradle daemons may solve this problem.
+	corrupt
+	英 [kəˈrʌpt]   美 [kəˈrʌpt]  
+	adj.
+	贪污的;有缺陷的;有错误的
+	v.
+	使腐化;损坏;引起(计算机文件等的)错误
+328 get rid of
+	英 [ɡet rɪd ɒv]   美 [ɡet rɪd əv]  
+	摆脱，除去;丢弃
+329 Parallel execution is an incubating feature.
+	并行执行是一种孵化特性。
+	
+	incubate
+	英 [ˈɪŋkjubeɪt] 
+	v.
+	孵化，孵(卵);（在恒温箱内—）温育（早产婴儿）;酝酿;
+330. list.remove(i) tip:
+	This is suspicious as list becomes shorter  after that and the element next to removed will not be processed.
+	Simple fix to decrease the index variable after removal,
+	but probably removing via iterator or using removeif method (since lava 8) is a more robust alternative.
+	
+	suspicious
+	英 [səˈspɪʃəs]   美 [səˈspɪʃəs]  
+	adj.
+	可疑的;感觉可疑的;
+	probably
+	英 [ˈprɒbəbli]   美 [ˈprɑːbəbli]  
+	adv.
+	可能;大概;几乎肯定
+******	
+251-270 dragger2 使用到的英语单词记录
+	
+251 {Component}
+	The generated class will have the name of the type annotated with @Component prepended with Dagger.
+	产生的类有以带有@Component注解的类的名称，同时在该名称前添加Dagger作为前缀。
+	prepend
+	预先考虑;预置;前置;
+
+
+271 throttle
+	英 [ˈθrɒtl]   美 [ˈθrɑːtl]  
+	vt.
+	掐死;使窒息;勒死
+	n.
+	节流阀;节流杆;
+	
+	Threshold
+	英 [ˈθreʃhəʊld]   美 [ˈθreʃhoʊld]  
+	n.
+	门槛;门口;阈,界;起始点;
+272 
+	The flutter-io.cn server is a provisional mirror for Flutter dependencies and packages maintained by GDG China.
+	provisional
+	英 [prəˈvɪʒənl]   美 [prəˈvɪʒənl]  
+	adj.
+	临时的;暂时的;暂定的
+	n.
+	临时性;
+	temporary; provisional; transient
+273 Show a progress spinner, and kick off a background task to perform the user login attempt.
+	显示进度微调器，并启动后台任务以执行用户登录尝试。
+	kick off 在足球比赛中）开球 ; 开始 ; 踢掉 ; 强使离开
+	
+274 A dummy authentication store containing known user names and passwords.
+	包含已知用户名和密码的虚拟身份验证存储。
+	
+	英 [ˈdʌmi] 
+	n. 笨蛋;   (尤指缝制或陈列服装用的)人体模型;   仿制品;  
+275 awesome
+	英 [ˈɔːsəm]   美 [ˈɔːsəm]  
+	adj.
+	令人惊叹的;使人惊惧的;很好的(或极好玩的等)
+	
+	It's a totally awesome experience. 
+
+		这是个棒极了的经历。
+****
+276-400 android api
+	android.support.v4.view.ViewPager#setOffscreenPageLimit
+	This is offered as an optimization. 
+	If you know in advance the number  of pages you will need to support or have lazy-loading mechanisms in place  on your 
+	pages, tweaking this setting can have benefits in perceived smoothness  of paging animations and interaction.
+	
+	这是一种优化。
+	如果您事先知道需要支持的页面数量，或者页面上有延迟加载机制，那么调整此设置可以提高页面动画和交互的流畅度。
+	in advance
+	英 [ɪn ədˈvɑːns]   美 [ɪn ədˈvæns]  
+	提前;事先，预先
+	tweak
+	英 [twiːk]
+	vt.
+	v
+	扭;拧;扯;稍稍调整(机器、系统等)
+	同义词：
+		turn round
+	
+	perceive
+	英 [pəˈsiːv]   美 [pərˈsiːv]  
+	vt.
+	感知;认为;察觉到;
+	
+277 
+	match_parent
+	The view should be as big as its parent (minus padding)
+	加减乘除
+		add , subtract , multiply and divide
+	minus
+	英 [ˈmaɪnəs]   美 [ˈmaɪnəs]  
+	prep.
+	减;零下;无;欠缺(曾经有过的东西)
+	n.
+	减号;负号;负值;缺点
+	adj.
+	负的;
+	
+	减[jiǎn]
+	subtract; reduce; decrease; cut; minus; knock down; mark down
+	
+	subtract
+	英 [səbˈtrækt]   美 [səbˈtrækt]  
+	v.
+	减;减去
+278 Make sure we do execute immediately if we are in the middle of a traversal or the damage  done by 
+	dispatchDetachedFromWindow will cause havoc on return.
+	如果正在进行遍历，请确保立即执行，否则dispatchDetachedFromWindow造成的损坏将在返回时造成严重破坏。
+	havoc
+	英 /
+	ˈhævək 
+	美 /
+	[ˈhævək]
+	n.
+	灾害;祸患;浩劫
+	vi.
+	严重破坏;毁灭损毁
+****	
+401-450 retrofit
+	retrofit2.Retrofit.Builder#build
+	Make a defensive copy of the converters.//制作转换器的防御性副本
+	defensive
+	英 [dɪˈfensɪv]   美 [dɪˈfensɪv]  
+	adj.
+	防御的;保护的;保卫的;戒备的;
+****
+451-550 java
+451 The following example illustrates an aggregate operation using Stream and IntStream.
+	以下示例说明了使用Stream和IntStream的聚合操作
+	#java.util.stream.IntStream
+	illustrate
+	英 [ˈɪləstreɪt]   美 [ˈɪləstreɪt]  
+	vt.
+	说明;加插图于;给(书等)做图表;(用示例、图画等)解释;
+452 This is a custom hash code (useful only within ThreadLocalMaps) that eliminates collisions  in the common case where 
+	consecutively constructed ThreadLocals  are used by the same threads, while remaining well-behaved in  less common cases.
+	这是一个自定义哈希代码（仅在ThreadLocalMaps中有用），它可以在相同线程使用连续构造的ThreadLocals的常见情况下消除冲突，
+	而在不太常见的情况下保持良好的行为。
+	eliminate
+	英 [ɪˈlɪmɪneɪt]   美 [ɪˈlɪmɪneɪt]  
+	vt.
+	排除;清除;
+	collision
+	英 [kəˈlɪʒn]   美 [kəˈlɪʒn]  
+	n.
+	碰撞;(相撞)事故;(两人之间或对立意见、看法等之间的)冲突
+453 CopyOnWriteArrayList	
+	A thread-safe random-access list.
+	 *
+	 <p>Read operations (including {@link #get}) do not block and may overlap with
+	 update operations. Reads reflect the results of the most recently completed
+	  operations. Aggregate operations like {@link #addAll} and {@link #clear} are
+	 * atomic; they never expose an intermediate state.
+	do not不要; 勿; 请勿
+	overlap部分重叠，交叠; 使部分重叠; 部分重叠; 重叠部分; 重叠部分，重叠量; 重叠时间，交接时期
+	reflect反映; 映出; 反射; 显示，表明，表达
+	completed完成; 结束; 填写; 使完整; 使完美; complete的过去分词和过去式
+	Aggregate总数; 合计; 骨料，集料; 总数的; 总计的; 总计
+	atomic原子的; 与原子有关的; 原子能的; 原子武器的
+	expose陈述，阐述，揭露; 暴露; 显露; 露出; 揭露; 揭穿; 使面临，使遭受
+	intermediate state中间态
+	
+	inter
+	英 [ɪnˈtɜː(r)]
+	v.
+	埋葬(遗体)
+	第三人称单数： inters现在分词： interring过去式： interred过去分词： interred
+	记忆技巧：in 进入 + ter〔= terr〕土地 → 进入土里 → 埋葬
+	
+	mediate
+	英 [ˈmiːdieɪt]
+	v.
+	调停;调解;斡旋;为解决分歧找到(方法);促成(协议);影响…的发生;使…可能发生
+	
+	aggregate
+	英 [ˈæɡrɪɡeɪt]
+	n.
+	总数;合计;(可成混凝土或修路等用的)骨料，集料
+	adj.
+	总数的

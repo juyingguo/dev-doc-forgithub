@@ -268,11 +268,13 @@
 			*.a       # 忽略所有 .a 结尾的文件
 			!lib.a    # 但 lib.a 除外
 			/TODO     # 仅仅忽略项目根目录下的 TODO 文件夹，不会忽略其它目录下所有的TODO文件夹 otherdir/TODO。
-			build/    # 忽略项目根目录(build/)下的文件夹及文件夹下的所有文件。同时会忽略所有子目录中的build/文件夹及文件。
+			build/    # 忽略项目根目录(build/)下的文件夹及所有文件。同时会忽略项目根目录下其它目录中的build/文件夹及文件。
 			build 	  # 这种写法效果同 build/ 
 			doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 			#为注释
 			/为当前目录
+			
+			!*/build/*.java #不忽略任何build目录下的java文件.(初步验证，如果已经忽略不build/,这种写法无效)
 		6.1）将.gitignore添加到忽略文件与不添加的区别？
 			1.添加后，可以动态改变忽略规则，而不需要删除缓存。
 				但是忽略文件本身没有添加到版本库中。
